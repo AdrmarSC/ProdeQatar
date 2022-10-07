@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+
+.navbar {
+    overflow: hidden;
+    /* background-color: #7F1431; */
+    /* background-color: #2E8512; */
+    background-color: #161B22;
+ 
+    font-family: 'Sansita', sans-serif;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 0;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: calc(18px + .4vw);
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  
+
+
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+    @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 2px 3px;
+    }
+  }
+  
+  .logo img{float:left;}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Sansita', sans-serif;
+    
+  }
+  
+  .grupo {
+    gap: 0.2% 0px; 
+    margin: 1% auto;
+    color:#fff;
+    font-weight: 500 !important;
+    text-align: center;  
+    justify-content: center;
+    max-width: 700px;
+  }
+  
+  .titleGrupo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    border: 1px solid #fff;
+    font-size: calc(14px + .5vw) !important;
+    font-weight: 700 !important;
+    border-radius: 0.5rem !important;
+    padding: 2%;
+    }
+  
+ 
+  .rowPartido{
+    display: grid; 
+    grid-template-columns: 0.25fr 0.08fr 0.35fr 0.10fr 0.1fr 0.05fr 0.1fr 0.10fr 0.35fr; 
+    /*grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;*/
+    grid-template-rows: repeat(auto-fit, minmax(1fr,3fr));
+  }
+
+  .rowPartido > div {
+    border: 1px solid #fff;
+    font-size: calc(12px + .4vw);
+    padding: 0.3rem;
+  }
+
+  .fecha { 
+    grid-area: 1 / 1 / 9 / 2;
+    font-size: calc(8px + .4vw) !important;
+   }
+  .hora { 
+    grid-area: 1 / 2 / 9 / 3; 
+    font-size: calc(8px + .4vw) !important; 
+  }
+  .local { 
+    grid-area: 1 / 3 / 9 / 4; 
+    border-right: 0px !important; 
+    
+  }
+  .icoLocal { 
+    grid-area: 1 / 4 / 9 / 5;
+    border-left: 0px !important; 
+   }
+
+  .imgIco{   
+    max-width: 100%;
+    height: auto;
+  }
+  .resLocal { 
+    grid-area: 1 / 5 / 9 / 6; 
+    background-color: #a5a5ac !important;
+  }
+  .resMedio { 
+    grid-area: 1 / 6 / 9 / 7; 
+  }
+  .resVisitante { 
+    grid-area: 1 / 7 / 9 / 8; 
+    background-color: #a5a5ac !important;
+  }
+  .icoVisitante { 
+    grid-area: 1 / 8 / 9 / 8;
+    border-right: 0px !important;
+   }
+  .visitante { 
+    grid-area: 1 / 9 / 9 / 9; 
+    border-left: 0px !important;
+  }
+
+  .grupoA{
+    background-color: #390131;
+  }
+  .grupoB{
+    background-color: #1800AC;
+  }
+  .grupoC{
+    background-color: #f23e3b;
+  }
+  .grupoD{
+    background-color: #D6B44F;
+  }
+  .grupoE{
+    background-color: #0a8910;
+  }
+  .grupoF{
+    background-color: #4F88D6;
+  }
+  .grupoG{
+    background-color: #F03E17;
+  }
+  .grupoH{
+    background-color: #8f06a1;
+  }
+
+
+/*Iframe de tabla de partidos por grupo*/
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+}
+.iframeGrupo {
+  border-style: none; 
+  border-color: inherit; 
+  border-width: 0px; 
+  height:380px; 
+  width:100%;
+  margin-top: 1px;
+}
+
+.grupos{
+  margin-top: 35px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .grupos{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .grupos{
+    margin-top: 94px;
+  }
+}
+
+
+/* Botones guardar */
+.button {
+  font-family: 'Sansita', sans-serif;
+  font-size: calc(12px + .4vw) !important;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  background: #007700;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  margin: 0.7% 0.7%;
+}
+.button:hover {
+  background: #00f546;
+  color: black;
+}

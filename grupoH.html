@@ -1,113 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/grupos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/grupos.css" />
 
     <script src="guardar.js"></script>
     <title>GrupoD</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="grupo grupoH">
-        <div class="titleGrupo">
-            GRUPO H
+      <div class="titleGrupo">GRUPO H</div>
+      <div class="rowPartido">
+        <div class="fecha">JUEVES 24/11</div>
+        <div class="hora">10:00</div>
+        <div class="local">URUGUAY</div>
+        <div class="icoLocal">
+          <img src="img/equipos/uruguay.png" class="imgIco" />
         </div>
-        <div class="rowPartido">
-            <div class="fecha">JUEVES 24/11</div>
-            <div class="hora">10:00</div>
-            <div class="local">URUGUAY</div>
-            <div class="icoLocal">
-                <img src="img/equipos/uruguay.png" class="imgIco">
-            </div>
-            <div id="res_H_L1" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_H_V1" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/corea.png" class="imgIco">
-            </div>    
-            <div class="visitante">COREA DEL SUR</div> 
+        <div
+          id="res_H_L1"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_H_V1"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/corea.png" class="imgIco" />
         </div>
-    
-        <div class="rowPartido">
-            <div class="fecha">JUEVES 24/11</div>
-            <div class="hora">13:00</div>
-            <div class="local">PORTUGAL</div>
-            <div class="icoLocal">
-                <img src="img/equipos/portugal.png" class="imgIco">
-            </div>
-            <div id="res_H_L2" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_H_V2" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/ghana.png" class="imgIco">
-            </div>    
-            <div class="visitante">GHANA</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">LUNES 28/11</div>
-            <div class="hora">10:00</div>
-            <div class="local">COREA DEL SUR</div>
-            <div class="icoLocal">
-                <img src="img/equipos/corea.png" class="imgIco">
-            </div>
-            <div id="res_H_L3" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_H_V3" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/ghana.png" class="imgIco">
-            </div>    
-            <div class="visitante">GHANA</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">LUNES 28/11</div>
-            <div class="hora">16:00</div>
-            <div class="local">PORTUGAL</div>
-            <div class="icoLocal">
-                <img src="img/equipos/portugal.png" class="imgIco">
-            </div>
-            <div id="res_H_L4" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_H_V4" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/uruguay.png" class="imgIco">
-            </div>    
-            <div class="visitante">URUGUAY</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">VIERNES 02/12</div>
-            <div class="hora">12:00</div>
-            <div class="local">COREA DEL SUR</div>
-            <div class="icoLocal">
-                <img src="img/equipos/corea.png" class="imgIco">
-            </div>
-            <div id="res_H_L5" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_H_V5" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/portugal.png" class="imgIco">
-            </div>    
-            <div class="visitante">PORTUGAL</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">VIERNES 02/12</div>
-            <div class="hora">12:00</div>
-            <div class="local">GHANA</div>
-            <div class="icoLocal">
-                <img src="img/equipos/ghana.png" class="imgIco">
-            </div>
-            <div id="res_H_L6" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_H_V6" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/uruguay.png" class="imgIco">
-            </div>    
-            <div class="visitante">URUGUAY</div> 
-        </div>
-        <button class="button" role="button" onclick="returnText('H')">Guardar</button>
-    </div>    
+        <div class="visitante">COREA DEL SUR</div>
+      </div>
 
-</body>
+      <div class="rowPartido">
+        <div class="fecha">JUEVES 24/11</div>
+        <div class="hora">13:00</div>
+        <div class="local">PORTUGAL</div>
+        <div class="icoLocal">
+          <img src="img/equipos/portugal.png" class="imgIco" />
+        </div>
+        <div
+          id="res_H_L2"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_H_V2"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/ghana.png" class="imgIco" />
+        </div>
+        <div class="visitante">GHANA</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">LUNES 28/11</div>
+        <div class="hora">10:00</div>
+        <div class="local">COREA DEL SUR</div>
+        <div class="icoLocal">
+          <img src="img/equipos/corea.png" class="imgIco" />
+        </div>
+        <div
+          id="res_H_L3"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_H_V3"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/ghana.png" class="imgIco" />
+        </div>
+        <div class="visitante">GHANA</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">LUNES 28/11</div>
+        <div class="hora">16:00</div>
+        <div class="local">PORTUGAL</div>
+        <div class="icoLocal">
+          <img src="img/equipos/portugal.png" class="imgIco" />
+        </div>
+        <div
+          id="res_H_L4"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_H_V4"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/uruguay.png" class="imgIco" />
+        </div>
+        <div class="visitante">URUGUAY</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">VIERNES 02/12</div>
+        <div class="hora">12:00</div>
+        <div class="local">COREA DEL SUR</div>
+        <div class="icoLocal">
+          <img src="img/equipos/corea.png" class="imgIco" />
+        </div>
+        <div
+          id="res_H_L5"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_H_V5"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/portugal.png" class="imgIco" />
+        </div>
+        <div class="visitante">PORTUGAL</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">VIERNES 02/12</div>
+        <div class="hora">12:00</div>
+        <div class="local">GHANA</div>
+        <div class="icoLocal">
+          <img src="img/equipos/ghana.png" class="imgIco" />
+        </div>
+        <div
+          id="res_H_L6"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_H_V6"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/uruguay.png" class="imgIco" />
+        </div>
+        <div class="visitante">URUGUAY</div>
+      </div>
+      <button class="button" role="button" onclick="returnText('H')">
+        Guardar
+      </button>
+    </div>
+  </body>
 </html>

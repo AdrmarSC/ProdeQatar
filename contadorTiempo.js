@@ -3,7 +3,7 @@ const minuto = segundo * 60;
 const hora = minuto * 60;
 const dia = hora * 24;
 
-const partidoInicial = new Date("2022-11-21 07:00:00");
+const partidoInicial = new Date("2022-11-20 13:00:00");
 
 function ceroIzq(num) {
   return String(num).padStart(2, "0");

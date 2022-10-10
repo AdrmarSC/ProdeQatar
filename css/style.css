@@ -205,11 +205,11 @@ ul {
   text-align: center;
   background-color: #8d1b3d;
 }
-
+/* 
 #cuentaRegresiva li:before,
 #cuentaRegresiva li:after {
-  /* position: absolute; */
-}
+  position: absolute;
+} */
 
 #cuentaRegresiva li:not(:last-child):before {
   position: absolute;

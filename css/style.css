@@ -6,9 +6,9 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Sansita", sans-serif;
   display: grid;
-  min-height: 93vh;
+  min-height: 96vh;
   grid-template-rows: auto 1fr auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 /* --------------Menu de arriba----------------------- */
@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   background-color: #161b22;
   font-family: "Sansita", sans-serif;
-  position: fixed;
+  position: relative;
   text-align: center;
   width: 100%;
   top: 0;
@@ -35,8 +35,8 @@ body {
 .dropdown:hover .dropbtn {
   background-color: red;
 }
-
-@media screen and (max-width: 720px) {
+/* 
+@media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -44,13 +44,8 @@ body {
     float: right;
     display: block;
   }
-  .card {
-    position: relative;
-    margin-top: 60px;
-  }
-}
-
-@media screen and (min-width: 720px) and (max-width: 1240px) {
+} */
+@media screen and (max-width: 1240px) {
   .navbar a:not(:first-child) {
     display: none;
   }
@@ -58,13 +53,23 @@ body {
     float: right;
     display: block;
   }
-  .card {
+  /* .navbar.responsive {
     position: relative;
-    margin-top: 60px;
+  } */
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 2px 3px;
   }
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
   }
@@ -79,9 +84,11 @@ body {
     text-align: left;
     padding: 2px 3px;
   }
-  .card {
-    position: relative;
-    margin-top: 50px;
+}
+@media screen and (min-width: 1240px) {
+  .navbar a.icon {
+    float: right;
+    display: none;
   }
 }
 .logo img {
@@ -116,6 +123,13 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 .piepag .grupo1 .box figure {
   display: flex;
@@ -158,8 +172,10 @@ footer {
 .fondo {
   justify-content: center;
   align-items: center;
-
   display: flex;
+}
+.fondo img {
+  width: 50%;
 }
 /* ---------------------------------------*/
 .contador {
@@ -172,15 +188,19 @@ footer {
   list-style: none;
   align-items: center;
   justify-content: center;
-  min-height: 200px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: inside;
 }
 
 #cuentaRegresiva li {
   border-radius: 15px;
   color: #fff;
-  font-size: calc(100px + 0.5vw) !important;
+  font-size: calc(12px + 8vw) !important;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 10px 12px;
   position: relative;
   text-align: center;
   background-color: #8d1b3d;
@@ -194,7 +214,7 @@ footer {
 #cuentaRegresiva li:not(:last-child):before {
   position: absolute;
   content: ":";
-  font-size: calc(60px + 0.5vw) !important;
+  font-size: calc(10px + 4vw) !important;
   right: -20px;
   top: 40px;
   color: #8d1b3d;
@@ -203,10 +223,9 @@ footer {
 #cuentaRegresiva li:after {
   bottom: -30px;
   display: flex;
-  font-size: calc(16px + 0.4vw) !important;
+  font-size: calc(12px + 0.5vw) !important;
   font-weight: 100;
   justify-content: center;
-  width: 100%;
 }
 
 #cuentaRegresiva li.dias:after {

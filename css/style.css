@@ -14,6 +14,7 @@ body {
 }
 
 /* --------------Menu de arriba----------------------- */
+
 .navbar {
   overflow: hidden;
   background-color: #161b22;
@@ -37,16 +38,7 @@ body {
 .dropdown:hover .dropbtn {
   background-color: red;
 }
-/* 
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-} */
+
 @media screen and (max-width: 1240px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -55,9 +47,7 @@ body {
     float: right;
     display: block;
   }
-  /* .navbar.responsive {
-    position: relative;
-  } */
+
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;
@@ -114,7 +104,8 @@ footer {
   background-color: #161b22;
   text-align: center;
   color: #fff;
-  padding: 10px 0;
+  padding: 5px 0;
+  margin-top: 5px;
 }
 
 .piepag {
@@ -126,27 +117,24 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
-
-figure {
+.piepag .grupo1 .box {
+  margin: 0% !important;
   padding: 0;
   margin: 0;
   justify-content: center;
   align-items: center;
 }
-.piepag .grupo1 .box figure {
-  display: flex;
+.piepag .grupo1 .box img {
+  width: calc(25% + 1vh);
+  justify-content: center;
+  align-items: center;
 }
-.piepag .grupo1 .box figure img {
-  width: 120%;
-}
-.piepag .grupo1 .box h2 {
+.piepag .grupo2 .box h1 {
   color: #fff;
   margin: 0% !important;
   font-size: calc(12px + 0.4vw) !important;
 }
-.piepag .grupo1 .box {
-  margin: 0% !important;
-}
+
 .piepag .grupo2 {
   background-color: #0a1a2a;
   padding: 2px 2px;
@@ -154,10 +142,20 @@ figure {
   color: #fff;
   justify-content: center;
   align-items: center;
+  font-size: calc(12px + 0.4vw) !important;
+}
+.piepag .grupo2 p {
+  color: #fff;
+  font-size: calc(16px + 0.4vw) !important;
+}
+.piepag .grupo2 p a {
+  color: #fff;
+  font-size: calc(12px + 0.4vw) !important;
 }
 .piepagina .grupo2 small {
   font-size: calc(10px + 0.4vw) !important;
 }
+
 @media screen and (max-width: 800px) {
   .piepag .grupo1 {
     width: 100%;
@@ -170,8 +168,8 @@ figure {
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
 }
-/* ---------------------------------------*/
-/* animacion cambio de fondo */
+/* -------------imgen central en index.html--------------------------*/
+
 .fondo {
   justify-content: center;
   align-items: center;
@@ -180,8 +178,10 @@ figure {
 .fondo img {
   width: 50%;
 }
+/* ---------------------------------------------------------------------*/
 
-/* ---------------------------------------*/
+/* --------------Cuenta regresiva en index.html-------------------------*/
+/* animacion cambio de fondo */
 .contador {
   justify-content: center;
   align-items: center;
@@ -195,6 +195,7 @@ figure {
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style-type: inside;
 }
@@ -253,3 +254,4 @@ ul {
 #cuentaRegresiva li.segundos:after {
   content: "Segundos";
 }
+/* --------------Cuenta regresiva en index.html-------------------------*/

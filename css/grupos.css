@@ -4,7 +4,10 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: "Sansita", sans-serif;
 }
-
+.grupos {
+  margin: 0;
+  padding: 0;
+}
 .grupo {
   gap: 0.2% 0px;
   margin: 1% auto;
@@ -13,6 +16,7 @@ body {
   text-align: center;
   justify-content: center;
   max-width: 700px;
+  min-width: 350px;
 }
 
 .titleGrupo {
@@ -30,7 +34,6 @@ body {
 .rowPartido {
   display: grid;
   grid-template-columns: 0.25fr 0.08fr 0.35fr 0.1fr 0.1fr 0.05fr 0.1fr 0.1fr 0.35fr;
-  /*grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;*/
   grid-template-rows: repeat(auto-fit, minmax(1fr, 3fr));
 }
 
@@ -107,33 +110,23 @@ body {
 }
 
 /*Iframe de tabla de partidos por grupo*/
+iframe {
+  margin: 0;
+  padding: 0;
+}
 .iframe-container {
   position: relative;
   overflow: hidden;
 }
+
 .iframeGrupo {
   border-style: none;
   border-color: inherit;
   border-width: 0px;
-  height: 380px;
+  height: calc(356px + 1vw);
+  min-height: 356px;
   width: 100%;
-  margin-top: 1px;
-}
-
-.grupos {
-  margin-top: 35px;
-}
-
-@media screen and (max-width: 600px) {
-  .grupos {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 1130px) {
-  .grupos {
-    margin-top: 94px;
-  }
+  margin: 0;
 }
 
 /* Botones guardar */
@@ -151,4 +144,12 @@ body {
 .button:hover {
   background: #00f546;
   color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .iframeGrupo {
+    min-height: 300px;
+    min-width: 320px;
+    height: calc(320px + 1vw);
+  }
 }

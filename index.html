@@ -13,37 +13,36 @@
     <title>ApuesQatar</title>
   </head>
   <body>
-    <div id="navbar"></div>
-    <script>
-      $(function () {
-        $("#navbar").load("navigation.html");
-      });
-    </script>
+        <nav>
+      <div id="navbar"></div>
+
+      <script>
+        $(function () {
+          $("#navbar").load("navigation.html");
+        });
+      </script>
+    </nav>
     <main>
-      <div class="fondo">
-        <img src="img/logo_ApuesQatar_map_trans.png" alt="" />
-      </div>
-
-      <!-- Cuenta regresiva primer partidos mundial -->
-      <!-- <div class="contador"> -->
-
-      <ul id="cuentaRegresiva">
-        <li class="dias anim"></li>
-
-        <li class="horas anim"></li>
-        <li class="minutos anim"></li>
-        <li class="segundos anim"></li>
-      </ul>
-
-      <script src="./contadorTiempo.js"></script>
-      <!-- </div> -->
+        <div class="fondo">
+          <img src="img/logo_ApuesQatar_map_trans.png" alt="" />
+        </div>
+        <!-- Cuenta regresiva primer partidos mundial -->
+        <ul id="cuentaRegresiva">
+          <li class="dias anim"></li>
+          <li class="horas anim"></li>
+          <li class="minutos anim"></li>
+          <li class="segundos anim"></li>
+        </ul>
+        <script src="./contadorTiempo.js"></script>
+      </section>
     </main>
-    <!--Footer-->
-    <div id="footer"></div>
-    <script>
-      $(function () {
-        $("#footer").load("footer.html");
-      });
-    </script>
+    <footer>
+      <div id="footer"></div>
+      <script>
+        $(function () {
+          $("#footer").load("footer.html");
+        });
+      </script>
+    </footer>
   </body>
 </html>

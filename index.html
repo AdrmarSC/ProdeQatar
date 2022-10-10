@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/navigation.css" />
     <link rel="stylesheet" href="css/grupos.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -21,55 +20,18 @@
       });
     </script>
     <main>
-      <div class="grupos">
-        <iframe
-          id="IFgrupoA"
-          class="iframeGrupo"
-          src="grupoA.html"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          id="IFgrupoB"
-          class="iframeGrupo"
-          src="grupoB.html"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          id="IFgrupoC"
-          class="iframeGrupo"
-          src="grupoC.html"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          id="IFgrupoD"
-          class="iframeGrupo"
-          src="grupoD.html"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          id="IFgrupoE"
-          class="iframeGrupo"
-          src="grupoE.html"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          id="IFgrupoF"
-          class="iframeGrupo"
-          src="grupoF.html"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          id="IFgrupoF"
-          class="iframeGrupo"
-          src="grupoG.html"
-          scrolling="no"
-        ></iframe>
-        <iframe
-          id="IFgrupoH"
-          class="iframeGrupo"
-          src="grupoH.html"
-          scrolling="no"
-        ></iframe>
+      <div class="fondo">
+        <img src="img/logo_ApuesQatar_map.png" alt="" />
+      </div>
+      <!-- Cuenta regresiva primer partidos mundial -->
+      <div class="contador">
+        <ul id="cuentaRegresiva">
+          <li class="dias"></li>
+          <li class="horas"></li>
+          <li class="minutos"></li>
+          <li class="segundos"></li>
+        </ul>
+        <script src="./contadorTiempo.js"></script>
       </div>
     </main>
     <!--Footer-->

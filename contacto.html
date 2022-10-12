@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/grupos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>Contacto</title>
+  </head>
+  <body>
+    <nav>
+      <div id="navbar"></div>
+      <script>
+        $(function () {
+          $("#navbar").load("navigation.html");
+        });
+      </script>
+    </nav>
+    <main>
+      <section class="contacto" id="contacto">
+        <div class="contact">
+          <h3>ENVIANOS UN EMAIL</h3>
+          <div class="alert">Dejanos tu mensaje</div>
+          <form id="contactForm">
+            <p>
+              <label>Tu nombre (obligatorio)</label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label>Tu correo electrónico (obligatorio) </label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p class="full">
+              <label>Tu mensaje</label>
+              <textarea name="message" rows="8" id="message"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Enviar</button>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer"></div>
+      <script>
+        $(function () {
+          $("#footer").load("footer.html");
+        });
+      </script>
+    </footer>
+
+    <script type="module" src="contacto.js"></script>
+  </body>
+</html>

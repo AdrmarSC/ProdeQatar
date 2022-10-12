@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
+
+.contacto {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  background-color: #8d1b3d;
+  color: #fff;
+  font-family: "Sansita", sans-serif;
+  font-size: calc(14px + 0.4vw);
+}
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  background-color: #8d1b3d;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 1%;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em 0;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+  background: #f0f0e5;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "Sansita", sans-serif;
+  font-size: calc(14px + 0.4vw);
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #29b4a0;
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrapper > * {
+    padding: 1em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}

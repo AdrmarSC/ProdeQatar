@@ -1,0 +1,60 @@
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/prodeFecha.css" />
+<link rel="stylesheet" href="css/grupos.css" />
+
+<div class="menuGrupos">
+  <button
+    class="menuLinks"
+    onclick="abrirGrupo(event, 'grupoA')"
+    id="defaultOpen"
+  >
+    GRUPO A
+  </button>
+  <button class="menuLinks" onclick="abrirGrupo(event, 'grupoB')">
+    GRUPO B
+  </button>
+  <button class="menuLinks" onclick="abrirGrupo(event, 'grupoC')">
+    GRUPO C
+  </button>
+</div>
+
+<div id="grupoA" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright"
+    >&times</span
+  >
+  <iframe id="IFgrupoA" class="iframeGrupo" src="grupoA.html"></iframe>
+</div>
+<div id="grupoB" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright"
+    >&times</span
+  >
+  <iframe id="IFgrupoA" class="iframeGrupo" src="grupoB.html"></iframe>
+</div>
+<div id="grupoC" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright"
+    >&times</span
+  >
+  <iframe id="IFgrupoA" class="iframeGrupo" src="grupoC.html"></iframe>
+</div>
+
+<script>
+  function abrirGrupo(evt, grupo) {
+    var i, tabcontent, menuLinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    menuLinks = document.getElementsByClassName("menuLinks");
+    for (i = 0; i < menuLinks.length; i++) {
+      menuLinks[i].className = menuLinks[i].className.replace(" active", "");
+    }
+    document.getElementById(grupo).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>

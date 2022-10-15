@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="css/grupos.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <base href="/" />
+    <link rel="stylesheet" href="/css/grupos.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <title>ApuesQatar</title>
   </head>
   <body>
-        <nav>
-      <div id="navbar"></div>
-
-      <script>
-        $(function () {
-          $("#navbar").load("navigation.html");
-        });
-      </script>
-    </nav>
+    <header>
+      <nav>
+        <div id="navbar"></div>
+        <script>
+          $(function () {
+            $("#navbar").load("./login/menuNavbar.html")
+          })
+        </script>
+      </nav>
+    </header>
     <main>
         <div class="fondo">
           <img src="img/logo_ApuesQatar_map_trans.png" alt="" />
@@ -40,7 +40,7 @@
       <div id="footer"></div>
       <script>
         $(function () {
-          $("#footer").load("footer.html");
+          $("#footer").load("/footer/footer.html");
         });
       </script>
     </footer>

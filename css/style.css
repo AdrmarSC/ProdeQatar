@@ -105,7 +105,10 @@ footer {
   text-align: center;
   color: #fff;
   padding: 5px 0;
-  margin-top: 5px;
+  margin-top: 10px;
+  /* position: fixed; */
+  width: 100vw;
+  bottom: 0;
 }
 
 .piepag {
@@ -125,7 +128,7 @@ footer {
   align-items: center;
 }
 .piepag .grupo1 .box img {
-  width: calc(25% + 1vh);
+  width: calc(20% + 1vh);
   justify-content: center;
   align-items: center;
 }
@@ -136,21 +139,21 @@ footer {
 }
 
 .piepag .grupo2 {
-  background-color: #0a1a2a;
+  /* background-color: #0a1a2a; */
   padding: 2px 2px;
   text-align: center;
   color: #fff;
   justify-content: center;
   align-items: center;
-  font-size: calc(12px + 0.4vw) !important;
+  font-size: calc(10px + 0.4vw) !important;
 }
 .piepag .grupo2 p {
   color: #fff;
-  font-size: calc(16px + 0.4vw) !important;
+  font-size: calc(12px + 0.4vw) !important;
 }
 .piepag .grupo2 p a {
   color: #fff;
-  font-size: calc(12px + 0.4vw) !important;
+  font-size: calc(10px + 0.4vw) !important;
 }
 .piepagina .grupo2 small {
   font-size: calc(10px + 0.4vw) !important;

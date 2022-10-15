@@ -33,7 +33,7 @@ body {
 
 .rowPartido {
   display: grid;
-  grid-template-columns: 0.25fr 0.08fr 0.35fr 0.1fr 0.1fr 0.05fr 0.1fr 0.1fr 0.35fr;
+  grid-template-columns: 0.27fr 0.08fr 0.35fr 0.1fr 0.1fr 0.05fr 0.1fr 0.1fr 0.35fr;
   grid-template-rows: repeat(auto-fit, minmax(1fr, 3fr));
 }
 

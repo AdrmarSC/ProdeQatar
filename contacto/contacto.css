@@ -35,8 +35,9 @@
 .contact form input,
 .contact form textarea {
   width: 100%;
-  padding: 1em 0;
+  padding: 1% 0;
   border: 1px solid #c9e6ff;
+  font-family: "Sansita", sans-serif;
 }
 
 .contact form button {

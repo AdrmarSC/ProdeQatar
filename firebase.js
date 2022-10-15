@@ -36,7 +36,6 @@ export const saveResultGrupo = (grupo) => {
 };
 
 //En formulario de contacto, guardo el mensaje.
-export const guardarContacto = (name, email, message) => {
-  console.log(name, email, message);
-  addDoc(collection(db, "mensajesContacto"), { name, email, message });
+export const guardarContacto = (nombre, correo, mensaje, fechahora) => {
+  addDoc(collection(db, "mensajesContacto"), { nombre, correo, mensaje, fechahora });
 };

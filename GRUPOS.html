@@ -8,21 +8,22 @@
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grupos.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <title>GRUPOS</title>
 </head>
 <body>
-
-  <div id="navbar">
-
-  </div>
-  <script>
-      $(function(){
-      $("#navbar").load("navigation.html");
-      });
-  </script>
-
+    <header>
+        <nav>
+          <div id="navbar"></div>
+          <script>
+            $(function () {
+              $("#navbar").load("./login/menuNavbar.html")
+            })
+          </script>
+        </nav>
+      </header>
+<main>
     <div class"grupos">
         <iframe id="IFgrupoA" class="iframeGrupo" src="grupoA.html"></iframe>
         <iframe id="IFgrupoB" class="iframeGrupo" src="grupoB.html"></iframe>
@@ -33,5 +34,6 @@
         <iframe id="IFgrupoF" class="iframeGrupo" src="grupoG.html"></iframe>
         <iframe id="IFgrupoH" class="iframeGrupo" src="grupoH.html"></iframe>
     </div>
+</main>
 </body>
 </html>

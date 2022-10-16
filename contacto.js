@@ -1,6 +1,6 @@
 //En el sección Contacto, guarda el formulario en la bd collection "mensajesContacto"
-import { showMessage } from "../login/js/mensajes.js"
-import { guardarContacto } from "../firebase.js";
+import { showMessage } from "./js/mensajes.js";
+import { guardarContacto } from "./firebase.js";
 const contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();

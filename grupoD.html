@@ -1,113 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/grupos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/grupos.css" />
 
     <script src="guardar.js"></script>
     <title>GrupoD</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="grupo grupoD">
-        <div class="titleGrupo">
-            GRUPO D
+      <div class="titleGrupo">GRUPO D</div>
+      <div class="rowPartido">
+        <div class="fecha">MARTES 22/11</div>
+        <div class="hora">10:00</div>
+        <div class="local">DINAMARCA</div>
+        <div class="icoLocal">
+          <img src="img/equipos/dinamarca.png" class="imgIco" />
         </div>
-        <div class="rowPartido">
-            <div class="fecha">MARTES 22/11</div>
-            <div class="hora">10:00</div>
-            <div class="local">DINAMARCA</div>
-            <div class="icoLocal">
-                <img src="img/equipos/DINAMARCA.png" class="imgIco">
-            </div>
-            <div id="res_D_L1" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_D_V1" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/tunez.png" class="imgIco">
-            </div>    
-            <div class="visitante">TÚNEZ</div> 
+        <div
+          id="res_D_L1"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_D_V1"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/tunez.png" class="imgIco" />
         </div>
-    
-        <div class="rowPartido">
-            <div class="fecha">MARTES 22/11</div>
-            <div class="hora">16:00</div>
-            <div class="local">FRANCIA</div>
-            <div class="icoLocal">
-                <img src="img/equipos/francia.png" class="imgIco">
-            </div>
-            <div id="res_D_L2" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_D_V2" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/AUSTRALIA.png" class="imgIco">
-            </div>    
-            <div class="visitante">AUSTRALIA</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">SÁBADO 26/11</div>
-            <div class="hora">07:00</div>
-            <div class="local">TÚNEZ</div>
-            <div class="icoLocal">
-                <img src="img/equipos/tunez.png" class="imgIco">
-            </div>
-            <div id="res_D_L3" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_D_V3" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/australia.png" class="imgIco">
-            </div>    
-            <div class="visitante">AUSTRALIA</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">SÁBADO 26/11</div>
-            <div class="hora">13:00</div>
-            <div class="local">FRANCIA</div>
-            <div class="icoLocal">
-                <img src="img/equipos/francia.png" class="imgIco">
-            </div>
-            <div id="res_D_L4" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_D_V4" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/dinamarca.png" class="imgIco">
-            </div>    
-            <div class="visitante">DINAMARCA</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">MIÉRCOLES 30/11</div>
-            <div class="hora">12:00</div>
-            <div class="local">TÚNEZ</div>
-            <div class="icoLocal">
-                <img src="img/equipos/tunez.png" class="imgIco">
-            </div>
-            <div id="res_D_L5" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_D_V5" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/francia.png" class="imgIco">
-            </div>    
-            <div class="visitante">FRANCIA</div> 
-        </div>
-        <div class="rowPartido">
-            <div class="fecha">MIÉRCOLES 30/11</div>
-            <div class="hora">12:00</div>
-            <div class="local">AUSTRALIA</div>
-            <div class="icoLocal">
-                <img src="img/equipos/australia.png" class="imgIco">
-            </div>
-            <div id="res_D_L6" onKeypress="return isNum_MaxCar(event,this)" class="resLocal" contenteditable></div>
-            <div class="resMedio">-</div>
-            <div id="res_D_V6" onKeypress="return isNum_MaxCar(event,this)" class="resVisitante" contenteditable></div>
-            <div class="icoVisitante">
-                <img src="img/equipos/dinamarca.png" class="imgIco">
-            </div>    
-            <div class="visitante">DINAMARCA</div> 
-        </div>
-        <button class="button" role="button" onclick="returnText('D')">Guardar</button>
-    </div>    
+        <div class="visitante">TÚNEZ</div>
+      </div>
 
-</body>
+      <div class="rowPartido">
+        <div class="fecha">MARTES 22/11</div>
+        <div class="hora">16:00</div>
+        <div class="local">FRANCIA</div>
+        <div class="icoLocal">
+          <img src="img/equipos/francia.png" class="imgIco" />
+        </div>
+        <div
+          id="res_D_L2"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_D_V2"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/australia.png" class="imgIco" />
+        </div>
+        <div class="visitante">AUSTRALIA</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">SÁBADO 26/11</div>
+        <div class="hora">07:00</div>
+        <div class="local">TÚNEZ</div>
+        <div class="icoLocal">
+          <img src="img/equipos/tunez.png" class="imgIco" />
+        </div>
+        <div
+          id="res_D_L3"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_D_V3"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/australia.png" class="imgIco" />
+        </div>
+        <div class="visitante">AUSTRALIA</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">SÁBADO 26/11</div>
+        <div class="hora">13:00</div>
+        <div class="local">FRANCIA</div>
+        <div class="icoLocal">
+          <img src="img/equipos/francia.png" class="imgIco" />
+        </div>
+        <div
+          id="res_D_L4"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_D_V4"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/dinamarca.png" class="imgIco" />
+        </div>
+        <div class="visitante">DINAMARCA</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">MIÉRCOLES 30/11</div>
+        <div class="hora">12:00</div>
+        <div class="local">TÚNEZ</div>
+        <div class="icoLocal">
+          <img src="img/equipos/tunez.png" class="imgIco" />
+        </div>
+        <div
+          id="res_D_L5"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_D_V5"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/francia.png" class="imgIco" />
+        </div>
+        <div class="visitante">FRANCIA</div>
+      </div>
+      <div class="rowPartido">
+        <div class="fecha">MIÉRCOLES 30/11</div>
+        <div class="hora">12:00</div>
+        <div class="local">AUSTRALIA</div>
+        <div class="icoLocal">
+          <img src="img/equipos/australia.png" class="imgIco" />
+        </div>
+        <div
+          id="res_D_L6"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resLocal"
+          contenteditable
+        ></div>
+        <div class="resMedio">-</div>
+        <div
+          id="res_D_V6"
+          onKeypress="return isNum_MaxCar(event,this)"
+          class="resVisitante"
+          contenteditable
+        ></div>
+        <div class="icoVisitante">
+          <img src="img/equipos/dinamarca.png" class="imgIco" />
+        </div>
+        <div class="visitante">DINAMARCA</div>
+      </div>
+      <button class="button" role="button" onclick="returnText('D')">
+        Guardar
+      </button>
+    </div>
+  </body>
 </html>

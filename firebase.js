@@ -39,3 +39,7 @@ export const saveResultGrupo = (grupo) => {
 export const guardarContacto = (nombre, correo, mensaje, fechahora) => {
   addDoc(collection(db, "mensajesContacto"), { nombre, correo, mensaje, fechahora });
 };
+
+export const updateProdeFecha = (objetoJson) => {
+  addDoc(collection(db, "prodeFechas"), { nombre, correo, mensaje, fechahora });
+};

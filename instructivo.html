@@ -1,55 +1,53 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/grupos.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/grupos.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <title>Instructivo</title>
-  </head>
-  <body>
-    <!--Body-->
-    <header>
-      <nav>
-        <div id="navbar"></div>
+        <title>Instructivo</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="navbar"></div>
+                <script>
+                    $(function () {
+                        $("#navbar").load("./menuNavbar.html")
+                    })
+                </script>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="card">
+                    <div class="reglas">
+                        <p>¿Cómo jugar en ApuesQatar?</p>
+                        <p>1. Inicia sesión con tu cuenta de Google.</p>
+                        <p>
+                            2. En la sección "Prode", ingresa tus prónosticos-resultados- para cada partido. Tenes
+                            tiempo hasta 1 hora antes de cada partido.
+                        </p>
+                        <p>
+                            3. Concluidos los partidos, se cálculan los puntajes dando 1 punto por acertar el resultado
+                            del partido (Local, empate, Visitante) y 3 puntos por acierto del resultado exacto.
+                        </p>
+                        <p>4. Gana el torneo quien al finalizar el Mundial, sume más puntos.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <div id="footer"></div>
         <script>
-          $(function () {
-            $("#navbar").load("./menuNavbar.html")
-          })
+            $(function () {
+                $("#footer").load("./footer.html")
+            })
         </script>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="card">
-          <div class="reglas">
-            <p>¿Cómo jugar en ApuesQatar?</p>
-            <p>1. Inicia sesión con tu cuenta de Google.</p>
-            <p>
-              2. En la sección "Prode", ingresa tus prónosticos-resultados- para
-              cada partido. Tenes tiempo hasta 1 hora antes de cada partido.
-            </p>
-            <p>
-              3. Concluidos los partidos, se cálculan los puntajes dando 1 punto
-              por acertar el resultado del partido (Local, empate, Visitante) y
-              3 puntos por acierto del resultado exacto.
-            </p>
-            <p>
-              4. Gana el torneo quien al finalizar el Mundial, sume más puntos.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!--Footer-->
-    <div id="footer"></div>
-    <script>
-      $(function () {
-        $("#footer").load("./footer.html")
-      })
-    </script>
-  </body>
+    </body>
 </html>

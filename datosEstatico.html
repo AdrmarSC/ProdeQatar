@@ -1,0 +1,75 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="css/datosEstatico.css" />
+        <!-- <link rel="stylesheet" href="css/prodeFecha.css" /> -->
+        <title>DatosEstatico</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div id="navbar"></div>
+                <script>
+                    $(function () {
+                        $("#navbar").load("./menuNavbar.html")
+                    })
+                </script>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="menuGrupos">
+                    <div class="centro">
+                        <button class="menuLinks" onclick="abrirFecha(event, '1')" id="defaultOpen">FECHA 1</button>
+                        <button class="menuLinks" onclick="abrirFecha(event, '2')">FECHA 2</button>
+                        <button class="menuLinks" onclick="abrirFecha(event, '3')">FECHA 3</button>
+                        <button class="menuLinks" onclick="abrirFecha(event, '4')">OCTAVOS</button>
+                        <button class="menuLinks" onclick="abrirFecha(event, '5')">CUARTOS</button>
+                        <button class="menuLinks" onclick="abrirFecha(event, '6')">SEMIFINAL</button>
+                        <button class="menuLinks" onclick="abrirFecha(event, '7')">FINAL</button>
+                    </div>
+                </div>
+
+                <div id="tablaProde"></div>
+
+                <div id="fecha1" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha2" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha3" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha4" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha5" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha6" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha7" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+            </section>
+        </main>
+        <script src="./datosAPI.js"></script>
+        <script src="./datosEstatico.js"></script>
+        <script>
+            document.getElementById("defaultOpen").click()
+        </script>
+        <!-- <script src="guardar.js"></script> -->
+    </body>
+</html>

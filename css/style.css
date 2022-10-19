@@ -1,260 +1,262 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 main {
-  margin: 0;
+    margin: 0;
 }
 body {
-  background-color: rgb(255, 255, 255);
-  font-family: "Sansita", sans-serif;
-  display: grid;
-  min-height: 96vh;
-  grid-template-rows: auto 1fr auto;
-  /* margin-top: 50px; */
+    background-color: rgb(255, 255, 255);
+    font-family: "Sansita", sans-serif;
+    display: grid;
+    min-height: 96vh;
+    grid-template-rows: auto 1fr auto;
+    /* margin-top: 50px; */
 }
 
 /* --------------Menu de arriba----------------------- */
 
 .navbar {
-  overflow: hidden;
-  background-color: #161b22;
-  font-family: "Sansita", sans-serif;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  top: 0;
+    overflow: hidden;
+    background-color: #161b22;
+    font-family: "Sansita", sans-serif;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 0;
 }
 
 .navbar a {
-  float: left;
-  font-size: calc(18px + 0.4vw);
-  color: white;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-  display: block;
+    float: left;
+    font-size: calc(18px + 0.4vw);
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
 }
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
+    background-color: red;
 }
 
 @media screen and (max-width: 1240px) {
-  .navbar a:not(:first-child) {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
 
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    padding: 2px 3px;
-  }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 2px 3px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: relative;
-  }
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    padding: 2px 3px;
-  }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 2px 3px;
+    }
 }
 @media screen and (min-width: 1240px) {
-  .navbar a.icon {
-    float: right;
-    display: none;
-  }
+    .navbar a.icon {
+        float: right;
+        display: none;
+    }
 }
 .logo img {
-  float: left;
+    float: left;
 }
 
 .reglas {
-  padding: 1% 1%;
-  font-size: calc(12px + 0.4vw) !important;
+    padding: 1% 1%;
+    font-size: calc(12px + 0.4vw) !important;
 }
 
 .card {
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
 }
 
 /* ------------ Footer abajo de todo ----------------------*/
 footer {
-  background-color: #161b22;
-  text-align: center;
-  color: #fff;
-  padding: 5px 0;
-  margin-top: 10px;
-  /* position: fixed; */
-  width: 100vw;
-  bottom: 0;
+    background-color: #161b22;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+    margin-top: 10px;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
 }
 
 .piepag {
-  background-color: #161b22;
+    background-color: #161b22;
 }
 .piepag .grupo1 {
-  margin: 0 !important;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  position: relative;
+    margin: 0 !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
 .piepag .grupo1 .box {
-  margin: 0% !important;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
+    margin: 0% !important;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 .piepag .grupo1 .box img {
-  width: calc(20% + 1vh);
-  justify-content: center;
-  align-items: center;
+    width: calc(20% + 1vh);
+    justify-content: center;
+    align-items: center;
 }
 .piepag .grupo2 .box h1 {
-  color: #fff;
-  margin: 0% !important;
-  font-size: calc(12px + 0.4vw) !important;
+    color: #fff;
+    margin: 0% !important;
+    font-size: calc(12px + 0.4vw) !important;
 }
 
 .piepag .grupo2 {
-  /* background-color: #0a1a2a; */
-  padding: 2px 2px;
-  text-align: center;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  font-size: calc(10px + 0.4vw) !important;
+    /* background-color: #0a1a2a; */
+    padding: 2px 2px;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 0.4vw) !important;
 }
 .piepag .grupo2 p {
-  color: #fff;
-  font-size: calc(12px + 0.4vw) !important;
+    color: #fff;
+    font-size: calc(12px + 0.4vw) !important;
 }
 .piepag .grupo2 p a {
-  color: #fff;
-  font-size: calc(10px + 0.4vw) !important;
+    color: #fff;
+    font-size: calc(10px + 0.4vw) !important;
 }
 .piepagina .grupo2 small {
-  font-size: calc(10px + 0.4vw) !important;
+    font-size: calc(10px + 0.4vw) !important;
 }
 
 @media screen and (max-width: 800px) {
-  .piepag .grupo1 {
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1px;
-    justify-content: center;
-  }
+    .piepag .grupo1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1px;
+        justify-content: center;
+    }
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+    font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
 }
 /* -------------imgen central en index.html--------------------------*/
 
 .fondo {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .fondo img {
-  width: 50%;
+    width: 50%;
 }
 /* ---------------------------------------------------------------------*/
 
 /* --------------Cuenta regresiva en index.html-------------------------*/
 /* animacion cambio de fondo */
 .contador {
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 #cuentaRegresiva {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    gap: 2%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: inside;
+    margin: 0;
+    padding: 0;
+    list-style-type: inside;
 }
 
 #cuentaRegresiva li {
-  border-radius: 15px;
-  color: #fff;
-  font-size: calc(12px + 8vw) !important;
-  font-weight: bold;
-  padding: 10px 12px;
-  position: relative;
-  text-align: center;
-  background-color: #8d1b3d;
+    border-radius: 15px;
+    color: #fff;
+    font-size: calc(12px + 6vw) !important;
+    font-weight: bold;
+    padding: 5px 8px;
+    position: relative;
+    text-align: center;
+    background-color: #8d1b3d;
 }
 
 .anim {
-  background-color: #ff8a7d;
-  -webkit-transition: background-color 1s linear;
-  transition: background-color 1s linear;
+    background-color: #ff8a7d;
+    -webkit-transition: background-color 1s linear;
+    transition: background-color 1s linear;
 }
 
 #cuentaRegresiva li:hover {
-  background-color: #4f9abf;
-  -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    background-color: #4f9abf;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 #cuentaRegresiva li:not(:last-child):before {
-  position: absolute;
-  content: ":";
-  font-size: calc(10px + 4vw) !important;
-  right: -20px;
-  top: 40px;
-  color: #8d1b3d;
+    position: absolute;
+    content: ":";
+    font-size: calc(10px + 4vw) !important;
+    right: -15%;
+    top: 25%;
+    color: #8d1b3d;
 }
 
 #cuentaRegresiva li:after {
-  bottom: -30px;
-  display: flex;
-  font-size: calc(12px + 0.5vw) !important;
-  font-weight: 100;
-  justify-content: center;
+    bottom: -30px;
+    display: flex;
+    font-size: calc(12px + 0.5vw) !important;
+    font-weight: 100;
+    justify-content: center;
 }
 
 #cuentaRegresiva li.dias:after {
-  content: "Dias";
+    content: "Dias";
 }
 
 #cuentaRegresiva li.horas:after {
-  content: "Horas";
+    content: "Horas";
 }
 
 #cuentaRegresiva li.minutos:after {
-  content: "Minutos";
+    content: "Minutos";
 }
 
 #cuentaRegresiva li.segundos:after {
-  content: "Segundos";
+    content: "Segundos";
 }
 /* --------------Cuenta regresiva en index.html-------------------------*/

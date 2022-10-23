@@ -8,6 +8,8 @@ import {
   getFirestore,
   collection,
   addDoc,
+  doc,
+  setDoc
 } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -40,6 +42,12 @@ export const guardarContacto = (nombre, correo, mensaje, fechahora) => {
   addDoc(collection(db, "mensajesContacto"), { nombre, correo, mensaje, fechahora });
 };
 
-export const updateProdeFecha = (objetoJson) => {
-  addDoc(collection(db, "prodeFechas"), { nombre, correo, mensaje, fechahora });
+export const updateProdeFecha = async (objeto, usuario, version) => {
+  let docu = usuario + "_V" + version;
+  console.log(docu);
+  ;
+  await setDoc(doc(db, "prodeFechas", docu), objeto);
 };
+
+
+

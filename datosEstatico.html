@@ -29,14 +29,14 @@
         <main>
             <section>
                 <div class="menuGrupos">
-                    <div class="centro">
-                        <button class="menuLinks" onclick="abrirFecha(event, '1')" id="defaultOpen">FECHA 1</button>
-                        <button class="menuLinks" onclick="abrirFecha(event, '2')">FECHA 2</button>
-                        <button class="menuLinks" onclick="abrirFecha(event, '3')">FECHA 3</button>
-                        <button class="menuLinks" onclick="abrirFecha(event, '4')">OCTAVOS</button>
-                        <button class="menuLinks" onclick="abrirFecha(event, '5')">CUARTOS</button>
-                        <button class="menuLinks" onclick="abrirFecha(event, '6')">SEMIFINAL</button>
-                        <button class="menuLinks" onclick="abrirFecha(event, '7')">FINAL</button>
+                    <div class="centro" id="fechasTab">
+                        <button class="menuLinks" id="fecha1">FECHA 1</button>
+                        <button class="menuLinks" id="fecha2">FECHA 2</button>
+                        <button class="menuLinks" id="fecha3">FECHA 3</button>
+                        <button class="menuLinks" id="fecha4">OCTAVOS</button>
+                        <button class="menuLinks" id="fecha5">CUARTOS</button>
+                        <button class="menuLinks" id="fecha6">SEMIFINAL</button>
+                        <button class="menuLinks" id="fecha7">FINAL</button>
                     </div>
                 </div>
 
@@ -66,9 +66,9 @@
             </section>
         </main>
         <script src="./datosAPI.js"></script>
-        <script src="./datosEstatico.js"></script>
+        <script type="module" src="./datosEstatico.js"></script>
         <script>
-            document.getElementById("defaultOpen").click()
+            // document.getElementById("fecha1").click()
         </script>
         <!-- <script src="guardar.js"></script> -->
     </body>

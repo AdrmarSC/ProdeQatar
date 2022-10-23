@@ -17,7 +17,7 @@ signupForm.addEventListener("submit", async (e) => {
     modal.hide()
     showMessage("Bienvenido " + email, "success")
     document.getElementById('login-usuario').innerText = userCredentials.user.email
-
+    localStorage.setItem("user", credentials.user.email);
   } catch (error) {
 
     if (error.code === 'auth/invalid-email') {

@@ -4,4 +4,5 @@ import { auth } from './firebase.js'
 const logout = document.querySelector('#logout')
 logout.addEventListener('click', async () => {
     await signOut(auth);
+    localStorage.removeItem("user");
 })

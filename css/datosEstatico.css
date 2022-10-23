@@ -4,7 +4,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    font-family: "Sansita", sans-serif;
+    font-family: "Sansita", sans-serif !important;
     font-size: calc(10px + 0.5vw);
 }
 
@@ -15,7 +15,7 @@ body {
     font-weight: 500 !important;
     text-align: center;
     justify-content: center;
-    max-width: 800px;
+    max-width: 760px;
     min-width: 350px;
 }
 

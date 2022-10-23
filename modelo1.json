@@ -1,398 +1,9 @@
-//Consumo los datos de datosEstatico.js
-import { showMessage } from "./js/mensajes.js";
-import { updateProdeFecha } from "./firebase.js";
-
-//Variable que guarda el objecto de datos.
-var fechaFiltrada;
-// Función para la creación de html de las 3 primeras fechas;
-const partidosFecha = (num) => {
-    var numFecha = num;
-    var tituloCuadro;
-    fechaFiltrada = datosProde.filter(partido => partido.fecha_n == numFecha)
-    // return fechaFiltrada;
-
-    //console.log(numFecha)
-    console.log(fechaFiltrada);
-    switch (Number(numFecha)) {
-        case 1:
-            tituloCuadro = "FECHA 1";
-            break;
-        case 2:
-            tituloCuadro = "FECHA 2";
-            break;
-        case 3:
-            tituloCuadro = "FECHA 3";
-            break;
-        case 4:
-            tituloCuadro = "OCTAVOS DE FINAL";
-            break;
-        case 5:
-            tituloCuadro = "CUARTOS DE FINAL";
-            break;
-        case 6:
-            tituloCuadro = "SEMIFINALES";
-            break;
-        case 7:
-            tituloCuadro = "FINALES";
-            break;
-    }
-
-    var tablaGrupos = `
-<div class="cuadroCompleto solapa${numFecha}">
-    <div class="tituloCuadro">${tituloCuadro}</div>
-        <div class="titulosPartidos">
-            <div class="fecha">DIA</div>
-            <div class="hora">HORA</div>
-            <div class="resMedio">PRÓNOSTICO</div>
-            <div class="resultado">REAL</div>
-            <div class="puntos">PTS</div>
-        </div>
-`
-    for (let i = 0; i < fechaFiltrada.length; i++) {
-        tablaGrupos += `
-            <div class="filaPartido">
-                <div class="fecha">${fechaFiltrada[i].dia + " " + fechaFiltrada[i].fecha.substring(0, 5)}</div>
-                <div class="hora">${fechaFiltrada[i].hora}</div>
-                <div class="local">${fechaFiltrada[i].eqlocal}</div>
-                <div class="icoLocal">
-                    <img src="img/equipos/${fechaFiltrada[i].icolocal}.png" onerror="this.onerror=null;this.src=''" class="imgIco" />
-                </div>
-                <div id="resLoc_L${i}"  class="resLocal resul" contenteditable>${fechaFiltrada[i].prode_loc}</div>
-                <div class="resMedio">-</div>
-                <div id="resVis_V${i}"  class="resVisitante resul" contenteditable>${fechaFiltrada[i].prode_vis}</div>
-                <div class="icoVisitante">
-                    <img src="img/equipos/${fechaFiltrada[i].icovisitante}.png" onerror="this.onerror=null;this.src=''" class="imgIco" />
-                </div>
-                <div class="visitante">${fechaFiltrada[i].eqvisitante}</div>
-                <div class="resultado">${fechaFiltrada[i].resul_loc + "-" + fechaFiltrada[i].resul_vis}</div>
-                <div class="puntos">${fechaFiltrada[i].puntos}</div>
-            </div>
-        `
-    }
-    tablaGrupos += `
-    <button class="button" role="button" id="btn${numFecha}">
-        Guardar
-    </button>
-</div>
-<div id="fecha${numFecha}" class="tabcontent">
-<div id="tablaProde"></div>
-</div>
-`
-    document.getElementById("tablaProde").innerHTML = tablaGrupos
-};
-
-
-
-
-//---------------------------------------------------------------------------------
-//Valida que la tecla presionada sea número y no más de 2 caracteres
-const isNumer_MaxCarac = (e) => {
-    //id del div y tecla presionada
-    //console.log(e.target.id + "" + e.keyCode);
-
-    // Valida el ingreso de resultados, verifica que sean números y no más de 2 caracteres
-    if (!(e.keyCode >= 48 && e.keyCode <= 57) || e.target.innerText.length > 1) {
-        e.preventDefault();
-    }
-    //isNum_MaxCar(e.keyCode, e.target.id)
-}
-// let divresultados = document.getElementsByClassName("resul")
-// for (let div of divresultados) {
-//     console.log(div.id);
-//     div.addEventListener("keypress", isNumer_MaxCarac);
-// }
-//---------------------------------------------------------------------------------
-
-//--------------------------------------------------------------------------------
-//Seteo menu según fecha seleccionada
-// const abrirFecha = (evt, fecha) => {
-const abrirFecha = (fecha) => {
-    //console.log(fecha);
-    var i, tabcontent, menuLinks
-    tabcontent = document.getElementsByClassName("tabcontent")
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none"
-    }
-    menuLinks = document.getElementsByClassName("menuLinks")
-    for (i = 0; i < menuLinks.length; i++) {
-        menuLinks[i].className = menuLinks[i].className.replace(" active", "")
-    }
-    document.getElementById("fecha" + fecha).style.display = "block";
-    // evt.currentTarget.className += " active"
-    document.getElementById("fecha" + fecha).className += " active";
-    partidosFecha(fecha);
-
-    //Validaciones en el ingreso de números
-    let divresultados = document.getElementsByClassName("resul")
-    for (let div of divresultados) {
-        //console.log(div.id);
-        div.addEventListener("keypress", isNumer_MaxCarac);
-    }
-
-    //click en botón Guardar
-    const btnGuardar = document.getElementsByClassName("button");
-    //console.log(btnGuardar[0].id);
-    btnGuardar[0].addEventListener('click', (event) => {
-        console.dir("boton: " + event.target.id);
-        let numFecha = event.target.id.match(/\d+/g);
-        console.log("fecha numero: " + numFecha);
-        guardarResultados(numFecha);
-
-    })
-};
-
-//Función para detecar el click en botones de fechas
-document.getElementById("fecha1").onclick = abrirFecha(1);//Click en la fecha1
-const botones = document.getElementById('fechasTab');
-botones.addEventListener('click', (event) => {
-    const isButton = event.target.nodeName === 'BUTTON';
-    if (!isButton) {
-        return;
-    }
-    // Id de los botones
-    //console.dir(event.target.id);
-    let numFecha = event.target.id.match(/\d+/g);
-    //console.log("fecha numero: " + numFecha);
-    abrirFecha(numFecha);
-
-})
-//--------------------------------------------------------------------------------
-
-
-
-
-//Guardo los resultados cargados en cada fecha por usuario.
-
-const guardarResultados = (num) => {
-    let camposIncompletos = true;
-    for (let i = 0; i < fechaFiltrada.length; i++) {
-        // console.log(i);
-        // console.log(fechaFiltrada)
-        // let uri = document.documentURI;
-        // console.log(uri);
-        document.getElementById("resLoc_L" + i).style.border = '1px solid white';
-        document.getElementById("resVis_V" + i).style.border = '1px solid white';
-        //Reviso resultados no completados:
-        if (document.getElementById("resLoc_L" + i).textContent.length === 0 || document.getElementById("resVis_V" + i).textContent.length === 0) {
-            //alert("Faltan completar resultados")
-            document.getElementById("resLoc_L" + i).style.border = '2px solid red';
-            document.getElementById("resVis_V" + i).style.border = '2px solid red';
-            camposIncompletos = true;
-        } else {
-            fechaFiltrada[i].prode_loc = document.getElementById("resLoc_L" + i).textContent;
-            fechaFiltrada[i].prode_vis = document.getElementById("resVis_V" + i).textContent;
-
-            let resultadoProde = "";
-            if ((fechaFiltrada[i].prode_loc) && (fechaFiltrada[i].prode_vis)) {
-                if (fechaFiltrada[i].prode_loc > fechaFiltrada[i].prode_vis) {
-                    resultadoProde = "L"
-                } else if (fechaFiltrada[i].prode_loc < fechaFiltrada[i].prode_vis) {
-                    resultadoProde = "V"
-                } else if (fechaFiltrada[i].prode_loc == fechaFiltrada[i].prode_vis) {
-                    resultadoProde = "E"
-                }
-            }
-
-            fechaFiltrada[i].user = localStorage.getItem("user");
-            fechaFiltrada[i].prode_resul = resultadoProde;
-            fechaFiltrada[i].user_version++
-
-            // console.log(fechaFiltrada[i].user);
-            // console.log(fechaFiltrada[i].prode_resul);
-            // console.log(fechaFiltrada[i].user_version);
-
-            camposIncompletos = false;
-        }
-    }
-    // console.log(fechaFiltrada)
-    // console.log(fechaFiltrada[0].user)
-    // console.log(fechaFiltrada[0].user_version)
-
-    // Object.keys(fechaFiltrada).forEach(function (key) {
-    //     console.log(key, fechaFiltrada[key]);
-    // });
-
-    const fechaHora = new Date().toLocaleString();
-    console.log(fechaHora);
-
-
-    if (!camposIncompletos) {
-        showMessage("Se guardaron los resultados.", "success")
-    } else {
-        showMessage("No se guardaron los resultados. Faltan completar partidos de la fecha.", "error")
-    }
-    console.log(fechaFiltrada);
-    //var pruebarray =
-    // {
-    //     "user": "prueba6@prueba.com",
-    //     "user_version": 2,
-    //     "user_modificacion": fechaHora,
-    //     "fecha": {
-    //         "fecha_n": 1,
-    //         "partidos": {
-    //             "id": "16",
-    //             "partido": {
-    //                 "partido_n": "16",
-    //                 "datosPartido": {
-    //                     "dia": "JUEVES",
-    //                     "fecha": "24/11/2022",
-    //                     "hora": "16:00",
-    //                     "eqlocal": "BRASIL",
-    //                     "icolocal": "brasil",
-    //                     "eqvisitante": "SERBIA",
-    //                     "icovisitante": "serbia",
-    //                     "grupo": "GRUPO G",
-    //                 },
-    //                 "prodePartido": {
-    //                     "prode_resul": "E",
-    //                     "prode_loc": "4",
-    //                     "prode_vis": "4",
-    //                     "prode_penloc": "",
-    //                     "prode_penvis": ""
-    //                 },
-    //                 "realPartido": {
-    //                     "resultado": "",
-    //                     "resul_loc": "",
-    //                     "resul_vis": "",
-    //                     "resul_penloc": "",
-    //                     "resul_penvis": ""
-    //                 },
-    //                 "puntos": ""
-    //             }
-    //         }
-    //     }
-
-    // }
-    // var pruebarray = {
-    //     "user": "prueba6@prueba.com",
-    //     "user_version": 2,
-    //     "user_modificacion": "fechaHora",
-    //     "fecha": [{
-    //         "fecha_n": 1,
-    //         "partidos": [{
-    //             "id": "16",
-    //             "partido_n": "16",
-    //             "datosPartido": {
-    //                 "dia": "JUEVES",
-    //                 "fecha": "24/11/2022",
-    //                 "hora": "16:00",
-    //                 "eqlocal": "BRASIL",
-    //                 "icolocal": "brasil",
-    //                 "eqvisitante": "SERBIA",
-    //                 "icovisitante": "serbia",
-    //                 "grupo": "GRUPO G"
-    //             },
-    //             "prodePartido": {
-    //                 "prode_resul": "E",
-    //                 "prode_loc": "4",
-    //                 "prode_vis": "4",
-    //                 "prode_penloc": "",
-    //                 "prode_penvis": ""
-    //             },
-    //             "realPartido": {
-    //                 "resultado": "",
-    //                 "resul_loc": "",
-    //                 "resul_vis": "",
-    //                 "resul_penloc": "",
-    //                 "resul_penvis": ""
-    //             },
-    //             "puntos": ""
-    //         }, {
-    //             "id": "17",
-    //             "partido_n": "17",
-    //             "datosPartido": {
-    //                 "dia": "JUEVES",
-    //                 "fecha": "24/11/2022",
-    //                 "hora": "16:00",
-    //                 "eqlocal": "BRASIL",
-    //                 "icolocal": "brasil",
-    //                 "eqvisitante": "SERBIA",
-    //                 "icovisitante": "serbia",
-    //                 "grupo": "GRUPO G"
-    //             },
-    //             "prodePartido": {
-    //                 "prode_resul": "E",
-    //                 "prode_loc": "4",
-    //                 "prode_vis": "4",
-    //                 "prode_penloc": "",
-    //                 "prode_penvis": ""
-    //             },
-    //             "realPartido": {
-    //                 "resultado": "",
-    //                 "resul_loc": "",
-    //                 "resul_vis": "",
-    //                 "resul_penloc": "",
-    //                 "resul_penvis": ""
-    //             },
-    //             "puntos": ""
-    //         }]
-    //     }, {
-    //         "fecha_n": 2,
-    //         "partidos": [{
-    //             "id": "18",
-    //             "partido_n": "18",
-    //             "datosPartido": {
-    //                 "dia": "JUEVES",
-    //                 "fecha": "24/11/2022",
-    //                 "hora": "16:00",
-    //                 "eqlocal": "BRASIL",
-    //                 "icolocal": "brasil",
-    //                 "eqvisitante": "SERBIA",
-    //                 "icovisitante": "serbia",
-    //                 "grupo": "GRUPO G"
-    //             },
-    //             "prodePartido": {
-    //                 "prode_resul": "E",
-    //                 "prode_loc": "4",
-    //                 "prode_vis": "4",
-    //                 "prode_penloc": "",
-    //                 "prode_penvis": ""
-    //             },
-    //             "realPartido": {
-    //                 "resultado": "",
-    //                 "resul_loc": "",
-    //                 "resul_vis": "",
-    //                 "resul_penloc": "",
-    //                 "resul_penvis": ""
-    //             },
-    //             "puntos": ""
-    //         }, {
-    //             "id": 19,
-    //             "partido_n": "19",
-    //             "datosPartido": {
-    //                 "dia": "JUEVES",
-    //                 "fecha": "24/11/2022",
-    //                 "hora": "16:00",
-    //                 "eqlocal": "BRASIL",
-    //                 "icolocal": "brasil",
-    //                 "eqvisitante": "SERBIA",
-    //                 "icovisitante": "serbia",
-    //                 "grupo": "GRUPO G"
-    //             },
-    //             "prodePartido": {
-    //                 "prode_resul": "E",
-    //                 "prode_loc": "4",
-    //                 "prode_vis": "4",
-    //                 "prode_penloc": "",
-    //                 "prode_penvis": ""
-    //             },
-    //             "realPartido": {
-    //                 "resultado": "",
-    //                 "resul_loc": "",
-    //                 "resul_vis": "",
-    //                 "resul_penloc": "",
-    //                 "resul_penvis": ""
-    //             },
-    //             "puntos": ""
-    //         }]
-    //     }]
-    // }
-
-    var pruebarray = {
+[
+    {
         "user": "prueba@prueba.com",
         "user_version": 0,
         "user_modificacion": "",
-        "fechanro": [
+        "fecha": [
             {
                 "fecha_n": 1,
                 "partidos": [
@@ -401,7 +12,7 @@ const guardarResultados = (num) => {
                         "id": 1,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "20/11/2022",
+                            "fecha__1": "20/11/2022",
                             "hora": "13:00",
                             "eqlocal": "QATAR",
                             "icolocal": "qatar",
@@ -424,13 +35,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": 0
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 2,
                         "id": 2,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "21/11/2022",
+                            "fecha__1": "21/11/2022",
                             "hora": "10:00",
                             "eqlocal": "INGLATERRA",
                             "icolocal": "inglaterra",
@@ -453,13 +76,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": 3
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 3,
                         "id": 3,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "21/11/2022",
+                            "fecha__1": "21/11/2022",
                             "hora": "13:00",
                             "eqlocal": "SENEGAL",
                             "icolocal": "senegal",
@@ -482,13 +117,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": 0
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 4,
                         "id": 4,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "21/11/2022",
+                            "fecha__1": "21/11/2022",
                             "hora": "16:00",
                             "eqlocal": "ESTADOS UNIDOS",
                             "icolocal": "estadosunidos",
@@ -511,13 +158,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": 1
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 5,
                         "id": 5,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "22/11/2022",
+                            "fecha__1": "22/11/2022",
                             "hora": "07:00",
                             "eqlocal": "ARGENTINA",
                             "icolocal": "argentina",
@@ -540,13 +199,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 6,
                         "id": 6,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "22/11/2022",
+                            "fecha__1": "22/11/2022",
                             "hora": "10:00",
                             "eqlocal": "DINAMARCA",
                             "icolocal": "dinamarca",
@@ -569,13 +240,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 7,
                         "id": 7,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "22/11/2022",
+                            "fecha__1": "22/11/2022",
                             "hora": "13:00",
                             "eqlocal": "MÉXICO",
                             "icolocal": "mexico",
@@ -598,13 +281,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 8,
                         "id": 8,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "22/11/2022",
+                            "fecha__1": "22/11/2022",
                             "hora": "16:00",
                             "eqlocal": "FRANCIA",
                             "icolocal": "francia",
@@ -627,13 +322,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 9,
                         "id": 9,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "23/11/2022",
+                            "fecha__1": "23/11/2022",
                             "hora": "07:00",
                             "eqlocal": "MARRUECOS",
                             "icolocal": "marruecos",
@@ -656,13 +363,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 10,
                         "id": 10,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "23/11/2022",
+                            "fecha__1": "23/11/2022",
                             "hora": "10:00",
                             "eqlocal": "ALEMANIA",
                             "icolocal": "alemania",
@@ -685,13 +404,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 11,
                         "id": 11,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "23/11/2022",
+                            "fecha__1": "23/11/2022",
                             "hora": "13:00",
                             "eqlocal": "ESPAÑA",
                             "icolocal": "espana",
@@ -714,13 +445,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 12,
                         "id": 12,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "23/11/2022",
+                            "fecha__1": "23/11/2022",
                             "hora": "16:00",
                             "eqlocal": "BÉLGICA",
                             "icolocal": "belgica",
@@ -743,13 +486,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 13,
                         "id": 13,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "24/11/2022",
+                            "fecha__1": "24/11/2022",
                             "hora": "07:00",
                             "eqlocal": "SUIZA",
                             "icolocal": "suiza",
@@ -772,13 +527,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 14,
                         "id": 14,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "24/11/2022",
+                            "fecha__1": "24/11/2022",
                             "hora": "10:00",
                             "eqlocal": "URUGUAY",
                             "icolocal": "uruguay",
@@ -801,13 +568,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 15,
                         "id": 15,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "24/11/2022",
+                            "fecha__1": "24/11/2022",
                             "hora": "13:00",
                             "eqlocal": "PORTUGAL",
                             "icolocal": "portugal",
@@ -830,13 +609,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 1,
+                "partidos": [
                     {
                         "partido_n": 16,
                         "id": 16,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "24/11/2022",
+                            "fecha__1": "24/11/2022",
                             "hora": "16:00",
                             "eqlocal": "BRASIL",
                             "icolocal": "brasil",
@@ -861,7 +652,14 @@ const guardarResultados = (num) => {
                         "puntos": ""
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
             {
                 "fecha_n": 2,
                 "partidos": [
@@ -870,7 +668,7 @@ const guardarResultados = (num) => {
                         "id": 17,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "25/11/2022",
+                            "fecha__1": "25/11/2022",
                             "hora": "07:00",
                             "eqlocal": "GALES",
                             "icolocal": "gales",
@@ -893,13 +691,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 18,
                         "id": 18,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "25/11/2022",
+                            "fecha__1": "25/11/2022",
                             "hora": "10:00",
                             "eqlocal": "QATAR",
                             "icolocal": "qatar",
@@ -922,13 +732,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 19,
                         "id": 19,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "25/11/2022",
+                            "fecha__1": "25/11/2022",
                             "hora": "13:00",
                             "eqlocal": "PAÍSES BAJOS",
                             "icolocal": "paisesbajos",
@@ -951,13 +773,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 20,
                         "id": 20,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "25/11/2022",
+                            "fecha__1": "25/11/2022",
                             "hora": "16:00",
                             "eqlocal": "INGLATERRA",
                             "icolocal": "inglaterra",
@@ -980,13 +814,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 21,
                         "id": 21,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "26/11/2022",
+                            "fecha__1": "26/11/2022",
                             "hora": "07:00",
                             "eqlocal": "TÚNEZ",
                             "icolocal": "tunez",
@@ -1009,13 +855,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 22,
                         "id": 22,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "26/11/2022",
+                            "fecha__1": "26/11/2022",
                             "hora": "10:00",
                             "eqlocal": "POLONIA",
                             "icolocal": "polonia",
@@ -1038,13 +896,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 23,
                         "id": 23,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "26/11/2022",
+                            "fecha__1": "26/11/2022",
                             "hora": "13:00",
                             "eqlocal": "FRANCIA",
                             "icolocal": "francia",
@@ -1067,13 +937,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 24,
                         "id": 24,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "26/11/2022",
+                            "fecha__1": "26/11/2022",
                             "hora": "16:00",
                             "eqlocal": "ARGENTINA",
                             "icolocal": "argentina",
@@ -1096,13 +978,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 25,
                         "id": 25,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "27/11/2022",
+                            "fecha__1": "27/11/2022",
                             "hora": "07:00",
                             "eqlocal": "JAPÓN",
                             "icolocal": "japon",
@@ -1125,13 +1019,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 26,
                         "id": 26,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "27/11/2022",
+                            "fecha__1": "27/11/2022",
                             "hora": "10:00",
                             "eqlocal": "BÉLGICA",
                             "icolocal": "belgica",
@@ -1154,13 +1060,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 27,
                         "id": 27,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "27/11/2022",
+                            "fecha__1": "27/11/2022",
                             "hora": "13:00",
                             "eqlocal": "CROACIA",
                             "icolocal": "croacia",
@@ -1183,13 +1101,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 28,
                         "id": 28,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "27/11/2022",
+                            "fecha__1": "27/11/2022",
                             "hora": "16:00",
                             "eqlocal": "ESPAÑA",
                             "icolocal": "espana",
@@ -1212,13 +1142,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 29,
                         "id": 29,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "28/11/2022",
+                            "fecha__1": "28/11/2022",
                             "hora": "07:00",
                             "eqlocal": "CAMERÚN",
                             "icolocal": "camerun",
@@ -1241,13 +1183,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 30,
                         "id": 30,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "28/11/2022",
+                            "fecha__1": "28/11/2022",
                             "hora": "10:00",
                             "eqlocal": "COREA",
                             "icolocal": "corea",
@@ -1270,13 +1224,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 31,
                         "id": 31,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "28/11/2022",
+                            "fecha__1": "28/11/2022",
                             "hora": "13:00",
                             "eqlocal": "BRASIL",
                             "icolocal": "brasil",
@@ -1299,13 +1265,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 2,
+                "partidos": [
                     {
                         "partido_n": 32,
                         "id": 32,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "28/11/2022",
+                            "fecha__1": "28/11/2022",
                             "hora": "16:00",
                             "eqlocal": "PORTUGAL",
                             "icolocal": "portugal",
@@ -1330,7 +1308,14 @@ const guardarResultados = (num) => {
                         "puntos": ""
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
             {
                 "fecha_n": 3,
                 "partidos": [
@@ -1339,7 +1324,7 @@ const guardarResultados = (num) => {
                         "id": 33,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "29/11/2022",
+                            "fecha__1": "29/11/2022",
                             "hora": "12:00",
                             "eqlocal": "PAÍSES BAJOS",
                             "icolocal": "paisesbajos",
@@ -1362,13 +1347,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 34,
                         "id": 34,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "29/11/2022",
+                            "fecha__1": "29/11/2022",
                             "hora": "12:00",
                             "eqlocal": "ECUADOR",
                             "icolocal": "ecuador",
@@ -1391,13 +1388,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 35,
                         "id": 35,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "29/11/2022",
+                            "fecha__1": "29/11/2022",
                             "hora": "16:00",
                             "eqlocal": "GALES",
                             "icolocal": "gales",
@@ -1420,13 +1429,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 36,
                         "id": 36,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "29/11/2022",
+                            "fecha__1": "29/11/2022",
                             "hora": "16:00",
                             "eqlocal": "IRÁN",
                             "icolocal": "iran",
@@ -1449,13 +1470,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 37,
                         "id": 37,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "30/11/2022",
+                            "fecha__1": "30/11/2022",
                             "hora": "12:00",
                             "eqlocal": "TÚNEZ",
                             "icolocal": "tunez",
@@ -1478,13 +1511,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 38,
                         "id": 38,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "30/11/2022",
+                            "fecha__1": "30/11/2022",
                             "hora": "12:00",
                             "eqlocal": "AUSTRALIA",
                             "icolocal": "australia",
@@ -1507,13 +1552,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 39,
                         "id": 39,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "30/11/2022",
+                            "fecha__1": "30/11/2022",
                             "hora": "16:00",
                             "eqlocal": "POLONIA",
                             "icolocal": "polonia",
@@ -1536,13 +1593,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 40,
                         "id": 40,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "30/11/2022",
+                            "fecha__1": "30/11/2022",
                             "hora": "16:00",
                             "eqlocal": "ARABIA SAUDITA",
                             "icolocal": "arabiasaudita",
@@ -1565,13 +1634,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 41,
                         "id": 41,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "01/12/2022",
+                            "fecha__1": "01/12/2022",
                             "hora": "12:00",
                             "eqlocal": "CROACIA",
                             "icolocal": "croacia",
@@ -1594,13 +1675,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 42,
                         "id": 42,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "01/12/2022",
+                            "fecha__1": "01/12/2022",
                             "hora": "12:00",
                             "eqlocal": "CANADÁ",
                             "icolocal": "canada",
@@ -1623,13 +1716,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 43,
                         "id": 43,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "01/12/2022",
+                            "fecha__1": "01/12/2022",
                             "hora": "16:00",
                             "eqlocal": "JAPÓN",
                             "icolocal": "japon",
@@ -1652,13 +1757,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 44,
                         "id": 44,
                         "datosPartido": {
                             "dia": "JUEVES",
-                            "fecha": "01/12/2022",
+                            "fecha__1": "01/12/2022",
                             "hora": "16:00",
                             "eqlocal": "COSTA RICA",
                             "icolocal": "costarica",
@@ -1681,13 +1798,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 45,
                         "id": 45,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "02/12/2022",
+                            "fecha__1": "02/12/2022",
                             "hora": "12:00",
                             "eqlocal": "COREA",
                             "icolocal": "corea",
@@ -1710,13 +1839,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 46,
                         "id": 46,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "02/12/2022",
+                            "fecha__1": "02/12/2022",
                             "hora": "12:00",
                             "eqlocal": "GHANA",
                             "icolocal": "ghana",
@@ -1739,13 +1880,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 47,
                         "id": 47,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "02/12/2022",
+                            "fecha__1": "02/12/2022",
                             "hora": "16:00",
                             "eqlocal": "CAMERÚN",
                             "icolocal": "camerun",
@@ -1768,13 +1921,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 3,
+                "partidos": [
                     {
                         "partido_n": 48,
                         "id": 48,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "02/12/2022",
+                            "fecha__1": "02/12/2022",
                             "hora": "16:00",
                             "eqlocal": "SERBIA",
                             "icolocal": "serbia",
@@ -1799,7 +1964,14 @@ const guardarResultados = (num) => {
                         "puntos": ""
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
             {
                 "fecha_n": 4,
                 "partidos": [
@@ -1808,7 +1980,7 @@ const guardarResultados = (num) => {
                         "id": 49,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "03/12/2022",
+                            "fecha__1": "03/12/2022",
                             "hora": "12:00",
                             "eqlocal": "1° A",
                             "icolocal": "1°a",
@@ -1831,13 +2003,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 4,
+                "partidos": [
                     {
                         "partido_n": 50,
                         "id": 50,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "03/12/2022",
+                            "fecha__1": "03/12/2022",
                             "hora": "16:00",
                             "eqlocal": "1° C",
                             "icolocal": "1°c",
@@ -1860,13 +2044,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 4,
+                "partidos": [
                     {
                         "partido_n": 51,
                         "id": 51,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "04/12/2022",
+                            "fecha__1": "04/12/2022",
                             "hora": "12:00",
                             "eqlocal": "1° D",
                             "icolocal": "1°d",
@@ -1889,13 +2085,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 4,
+                "partidos": [
                     {
                         "partido_n": 52,
                         "id": 52,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "04/12/2022",
+                            "fecha__1": "04/12/2022",
                             "hora": "16:00",
                             "eqlocal": "1° B",
                             "icolocal": "1°b",
@@ -1918,13 +2126,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 4,
+                "partidos": [
                     {
                         "partido_n": 53,
                         "id": 53,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "05/12/2022",
+                            "fecha__1": "05/12/2022",
                             "hora": "12:00",
                             "eqlocal": "1° E",
                             "icolocal": "1°e",
@@ -1947,13 +2167,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 4,
+                "partidos": [
                     {
                         "partido_n": 54,
                         "id": 54,
                         "datosPartido": {
                             "dia": "LUNES",
-                            "fecha": "05/12/2022",
+                            "fecha__1": "05/12/2022",
                             "hora": "16:00",
                             "eqlocal": "1° G",
                             "icolocal": "1°g",
@@ -1976,13 +2208,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 4,
+                "partidos": [
                     {
                         "partido_n": 55,
                         "id": 55,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "06/12/2022",
+                            "fecha__1": "06/12/2022",
                             "hora": "12:00",
                             "eqlocal": "1° F",
                             "icolocal": "1°f",
@@ -2005,13 +2249,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 4,
+                "partidos": [
                     {
                         "partido_n": 56,
                         "id": 56,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "06/12/2022",
+                            "fecha__1": "06/12/2022",
                             "hora": "16:00",
                             "eqlocal": "1° H",
                             "icolocal": "1°h",
@@ -2036,7 +2292,14 @@ const guardarResultados = (num) => {
                         "puntos": ""
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
             {
                 "fecha_n": 5,
                 "partidos": [
@@ -2045,7 +2308,7 @@ const guardarResultados = (num) => {
                         "id": 57,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "09/12/2022",
+                            "fecha__1": "09/12/2022",
                             "hora": "12:00",
                             "eqlocal": "GANADOR P. 5",
                             "icolocal": "ganadorp.5",
@@ -2068,13 +2331,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 5,
+                "partidos": [
                     {
                         "partido_n": 58,
                         "id": 58,
                         "datosPartido": {
                             "dia": "VIERNES",
-                            "fecha": "09/12/2022",
+                            "fecha__1": "09/12/2022",
                             "hora": "16:00",
                             "eqlocal": "GANADOR P. 1",
                             "icolocal": "ganadorp.1",
@@ -2097,13 +2372,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 5,
+                "partidos": [
                     {
                         "partido_n": 59,
                         "id": 59,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "10/12/2022",
+                            "fecha__1": "10/12/2022",
                             "hora": "12:00",
                             "eqlocal": "GANADOR P. 7",
                             "icolocal": "ganadorp.7",
@@ -2126,13 +2413,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 5,
+                "partidos": [
                     {
                         "partido_n": 60,
                         "id": 60,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "10/12/2022",
+                            "fecha__1": "10/12/2022",
                             "hora": "16:00",
                             "eqlocal": "GANADOR P. 4",
                             "icolocal": "ganadorp.4",
@@ -2157,7 +2456,14 @@ const guardarResultados = (num) => {
                         "puntos": ""
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
             {
                 "fecha_n": 6,
                 "partidos": [
@@ -2166,7 +2472,7 @@ const guardarResultados = (num) => {
                         "id": 61,
                         "datosPartido": {
                             "dia": "MARTES",
-                            "fecha": "13/12/2022",
+                            "fecha__1": "13/12/2022",
                             "hora": "16:00",
                             "eqlocal": "GANADOR P. 10",
                             "icolocal": "ganadorp.10",
@@ -2189,13 +2495,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 6,
+                "partidos": [
                     {
                         "partido_n": 62,
                         "id": 62,
                         "datosPartido": {
                             "dia": "MIÉRCOLES",
-                            "fecha": "14/12/2022",
+                            "fecha__1": "14/12/2022",
                             "hora": "16:00",
                             "eqlocal": "GANADOR P. 12",
                             "icolocal": "ganadorp.12",
@@ -2220,7 +2538,14 @@ const guardarResultados = (num) => {
                         "puntos": ""
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
             {
                 "fecha_n": 7,
                 "partidos": [
@@ -2229,7 +2554,7 @@ const guardarResultados = (num) => {
                         "id": 63,
                         "datosPartido": {
                             "dia": "SÁBADO",
-                            "fecha": "17/12/2022",
+                            "fecha__1": "17/12/2022",
                             "hora": "12:00",
                             "eqlocal": "PERDEDOR P.13",
                             "icolocal": "perdedorp.13",
@@ -2252,13 +2577,25 @@ const guardarResultados = (num) => {
                             "resul_penvis": ""
                         },
                         "puntos": ""
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "prueba@prueba.com",
+        "user_version": 0,
+        "user_modificacion": "",
+        "fecha": [
+            {
+                "fecha_n": 7,
+                "partidos": [
                     {
                         "partido_n": 64,
                         "id": 64,
                         "datosPartido": {
                             "dia": "DOMINGO",
-                            "fecha": "18/12/2022",
+                            "fecha__1": "18/12/2022",
                             "hora": "12:00",
                             "eqlocal": "GANADOR P. 13",
                             "icolocal": "ganadorp.13",
@@ -2286,7 +2623,4 @@ const guardarResultados = (num) => {
             }
         ]
     }
-    updateProdeFecha(pruebarray, fechaFiltrada[0].user, fechaFiltrada[0].user_version)
-};
-
-
+]

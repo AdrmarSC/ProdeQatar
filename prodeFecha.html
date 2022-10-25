@@ -1,60 +1,77 @@
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
-  rel="stylesheet"
-/>
-<link rel="stylesheet" href="css/prodeFecha.css" />
-<link rel="stylesheet" href="css/grupos.css" />
+<!-- @format -->
 
-<div class="menuGrupos">
-  <button
-    class="menuLinks"
-    onclick="abrirGrupo(event, 'grupoA')"
-    id="defaultOpen"
-  >
-    GRUPO A
-  </button>
-  <button class="menuLinks" onclick="abrirGrupo(event, 'grupoB')">
-    GRUPO B
-  </button>
-  <button class="menuLinks" onclick="abrirGrupo(event, 'grupoC')">
-    GRUPO C
-  </button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<div id="grupoA" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright"
-    >&times</span
-  >
-  <iframe id="IFgrupoA" class="iframeGrupo" src="grupoA.html"></iframe>
-</div>
-<div id="grupoB" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright"
-    >&times</span
-  >
-  <iframe id="IFgrupoA" class="iframeGrupo" src="grupoB.html"></iframe>
-</div>
-<div id="grupoC" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'" class="topright"
-    >&times</span
-  >
-  <iframe id="IFgrupoA" class="iframeGrupo" src="grupoC.html"></iframe>
-</div>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="css/datosEstatico.css" />
+        <!-- <link rel="stylesheet" href="css/prodeFecha.css" /> -->
+        <title>DatosEstatico</title>
+    </head>
 
-<script>
-  function abrirGrupo(evt, grupo) {
-    var i, tabcontent, menuLinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    menuLinks = document.getElementsByClassName("menuLinks");
-    for (i = 0; i < menuLinks.length; i++) {
-      menuLinks[i].className = menuLinks[i].className.replace(" active", "");
-    }
-    document.getElementById(grupo).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+    <body>
+        <header>
+            <nav>
+                <div id="navbar"></div>
+                <script>
+                    $(function () {
+                        $("#navbar").load("./menuNavbar.html")
+                    })
+                </script>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="menuGrupos">
+                    <div class="centro" id="fechasTab">
+                        <button class="menuLinks" id="fecha1">FECHA 1</button>
+                        <button class="menuLinks" id="fecha2">FECHA 2</button>
+                        <button class="menuLinks" id="fecha3">FECHA 3</button>
+                        <button class="menuLinks" id="fecha4">OCTAVOS</button>
+                        <button class="menuLinks" id="fecha5">CUARTOS</button>
+                        <button class="menuLinks" id="fecha6">SEMIFINAL</button>
+                        <button class="menuLinks" id="fecha7">FINAL</button>
+                    </div>
+                </div>
 
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-</script>
+                <div id="tablaProde"></div>
+
+                <div id="fecha1" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha2" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha3" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha4" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha5" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha6" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha7" class="tabcontent">
+                    <div id="tablaProde"></div>
+                </div>
+            </section>
+        </main>
+        <!-- <script src="./datosAPI.js"></script> -->
+        <script src="./datosAPI.js"></script>
+        <!-- <script src="./modeloCERO.js"></script> -->
+        <script type="module" src="./prodeFecha.js"></script>
+        <script>
+            // document.getElementById("fecha1").click()
+        </script>
+        <!-- <script src="guardar.js"></script> -->
+    </body>
+</html>

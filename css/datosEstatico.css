@@ -36,11 +36,11 @@ body {
     grid-template-columns: 0.25fr 0.08fr 0.38fr 0.08fr 0.1fr 0.02fr 0.1fr 0.08fr 0.38fr 0.19fr 0.1fr;
     grid-template-rows: repeat(auto-fit, minmax(1fr, 3fr));
     border: 1px solid #fff;
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(12px + 0.4vw);
 }
 
 .titulosPartidos > div {
-    font-size: calc(10px + 0.3vw);
+    font-size: calc(10px + 0.4vw);
     padding: 0.1rem;
 }
 
@@ -53,17 +53,17 @@ body {
 
 .filaPartido > div {
     border: 1px solid #fff;
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(12px + 0.4vw);
     padding: 0.2rem;
 }
 
 .fecha {
     grid-area: 1 / 1 / 11 / 2;
-    font-size: calc(9px + 0.3vw) !important;
+    font-size: calc(10px + 0.2vw) !important;
 }
 .hora {
     grid-area: 1 / 2 / 11 / 3;
-    font-size: calc(9px + 0.3vw) !important;
+    font-size: calc(10px + 0.2vw) !important;
 }
 .local {
     grid-area: 1 / 3 / 11 / 4;

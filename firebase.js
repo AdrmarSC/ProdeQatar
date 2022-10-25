@@ -9,7 +9,12 @@ import {
   collection,
   addDoc,
   doc,
-  setDoc
+  setDoc,
+  getDoc,
+  getDocs,
+  where,
+  Timestamp,
+  query, orderBy, limit
 } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -27,10 +32,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-const db = getFirestore();
+export const app = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(app);
+export const auth = getAuth(app);
+export const db = getFirestore();
 
 export const saveResultGrupo = (grupo) => {
   collection(db, "");
@@ -44,10 +49,44 @@ export const guardarContacto = (nombre, correo, mensaje, fechahora) => {
 
 export const updateProdeFecha = async (objeto, usuario, version) => {
   let docu = usuario + "_V" + version;
+  objeto.timestamp = Timestamp.fromDate(new Date())
   console.log(docu);
-  ;
   await setDoc(doc(db, "prodeFechas", docu), objeto);
 };
 
+export const consultaDocumento = async (usuario, version) => {
+  let docuUser = usuario + "_V" + version;
+  console.log("docuUser" + docuUser);
+  const documento = await getDoc(doc(db, "prodeFechas", docuUser));
+  console.log("Reccuperado de firebase");
+  console.log(documento.data()) //todas las fechas
+  console.log(documento.data().fechanro[0].partidos); //fecha
+  //window.localStorage.setItem("objFBdata", JSON.stringify(documento.data())); //guardo en local
+  window.localStorage.setItem("objFBdata", JSON.stringify(documento.data().fechanro[0].partidos)); //guardo en local
+}
 
 
+
+export const cargaUltimoDocumento = async (usuario) => {
+  //Filtra entre los documentos del usuario y se queda con el actualizado por fecha más reciente.
+  const colle = collection(db, "prodeFechas")
+  //const q = query(colle, where("user", "==", "prueba0@prueba.com"), orderBy("user_modificacion", "desc"), limit(1))
+  const q = query(colle, where("user", "==", usuario), orderBy("timestamp", "desc"), limit(1))
+  const querySnapshot = await getDocs(q);
+  querySnapshot.forEach((doc) => {
+    // doc.data() is never undefined for query doc snapshots
+    console.log(doc.id, " => ", doc.data());
+    // const todayAsTimestamp = Timestamp.fromDate(new Date());
+    // console.log(todayAsTimestamp)
+    //window.localStorage.setItem("objFBdata", JSON.stringify(doc.data().fechanro[0].partidos));
+    window.localStorage.setItem("objFBdata", JSON.stringify(doc.data()));
+  });
+};
+
+
+export const cargaUserCero = async (objeto, usuario, version) => {
+  let docu = usuario + "_V" + version;
+  objeto.timestamp = Timestamp.fromDate(new Date())
+  console.log(docu);
+  await setDoc(doc(db, "prodeFechas", docu), objeto);
+};

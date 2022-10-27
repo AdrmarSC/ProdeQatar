@@ -16,6 +16,7 @@ import {
   Timestamp,
   query, orderBy, limit
 } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -48,25 +49,29 @@ export const guardarContacto = (nombre, correo, mensaje, fechahora) => {
 };
 
 export const updateProdeFecha = async (objeto, usuario, version) => {
-  let docu = usuario + "_V" + version;
+  let docu = usuario + "_v" + version;
   objeto.timestamp = Timestamp.fromDate(new Date())
-  console.log(docu);
+  console.log("docu => " + docu);
   await setDoc(doc(db, "prodeFechas", docu), objeto);
 };
 
-export const consultaDocumento = async (usuario, version) => {
-  let docuUser = usuario + "_V" + version;
-  console.log("docuUser" + docuUser);
-  const documento = await getDoc(doc(db, "prodeFechas", docuUser));
-  console.log("Reccuperado de firebase");
-  console.log(documento.data()) //todas las fechas
-  console.log(documento.data().fechanro[0].partidos); //fecha
-  //window.localStorage.setItem("objFBdata", JSON.stringify(documento.data())); //guardo en local
-  window.localStorage.setItem("objFBdata", JSON.stringify(documento.data().fechanro[0].partidos)); //guardo en local
-}
+var noPasa = "prueba"
+export const encryptObj = (obj, ps) => CryptoJS.AES.encrypt(JSON.stringify(obj), ps).toString()
+export const decryptObj = (cryp, ps) => JSON.parse(CryptoJS.AES.decrypt(cryp, ps).toString(CryptoJS.enc.Utf8))
+//no se usa
+// export const consultaDocumento = async (usuario, version) => {
+// let docuUser = usuario + "_V" + version;
+// console.log("docuUser" + docuUser);
+// const documento = await getDoc(doc(db, "prodeFechas", docuUser));
+// console.log("Reccuperado de firebase");
+// console.log(documento.data()) //todas las fechas
+// console.log(documento.data().fechanro[0].partidos); //fecha
+// //window.localStorage.setItem("objFBdata", JSON.stringify(documento.data())); //guardo en local
+// window.localStorage.setItem("objFBdata", JSON.stringify(documento.data().fechanro[0].partidos)); //guardo en local
+// }
 
 
-
+//Busca la version con número más alto
 export const cargaUltimoDocumento = async (usuario) => {
   //Filtra entre los documentos del usuario y se queda con el actualizado por fecha más reciente.
   const colle = collection(db, "prodeFechas")
@@ -79,13 +84,15 @@ export const cargaUltimoDocumento = async (usuario) => {
     // const todayAsTimestamp = Timestamp.fromDate(new Date());
     // console.log(todayAsTimestamp)
     //window.localStorage.setItem("objFBdata", JSON.stringify(doc.data().fechanro[0].partidos));
-    window.localStorage.setItem("objFBdata", JSON.stringify(doc.data()));
+    //window.localStorage.setItem("objFBdata", JSON.stringify(doc.data()));
+    const encryptedObject = encryptObj(JSON.stringify(doc.data()), noPasa);
+    window.localStorage.setItem("objFiBdata", encryptedObject)
   });
 };
 
 
 export const cargaUserCero = async (objeto, usuario, version) => {
-  let docu = usuario + "_V" + version;
+  let docu = usuario + "_v" + version;
   objeto.timestamp = Timestamp.fromDate(new Date())
   console.log(docu);
   await setDoc(doc(db, "prodeFechas", docu), objeto);

@@ -6,17 +6,22 @@ import {
     createUserWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 
+import { } from "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+
 import { auth, cargaUserCero, consultaExisteDocumento } from './loginFirebase.js'
 import { showMessage } from "./mensajes.js"
 
 import { datosProdeCero } from "./modeloCERO.js"
 
-
+//------------------------------------------------------------------------------------------------------------
+var noPasa = "prueba"
+export const encryptObj = (obj, ps) => CryptoJS.AES.encrypt(JSON.stringify(obj), ps).toString()
+export const decryptObj = (cryp, ps) => JSON.parse(CryptoJS.AES.decrypt(cryp, ps).toString(CryptoJS.enc.Utf8))
+//------------------------------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------
 //Login con botón de google
 const googleButton = document.querySelector('#googleLogin')
-
 googleButton.addEventListener('click', async () => {
     const provider = new GoogleAuthProvider()
     try {
@@ -26,12 +31,14 @@ googleButton.addEventListener('click', async () => {
         const modal = bootstrap.Modal.getInstance(signinModal);
         modal.hide();
         showMessage("Bienvenido " + credentials.user.displayName, "success");
-        localStorage.setItem("user", credentials.user.email);
     } catch (error) {
         console.log(error);
     } finally {
         //cargaUserCero(datosProdeCero, email, 0)
         consultaExisteDocumento(email);
+        const userEnc = encryptObj(email, noPasa);
+        window.localStorage.setItem("user", userEnc);
+        location.reload();
     }
 })
 //------------------------------------------------------------------
@@ -59,6 +66,8 @@ const logout = document.querySelector('#logout')
 logout.addEventListener('click', async () => {
     await signOut(auth);
     localStorage.removeItem("user");
+    localStorage.removeItem("objFiBdata");
+    location.reload()
 })
 //------------------------------------------------------------------
 
@@ -77,7 +86,7 @@ signInForm.addEventListener('submit', async e => {
         document.getElementById('login-usuario').innerText = credentials.user.email
         modal.hide()
         showMessage("Bienvenido " + email, "success")
-        localStorage.setItem("user", credentials.user.email);
+
     } catch (error) {
         if (error.code === 'auth/wrong-password') {
             showMessage("Contraseña incorrecta.", "error")
@@ -87,7 +96,10 @@ signInForm.addEventListener('submit', async e => {
             showMessage(error.message, "error")
         }
     } finally {
-
+        consultaExisteDocumento(email);
+        const userEnc = encryptObj(email, noPasa);
+        window.localStorage.setItem("user", userEnc);
+        location.reload();
     }
 })
 //------------------------------------------------------------------
@@ -113,8 +125,6 @@ signupForm.addEventListener("submit", async (e) => {
         modal.hide()
         showMessage("Bienvenido " + email, "success")
         document.getElementById('login-usuario').innerText = userCredentials.user.email
-
-
     } catch (error) {
 
         if (error.code === 'auth/invalid-email') {
@@ -129,7 +139,8 @@ signupForm.addEventListener("submit", async (e) => {
 
     }
     finally {
-        localStorage.setItem("user", email);
+        const userEnc = encryptObj(email, noPasa);
+        window.localStorage.setItem("user", userEnc);
         cargaUserCero(datosProdeCero, email, 0)
     }
 });

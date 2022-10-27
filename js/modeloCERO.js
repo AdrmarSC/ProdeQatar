@@ -22,19 +22,19 @@ var datosProdeCero =
                     },
                     "prodePartido": {
                         "prode_resul": "L",
-                        "prode_loc": 2,
-                        "prode_vis": 1,
+                        "prode_loc": "2",
+                        "prode_vis": "1",
                         "prode_penloc": "",
                         "prode_penvis": ""
                     },
                     "realPartido": {
                         "resultado": "L",
-                        "resul_loc": 1,
-                        "resul_vis": 0,
+                        "resul_loc": "1",
+                        "resul_vis": "0",
                         "resul_penloc": "",
                         "resul_penvis": ""
                     },
-                    "puntos": 1
+                    "puntos": "1"
                 },
                 {
                     "partido_n": 2,

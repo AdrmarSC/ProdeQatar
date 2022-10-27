@@ -3,7 +3,7 @@
 export function showMessage(mensajes, tipo) {
     Toastify({
         text: mensajes,
-        duration: 3000,
+        duration: 4000,
         newWindow: true,
         close: true,
         gravity: "bottom", // `top` or `bottom`

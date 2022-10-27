@@ -293,8 +293,10 @@ const guardarResultados = async (numF) => {
         datosUser.user_modificacion = fechaHora;
         const encryptedObject = encryptObj(JSON.stringify(datosUser), noPasa);
         window.localStorage.setItem("objFiBdata", encryptedObject)
+        datosLocal = await decryptObj(window.localStorage.getItem('objFiBdata'), noPasa);
         updateProdeFecha(datosUser, usuario, versionUsuario)
         showMessage("Se guardaron los resultados.", "success")
+
     } else {
         showMessage("No se guardaron los resultados. Faltan completar partidos de la fecha.", "error")
     }

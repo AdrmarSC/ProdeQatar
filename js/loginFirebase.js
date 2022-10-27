@@ -55,9 +55,9 @@ export const consultaExisteDocumento = async (usuario) => {
   const docSnap = await getDoc(docRef);
   if (docSnap.exists()) {
     //console.log("Document data:", docSnap.data());
-    //console.log("existe archivo")
+    console.log("existe archivo")
   } else {
-    //console.log("no existe archivo")
+    console.log("no existe archivo")
     cargaUserCero(datosProdeCero, usuario, 0)
   }
 };

@@ -25,7 +25,6 @@ const googleButton = document.querySelector('#googleLogin')
 googleButton.addEventListener('click', async () => {
     const provider = new GoogleAuthProvider()
     try {
-
         const credentials = await signInWithPopup(auth, provider);
         var email = credentials.user.email;
         const modal = bootstrap.Modal.getInstance(signinModal);
@@ -38,7 +37,6 @@ googleButton.addEventListener('click', async () => {
         consultaExisteDocumento(email);
         const userEnc = encryptObj(email, noPasa);
         window.localStorage.setItem("user", userEnc);
-        location.reload();
     }
 })
 //------------------------------------------------------------------

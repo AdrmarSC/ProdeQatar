@@ -226,7 +226,7 @@ window.onload = async () => {
             document.getElementById("fecha1").onclick = abrirFecha(1);
         }
     } else {
-        document.getElementById("animacion").innerHTML = `<div>Iniciar sesión para visualizar los partidos</div>`
+        document.getElementById("animacion").innerHTML = `<div>Iniciar sesión y clickear en la sección "Prode" para visualizar los partidos</div>`
     }
 }
 //--------------------------------------------------------------------------------

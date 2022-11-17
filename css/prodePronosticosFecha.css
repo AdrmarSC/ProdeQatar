@@ -1,0 +1,234 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Sansita", sans-serif !important;
+}
+
+.cuadroCompleto {
+    gap: 0.1% 0px;
+    margin: 1% auto;
+    color: #fff;
+    font-weight: 500 !important;
+    text-align: center;
+    justify-content: center;
+    max-width: 1165px;
+    min-width: 1165px;
+}
+
+.tituloCuadro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    border: 1px solid #fff;
+    font-size: calc(16px + 0.5vw) !important;
+    font-weight: 700 !important;
+    border-radius: 0.5rem !important;
+    padding: 1%;
+}
+
+.titulosPartidos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: "Sansita", sans-serif;
+    border: 1px solid #fff;
+}
+
+.titulosPartidos > div {
+    /* font-size: calc(10px + 0.4vw); */
+    font-size: 14px;
+    padding: 0.2rem;
+}
+.tituloMedio {
+    min-width: 34vh;
+}
+.tituloJugadores {
+    min-width: 5vh;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.filaPartido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: "Sansita", sans-serif;
+}
+
+.filaPartido > div {
+    border: 1px solid #fff;
+    font-size: 12px;
+    /* font-size: calc(10px + 0.2vw); */
+    padding: 0.2rem;
+}
+
+.fecha {
+    min-width: 10vh;
+}
+
+.local {
+    min-width: 10vh;
+    border-right: 0px !important;
+}
+.icoLocal {
+    min-width: 3vh;
+    border-left: 0px !important;
+}
+
+.imgIco {
+    max-width: 100%;
+    height: auto;
+}
+.resLocal {
+    min-width: 3vh;
+    background-color: #a5a5ac !important;
+}
+.resMedio {
+    align-items: center;
+    align-content: center;
+    min-width: 1vh;
+}
+.resVisitante {
+    min-width: 3vh;
+    background-color: #a5a5ac !important;
+}
+.icoVisitante {
+    min-width: 3vh;
+    border-right: 0px !important;
+}
+.visitante {
+    min-width: 10vh;
+    border-left: 0px !important;
+}
+.jugadores {
+    min-width: 5vh;
+}
+/* 
+.resultado {
+    grid-area: 1 / 10 / 11 / 10;
+    border-left: 0px !important;
+}
+.puntos {
+    grid-area: 1 / 11 / 11 / 11;
+    border-left: 0px !important;
+} */
+
+/* Botones guardar */
+.button {
+    font-family: "Sansita", sans-serif;
+    font-size: calc(14px + 0.4vw) !important;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    background: #000000;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    margin: 0.7% 0.7%;
+}
+.button:hover {
+    background: #ffffff;
+    color: black;
+}
+
+.solapa1 {
+    background-color: #0a8910;
+}
+.solapa2 {
+    background-color: #390131;
+}
+.solapa3 {
+    background-color: #1800ac;
+}
+.solapa4 {
+    background-color: #f23e3b;
+}
+.solapa5 {
+    background-color: #d6b44f;
+}
+.solapa6 {
+    background-color: #4f88d6;
+}
+.solapa7 {
+    background-color: #f03e17;
+}
+.solapa8 {
+    background-color: #8f06a1;
+}
+
+.ultimaActualizacion {
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.menuGrupos {
+    overflow: hidden;
+    background-color: #8d1b3d !important;
+    border: 1px solid #8b8b8b;
+    align-items: center;
+}
+.menuGrupos button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Sansita", sans-serif;
+    padding: 0.5em 0.5em;
+    transition: 0.3s;
+    font-size: calc(14px + 0.4vw);
+    color: #fff;
+}
+
+.menuGrupos button:hover {
+    background-color: red;
+}
+
+.menuGrupos button.active {
+    background-color: red;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1 {
+    font-family: "Sansita", sans-serif;
+    font-size: calc(14px + 0.4vw) !important;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    background: #000000;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    margin: 0.7% 0.7%;
+}
+.button1:hover {
+    background: #ffffff;
+    color: black;
+}
+
+.button2 {
+    font-family: "Sansita", sans-serif;
+    font-size: calc(14px + 0.4vw) !important;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    background: #000000;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    margin: 0.7% 0.7%;
+}
+.button2:hover {
+    background: #ffffff;
+    color: black;
+}

@@ -1,4 +1,4 @@
-var datosProdeCero =
+export var datosProdeCero =
 {
     "user": "",
     "user_version": 0,
@@ -21,20 +21,20 @@ var datosProdeCero =
                         "grupo": "GRUPO A"
                     },
                     "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_loc": "2",
-                        "prode_vis": "1",
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_vis": "",
                         "prode_penloc": "",
                         "prode_penvis": ""
                     },
                     "realPartido": {
-                        "resultado": "L",
-                        "resul_loc": "1",
-                        "resul_vis": "0",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
                         "resul_penloc": "",
                         "resul_penvis": ""
                     },
-                    "puntos": "1"
+                    "puntos": ""
                 },
                 {
                     "partido_n": 2,
@@ -1422,9 +1422,9 @@ var datosProdeCero =
                         "fecha": "03/12/2022",
                         "hora": "12:00",
                         "eqlocal": "1° A",
-                        "icolocal": "1°a",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° B",
-                        "icovisitante": "2°b",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1451,9 +1451,9 @@ var datosProdeCero =
                         "fecha": "03/12/2022",
                         "hora": "16:00",
                         "eqlocal": "1° C",
-                        "icolocal": "1°c",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° D",
-                        "icovisitante": "2°d",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1480,9 +1480,9 @@ var datosProdeCero =
                         "fecha": "04/12/2022",
                         "hora": "12:00",
                         "eqlocal": "1° D",
-                        "icolocal": "1°d",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° C",
-                        "icovisitante": "2°c",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1509,9 +1509,9 @@ var datosProdeCero =
                         "fecha": "04/12/2022",
                         "hora": "16:00",
                         "eqlocal": "1° B",
-                        "icolocal": "1°b",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° A",
-                        "icovisitante": "2°a",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1538,9 +1538,9 @@ var datosProdeCero =
                         "fecha": "05/12/2022",
                         "hora": "12:00",
                         "eqlocal": "1° E",
-                        "icolocal": "1°e",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° F",
-                        "icovisitante": "2°f",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1567,9 +1567,9 @@ var datosProdeCero =
                         "fecha": "05/12/2022",
                         "hora": "16:00",
                         "eqlocal": "1° G",
-                        "icolocal": "1°g",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° H",
-                        "icovisitante": "2°h",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1596,9 +1596,9 @@ var datosProdeCero =
                         "fecha": "06/12/2022",
                         "hora": "12:00",
                         "eqlocal": "1° F",
-                        "icolocal": "1°f",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° E",
-                        "icovisitante": "2°e",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1625,9 +1625,9 @@ var datosProdeCero =
                         "fecha": "06/12/2022",
                         "hora": "16:00",
                         "eqlocal": "1° H",
-                        "icolocal": "1°h",
+                        "icolocal": "vacio",
                         "eqvisitante": "2° G",
-                        "icovisitante": "2°g",
+                        "icovisitante": "vacio",
                         "grupo": "OCTAVOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1659,9 +1659,9 @@ var datosProdeCero =
                         "fecha": "09/12/2022",
                         "hora": "12:00",
                         "eqlocal": "GANADOR P. 5",
-                        "icolocal": "ganadorp.5",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 6",
-                        "icovisitante": "ganadorp.6",
+                        "icovisitante": "vacio",
                         "grupo": "CUARTOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1688,9 +1688,9 @@ var datosProdeCero =
                         "fecha": "09/12/2022",
                         "hora": "16:00",
                         "eqlocal": "GANADOR P. 1",
-                        "icolocal": "ganadorp.1",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 2",
-                        "icovisitante": "ganadorp.2",
+                        "icovisitante": "vacio",
                         "grupo": "CUARTOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1717,9 +1717,9 @@ var datosProdeCero =
                         "fecha": "10/12/2022",
                         "hora": "12:00",
                         "eqlocal": "GANADOR P. 7",
-                        "icolocal": "ganadorp.7",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 8",
-                        "icovisitante": "ganadorp.8",
+                        "icovisitante": "vacio",
                         "grupo": "CUARTOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1746,9 +1746,9 @@ var datosProdeCero =
                         "fecha": "10/12/2022",
                         "hora": "16:00",
                         "eqlocal": "GANADOR P. 4",
-                        "icolocal": "ganadorp.4",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 3",
-                        "icovisitante": "ganadorp.3",
+                        "icovisitante": "vacio",
                         "grupo": "CUARTOS DE FINAL"
                     },
                     "prodePartido": {
@@ -1780,9 +1780,9 @@ var datosProdeCero =
                         "fecha": "13/12/2022",
                         "hora": "16:00",
                         "eqlocal": "GANADOR P. 10",
-                        "icolocal": "ganadorp.10",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 9",
-                        "icovisitante": "ganadorp.9",
+                        "icovisitante": "vacio",
                         "grupo": "SEMIFINAL"
                     },
                     "prodePartido": {
@@ -1809,9 +1809,9 @@ var datosProdeCero =
                         "fecha": "14/12/2022",
                         "hora": "16:00",
                         "eqlocal": "GANADOR P. 12",
-                        "icolocal": "ganadorp.12",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 11",
-                        "icovisitante": "ganadorp.11",
+                        "icovisitante": "vacio",
                         "grupo": "SEMIFINAL"
                     },
                     "prodePartido": {
@@ -1843,9 +1843,9 @@ var datosProdeCero =
                         "fecha": "17/12/2022",
                         "hora": "12:00",
                         "eqlocal": "PERDEDOR P.13",
-                        "icolocal": "perdedorp.13",
+                        "icolocal": "vacio",
                         "eqvisitante": "PERDEDOR P. 14",
-                        "icovisitante": "perdedorp.14",
+                        "icovisitante": "vacio",
                         "grupo": "3° Y 4° PUESTO"
                     },
                     "prodePartido": {
@@ -1872,9 +1872,9 @@ var datosProdeCero =
                         "fecha": "18/12/2022",
                         "hora": "12:00",
                         "eqlocal": "GANADOR P. 13",
-                        "icolocal": "ganadorp.13",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 14",
-                        "icovisitante": "ganadorp.14",
+                        "icovisitante": "vacio",
                         "grupo": "FINAL"
                     },
                     "prodePartido": {
@@ -1896,6 +1896,6 @@ var datosProdeCero =
             ]
         }
     ]
-}
+};
 
-export { datosProdeCero };
+//export { datosProdeCero };

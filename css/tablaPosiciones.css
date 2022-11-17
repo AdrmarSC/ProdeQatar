@@ -1,0 +1,65 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Sansita", sans-serif !important;
+}
+
+.cuadroCompleto {
+    gap: 0.1% 0px;
+    margin: 1% auto;
+    color: #fff;
+    font-weight: 500 !important;
+    text-align: center;
+    justify-content: center;
+    max-width: 760px;
+    min-width: 760px;
+    background-color: #8a1a3d;
+}
+
+.tituloCuadro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    border: 1px solid #fff;
+    font-size: 24px;
+    font-weight: 700 !important;
+    border-radius: 0.5rem !important;
+    padding: 1%;
+}
+
+.titulosParticipantes {
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    width: 100%;
+    font-family: "Sansita", sans-serif;
+}
+
+.titulosParticipantes > div {
+    border: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    padding: 5px 5px;
+}
+.filaParticipantes {
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    width: 100%;
+    font-family: "Sansita", sans-serif;
+}
+.filaParticipantes > div {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    padding: 5px 5px;
+}
+
+.ultimaActualizacion {
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+}

@@ -1,0 +1,72 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="css/prodePronosticosFecha.css" />
+        <link rel="stylesheet" href="css/loading.css" />
+        <!-- <link rel="stylesheet" href="css/prodeFecha.css" /> -->
+        <title>Prode por Fecha</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div id="navbar"></div>
+                <script>
+                    $(function () {
+                        $("#navbar").load("./menuNavbar.html")
+                    })
+                </script>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="menuGrupos">
+                    <div class="centro" id="fechasTabPronos">
+                        <button class="menuLinks" id="fecha1">FECHA 1</button>
+                        <button class="menuLinks" id="fecha2">FECHA 2</button>
+                        <button class="menuLinks" id="fecha3">FECHA 3</button>
+                        <button class="menuLinks" id="fecha4">OCTAVOS</button>
+                        <button class="menuLinks" id="fecha5">CUARTOS</button>
+                        <button class="menuLinks" id="fecha6">SEMIFINAL</button>
+                        <button class="menuLinks" id="fecha7">FINAL</button>
+                    </div>
+                </div>
+
+                <div id="tablaProde"><div id="animacion"></div></div>
+
+                <div id="fecha1" class="tabcontentPronos">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha2" class="tabcontentPronos">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha3" class="tabcontentPronos">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha4" class="tabcontentPronos">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha5" class="tabcontentPronos">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha6" class="tabcontentPronos">
+                    <div id="tablaProde"></div>
+                </div>
+                <div id="fecha7" class="tabcontentPronos">
+                    <div id="tablaProde"></div>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="./prodePronosticosFecha.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    </body>
+</html>

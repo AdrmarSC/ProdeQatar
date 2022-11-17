@@ -1,10 +1,10 @@
 //Consumo los datos de datosEstatico.js
 import { showMessage } from "./js/mensajes.js";
-import { updateProdeFecha, cargaUltimoDocumento } from "./firebase.js";
+import { updateProdeFecha, updateProdeFechaUnico, cargaUltimoDocumento } from "./firebase.js";
+import { noPasa, verFechasCerradas, ultUpdProdeFec } from "./js/env.js"
+
 
 import { datosProdeCero } from "./js/modeloCERO.js";
-
-var noPasa = "prueba";
 
 export const encryptObj = (obj, ps) => CryptoJS.AES.encrypt(JSON.stringify(obj), ps).toString();
 export const decryptObj = (cryp, ps) => JSON.parse(CryptoJS.AES.decrypt(cryp, ps).toString(CryptoJS.enc.Utf8));
@@ -22,6 +22,7 @@ var datosLocal = null;
 const partidosFecha = async (num) => {
     var numFecha = num;
     var tituloCuadro;
+    let grisarResultados = true;
     //datosUser = await decryptObj(window.localStorage.getItem('objFiBdata'), noPasa)
     //window.localStorage.setItem("prueba", datosUser)
     //console.log(datosUser.fechanro[numFecha - 1].partidos)
@@ -53,7 +54,9 @@ const partidosFecha = async (num) => {
             tituloCuadro = "FINALES";
             break;
     }
-
+    if (Number(numFecha) <= verFechasCerradas) {
+        grisarResultados = false;
+    }
     var tablaGrupos = `
 <div class="cuadroCompleto solapa${numFecha}">
     <div class="tituloCuadro">${tituloCuadro}</div>
@@ -66,6 +69,18 @@ const partidosFecha = async (num) => {
         </div>
 `
     for (let i = 0; i < fechaFiltrada.length; i++) {
+        let colorResul = "transparent";
+        if (fechaFiltrada[i].puntos === "") { colorResul = "transparent" } else {
+            if (Number(fechaFiltrada[i].puntos) === 3) {
+                colorResul = "#57c443" //green;
+            } else if (Number(fechaFiltrada[i].puntos) === 1) {
+                colorResul = "#fdc82e" //yellow;
+            } else if (Number(fechaFiltrada[i].puntos) === 0) {
+                colorResul = "#d5385a" //red    
+            }
+        }
+
+
         tablaGrupos += `
             <div class="filaPartido">
                 <div class="fecha">${fechaFiltrada[i].datosPartido.dia + " " + fechaFiltrada[i].datosPartido.fecha.substring(0, 5)}</div>
@@ -74,18 +89,20 @@ const partidosFecha = async (num) => {
                 <div class="icoLocal">
                     <img src="img/equipos/${fechaFiltrada[i].datosPartido.icolocal}.png" onerror="this.onerror=null;this.src=''" class="imgIco" />
                 </div>
-                <div id="resLoc_L${i}"  class="resLocal resul" contenteditable="true">${fechaFiltrada[i].prodePartido.prode_loc}</div>
+                <div id="resLoc_L${i}"  class="resLocal resul" contenteditable="${grisarResultados}">${fechaFiltrada[i].prodePartido.prode_loc}</div>
                 <div class="resMedio">-</div>
-                <div id="resVis_V${i}"  class="resVisitante resul" contenteditable="true">${fechaFiltrada[i].prodePartido.prode_vis}</div>
+                <div id="resVis_V${i}"  class="resVisitante resul" contenteditable="${grisarResultados}">${fechaFiltrada[i].prodePartido.prode_vis}</div>
                 <div class="icoVisitante">
                     <img src="img/equipos/${fechaFiltrada[i].datosPartido.icovisitante}.png" onerror="this.onerror=null;this.src=''" class="imgIco" />
                 </div>
                 <div class="visitante">${fechaFiltrada[i].datosPartido.eqvisitante}</div>
                 <div class="resultado">${fechaFiltrada[i].realPartido.resul_loc + "-" + fechaFiltrada[i].realPartido.resul_vis}</div>
-                <div class="puntos">${fechaFiltrada[i].puntos}</div>
+                <div class="puntos" style="background-color:${colorResul}">${fechaFiltrada[i].puntos}</div>
             </div>
         `
+
     }
+
     tablaGrupos += `
     <button class="button" role="button" id="btn${numFecha}">
         Guardar
@@ -96,6 +113,10 @@ const partidosFecha = async (num) => {
 </div>
 `
     document.getElementById("tablaProde").innerHTML = tablaGrupos
+    if (Number(numFecha) <= verFechasCerradas) {
+        document.getElementById("btn" + numFecha).style.display = 'none'
+    }
+
 };
 //------------------------------------------------------------------------------------------------
 
@@ -210,6 +231,7 @@ const abrirFecha = async (fecha) => {
 //--------------------------------------------------------------------------------
 //Función para detectar el click en botones de fechas. INICIO DE LA PAGE
 //Click en la fecha1, modificar al avanzar fechas.
+/*
 window.onload = async () => {
     document.getElementById("animacion").innerHTML = `<div class="loading">Loading&#8230;</div>`
     if (!(localStorage.getItem("user") === null)) {
@@ -229,7 +251,51 @@ window.onload = async () => {
         document.getElementById("animacion").innerHTML = `<div>Iniciar sesión y clickear en la sección "Prode" para visualizar los partidos</div>`
     }
 }
+*/
 //--------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------
+//Función para detectar el click en botones de fechas. INICIO DE LA PAGE
+//Click en la fecha1, modificar al avanzar fechas.
+
+window.onload = async () => {
+    document.getElementById("animacion").innerHTML = `<div class="loading">Loading&#8230;</div>`
+    let actualizar = false;
+    if (!(localStorage.getItem("user") === null)) {
+        usuario = decryptObj(localStorage.getItem("user"), noPasa);
+        console.log("usuario logeado")
+        console.log(localStorage.getItem("ultUpdProdeFec"));
+        if (!(localStorage.getItem("ultUpdProdeFec") === null)) {
+            console.log("local: " + localStorage.getItem("ultUpdProdeFec") + ", partActualizado: " + ultUpdProdeFec)
+            if (!(Number(localStorage.getItem("ultUpdProdeFec")) === Number(ultUpdProdeFec))) {
+                console.log("datos en storage no actualizados")
+                actualizar = true;
+            } else {
+                console.log("datos en storage actualizados")
+                actualizar = false;
+            }
+        } else {
+            actualizar = true;
+        }
+
+        if (actualizar) {
+            console.log("actualizado")
+            window.localStorage.setItem("ultUpdProdeFec", ultUpdProdeFec)
+            window.localStorage.removeItem('objFiBdata');
+            console.log("recuperando datos")
+            await cargaUltimoDocumento(usuario);
+        }
+
+        datosLocal = await decryptObj(window.localStorage.getItem('objFiBdata'), noPasa);
+        document.getElementById("fecha1").onclick = abrirFecha(1);
+    } else {
+        document.getElementById("animacion").innerHTML = `<div>Iniciar sesión y clickear en la sección "Prode" para visualizar los partidos</div>`
+    }
+}
+
+//--------------------------------------------------------------------------------
+
+
+
 const botones = document.getElementById('fechasTab');
 botones.addEventListener('click', (event) => {
     const isButton = event.target.nodeName === 'BUTTON';
@@ -253,8 +319,7 @@ const guardarResultados = async (numF) => {
         document.getElementById("resLoc_L" + i).style.border = '1px solid white';
         document.getElementById("resVis_V" + i).style.border = '1px solid white';
         //Reviso resultados no completados:
-        if (document.getElementById("resLoc_L" + i).textContent.length === 0 || document.getElementById("resVis_V" + i).textContent.length === 0) {
-            //alert("Faltan completar resultados")
+        if (document.getElementById("resLoc_L" + i).textContent.length === 0 || document.getElementById("resVis_V" + i).textContent.length === 0) {            //alert("Faltan completar resultados")
             document.getElementById("resLoc_L" + i).style.border = '2px solid red';
             document.getElementById("resVis_V" + i).style.border = '2px solid red';
             camposIncompletos = true;
@@ -277,11 +342,6 @@ const guardarResultados = async (numF) => {
             camposIncompletos = false;
         }
     }
-
-    // Object.keys(fechaFiltrada).forEach(function (key) {
-    //     console.log(key, fechaFiltrada[key]);
-    // });
-
     const fechaHora = new Date().toLocaleString();
     console.log(fechaHora);
 
@@ -294,7 +354,8 @@ const guardarResultados = async (numF) => {
         const encryptedObject = encryptObj(JSON.stringify(datosUser), noPasa);
         window.localStorage.setItem("objFiBdata", encryptedObject)
         datosLocal = await decryptObj(window.localStorage.getItem('objFiBdata'), noPasa);
-        updateProdeFecha(datosUser, usuario, versionUsuario)
+        await updateProdeFechaUnico(datosUser, usuario);
+        await updateProdeFecha(datosUser, usuario, versionUsuario)
         showMessage("Se guardaron los resultados.", "success")
 
     } else {

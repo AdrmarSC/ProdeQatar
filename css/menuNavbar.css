@@ -1,27 +1,29 @@
+/** @format */
+
 .navbar {
-  font-family: "Sansita", sans-serif !important;
-  color: white;
+    font-family: "Sansita", sans-serif !important;
+    color: white;
 }
 
 .navbar a {
-  font-size: calc(18px + 0.4vw);
-  color: white;
+    font-size: calc(14px + 0.3vw) !important;
+    color: white;
 }
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
-  color: white;
+    background-color: red;
+    color: white;
 }
 
 .modal-title {
-  color: white;
+    color: white;
 }
 
 #login-usuario,
 #logout {
-  background-color: #8d1b3d !important;
-  border: 1px solid #8b8b8b;
-  border-radius: 4px;
-  margin-right: 1%;
-  font-size: calc(12px + 0.4vw);
+    background-color: #8d1b3d !important;
+    border: 1px solid #8b8b8b;
+    border-radius: 4px;
+    margin-right: 1%;
+    font-size: calc(12px + 0.4vw);
 }

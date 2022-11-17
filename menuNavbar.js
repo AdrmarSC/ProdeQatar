@@ -7,7 +7,7 @@ import { loginCheck } from "./js/login.js"
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         loginCheck(user);
-        document.getElementById('login-usuario').innerText = user.email
+        document.getElementById('login-usuario').innerText = user.email.toUpperCase()
 
     } else {
         loginCheck(user);

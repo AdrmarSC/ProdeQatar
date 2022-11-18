@@ -901,6 +901,7 @@ btnGuardar.addEventListener('click', async (event) => {
     console.log("guardando...")
     let encObjOrDatos = await encryptObj(JSON.stringify(orDatos), noPasa);
     window.localStorage.setItem("orDatosTablaGrupos", encObjOrDatos)
+
     //window.localStorage.setItem("orDatosTablaGrupos", JSON.stringify(orDatos))
     let objFinal = new Object()
     //objFinal.tablaGrupos = JSON.parse(window.localStorage.getItem("orDatosTablaGrupos"))
@@ -909,6 +910,8 @@ btnGuardar.addEventListener('click', async (event) => {
     objFinal.partidos = await JSON.parse(decryptObj(window.localStorage.getItem("prodeUnicoFINAL"), noPasa));
     objFinal.user = usuario;
     console.log(objFinal)
+    let encObjProdeUU = encryptObj(JSON.stringify(objFinal), noPasa);
+    window.localStorage.setItem("prodeUnicoUser", encObjProdeUU);
     await saveProdeUnicoUser(objFinal, usuario);
     setTimeout(() => {
         event.target.disabled = false;

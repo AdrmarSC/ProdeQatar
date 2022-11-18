@@ -25,6 +25,9 @@ import { objModeloCierreFechas } from "./js/modeloCierreFechas.js";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+//*******************************************************/
+//*****************TEST***********************************/
+
 const firebaseConfig = {
   apiKey: "AIzaSyAuW45bTxQWs0-LQExc0A_2HZnJLWCQ7N4",
   authDomain: "prodeqatar-364703.firebaseapp.com",
@@ -34,6 +37,24 @@ const firebaseConfig = {
   appId: "1:604182413607:web:77bbc4a3965ebc6183e902",
   measurementId: "G-SQ4Z7RMRCT",
 };
+
+//*****************TEST***********************************/
+
+
+//*****************PROD***********************************/
+//********************************************************/
+/*
+const firebaseConfig = {
+  apiKey: "AIzaSyB4RXWMT3ar_xGx2p7dERXpRVP2gOolNoA",
+  authDomain: "apuesqatar2022.firebaseapp.com",
+  projectId: "apuesqatar2022",
+  storageBucket: "apuesqatar2022.appspot.com",
+  messagingSenderId: "386367050101",
+  appId: "1:386367050101:web:cb061c8c9f7506fc22433c",
+  measurementId: "G-0N522E8PET"
+};
+*/
+//********************************************************/
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
@@ -375,4 +396,27 @@ export const updateProdeUnicoResultados = async (objeto, usuario) => {
   await setDoc(docRef, objeto);
 };
 
+//*************************************************************************************************** */
+
+
+
+//*************************************************************************************************** */
+//-----------------------------------------------------------------------------------
+//Trae cada archivo unico de usuario para actualizar RESULTADOS
+export const unificarTodosUsuariosProdeUnico = async () => {
+  //funcion para traer la ultima version con los resultados de los usuarios. Devuelve los mails (users) unicos. 
+  const colle = collection(db, "prodeUnico")
+  const todosDocsProdeUnico = [];
+  let j = 0
+  const querySnapshot = await getDocs(colle);
+  querySnapshot.forEach((doc) => {
+    //console.log(doc.id, " => ", doc.data());
+    todosDocsProdeUnico[j] = doc.data()
+    j++
+  });
+  window.localStorage.removeItem("todosDocsProdeUnico");
+  window.localStorage.setItem("todosDocsProdeUnico", JSON.stringify(todosDocsProdeUnico))
+  console.log("docu => " + "todosDocsProdeUnico")
+
+};
 //*************************************************************************************************** */

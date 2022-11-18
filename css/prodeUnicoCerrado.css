@@ -20,8 +20,7 @@ body {
 }
 
 .mitad1 {
-    /* width: 58%; */
-    /* margin-left: 5px; */
+    margin-right: 5px;
 }
 .mitad2 {
     width: 550px;
@@ -51,7 +50,7 @@ body {
     grid-template-rows: 1fr;
     gap: 0px 0px;
     border: 1px solid #fff;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-weight: 700 !important;
     border-radius: 0.5rem !important;
     padding: 1%;

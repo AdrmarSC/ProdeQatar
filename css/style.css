@@ -91,7 +91,7 @@ body {
 
 .reglas {
     padding: 1% 1%;
-    font-size: calc(12px + 0.4vw) !important;
+    font-size: calc(12px + 0.2vw) !important;
 }
 
 .card {

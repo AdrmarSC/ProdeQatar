@@ -75,6 +75,11 @@ logout.addEventListener('click', async () => {
     localStorage.removeItem("ultUpdTablaPos");
     localStorage.removeItem("ultUpdProdeFec");
     localStorage.removeItem("ultUpdAdminProdeResul");
+    localStorage.removeItem("prodeUnicoUser");
+    localStorage.removeItem("orDatosProdeUnicoUser");
+    localStorage.removeItem("orDatosTablaGrupos");
+    localStorage.removeItem("prodeUnicoFINAL");
+
     location.reload()
 })
 //------------------------------------------------------------------

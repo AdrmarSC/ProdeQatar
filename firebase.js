@@ -361,7 +361,9 @@ export const cargaProdeUnicoUser = async (usuario) => {
   const docRef = doc(db, "prodeUnico", docu)
   console.log("docu => " + docu);
   const docRecu = await getDoc(docRef);
-  window.localStorage.setItem("prodeUnicoUser", JSON.stringify(docRecu.data()))
+  //window.localStorage.setItem("prodeUnicoUser", JSON.stringify(docRecu.data())):
+  const encObj = encryptObj(JSON.stringify(docRecu.data()), noPasa);
+  window.localStorage.setItem("prodeUnicoUser", encObj);
 };
 
 export const updateProdeUnicoResultados = async (objeto, usuario) => {

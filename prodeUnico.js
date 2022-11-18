@@ -108,14 +108,20 @@ if (!(localStorage.getItem("user") === null)) {
     usuario = decryptObj(localStorage.getItem("user"), noPasa);
     console.log("usuario logeado")
     await cargaProdeUnicoUser(usuario);
-    console.log(JSON.parse(window.localStorage.getItem("prodeUnicoUser")))
+    //console.log(JSON.parse(window.localStorage.getItem("prodeUnicoUser")))
     document.getElementById("animacion").remove();
     document.getElementById("btnGuardarProdeUnico").style.display = "block";
     //origenProdeUnico = JSON.parse(window.localStorage.getItem("prodeUnico"));
-    let recuFBuserUnico = JSON.parse(window.localStorage.getItem("prodeUnicoUser"));
+    //let recuFBuserUnico = JSON.parse(window.localStorage.getItem("prodeUnicoUser"));   
+    let recuFBuserUnico = await JSON.parse(decryptObj(window.localStorage.getItem('prodeUnicoUser'), noPasa));
+    // recuFBuserUnico = JSON.parse(recuFBuserUnico)
+    console.log(recuFBuserUnico)
     origenProdeUnico = recuFBuserUnico.partidos
     let orDatosTabGru = recuFBuserUnico.tablaGrupos
-    window.localStorage.setItem("orDatosProdeUnicoUser", JSON.stringify(orDatosTabGru))
+
+    const encObj = encryptObj(JSON.stringify(orDatosTabGru), noPasa);
+    window.localStorage.setItem("orDatosProdeUnicoUser", encObj)
+    //window.localStorage.setItem("orDatosProdeUnicoUser", JSON.stringify(orDatosTabGru))
     const partidosPorFases = [6, 6, 6, 6, 6, 6, 6, 6, 8, 4, 2, 1, 1]
     let result = 0;
     partidosPorFases.forEach(async (p, index) => {
@@ -180,7 +186,8 @@ Array.from(btnFlecha).forEach(b => {
 //var orDatos = modeloTablaGruposCero;
 
 //var orDatos = JSON.parse(window.localStorage.getItem("orDatosProdeUnicoUser"));
-orDatos = JSON.parse(window.localStorage.getItem("orDatosProdeUnicoUser"));
+//orDatos = JSON.parse(window.localStorage.getItem("orDatosProdeUnicoUser"));
+orDatos = await JSON.parse(decryptObj(window.localStorage.getItem("orDatosProdeUnicoUser"), noPasa));
 const tablaPGrupos = async (fase) => {
     let tituloCuadroFecha = ["GRUPO A", "GRUPO B", "GRUPO C", "GRUPO D", "GRUPO E", "GRUPO F", "GRUPO G", "GRUPO H", "OCTAVOS DE FINAL", "CUARTOS DE FINAL", "SEMIFINALES", "3° Y 4° PUESTO", "FINALES"]
     let tituloCuadro = tituloCuadroFecha[fase]
@@ -360,7 +367,9 @@ const clasifOctavos = async (g) => {
     // let letraGrupo = ["A", "B", "C", "D", "E", "F", "G", "H"]
     let partJugados = 0;
     orDatos.grupos[g].eq.forEach((e, i) => { partJugados = partJugados + e.pj.reduce((x, y) => x + y) })
-    window.localStorage.setItem("orDatosTablaGrupos", JSON.stringify(orDatos))
+    //window.localStorage.setItem("orDatosTablaGrupos", JSON.stringify(orDatos))
+    let encObjOrDatos = await encryptObj(JSON.stringify(orDatos), noPasa);
+    window.localStorage.setItem("orDatosTablaGrupos", encObjOrDatos)
     if (partJugados === 12) {
         console.log("clasificados: ", orDatos.grupos[g].eq[0].equipo, "____2do: ", orDatos.grupos[g].eq[1].equipo)
         console.log("obj: ")
@@ -873,12 +882,15 @@ const resFinal = () => {
             origenProdeUnico[i].prodePartido.prode_ext = resul_ext
         }
         if (i === 63 && loc != "") {
-            window.localStorage.setItem("prodeUnicoFINAL", JSON.stringify(origenProdeUnico))
+            let encObjPUF = encryptObj(JSON.stringify(origenProdeUnico), noPasa);
+            //window.localStorage.setItem("prodeUnicoFINAL", JSON.stringify(origenProdeUnico))
+            window.localStorage.setItem("prodeUnicoFINAL", encObjPUF)
             console.log("objFinal:", origenProdeUnico)
         }
 
     }
-    window.localStorage.setItem("prodeUnicoFINAL", JSON.stringify(origenProdeUnico))
+    let encObjPUFF = encryptObj(JSON.stringify(origenProdeUnico), noPasa);
+    window.localStorage.setItem("prodeUnicoFINAL", encObjPUFF)
 }
 
 const btnGuardar = document.getElementById("btnGuardarProdeUnico")
@@ -887,10 +899,14 @@ btnGuardar.addEventListener('click', async (event) => {
     event.target.disabled = true;
     event.target.innerText = "Guardando...";
     console.log("guardando...")
-    window.localStorage.setItem("orDatosTablaGrupos", JSON.stringify(orDatos))
+    let encObjOrDatos = await encryptObj(JSON.stringify(orDatos), noPasa);
+    window.localStorage.setItem("orDatosTablaGrupos", encObjOrDatos)
+    //window.localStorage.setItem("orDatosTablaGrupos", JSON.stringify(orDatos))
     let objFinal = new Object()
-    objFinal.tablaGrupos = JSON.parse(window.localStorage.getItem("orDatosTablaGrupos"))
-    objFinal.partidos = JSON.parse(window.localStorage.getItem("prodeUnicoFINAL"));
+    //objFinal.tablaGrupos = JSON.parse(window.localStorage.getItem("orDatosTablaGrupos"))
+    objFinal.tablaGrupos = await JSON.parse(decryptObj(window.localStorage.getItem("orDatosTablaGrupos"), noPasa));
+    //objFinal.partidos = JSON.parse(window.localStorage.getItem("prodeUnicoFINAL"));
+    objFinal.partidos = await JSON.parse(decryptObj(window.localStorage.getItem("prodeUnicoFINAL"), noPasa));
     objFinal.user = usuario;
     console.log(objFinal)
     await saveProdeUnicoUser(objFinal, usuario);

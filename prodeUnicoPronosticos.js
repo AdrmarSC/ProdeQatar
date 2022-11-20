@@ -40,10 +40,10 @@ export const generarDocPronosticos = async () => {
                         prode_loc: usu.partidos[ind].prodePartido.prode_loc,
                         prode_vis: usu.partidos[ind].prodePartido.prode_vis,
                         prode_resul: usu.partidos[ind].prodePartido.prode_resul,
-                        eqlocal: usu.partidos[ind].datosPartido.eqlocal,
-                        eqvisitante: usu.partidos[ind].datosPartido.eqvisitante,
-                        icolocal: usu.partidos[ind].datosPartido.icolocal,
-                        icovisitante: usu.partidos[ind].datosPartido.icovisitante
+                        prode_eqlocal: usu.partidos[ind].datosPartido.eqlocal,
+                        prode_eqvisitante: usu.partidos[ind].datosPartido.eqvisitante,
+                        prode_icolocal: usu.partidos[ind].datosPartido.icolocal,
+                        prode_icovisitante: usu.partidos[ind].datosPartido.icovisitante
                     }
                 }
             )
@@ -102,8 +102,8 @@ const disenoTablaPronosticosProdeUnico = async () => {
                 }
             }
             tablaPronosticosProdeUnico += `<div class="jugadores" style="background-color:${colorResul}"> 
-            <img id="imgIcoLoc_${ind}" src="img/equipos/${pro.prodePartido.icolocal}.png"  class="imgIcoPronosticos" />` + `${pro.prodePartido.prode_loc}` + ` - ` + `${pro.prodePartido.prode_vis}` + `
-            <img id="imgIcoVis_${ind}" src="img/equipos/${pro.prodePartido.icovisitante}.png"  class="imgIcoPronosticos" />
+            <img id="imgIcoLoc_${ind}" src="img/equipos/${pro.prodePartido.prode_icolocal}.png"  class="imgIcoPronosticos" />` + `${pro.prodePartido.prode_loc}` + ` - ` + `${pro.prodePartido.prode_vis}` + `
+            <img id="imgIcoVis_${ind}" src="img/equipos/${pro.prodePartido.prode_icovisitante}.png"  class="imgIcoPronosticos" />
             </div>`
         })
         tablaPronosticosProdeUnico += `</div > `

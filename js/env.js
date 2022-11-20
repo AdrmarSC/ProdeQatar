@@ -1,10 +1,11 @@
-export var verFechasCerradas = 3;
+export var verFechasCerradas = 0;
 export var noPasa = "prueba";
 
 //variables de actualización en local
-export var ultUpdTablaPos = 48;
-export var ultUpdProdeFec = 48;
-export var ultUpdPronos = 48;
-export var ultUpdAdminProdeResul = 48;
+let cambiar = 0
+export var ultUpdTablaPos = cambiar;
+export var ultUpdProdeFec = cambiar;
+export var ultUpdPronos = cambiar;
+export var ultUpdAdminProdeResul = cambiar;
 
 export var userAdmin = "ADMINISTRADOR@ADMIN.COM";

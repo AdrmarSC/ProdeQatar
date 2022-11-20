@@ -17,13 +17,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 1
@@ -45,13 +53,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 2
@@ -73,13 +89,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 3
@@ -101,13 +125,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 4
@@ -129,13 +161,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 5
@@ -157,13 +197,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 6
@@ -185,13 +233,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 7
@@ -213,13 +269,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 8
@@ -241,13 +305,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 9
@@ -269,13 +341,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 10
@@ -297,13 +377,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 11
@@ -325,13 +413,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 12
@@ -353,13 +449,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 13
@@ -381,13 +485,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 14
@@ -409,13 +521,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 15
@@ -437,13 +557,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 16
@@ -465,13 +593,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 17
@@ -493,13 +629,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 18
@@ -521,13 +665,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 19
@@ -549,13 +701,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 20
@@ -577,13 +737,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 21
@@ -605,13 +773,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 22
@@ -633,13 +809,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 23
@@ -661,13 +845,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 24
@@ -689,13 +881,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 25
@@ -717,13 +917,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 26
@@ -745,13 +953,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 27
@@ -773,13 +989,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 28
@@ -801,13 +1025,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 29
@@ -829,13 +1061,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 30
@@ -857,13 +1097,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 31
@@ -885,13 +1133,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 32
@@ -913,13 +1169,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 33
@@ -941,13 +1205,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 34
@@ -969,13 +1241,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 35
@@ -997,13 +1277,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 36
@@ -1025,13 +1313,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 37
@@ -1053,13 +1349,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 38
@@ -1081,13 +1385,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 39
@@ -1109,13 +1421,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 40
@@ -1137,13 +1457,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 41
@@ -1165,13 +1493,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 42
@@ -1193,13 +1529,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 43
@@ -1221,13 +1565,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 44
@@ -1249,13 +1601,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 45
@@ -1277,13 +1637,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 46
@@ -1305,13 +1673,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 47
@@ -1333,13 +1709,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 48
@@ -1361,13 +1745,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 49
@@ -1389,13 +1781,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 50
@@ -1417,13 +1817,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 51
@@ -1445,13 +1853,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 52
@@ -1473,13 +1889,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 53
@@ -1501,13 +1925,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 54
@@ -1529,13 +1961,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 55
@@ -1557,13 +1997,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 56
@@ -1585,13 +2033,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 57
@@ -1613,13 +2069,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 58
@@ -1641,13 +2105,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 59
@@ -1669,13 +2141,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 60
@@ -1697,13 +2177,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 61
@@ -1725,13 +2213,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 62
@@ -1753,13 +2249,21 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 63
@@ -1781,19 +2285,26 @@ export var modeloProdeUnicoCero =
                 "prode_resul": "",
                 "prode_loc": "",
                 "prode_vis": "",
-                "prode_ext": ""
+                "prode_ext": "",
+                "prode_eqlocal": "",
+                "prode_eqvisitante": "",
+                "prode_icolocal": "vacio",
+                "prode_icovisitante": "vacio"
             },
             "realPartido": {
                 "resultado": "",
                 "resul_loc": "",
                 "resul_vis": "",
-                "resul_ext": ""
+                "resul_ext": "",
+                "resul_eqlocal": "",
+                "resul_icolocal": "vacio",
+                "resul_eqvisitante": "",
+                "resul_icovisitante": "vacio"
             },
             "puntos": "",
             "idg": 64
         }
     ]
-
 
 export var modeloTablaGruposCero =
 {

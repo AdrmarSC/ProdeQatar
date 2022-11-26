@@ -81,18 +81,28 @@ const partidosFecha = async (num) => {
             let resultadoReal = fechaCerrada[numFecha][i].realPartido.resultado;
             let resultadoProde = fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_resul;
             let resulProde = fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc + "-" + fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis;
+            let dgProde = Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc) - Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis)
+            let dgReal = Number(fechaCerrada[numFecha][i].realPartido.resul_loc) - Number(fechaCerrada[numFecha][i].realPartido.resul_vis)
+            let cgProde = Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc) + Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis)
+            let cgReal = Number(fechaCerrada[numFecha][i].realPartido.resul_loc) + Number(fechaCerrada[numFecha][i].realPartido.resul_vis)
+
             let colorResul = "transparent";
             if (resultadoReal === "") { colorResul = "transparent" } else {
                 if (resultadoReal === resultadoProde) {
-                    if (resulReal === resulProde) {
-                        colorResul = "#57c443" //green;
-                    } else {
-                        colorResul = "#fdc82e" //yellow;
+                    if (resulReal === resulProde) {//5 puntos
+                        colorResul = "#5EC448" //green;
+                    } else if (dgReal === dgProde && cgProde === cgReal) {// 3puntos 
+                        colorResul = "#1D8919" //verdeclaro;
+                    } else if (dgReal === dgProde || cgProde === cgReal) {//2 puntos
+                        colorResul = "#0070C0" //azul;
+                    } else {//1punto
+                        colorResul = "#595959" //gris  
                     }
-                } else {
+                } else {//0 puntos
                     colorResul = "#d5385a" //red
                 }
             }
+
             tablaGrupos += `<div class="jugadores" style="background-color:${colorResul}"> ` + `${fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc}` + ` - ` + `${fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis}` + `</div>`
         }
         tablaGrupos += `</div > `
@@ -104,6 +114,13 @@ const partidosFecha = async (num) => {
         <div id="tablaProde"></div>
     </div>
     <div class="ultimaActualizacion">Ultima actualización: ${fechaCerradaCompleta.user_modificacion}</div>
+    <div class="tablaColores ">
+        <div class="cincoColor"></div><div class="filaColores">5 Puntos</div>
+        <div class="tresColor"></div><div class="filaColores">3 Puntos</div>
+        <div class="dosColor"></div><div class="filaColores">2 Puntos</div>
+        <div class="unoColor"></div><div class="filaColores">1 Punto</div>
+        <div class="ceroColor"></div><div class="filaColores">0 Puntos</div>
+    </div>
     `
     document.getElementById("tablaProde").innerHTML = tablaGrupos
 };

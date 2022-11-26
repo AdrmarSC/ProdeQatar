@@ -1,5 +1,5 @@
 
-import { saveProdeUnicoUser, cargaProdeUnicoUser, updateProdeUnicoResultados } from "./firebase.js"
+import { saveProdeUnicoUser, cargaProdeUnicoUser } from "./firebase.js"
 import { noPasa } from "./js/env.js"
 export const encryptObj = (obj, ps) => CryptoJS.AES.encrypt(JSON.stringify(obj), ps).toString();
 export const decryptObj = (cryp, ps) => JSON.parse(CryptoJS.AES.decrypt(cryp, ps).toString(CryptoJS.enc.Utf8));
@@ -10,8 +10,6 @@ var fechaFiltrada = new Array();
 var tablaProdeUnico = new Array();
 var tablaPosGrupos = new Array();
 var orDatos;
-
-
 
 
 var equiposGanadoresOctavos = new Array();
@@ -705,6 +703,9 @@ const resFinal = () => {
 }
 
 const btnGuardar = document.getElementById("btnGuardarProdeUnico")
+/*OCULTAR BOTON PARA CERRAR CARGA*/
+document.getElementById("btnGuardarProdeUnico").style.display = 'none'
+/********************************* */
 btnGuardar.addEventListener('click', async (event) => {
     resFinal();
     event.target.disabled = true;

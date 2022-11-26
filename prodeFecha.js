@@ -71,10 +71,14 @@ const partidosFecha = async (num) => {
     for (let i = 0; i < fechaFiltrada.length; i++) {
         let colorResul = "transparent";
         if (fechaFiltrada[i].puntos === "") { colorResul = "transparent" } else {
-            if (Number(fechaFiltrada[i].puntos) === 3) {
-                colorResul = "#57c443" //green;
+            if (Number(fechaFiltrada[i].puntos) === 5) {
+                colorResul = "#5EC448" //verdeclaro;
+            } else if (Number(fechaFiltrada[i].puntos) === 3) {
+                colorResul = "#6BD089" //verdeclaro;
+            } else if (Number(fechaFiltrada[i].puntos) === 2) {
+                colorResul = "#0070C0" //azul;
             } else if (Number(fechaFiltrada[i].puntos) === 1) {
-                colorResul = "#fdc82e" //yellow;
+                colorResul = "#595959" //naranja   
             } else if (Number(fechaFiltrada[i].puntos) === 0) {
                 colorResul = "#d5385a" //red    
             }
@@ -110,6 +114,13 @@ const partidosFecha = async (num) => {
 </div>
 <div id="fecha${numFecha}" class="tabcontent">
 <div id="tablaProde"></div>
+</div>
+<div class="tablaColores ">
+<div class="cincoColor"></div><div class="filaColores">5 Puntos</div>
+<div class="tresColor"></div><div class="filaColores">3 Puntos</div>
+<div class="dosColor"></div><div class="filaColores">2 Puntos</div>
+<div class="unoColor"></div><div class="filaColores">1 Punto</div>
+<div class="ceroColor"></div><div class="filaColores">0 Puntos</div>
 </div>
 `
     document.getElementById("tablaProde").innerHTML = tablaGrupos
@@ -152,10 +163,19 @@ const abrirFecha = async (fecha) => {
     //console.log(fecha);
     var i, tabcontent, menuLinks
     tabcontent = document.getElementsByClassName("tabcontent")
+    /*************************************** */
+    /*MODIFICAR PARA HABILITAR FASES FINALES*/
+    let fechasActivas = 3;
+    /*************************************** */
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none"
     }
     menuLinks = document.getElementsByClassName("menuLinks")
+    //for (i = 0; i < menuLinks.length; i++) {
+
+    for (i = fechasActivas + 1; i < 8; i++) {
+        document.getElementById("fecha" + i).style.display = "none"
+    }
     for (i = 0; i < menuLinks.length; i++) {
         menuLinks[i].className = menuLinks[i].className.replace(" active", "")
     }

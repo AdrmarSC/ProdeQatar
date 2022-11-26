@@ -1,5 +1,5 @@
 
-import { saveProdeUnicoUser, cargaProdeUnicoUser, updateProdeUnicoResultados } from "./firebase.js"
+import { cargaProdeUnicoUser } from "./firebase.js"
 import { noPasa } from "./js/env.js"
 export const encryptObj = (obj, ps) => CryptoJS.AES.encrypt(JSON.stringify(obj), ps).toString();
 export const decryptObj = (cryp, ps) => JSON.parse(CryptoJS.AES.decrypt(cryp, ps).toString(CryptoJS.enc.Utf8));
@@ -95,7 +95,6 @@ const cargarDiseno = async () => {
     });
     document.getElementById("animacion").remove();
 }
-
 
 
 

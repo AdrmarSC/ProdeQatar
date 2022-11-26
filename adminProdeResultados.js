@@ -193,6 +193,7 @@ const abrirFecha = async (fecha) => {
         let numFecha = event.target.id.match(/\d+/g);
         actualizarResultadoTodosUsuarios(numFecha)
         console.log("actualizando");
+        console.log("fecha: ", numFecha)
     });
     //actualizar a todos los usuarios el resultado de partido
     const btnCerrarFecha = document.getElementsByClassName("button1");
@@ -423,16 +424,36 @@ const actualizarResultadoTodosUsuarios = async (numF) => {
 
                 if (obj.fechanro[fec].partidos[i].prodePartido.prode_resul === origenResultados.fechanro[fec].partidos[i].realPartido.resultado) {
                     if ((obj.fechanro[fec].partidos[i].prodePartido.prode_loc === origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) && (obj.fechanro[fec].partidos[i].prodePartido.prode_vis === origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)) {
-                        obj.fechanro[fec].partidos[i].puntos = "3";
+                        obj.fechanro[fec].partidos[i].puntosP = "3";
                         console.log("suma 3 puntos")
                     } else {
-                        obj.fechanro[fec].partidos[i].puntos = "1";
+                        obj.fechanro[fec].partidos[i].puntosP = "1";
                         console.log("suma 1 puntos")
                     }
                 } else {
-                    obj.fechanro[fec].partidos[i].puntos = "0";
+                    obj.fechanro[fec].partidos[i].puntosP = "0";
                     console.log("no suma puntos")
                 }
+                //puntos por diferencia de gol
+                let dgProde = Number(obj.fechanro[fec].partidos[i].prodePartido.prode_loc) - Number(obj.fechanro[fec].partidos[i].prodePartido.prode_vis)
+                console.log("dgProde: ", dgProde)
+                let dgReal = Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) - Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)
+                console.log("dgProde: ", dgReal)
+                if (dgProde === dgReal) {
+                    obj.fechanro[fec].partidos[i].puntosDG = "1";
+                } else {
+                    obj.fechanro[fec].partidos[i].puntosDG = "0";
+                }
+                //puntos por diferencia de gol
+                let cantGolesProde = Number(obj.fechanro[fec].partidos[i].prodePartido.prode_loc) + Number(obj.fechanro[fec].partidos[i].prodePartido.prode_vis)
+                let cantGolesReal = Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) + Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)
+                if (cantGolesProde === cantGolesReal) {
+                    obj.fechanro[fec].partidos[i].puntosCG = "1";
+                } else {
+                    obj.fechanro[fec].partidos[i].puntosCG = "0";
+                }
+                let puntos = Number(obj.fechanro[fec].partidos[i].puntosP) + Number(obj.fechanro[fec].partidos[i].puntosDG) + Number(obj.fechanro[fec].partidos[i].puntosCG)
+                obj.fechanro[fec].partidos[i].puntos = puntos;
             } else {
                 console.log("resultado no cargado. partido: " + i);
                 break;
@@ -471,30 +492,34 @@ const actualizarTablaPosiciones = async () => {
         let ceropt = 0
         let puntos = 0
         let pj = 0
-
+        let puntosExtra = 0
         usu.fechanro.every(f => {
             f.partidos.every(p => {
                 if (p.puntos === "") {
                     console.log("frenooooooooooooo")
                     console.log(f.partidos)
                     return false;
+                } else {
+                    if (Number(p.puntosP) === 3) {
+                        trespt++;
+                    }
+                    if (Number(p.puntosP) === 1) {
+                        unopt++;
+                    }
+                    if (Number(p.puntosP) === 0) {
+                        ceropt++;
+                    }
+                    pj++;
+                    console.log("p.puntosCG: ", p.puntosCG)
+                    puntosExtra = puntosExtra + Number(p.puntosCG) + Number(p.puntosDG)
+                    puntos = puntos + Number(p.puntos)
+                    return true;
                 }
-                if (Number(p.puntos) === 3) {
-                    trespt++;
-                }
-                if (Number(p.puntos) === 1) {
-                    unopt++;
-                }
-                if (Number(p.puntos) === 0) {
-                    ceropt++;
-                }
-                pj++;
-                puntos = puntos + Number(p.puntos)
-                return true;
+
             })
             return true;
         })
-        objTablaPosiciones.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "trespt": trespt, "unopt": unopt, "ceropt": ceropt })
+        objTablaPosiciones.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "trespt": trespt, "unopt": unopt, "ceropt": ceropt, "DG_CG": puntosExtra })
     });
     console.log("Obj tabla Posiciones:");
     console.log(objTablaPosiciones);

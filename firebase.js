@@ -396,6 +396,15 @@ export const updateProdeUnicoResultados = async (objeto, usuario) => {
   await setDoc(docRef, objeto);
 };
 
+export const cargaProdeUnicoResultadosAdmin = async (usuario) => {
+  let docu = usuario.toUpperCase();
+  const docRef = doc(db, "prodeUnicoResultados", docu)
+  console.log("docu => " + docu);
+  const docRecu = await getDoc(docRef);
+  //window.localStorage.setItem("prodeUnicoUser", JSON.stringify(docRecu.data())):
+  const encObj = encryptObj(JSON.stringify(docRecu.data()), noPasa);
+  window.localStorage.setItem("prodeUnicoAdmin", encObj);
+};
 //*************************************************************************************************** */
 
 
@@ -417,6 +426,27 @@ export const unificarTodosUsuariosProdeUnico = async () => {
   window.localStorage.removeItem("todosDocsProdeUnico");
   window.localStorage.setItem("todosDocsProdeUnico", JSON.stringify(todosDocsProdeUnico))
   console.log("docu => " + "todosDocsProdeUnico")
+
+};
+//*************************************************************************************************** */
+
+export const cargaUltimoDocumentoFechaPrueba = async (usuario) => {
+  //Filtra entre los documentos del usuario y se queda con el actualizado por fecha más reciente.
+  let docu = usuario;
+  const docRef = doc(db, "prodeFechasUsuarios", docu)
+  console.log("docu => " + docu);
+  const docRecu = await getDoc(docRef);
+  window.localStorage.setItem("ObjUlt_Fecha", JSON.stringify(docRecu.data()))
+
+};
+
+export const cargaUltimoDocumentoUNICOPrueba = async (usuario) => {
+  //Filtra entre los documentos del usuario y se queda con el actualizado por fecha más reciente.
+  let docu = usuario;
+  const docRef = doc(db, "prodeUnico", docu)
+  console.log("docu => " + docu);
+  const docRecu = await getDoc(docRef);
+  window.localStorage.setItem("ObjUlt_Unico", JSON.stringify(docRecu.data()))
 
 };
 //*************************************************************************************************** */

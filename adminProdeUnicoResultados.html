@@ -1,0 +1,65 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="css/prodeUnico.css" />
+        <link rel="stylesheet" href="css/loading.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <title>Prode Unico</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="navbar"></div>
+                <script>
+                    $(function () {
+                        $("#navbar").load("./menuNavbar.html")
+                    })
+                </script>
+            </nav>
+        </header>
+        <main>
+            <div id="animacion"></div>
+            <div class="Padre" id="Padre">
+                <div class="mitad1" id="mitad1">
+                    <div id="tablaProdeUnico_0"></div>
+                    <div id="tablaProdeUnico_1"></div>
+                    <div id="tablaProdeUnico_2"></div>
+                    <div id="tablaProdeUnico_3"></div>
+                    <div id="tablaProdeUnico_4"></div>
+                    <div id="tablaProdeUnico_5"></div>
+                    <div id="tablaProdeUnico_6"></div>
+                    <div id="tablaProdeUnico_7"></div>
+                    <div id="tablaProdeUnico_8"></div>
+                    <div id="tablaProdeUnico_9"></div>
+                    <div id="tablaProdeUnico_10"></div>
+                    <div id="tablaProdeUnico_11"></div>
+                    <div id="tablaProdeUnico_12"></div>
+                    <div id="tablaProdeUnico_13"></div>
+                    <center>
+                        <button class="botonUnico" role="button" id="btnGuardarProdeUnico">Guardar Prode</button>
+                    </center>
+                </div>
+
+                <div class="mitad2" id="mitad2">
+                    <div id="tablaPosCompleta_0"></div>
+                    <div id="tablaPosCompleta_1"></div>
+                    <div id="tablaPosCompleta_2"></div>
+                    <div id="tablaPosCompleta_3"></div>
+                    <div id="tablaPosCompleta_4"></div>
+                    <div id="tablaPosCompleta_5"></div>
+                    <div id="tablaPosCompleta_6"></div>
+                    <div id="tablaPosCompleta_7"></div>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="./adminProdeUnicoResultados.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    </body>
+</html>

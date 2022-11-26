@@ -61,7 +61,7 @@ const cargarTablaPosiciones = async () => {
 
     var vartablaPosiciones = `
     <div class="cuadroCompleto">
-        <div class="tituloCuadro">Tabla de posiciones</div>
+        <div class="tituloCuadro">Tabla de posiciones modo FECHA</div>
             <div class="tablaCompleta">
                 <div class="titulosParticipantes">
                     <div class="puesto">PUESTO</div>
@@ -71,7 +71,7 @@ const cargarTablaPosiciones = async () => {
                     <div class="trespuntos">3 Pts</div>
                     <div class="unpunto">1 Pts</div>
                     <div class="ceropunto">0 Pts</div>
-                    <div class="participacion">PART.</div>
+                    <div class="participacion">Extras</div>
                 </div>        
     `
     let puesto = 0;
@@ -89,7 +89,7 @@ const cargarTablaPosiciones = async () => {
                     <div class="trespuntos">${usu.trespt}</div>
                     <div class="unpunto">${usu.unopt}</div>
                     <div class="ceropunto">${usu.ceropt}</div>
-                    <div class="participacion">100%</div>
+                    <div class="participacion">${usu.DG_CG}</div>
                 </div >
            `
     })

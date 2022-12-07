@@ -1,5 +1,8 @@
 import { showMessage } from "./js/mensajes.js";
-import { updateProdeFecha, cargaUltimoDocumento, generarObjPronosticos, docCierreFecha, updateDocResultados, cargaResultados, updateResultadosUsuarios, docFechasCerradas, unificarTodosUsuario, updatePronosFechasCerradas, updateTablaPosicionesFechas } from "./firebase.js";
+import {
+    updateProdeFecha, cargaUltimoDocumento, generarObjPronosticos, docCierreFecha, updateDocResultados, cargaResultados, updateResultadosUsuarios, docFechasCerradas,
+    unificarTodosUsuario, updatePronosFechasCerradas, updateTablaPosicionesFechas, cargaProdeFechasAdmin
+} from "./firebase.js";
 import { objModeloCierreFechas } from "./js/modeloCierreFechas.js";
 import { noPasa, userAdmin, verFechasCerradas, ultUpdAdminProdeResul } from "./js/env.js"
 
@@ -55,9 +58,24 @@ const partidosFecha = async (num) => {
             <div class="fecha">DIA</div>
             <div class="hora">HORA</div>
             <div class="resMedio">PRÓNOSTICO</div>
+            <div class="extendido">EXT</div>
         </div>
 `
     for (let i = 0; i < fechaFiltrada.length; i++) {
+
+        let visible = "none";
+        let seleccionadoL;
+        let seleccionadoV;
+
+        if ((numFecha > 3) && (fechaFiltrada[i].realPartido.resultado === "E")) {
+            visible = "inline;  -webkit-appearance: none; background-color: #f0f0f0; width: 2vw;text-align: center; font-weight:bold; font-size: 16px;"
+            if (fechaFiltrada[i].realPartido.resul_ext === "L") {
+                seleccionadoL = "selected"
+            } else {
+                seleccionadoV = "selected"
+            }
+        }
+
         tablaGrupos += `
             <div class="filaPartido">
                 <div class="fecha">${fechaFiltrada[i].datosPartido.dia + " " + fechaFiltrada[i].datosPartido.fecha.substring(0, 5)}</div>
@@ -74,7 +92,12 @@ const partidosFecha = async (num) => {
                 </div>
                 <div class="visitante">${fechaFiltrada[i].datosPartido.eqvisitante}</div>
                 <!--<div class="resultado">${fechaFiltrada[i].realPartido.resul_loc + "-" + fechaFiltrada[i].realPartido.resul_vis}</div>-->
-                
+                <div class="extendido" id="ext_${i}">
+                <select id="extSelect_${i}" style="display:${visible}" class="selOpcion"> 
+                    <option value="L" ${seleccionadoL}>L</option>
+                    <option value="V" ${seleccionadoV}>V</option>
+                </select>
+                </div>
             </div>
         `
     }
@@ -142,29 +165,22 @@ const abrirFecha = async (fecha) => {
                 //console.log(event.target.innerText) //valor ingresado    
                 let divFila = event.target.id.match(/\d+/g);
                 //console.log(event.target.id)
-                let vis = document.getElementById("resVis_V" + divFila)
-                let loc = document.getElementById("resLoc_L" + divFila)
+                let vis = document.getElementById("resVis_V" + divFila).textContent
+                let loc = document.getElementById("resLoc_L" + divFila).textContent
+                let ext = document.getElementById("extSelect_" + divFila).value
+                console.log(fecha)
+                if ((!(loc === "" && vis === "")) && (fecha > 3)) {
+                    console.log("no vacio, loc: ", loc, " vis: ", vis)
+                    if (loc === vis) {
+                        document.getElementById("extSelect_" + divFila).style = "display: inline;  -webkit-appearance: none; background-color: #f0f0f0; width: 2vw;text-align: center; font-weight:bold; font-size: 16px;"
+                    }
+                    if (!(loc === vis)) {
+                        document.getElementById("extSelect_" + divFila).style = "display: none;"
+                        document.getElementById("extSelect_" + divFila).innerHTML
+                    }
+                }
+
                 console.log(event.target.id)
-                if (loc.textContent.length > 0 && vis.textContent.length > 0) {
-                    console.log("completo ok")
-                    vis.style.border = '1px solid white';
-                    loc.style.border = '1px solid white';
-                } else if (event.target.id === loc.id && event.target.innerText.length === 0) {
-                    loc.style.border = '2px solid red';
-                    if (vis.textContent.length === 0) {
-                        vis.style.border = '2px solid red';
-                    }
-                } else if (event.target.innerText.length > 0 && vis.textContent.length === 0) {
-                    vis.style.border = '2px solid red';
-                }
-                if (event.target.id === vis.id && event.target.innerText.length === 0) {
-                    vis.style.border = '2px solid red';
-                    if (loc.textContent.length === 0) {
-                        loc.style.border = '2px solid red';
-                    }
-                } else if (event.target.innerText.length > 0 && loc.textContent.length === 0) {
-                    loc.style.border = '2px solid red';
-                }
             });
         }
 
@@ -292,6 +308,7 @@ const guardarResultados = async (numF) => {
                     resultadoProde = "V"
                 } else if (datosUserResultado.fechanro[numF - 1].partidos[i].realPartido.resul_loc == datosUserResultado.fechanro[numF - 1].partidos[i].realPartido.resul_vis) {
                     resultadoProde = "E"
+                    datosUserResultado.fechanro[numF - 1].partidos[i].realPartido.resul_ext = document.getElementById("extSelect_" + i).value;
                 }
             }
             datosUserResultado.fechanro[numF - 1].partidos[i].realPartido.resultado = resultadoProde;
@@ -364,7 +381,10 @@ export const unificarProdes = async (numF) => {
 export const generarDocPronosticos = async (numF) => {
     await unificarTodosUsuario();
     let objTodosDoc = JSON.parse(window.localStorage.getItem("todosDocsUnificado"));
-    const objPronosticos = JSON.parse(JSON.stringify(objModeloCierreFechas))
+    await cargaProdeFechasAdmin()
+    //const objPronosticos = JSON.parse(JSON.stringify(objModeloCierreFechas))
+    const objPronosticos = JSON.parse(window.localStorage.getItem("PFAdmin"));
+
     let fec = numF - 1;
     for (let part in objPronosticos.fechanro[fec].partidos) {
         //Recorro por partidos de la fecha. Elimino y agrego keys del objeto
@@ -415,17 +435,37 @@ const actualizarResultadoTodosUsuarios = async (numF) => {
                 obj.fechanro[fec].partidos[i].realPartido.resul_loc = origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc
                 obj.fechanro[fec].partidos[i].realPartido.resul_vis = origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis
                 obj.fechanro[fec].partidos[i].realPartido.resultado = origenResultados.fechanro[fec].partidos[i].realPartido.resultado
+                obj.fechanro[fec].partidos[i].realPartido.resul_ext = origenResultados.fechanro[fec].partidos[i].realPartido.resul_ext || ""
 
 
                 objPronosFecCer.fechanro[fec].partidos[i].realPartido.resul_loc = origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc
                 objPronosFecCer.fechanro[fec].partidos[i].realPartido.resul_vis = origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis
                 objPronosFecCer.fechanro[fec].partidos[i].realPartido.resultado = origenResultados.fechanro[fec].partidos[i].realPartido.resultado
-                console.log(objPronosFecCer)
+                objPronosFecCer.fechanro[fec].partidos[i].realPartido.resul_ext = origenResultados.fechanro[fec].partidos[i].realPartido.resul_ext || ""
+
+                if (!(obj.fechanro[fec].partidos[i].prodePartido.prode_resul === "E")) {
+                    obj.fechanro[fec].partidos[i].prodePartido.prode_ext = ""
+                }
+
+                obj.fechanro[fec].partidos[i].puntosP = "0"
+                obj.fechanro[fec].partidos[i].puntosEXT = "0"
+                obj.fechanro[fec].partidos[i].puntosDG = "0"
+                obj.fechanro[fec].partidos[i].puntosCG = "0"
+
+                let extProde = obj.fechanro[fec].partidos[i].prodePartido.prode_ext
+                let extReal = origenResultados.fechanro[fec].partidos[i].realPartido.resul_ext || ""
 
                 if (obj.fechanro[fec].partidos[i].prodePartido.prode_resul === origenResultados.fechanro[fec].partidos[i].realPartido.resultado) {
                     if ((obj.fechanro[fec].partidos[i].prodePartido.prode_loc === origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) && (obj.fechanro[fec].partidos[i].prodePartido.prode_vis === origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)) {
-                        obj.fechanro[fec].partidos[i].puntosP = "3";
-                        console.log("suma 3 puntos")
+                        if ((fec < 3) || (origenResultados.fechanro[fec].partidos[i].realPartido.resultado != "E")) {
+                            obj.fechanro[fec].partidos[i].puntosP = "3";
+                            console.log("suma 3 puntos")
+                        } else if (extReal === extProde) {
+                            obj.fechanro[fec].partidos[i].puntosP = "2";
+                            console.log("suma 1 punto por penales")
+                        } else {
+                            obj.fechanro[fec].partidos[i].puntosP = "1";
+                        }
                     } else {
                         obj.fechanro[fec].partidos[i].puntosP = "1";
                         console.log("suma 1 puntos")
@@ -436,9 +476,8 @@ const actualizarResultadoTodosUsuarios = async (numF) => {
                 }
                 //puntos por diferencia de gol
                 let dgProde = Number(obj.fechanro[fec].partidos[i].prodePartido.prode_loc) - Number(obj.fechanro[fec].partidos[i].prodePartido.prode_vis)
-                console.log("dgProde: ", dgProde)
                 let dgReal = Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) - Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)
-                console.log("dgProde: ", dgReal)
+
                 if (dgProde === dgReal) {
                     obj.fechanro[fec].partidos[i].puntosDG = "1";
                 } else {
@@ -452,8 +491,20 @@ const actualizarResultadoTodosUsuarios = async (numF) => {
                 } else {
                     obj.fechanro[fec].partidos[i].puntosCG = "0";
                 }
-                let puntos = Number(obj.fechanro[fec].partidos[i].puntosP) + Number(obj.fechanro[fec].partidos[i].puntosDG) + Number(obj.fechanro[fec].partidos[i].puntosCG)
+
+                console.log({ extReal, extProde })
+                if ((fec > 2) && (origenResultados.fechanro[fec].partidos[i].realPartido.resultado === "E")) {
+                    if (extProde === extReal) {
+                        console.log("entre")
+                        obj.fechanro[fec].partidos[i].puntosEXT = "1";
+                    }
+                } else {
+                    obj.fechanro[fec].partidos[i].puntosEXT = "0";
+                }
+
+                let puntos = Number(obj.fechanro[fec].partidos[i].puntosP) + Number(obj.fechanro[fec].partidos[i].puntosDG) + Number(obj.fechanro[fec].partidos[i].puntosCG) + Number(obj.fechanro[fec].partidos[i].puntosEXT)
                 obj.fechanro[fec].partidos[i].puntos = puntos;
+
             } else {
                 console.log("resultado no cargado. partido: " + i);
                 break;
@@ -487,7 +538,9 @@ const actualizarTablaPosiciones = async () => {
     objTodosDocsUsuarios.forEach(usu => {
         let user = usu.user;
         user = user.substring(0, user.indexOf('@'));
+        let cincopt = 0
         let trespt = 0
+        let dospt = 0
         let unopt = 0
         let ceropt = 0
         let puntos = 0
@@ -500,13 +553,19 @@ const actualizarTablaPosiciones = async () => {
                     console.log(f.partidos)
                     return false;
                 } else {
-                    if (Number(p.puntosP) === 3) {
+                    if (Number(p.puntos) === 5) {
+                        cincopt++;
+                    }
+                    if (Number(p.puntos) === 3) {
                         trespt++;
                     }
-                    if (Number(p.puntosP) === 1) {
+                    if (Number(p.puntos) === 2) {
+                        dospt++;
+                    }
+                    if (Number(p.puntos) === 1) {
                         unopt++;
                     }
-                    if (Number(p.puntosP) === 0) {
+                    if (Number(p.puntos) === 0) {
                         ceropt++;
                     }
                     pj++;
@@ -519,7 +578,7 @@ const actualizarTablaPosiciones = async () => {
             })
             return true;
         })
-        objTablaPosiciones.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "trespt": trespt, "unopt": unopt, "ceropt": ceropt, "DG_CG": puntosExtra })
+        objTablaPosiciones.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "cincopt": cincopt, "trespt": trespt, "dospt": dospt, "unopt": unopt, "ceropt": ceropt, "DG_CG": puntosExtra })
     });
     console.log("Obj tabla Posiciones:");
     console.log(objTablaPosiciones);

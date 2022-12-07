@@ -1,4 +1,4 @@
-import { unificarTodosUsuario, cargaTablaPosicionesFechas } from "./firebase.js";
+import { unificarTodosUsuario, cargaTablaPosicionesFechas, cargaTablaPosicionesProdeUnico } from "./firebase.js";
 import { noPasa, ultUpdTablaPos } from "./js/env.js"
 
 
@@ -16,64 +16,24 @@ var colorUsuario;
 //------------------------------------------------------------------------------------------------
 // Función para crear la tabla de posiciones
 const cargarTablaPosiciones = async () => {
-    //Genero obj con puntajes de usuario
-    //await unificarTodosUsuario();
-    /*
-        objTodosDocsUsuarios = JSON.parse(window.localStorage.getItem("todosDocsUnificado"));
-        objTodosDocsUsuarios.forEach(usu => {
-            let user = usu.user;
-            user = user.substring(0, user.indexOf('@'));
-            let trespt = 0
-            let unopt = 0
-            let ceropt = 0
-            let puntos = 0
-            let pj = 0
-    
-            usu.fechanro.every(f => {
-                f.partidos.every(p => {
-                    if (p.puntos === "") {
-                        objTablaPosiciones.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "trespt": trespt, "unopt": unopt, "ceropt": ceropt })
-                        //console.log(objTablaPosiciones)
-                        return false;
-                    }
-                    if (Number(p.puntos) === 3) {
-                        trespt++;
-                    }
-                    if (Number(p.puntos) === 1) {
-                        unopt++;
-                    }
-                    if (Number(p.puntos) === 0) {
-                        ceropt++;
-                    }
-                    pj++;
-                    puntos = puntos + Number(p.puntos)
-                    return true;
-                })
-            })
-        });
-        console.log(objTablaPosiciones);
-        */
     //Busco el doc en FB con la tabla de posiciones
-    //await updateTablaPosicionesFechas(objTablaPosiciones);
-
-    objTablaPosiciones = JSON.parse(window.localStorage.getItem("tablaPosiciones"));
+    await cargaTablaPosicionesProdeUnico()
+    objTablaPosiciones = JSON.parse(window.localStorage.getItem("tablaPosicionesProdeUnico"));
     console.log(objTablaPosiciones);
 
     var vartablaPosiciones = `
-    <div class="cuadroCompleto">
-        <div class="tituloCuadro">Tabla de posiciones modo FECHA</div>
+    <div class="cuadroCompleto tablaprodeunico">
+        <div class="tituloCuadro">Tabla de posiciones modo UNICO</div>
             <div class="tablaCompleta">
                 <div class="titulosParticipantes">
                     <div class="puesto">PUESTO</div>
                     <div class="participante">PARTICIPANTE</div>
                     <div class="puntos">PUNTOS</div>
                     <div class="pj">PJ</div>
-                    <div class="cincopuntos">5 Pts</div>
                     <div class="trespuntos">3 Pts</div>
-                    <div class="dospuntos">2 Pts</div>
                     <div class="unpunto">1 Pts</div>
                     <div class="ceropunto">0 Pts</div>
-                    
+                    <div class="participacion">Extras</div>
                 </div>        
     `
     let puesto = 0;
@@ -88,11 +48,10 @@ const cargarTablaPosiciones = async () => {
                     <div class="participante">${usu.user}</div>
                     <div class="puntos">${usu.puntos}</div>
                     <div class="pj">${usu.pj}</div>
-                    <div class="cincopuntos">${usu.cincopt}</div>
                     <div class="trespuntos">${usu.trespt}</div>
-                    <div class="dospuntos">${usu.dospt}</div>
                     <div class="unpunto">${usu.unopt}</div>
                     <div class="ceropunto">${usu.ceropt}</div>
+                    <div class="participacion">${usu.DG_CG}</div>
                 </div >
            `
     })
@@ -133,7 +92,7 @@ window.onload = async () => {
                 console.log("actualizado")
                 window.localStorage.setItem("ultUpdTablaPos", ultUpdTablaPos)
                 console.log("recuperando datos")
-                await cargaTablaPosicionesFechas()
+                await cargaTablaPosicionesProdeUnico()
                 await cargarTablaPosiciones()
                 //acaaaaaaaaaaaaaa va funcion carga de tabla posiciones
                 //await cargaUltimoDocumento(usuario);

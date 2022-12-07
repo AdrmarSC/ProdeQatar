@@ -64,6 +64,7 @@ const partidosFecha = async (num) => {
             <div class="fecha">DIA</div>
             <div class="hora">HORA</div>
             <div class="resMedio">PRÓNOSTICO</div>
+            <div class="extendido">EXT</div>
             <div class="resultado">REAL</div>
             <div class="puntos">PTS</div>
         </div>
@@ -72,9 +73,9 @@ const partidosFecha = async (num) => {
         let colorResul = "transparent";
         if (fechaFiltrada[i].puntos === "") { colorResul = "transparent" } else {
             if (Number(fechaFiltrada[i].puntos) === 5) {
-                colorResul = "#5EC448" //verdeclaro;
+                colorResul = "#64C44D" //verdeclaro;
             } else if (Number(fechaFiltrada[i].puntos) === 3) {
-                colorResul = "#6BD089" //verdeclaro;
+                colorResul = "#288920" //verdeclaro;
             } else if (Number(fechaFiltrada[i].puntos) === 2) {
                 colorResul = "#0070C0" //azul;
             } else if (Number(fechaFiltrada[i].puntos) === 1) {
@@ -84,6 +85,20 @@ const partidosFecha = async (num) => {
             }
         }
 
+        let visible = "none";
+        let seleccionadoL;
+        let seleccionadoV;
+
+        if ((numFecha > 3) && (fechaFiltrada[i].prodePartido.prode_resul === "E")) {
+            visible = "inline;  -webkit-appearance: none; background-color: #f0f0f0; width: 2vw;text-align: center; font-weight:bold; font-size: 16px;"
+            if (fechaFiltrada[i].prodePartido.prode_ext === "L") {
+                seleccionadoL = "selected"
+            } else {
+                seleccionadoV = "selected"
+            }
+        }
+
+        fechaFiltrada[i].realPartido.resul_ext ? fechaFiltrada[i].realPartido.resul_ext : fechaFiltrada[i].realPartido.resul_ext = ""
 
         tablaGrupos += `
             <div class="filaPartido">
@@ -100,7 +115,13 @@ const partidosFecha = async (num) => {
                     <img src="img/equipos/${fechaFiltrada[i].datosPartido.icovisitante}.png" onerror="this.onerror=null;this.src=''" class="imgIco" />
                 </div>
                 <div class="visitante">${fechaFiltrada[i].datosPartido.eqvisitante}</div>
-                <div class="resultado">${fechaFiltrada[i].realPartido.resul_loc + "-" + fechaFiltrada[i].realPartido.resul_vis}</div>
+                <div class="extendido" id="ext_${i}">
+                <select id="extSelect_${i}" style="display:${visible}" class="selOpcion"> 
+                    <option value="L" ${seleccionadoL}>L</option>
+                    <option value="V" ${seleccionadoV}>V</option>
+                </select>
+                </div>
+                <div class="resultado">${fechaFiltrada[i].realPartido.resul_loc + "-" + fechaFiltrada[i].realPartido.resul_vis + " " + fechaFiltrada[i].realPartido.resul_ext}</div>
                 <div class="puntos" style="background-color:${colorResul}">${fechaFiltrada[i].puntos}</div>
             </div>
         `
@@ -165,7 +186,7 @@ const abrirFecha = async (fecha) => {
     tabcontent = document.getElementsByClassName("tabcontent")
     /*************************************** */
     /*MODIFICAR PARA HABILITAR FASES FINALES*/
-    let fechasActivas = 3;
+    let fechasActivas = 5;
     /*************************************** */
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none"
@@ -198,30 +219,49 @@ const abrirFecha = async (fecha) => {
             div.addEventListener('focusout', (event) => {
                 //console.log(event.target.id) //nombre del div anterior focuseado
                 //console.log(event.target.innerText) //valor ingresado    
+
+                //console.log(event.target.id)
                 let divFila = event.target.id.match(/\d+/g);
                 //console.log(event.target.id)
-                let vis = document.getElementById("resVis_V" + divFila)
-                let loc = document.getElementById("resLoc_L" + divFila)
-                console.log(event.target.id)
-                if (loc.textContent.length > 0 && vis.textContent.length > 0) {
-                    console.log("completo ok")
-                    vis.style.border = '1px solid white';
-                    loc.style.border = '1px solid white';
-                } else if (event.target.id === loc.id && event.target.innerText.length === 0) {
-                    loc.style.border = '2px solid red';
-                    if (vis.textContent.length === 0) {
-                        vis.style.border = '2px solid red';
+                let vis = document.getElementById("resVis_V" + divFila).textContent
+                let loc = document.getElementById("resLoc_L" + divFila).textContent
+                let ext = document.getElementById("extSelect_" + divFila).value
+                console.log(fecha)
+                if ((!(loc === "" && vis === "")) && (fecha > 3)) {
+                    console.log("no vacio, loc: ", loc, " vis: ", vis)
+                    if (loc === vis) {
+                        document.getElementById("extSelect_" + divFila).style = "display: inline;  -webkit-appearance: none; background-color: #f0f0f0; width: 2vw;text-align: center; font-weight:bold; font-size: 16px;"
                     }
-                } else if (event.target.innerText.length > 0 && vis.textContent.length === 0) {
-                    vis.style.border = '2px solid red';
+                    if (!(loc === vis)) {
+                        document.getElementById("extSelect_" + divFila).style = "display: none;"
+                        document.getElementById("extSelect_" + divFila).innerHTML
+                    }
+                }
+
+
+
+                let visD = document.getElementById("resVis_V" + divFila)
+                let locD = document.getElementById("resLoc_L" + divFila)
+                console.log(event.target.id)
+                if (locD.textContent.length > 0 && visD.textContent.length > 0) {
+                    console.log("completo ok")
+                    visD.style.border = '1px solid white';
+                    locD.style.border = '1px solid white';
+                } else if (event.target.id === locD.id && event.target.innerText.length === 0) {
+                    locD.style.border = '2px solid red';
+                    if (visD.textContent.length === 0) {
+                        visD.style.border = '2px solid red';
+                    }
+                } else if (event.target.innerText.length > 0 && visD.textContent.length === 0) {
+                    visD.style.border = '2px solid red';
                 }
                 if (event.target.id === vis.id && event.target.innerText.length === 0) {
-                    vis.style.border = '2px solid red';
-                    if (loc.textContent.length === 0) {
-                        loc.style.border = '2px solid red';
+                    visD.style.border = '2px solid red';
+                    if (locD.textContent.length === 0) {
+                        locD.style.border = '2px solid red';
                     }
-                } else if (event.target.innerText.length > 0 && loc.textContent.length === 0) {
-                    loc.style.border = '2px solid red';
+                } else if (event.target.innerText.length > 0 && locD.textContent.length === 0) {
+                    locD.style.border = '2px solid red';
                 }
             });
         }
@@ -306,7 +346,7 @@ window.onload = async () => {
         }
 
         datosLocal = await decryptObj(window.localStorage.getItem('objFiBdata'), noPasa);
-        document.getElementById("fecha1").onclick = abrirFecha(1);
+        document.getElementById("fecha1").onclick = abrirFecha(5);
     } else {
         document.getElementById("animacion").innerHTML = `<div>Iniciar sesión y clickear en la sección "Prode" para visualizar los partidos</div>`
     }
@@ -335,6 +375,7 @@ botones.addEventListener('click', (event) => {
 //Guardo los resultados cargados en cada fecha por usuario.
 const guardarResultados = async (numF) => {
     let camposIncompletos = true;
+    let resultExt = "";
     for (let i = 0; i < fechaFiltrada.length; i++) {
         document.getElementById("resLoc_L" + i).style.border = '1px solid white';
         document.getElementById("resVis_V" + i).style.border = '1px solid white';
@@ -356,9 +397,12 @@ const guardarResultados = async (numF) => {
                     resultadoProde = "V"
                 } else if (datosUser.fechanro[numF - 1].partidos[i].prodePartido.prode_loc == datosUser.fechanro[numF - 1].partidos[i].prodePartido.prode_vis) {
                     resultadoProde = "E"
+                    resultExt = document.getElementById("extSelect_" + i).value
+
                 }
             }
             datosUser.fechanro[numF - 1].partidos[i].prodePartido.prode_resul = resultadoProde;
+            datosUser.fechanro[numF - 1].partidos[i].prodePartido.prode_ext = resultExt;
             camposIncompletos = false;
         }
     }

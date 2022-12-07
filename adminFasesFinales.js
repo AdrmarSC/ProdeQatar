@@ -99,7 +99,7 @@ const disenoFasesFinales = async (numFecha, origenFasesFinales) => {
 //Octavos
 origenFasesFinales = JSON.parse(window.localStorage.getItem("fasesFinales"));
 //await iconosVacios(7, JSON.parse(window.localStorage.getItem("fasesFinales")));
-await disenoFasesFinales(4, JSON.parse(window.localStorage.getItem("fasesFinales")));
+await disenoFasesFinales(5, JSON.parse(window.localStorage.getItem("fasesFinales")));
 //************************************************************************************ */
 
 //click en botón Actualizar_Octavos

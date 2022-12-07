@@ -14,8 +14,8 @@ body {
     font-weight: 500 !important;
     text-align: center;
     justify-content: center;
-    max-width: 650px;
-    min-width: 650px;
+    max-width: 720px;
+    min-width: 720px;
     background-color: #8a1a3d;
 }
 
@@ -33,7 +33,7 @@ body {
 
 .titulosParticipantes {
     display: grid;
-    grid-template-columns: 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
     gap: 0px 0px;
     width: 100%;
     font-family: "Sansita", sans-serif;
@@ -47,7 +47,7 @@ body {
 }
 .filaParticipantes {
     display: grid;
-    grid-template-columns: 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
     gap: 0px 0px;
     width: 100%;
     font-family: "Sansita", sans-serif;
@@ -62,4 +62,8 @@ body {
     text-align: center;
     justify-content: center;
     font-size: 14px;
+}
+
+.tablaprodeunico {
+    background-color: #050031e0;
 }

@@ -81,29 +81,49 @@ const partidosFecha = async (num) => {
             let resultadoReal = fechaCerrada[numFecha][i].realPartido.resultado;
             let resultadoProde = fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_resul;
             let resulProde = fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc + "-" + fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis;
+            let extReal = fechaCerrada[numFecha][i].realPartido.resul_ext;
+            let extProde = fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_ext;
             let dgProde = Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc) - Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis)
             let dgReal = Number(fechaCerrada[numFecha][i].realPartido.resul_loc) - Number(fechaCerrada[numFecha][i].realPartido.resul_vis)
             let cgProde = Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc) + Number(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis)
             let cgReal = Number(fechaCerrada[numFecha][i].realPartido.resul_loc) + Number(fechaCerrada[numFecha][i].realPartido.resul_vis)
 
             let colorResul = "transparent";
-            if (resultadoReal === "") { colorResul = "transparent" } else {
-                if (resultadoReal === resultadoProde) {
-                    if (resulReal === resulProde) {//5 puntos
-                        colorResul = "#5EC448" //green;
-                    } else if (dgReal === dgProde && cgProde === cgReal) {// 3puntos 
-                        colorResul = "#1D8919" //verdeclaro;
-                    } else if (dgReal === dgProde || cgProde === cgReal) {//2 puntos
-                        colorResul = "#0070C0" //azul;
-                    } else {//1punto
-                        colorResul = "#595959" //gris  
+            if (numFecha < 4) {
+                if (resultadoReal === "") { colorResul = "transparent" } else {
+                    if (resultadoReal === resultadoProde) {
+                        if (resulReal === resulProde) {//5 puntos
+                            colorResul = "#5EC448" //green;
+                        } else if (dgReal === dgProde && cgProde === cgReal) {// 3puntos 
+                            colorResul = "#1D8919" //verdeclaro;
+                        } else if (dgReal === dgProde || cgProde === cgReal) {//2 puntos
+                            colorResul = "#0070C0" //azul;
+                        } else {//1punto
+                            colorResul = "#595959" //gris  
+                        }
+                    } else {//0 puntos
+                        colorResul = "#d5385a" //red
                     }
-                } else {//0 puntos
-                    colorResul = "#d5385a" //red
+                }
+            } else if (numFecha > 3) {
+                if (resultadoReal === "") { colorResul = "transparent" } else {
+                    if (resultadoReal === resultadoProde) {
+                        if (((resulReal === resulProde) && (resultadoReal === "E") && (extReal === extProde)) || ((resulReal === resulProde) && (resultadoReal != "E"))) {//5 puntos
+                            colorResul = "#5EC448" //verdeclaro;
+                        } else if ((dgReal === dgProde && cgProde === cgReal) || ((resulReal === resulProde) && (resultadoReal === "E") && (extReal != extProde))) {// 3puntos 
+                            colorResul = "#1D8919" //verdeclaro;
+                        } else if (dgReal === dgProde || cgProde === cgReal) {//2 puntos
+                            colorResul = "#0070C0" //azul;
+                        } else {//1punto
+                            colorResul = "#595959" //gris  
+                        }
+                    } else {//0 puntos
+                        colorResul = "#d5385a" //red
+                    }
                 }
             }
-
-            tablaGrupos += `<div class="jugadores" style="background-color:${colorResul}"> ` + `${fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc}` + ` - ` + `${fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis}` + `</div>`
+            let extendido = resultadoProde === "E" ? (String(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_ext) === "undefined" ? "" : String(fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_ext)) : "";
+            tablaGrupos += `<div class="jugadores" style="background-color:${colorResul}"> ` + `${fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_loc}` + ` - ` + `${fechaCerrada[numFecha][i].prodes[j].prodePartido.prode_vis}` + `  ` + `${extendido}` + `</div>`
         }
         tablaGrupos += `</div > `
     }
@@ -173,19 +193,19 @@ window.onload = async () => {
                     } else {
                         console.log("datos en storage actualizados")
                         actualizar = false;
-                        document.getElementById("fecha1").onclick = abrirFecha(1);
+                        document.getElementById("fecha1").onclick = abrirFecha(4);
                     }
                 } else {
                     actualizar = true;
                 }
-                document.getElementById("fecha1").onclick = abrirFecha(1);
+                document.getElementById("fecha1").onclick = abrirFecha(4);
 
                 if (actualizar) {
                     console.log("actualizado")
                     window.localStorage.setItem("ultUpdPronos", ultUpdPronos)
                     console.log("recuperando datos")
                     await docFechasCerradas();
-                    document.getElementById("fecha1").onclick = abrirFecha(1);
+                    document.getElementById("fecha1").onclick = abrirFecha(4);
                 }
             }
         } else {

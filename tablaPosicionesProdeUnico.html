@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="css/loading.css" />
+        <link rel="stylesheet" href="css/tablaPosiciones.css" />
+        <title>Tabla de Posiciones</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div id="navbar"></div>
+                <script>
+                    $(function () {
+                        $("#navbar").load("./menuNavbar.html")
+                    })
+                </script>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div id="tablaPosiciones"><div id="animacion"></div></div>
+                <div id="tablaPosiciones"></div>
+            </section>
+        </main>
+        <script type="module" src="./tablaPosicionesProdeUnico.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    </body>
+</html>

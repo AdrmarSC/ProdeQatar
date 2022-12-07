@@ -275,6 +275,7 @@ body {
     font-size: 32px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin: 10px;
 }
 .botonUnico:hover {
     background: #3cb0fd;

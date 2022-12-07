@@ -1,9 +1,17 @@
 
 /* Importart desde el archivo 11prodes*/
-import { updateProdeFecha, updateProdeFechaUnico, saveProdeUnicoUser } from "./firebase.js";
-
+import { updateProdeFecha, updateProdeFechaUnico, saveProdeUnicoUser, cargaProdeUnicoAdmin } from "./firebase.js";
+import { fechaDiego, unicoDiego, fechaPablo, unicoPablo, fechaSeba, unicoSeba, fechaAriel, unicoAriel, fechaAdri } from "./js/11prodes.js"
+//cargaProdeUnicoAdmin()
 /*
-import { fechaDiego, unicoDiego, fechaPablo, unicoPablo, fechaSeba, unicoSeba, fechaAriel, unicoAriel } from "./js/11prodes.js"
+await updateProdeFechaUnico(fechaAriel, "ARIELMORENO85@HOTMAIL.COM")
+await updateProdeFechaUnico(fechaDiego, "VILLAFANEDIEGO@GMAIL.COM")
+await updateProdeFechaUnico(fechaPablo, "PEPRIETO@GMAIL.COM")
+await updateProdeFechaUnico(fechaSeba, "SEBASV2002@HOTMAIL.COM")
+await updateProdeFechaUnico(fechaAdri, "ADRIANMARTIN@GMAIL.COM")
+*/
+/*
+
 await updateProdeFecha(fechaAriel, "ARIELMORENO85@HOTMAIL.COM", 0)
 await updateProdeFechaUnico(fechaAriel, "ARIELMORENO85@HOTMAIL.COM")
 await saveProdeUnicoUser(unicoAriel, "ARIELMORENO85@HOTMAIL.COM")
@@ -17,13 +25,14 @@ await updateProdeFechaUnico(fechaPablo, "PEPRIETO@GMAIL.COM")
 await saveProdeUnicoUser(unicoPablo, "PEPRIETO@GMAIL.COM")
 
 await updateProdeFecha(fechaSeba, "SEBASV2002@HOTMAIL.COM", 0)
-await updateProdeFechaUnico(fechaSeba, "SEBASPV2002@HOTMAIL.COM")
+await updateProdeFechaUnico(fechaSeba, "SEBASV2002@HOTMAIL.COM")
 await saveProdeUnicoUser(unicoSeba, "SEBASV2002@HOTMAIL.COM")
 */
 
 /*
 import { cargaUltimoDocumentoFechaPrueba, cargaUltimoDocumentoUNICOPrueba } from "./firebase.js";
-
+await cargaUltimoDocumentoFechaPrueba("PEPRIETO@GMAIL.COM")
+window.localStorage.setItem("ObjUlt_fecha_Pablo", window.localStorage.getItem("ObjUlt_Fecha"))
 await cargaUltimoDocumentoFechaPrueba("VILLAFANEDIEGO@GMAIL.COM")
 window.localStorage.setItem("ObjUlt_fecha_Diego", window.localStorage.getItem("ObjUlt_Fecha"))
 await cargaUltimoDocumentoFechaPrueba("SEBASV2002@HOTMAIL.COM")
@@ -32,8 +41,7 @@ await cargaUltimoDocumentoFechaPrueba("ARIELMORENO85@HOTMAIL.COM")
 window.localStorage.setItem("ObjUlt_fecha_Ariel", window.localStorage.getItem("ObjUlt_Fecha"))
 await cargaUltimoDocumentoFechaPrueba("ADRIANMARTIN@GMAIL.COM")
 window.localStorage.setItem("ObjUlt_fecha_Adri", window.localStorage.getItem("ObjUlt_Fecha"))
-await cargaUltimoDocumentoFechaPrueba("PEPRIETO@GMAIL.COM")
-window.localStorage.setItem("ObjUlt_fecha_Pablo", window.localStorage.getItem("ObjUlt_Fecha"))
+
 
 await cargaUltimoDocumentoUNICOPrueba("VILLAFANEDIEGO@GMAIL.COM")
 window.localStorage.setItem("ObjUlt_unico_Diego", window.localStorage.getItem("ObjUlt_Unico"))

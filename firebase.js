@@ -405,6 +405,54 @@ export const cargaProdeUnicoResultadosAdmin = async (usuario) => {
   const encObj = encryptObj(JSON.stringify(docRecu.data()), noPasa);
   window.localStorage.setItem("prodeUnicoAdmin", encObj);
 };
+
+export const updateResultadosUsuariosProdeUnico = async (objeto, usuario) => {
+  //Actualiza los resultados a cada usuario con sus puntajes
+  let docu = usuario.toUpperCase();
+  const docRef = doc(db, "prodeUnico", docu)
+  objeto.user_modificacion = new Date().toLocaleString();
+  objeto.timestamp = Timestamp.fromDate(new Date())
+  console.log("docu => " + docu);
+  await setDoc(docRef, objeto);
+};
+
+export const updatePronosticosProdeUnico = async (objeto) => {
+  //Actualiza los PRONOSTICOS de cada usuario
+  let docu = "docPRONOSTICOS";
+  objeto.user_modificacion = new Date().toLocaleString();
+  objeto.timestamp = Timestamp.fromDate(new Date())
+  const docRef = doc(db, "prodeUnicoResultados", docu)
+  console.log("docu => " + docu);
+  await setDoc(docRef, objeto);
+};
+
+export const cargaPronosticosProdeUnico = async () => {
+  //Actualiza los PRONOSTICOS de cada usuario
+  let docu = "docPRONOSTICOS";
+  const docRef = doc(db, "prodeUnicoResultados", docu)
+  console.log("docu => " + docu);
+  const docRecu = await getDoc(docRef);
+  window.localStorage.setItem("objPronosticoProdeUnico", JSON.stringify(docRecu.data()))
+};
+
+export const updateTablaPosicionesProdeUnico = async (objeto) => {
+  let docu = "tablaPosicionesProdeUnico"
+  objeto.user_modificacion = new Date().toLocaleString();
+  objeto.timestamp = Timestamp.fromDate(new Date())
+  console.log("docu => " + "tablaPosicionesProdeUnico")
+  const docRef = doc(db, "prodeUnicoResultados", docu)
+  await setDoc(docRef, objeto);
+  window.localStorage.setItem("tablaPosicionesProdeUnico", JSON.stringify(objeto))
+}
+
+export const cargaTablaPosicionesProdeUnico = async () => {
+  let docu = "tablaPosicionesProdeUnico";
+  const docRef = doc(db, "prodeUnicoResultados", docu)
+  console.log("docu => " + docu);
+  const docRecu = await getDoc(docRef);
+  window.localStorage.setItem("tablaPosicionesProdeUnico", JSON.stringify(docRecu.data()))
+};
+
 //*************************************************************************************************** */
 
 
@@ -449,4 +497,63 @@ export const cargaUltimoDocumentoUNICOPrueba = async (usuario) => {
   window.localStorage.setItem("ObjUlt_Unico", JSON.stringify(docRecu.data()))
 
 };
+//*************************************************************************************************** */
+
+
+export const cargaProdeUnicoAdmin = async () => {
+  let docu = "ADMINISTRADOR@ADMIN.COM";
+  const docRef = doc(db, "prodeUnicoResultados", docu)
+  console.log("docu => " + docu);
+  const docRecu = await getDoc(docRef);
+  window.localStorage.setItem("PUAdmin", JSON.stringify(docRecu.data()))
+};
+
+export const cargaProdeFechasAdmin = async () => {
+  let docu = "ADMINISTRADOR@ADMIN.COM";
+  const docRef = doc(db, "resultadoFechas", docu)
+  console.log("docu => " + docu);
+  const docRecu = await getDoc(docRef);
+  window.localStorage.setItem("PFAdmin", JSON.stringify(docRecu.data()))
+};
+
+
+
+//*************************************************************************************************** */
+export const backupDocFechasUser = async () => {
+  //Backup de usuarios Fechas
+  const colle = collection(db, "prodeFechasUsuarios")
+  const todosDocsFechas = [];
+
+  const querySnapshot = await getDocs(colle);
+  querySnapshot.forEach(async (docu) => {
+    //console.log(doc.id, " => ", doc.data());
+    todosDocsFechas.push(docu.data())
+    let docBackup = "BACKUP_8_" + docu.id;
+    console.log("docu => " + docu.id);
+    const docRefB = doc(db, "BACKUPS", docBackup)
+    await setDoc(docRefB, docu.data());
+  });
+  console.log({ todosDocsFechas });
+  window.localStorage.removeItem("todosDocsFechas8");
+  window.localStorage.setItem("todosDocsFechas8", JSON.stringify(todosDocsFechas))
+};
+
+export const backupDocUnicoUser = async () => {
+  //Backup de usuarios Fechas
+  const colle = collection(db, "prodeUnico")
+  const todosDocsUnico = [];
+  const querySnapshot = await getDocs(colle);
+  querySnapshot.forEach(async (docu) => {
+    //console.log(doc.id, " => ", doc.data());
+    todosDocsUnico.push(docu.data())
+    let docBackup = "BACKUP_UNICO8_" + docu.id;
+    console.log("docu => " + docu.id);
+    const docRefB = doc(db, "BACKUPS", docBackup)
+    await setDoc(docRefB, docu.data());
+  });
+  console.log({ todosDocsUnico });
+  window.localStorage.removeItem("todosDocsUnico8");
+  window.localStorage.setItem("todosDocsUnico8", JSON.stringify(todosDocsUnico))
+};
+
 //*************************************************************************************************** */

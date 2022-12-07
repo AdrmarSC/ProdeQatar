@@ -1,939 +1,1041 @@
 export var fechaSeba = {
+    "user": "SEBASV2002@HOTMAIL.COM",
+    "user_modificacion": "3/12/2022, 00:15:10",
+    "timestamp": {
+        "seconds": 1670037310,
+        "nanoseconds": 69000000
+    },
     "fechanro": [
         {
-            "fecha_n": 1,
             "partidos": [
                 {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
+                    "puntosCG": "0",
+                    "partido_n": 1,
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_resul": "E",
                         "prode_loc": "0",
-                        "prode_vis": "2",
-                        "prode_resul": "V",
+                        "prode_penvis": "",
                         "prode_penloc": ""
                     },
-                    "partido_n": 1,
-                    "puntos": "",
                     "datosPartido": {
-                        "fecha": "20/11/2022",
-                        "dia": "DOMINGO",
                         "icovisitante": "ecuador",
-                        "grupo": "GRUPO A",
-                        "hora": "13:00",
-                        "icolocal": "qatar",
+                        "fecha": "20/11/2022",
                         "eqvisitante": "ECUADOR",
-                        "eqlocal": "QATAR"
+                        "eqlocal": "QATAR",
+                        "icolocal": "qatar",
+                        "hora": "13:00",
+                        "grupo": "GRUPO A",
+                        "dia": "DOMINGO"
                     },
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_loc": "0"
+                    },
+                    "puntos": 0,
+                    "puntosP": "0",
                     "id": 1
                 },
                 {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "id": 2,
-                    "datosPartido": {
-                        "grupo": "GRUPO B",
-                        "dia": "LUNES",
-                        "icovisitante": "iran",
-                        "hora": "10:00",
-                        "eqvisitante": "IRÁN",
-                        "fecha": "21/11/2022",
-                        "eqlocal": "INGLATERRA",
-                        "icolocal": "inglaterra"
-                    },
-                    "puntos": "",
-                    "partido_n": 2,
                     "prodePartido": {
-                        "prode_penvis": "",
                         "prode_resul": "L",
                         "prode_loc": "2",
                         "prode_penloc": "",
+                        "prode_penvis": "",
                         "prode_vis": "0"
-                    }
+                    },
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "6",
+                        "resul_vis": "2"
+                    },
+                    "partido_n": 2,
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "fecha": "21/11/2022",
+                        "icovisitante": "iran",
+                        "eqlocal": "INGLATERRA",
+                        "hora": "10:00",
+                        "icolocal": "inglaterra",
+                        "eqvisitante": "IRÁN",
+                        "dia": "LUNES",
+                        "grupo": "GRUPO B"
+                    },
+                    "id": 2,
+                    "puntosP": "1"
                 },
                 {
                     "partido_n": 3,
-                    "id": 3,
-                    "datosPartido": {
-                        "icovisitante": "paisesbajos",
-                        "eqlocal": "SENEGAL",
-                        "grupo": "GRUPO A",
-                        "eqvisitante": "PAÍSES BAJOS",
-                        "hora": "13:00",
-                        "dia": "LUNES",
-                        "icolocal": "senegal",
-                        "fecha": "21/11/2022"
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resultado": "V",
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
                     },
-                    "puntos": "",
+                    "datosPartido": {
+                        "eqvisitante": "PAÍSES BAJOS",
+                        "icolocal": "senegal",
+                        "eqlocal": "SENEGAL",
+                        "hora": "13:00",
+                        "fecha": "21/11/2022",
+                        "icovisitante": "paisesbajos",
+                        "grupo": "GRUPO A",
+                        "dia": "LUNES"
+                    },
                     "prodePartido": {
                         "prode_vis": "2",
-                        "prode_loc": "0",
-                        "prode_resul": "V",
                         "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_loc": "0",
                         "prode_penloc": ""
                     },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    }
+                    "id": 3,
+                    "puntos": 5,
+                    "puntosDG": "1",
+                    "puntosCG": "1",
+                    "puntosP": "3"
                 },
                 {
-                    "id": 4,
                     "partido_n": 4,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "E",
+                        "resul_loc": "1",
+                        "resul_vis": "1"
+                    },
+                    "id": 4,
+                    "datosPartido": {
+                        "eqvisitante": "GALES",
+                        "hora": "16:00",
+                        "icolocal": "estadosunidos",
+                        "eqlocal": "ESTADOS UNIDOS",
+                        "dia": "LUNES",
+                        "grupo": "GRUPO B",
+                        "fecha": "21/11/2022",
+                        "icovisitante": "gales"
+                    },
+                    "puntosCG": "1",
                     "prodePartido": {
-                        "prode_vis": "1",
+                        "prode_penvis": "",
                         "prode_penloc": "",
                         "prode_resul": "E",
-                        "prode_penvis": "",
-                        "prode_loc": "1"
+                        "prode_loc": "1",
+                        "prode_vis": "1"
                     },
-                    "puntos": "",
-                    "datosPartido": {
-                        "eqlocal": "ESTADOS UNIDOS",
-                        "icovisitante": "gales",
-                        "grupo": "GRUPO B",
-                        "hora": "16:00",
-                        "eqvisitante": "GALES",
-                        "icolocal": "estadosunidos",
-                        "dia": "LUNES",
-                        "fecha": "21/11/2022"
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    }
+                    "puntosDG": "1",
+                    "puntos": 5,
+                    "puntosP": "3"
                 },
                 {
                     "datosPartido": {
-                        "icolocal": "argentina",
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "dia": "MARTES",
                         "grupo": "GRUPO C",
-                        "fecha": "22/11/2022",
+                        "icolocal": "argentina",
+                        "dia": "MARTES",
                         "icovisitante": "arabiasaudita",
+                        "eqlocal": "ARGENTINA",
+                        "eqvisitante": "ARABIA SAUDITA",
                         "hora": "07:00",
-                        "eqlocal": "ARGENTINA"
+                        "fecha": "22/11/2022"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "realPartido": {
+                        "resul_loc": "1",
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "V"
                     },
                     "partido_n": 5,
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_loc": "5"
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    },
+                    "puntosP": "0",
                     "id": 5,
-                    "puntos": ""
-                },
-                {
-                    "datosPartido": {
-                        "icovisitante": "tunez",
-                        "fecha": "22/11/2022",
-                        "hora": "10:00",
-                        "eqlocal": "DINAMARCA",
-                        "eqvisitante": "TÚNEZ",
-                        "icolocal": "dinamarca",
-                        "dia": "MARTES",
-                        "grupo": "GRUPO D"
-                    },
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    },
-                    "puntos": "",
-                    "id": 6,
-                    "partido_n": 6,
+                    "puntosDG": "0",
                     "prodePartido": {
                         "prode_vis": "0",
                         "prode_resul": "L",
+                        "prode_loc": "5",
                         "prode_penvis": "",
-                        "prode_loc": "1",
                         "prode_penloc": ""
                     }
+                },
+                {
+                    "puntosDG": "0",
+                    "id": 6,
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": "0"
+                    },
+                    "partido_n": 6,
+                    "datosPartido": {
+                        "eqlocal": "DINAMARCA",
+                        "icovisitante": "tunez",
+                        "eqvisitante": "TÚNEZ",
+                        "dia": "MARTES",
+                        "grupo": "GRUPO D",
+                        "fecha": "22/11/2022",
+                        "icolocal": "dinamarca",
+                        "hora": "10:00"
+                    },
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resul_penvis": "",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_vis": "0"
+                    },
+                    "puntos": 0,
+                    "puntosCG": "0"
                 },
                 {
                     "id": 7,
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
                     "prodePartido": {
-                        "prode_penvis": "",
+                        "prode_penloc": "",
                         "prode_vis": "2",
-                        "prode_penloc": "",
-                        "prode_resul": "V",
-                        "prode_loc": "0"
-                    },
-                    "datosPartido": {
-                        "eqvisitante": "POLONIA",
-                        "fecha": "22/11/2022",
-                        "hora": "13:00",
-                        "icolocal": "mexico",
-                        "dia": "MARTES",
-                        "eqlocal": "MÉXICO",
-                        "icovisitante": "polonia",
-                        "grupo": "GRUPO C"
-                    },
-                    "puntos": "",
-                    "partido_n": 7
-                },
-                {
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "datosPartido": {
-                        "icovisitante": "australia",
-                        "eqvisitante": "AUSTRALIA",
-                        "icolocal": "francia",
-                        "grupo": "GRUPO D",
-                        "eqlocal": "FRANCIA",
-                        "hora": "16:00",
-                        "fecha": "22/11/2022",
-                        "dia": "MARTES"
-                    },
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "3",
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_vis": "0"
-                    },
-                    "partido_n": 8,
-                    "id": 8
-                },
-                {
-                    "puntos": "",
-                    "datosPartido": {
-                        "icovisitante": "croacia",
-                        "eqvisitante": "CROACIA",
-                        "dia": "MIÉRCOLES",
-                        "grupo": "GRUPO F",
-                        "hora": "07:00",
-                        "fecha": "23/11/2022",
-                        "eqlocal": "MARRUECOS",
-                        "icolocal": "marruecos"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "id": 9,
-                    "partido_n": 9,
-                    "prodePartido": {
-                        "prode_penloc": "",
                         "prode_loc": "0",
-                        "prode_vis": "2",
                         "prode_penvis": "",
                         "prode_resul": "V"
+                    },
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "icolocal": "mexico",
+                        "eqvisitante": "POLONIA",
+                        "icovisitante": "polonia",
+                        "grupo": "GRUPO C",
+                        "fecha": "22/11/2022",
+                        "eqlocal": "MÉXICO",
+                        "dia": "MARTES",
+                        "hora": "13:00"
+                    },
+                    "puntosCG": "0",
+                    "partido_n": 7,
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resul_penloc": ""
+                    },
+                    "puntos": 0,
+                    "puntosDG": "0"
+                },
+                {
+                    "puntosP": "1",
+                    "puntos": 2,
+                    "id": 8,
+                    "partido_n": 8,
+                    "realPartido": {
+                        "resul_vis": "1",
+                        "resul_loc": "4",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "L"
+                    },
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_loc": "3",
+                        "prode_resul": "L"
+                    },
+                    "puntosDG": "1",
+                    "datosPartido": {
+                        "icolocal": "francia",
+                        "eqvisitante": "AUSTRALIA",
+                        "icovisitante": "australia",
+                        "eqlocal": "FRANCIA",
+                        "hora": "16:00",
+                        "dia": "MARTES",
+                        "grupo": "GRUPO D",
+                        "fecha": "22/11/2022"
                     }
                 },
                 {
-                    "id": 10,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
+                    "puntosCG": "0",
                     "prodePartido": {
-                        "prode_resul": "L",
+                        "prode_loc": "0",
                         "prode_penvis": "",
+                        "prode_resul": "V",
                         "prode_penloc": "",
-                        "prode_loc": "2",
-                        "prode_vis": "0"
+                        "prode_vis": "2"
                     },
                     "datosPartido": {
-                        "icovisitante": "japon",
-                        "hora": "10:00",
-                        "eqvisitante": "JAPÓN",
+                        "icolocal": "marruecos",
+                        "eqvisitante": "CROACIA",
+                        "icovisitante": "croacia",
                         "fecha": "23/11/2022",
-                        "icolocal": "alemania",
+                        "hora": "07:00",
                         "dia": "MIÉRCOLES",
-                        "eqlocal": "ALEMANIA",
-                        "grupo": "GRUPO E"
+                        "eqlocal": "MARRUECOS",
+                        "grupo": "GRUPO F"
                     },
-                    "partido_n": 10
+                    "partido_n": 9,
+                    "puntosDG": "0",
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "E",
+                        "resul_vis": "0"
+                    },
+                    "id": 9,
+                    "puntos": 0
                 },
                 {
+                    "puntos": 0,
+                    "partido_n": 10,
+                    "id": 10,
                     "realPartido": {
+                        "resul_loc": "1",
+                        "resul_vis": "2",
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": "",
                         "resul_penloc": "",
-                        "resul_loc": ""
+                        "resultado": "V"
+                    },
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "icolocal": "alemania",
+                        "eqlocal": "ALEMANIA",
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "japon",
+                        "fecha": "23/11/2022",
+                        "hora": "10:00",
+                        "grupo": "GRUPO E",
+                        "eqvisitante": "JAPÓN"
+                    },
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_loc": "2"
+                    },
+                    "puntosDG": "0"
+                },
+                {
+                    "partido_n": 11,
+                    "datosPartido": {
+                        "eqvisitante": "COSTA RICA",
+                        "icolocal": "espana",
+                        "eqlocal": "ESPAÑA",
+                        "dia": "MIÉRCOLES",
+                        "hora": "13:00",
+                        "icovisitante": "costarica",
+                        "fecha": "23/11/2022",
+                        "grupo": "GRUPO E"
                     },
                     "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_penvis": "",
-                        "prode_vis": "1",
                         "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "2",
+                        "prode_vis": "1",
                         "prode_resul": "L"
                     },
-                    "datosPartido": {
-                        "fecha": "23/11/2022",
-                        "dia": "MIÉRCOLES",
-                        "eqlocal": "ESPAÑA",
-                        "icovisitante": "costarica",
-                        "hora": "13:00",
-                        "grupo": "GRUPO E",
-                        "eqvisitante": "COSTA RICA",
-                        "icolocal": "espana"
+                    "id": 11,
+                    "realPartido": {
+                        "resul_loc": "7",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_penloc": ""
                     },
-                    "puntos": "",
-                    "partido_n": 11,
-                    "id": 11
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "puntosP": "1",
+                    "puntosCG": "0"
                 },
                 {
                     "partido_n": 12,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_vis": "0"
+                    },
+                    "datosPartido": {
+                        "eqlocal": "BÉLGICA",
+                        "grupo": "GRUPO F",
+                        "icolocal": "belgica",
+                        "hora": "16:00",
+                        "icovisitante": "canada",
+                        "eqvisitante": "CANADÁ",
+                        "fecha": "23/11/2022",
+                        "dia": "MIÉRCOLES"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "puntos": 1,
                     "prodePartido": {
+                        "prode_loc": "2",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
+                    },
+                    "puntosDG": "0",
+                    "id": 12
+                },
+                {
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_vis": "0",
+                        "resul_loc": "1"
+                    },
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "grupo": "GRUPO G",
+                        "fecha": "24/11/2022",
+                        "icolocal": "suiza",
+                        "dia": "JUEVES",
+                        "icovisitante": "camerun",
+                        "hora": "07:00",
+                        "eqlocal": "SUIZA",
+                        "eqvisitante": "CAMERÚN"
+                    },
+                    "puntosCG": "0",
+                    "partido_n": 13,
+                    "id": 13,
+                    "puntos": 0,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "E",
+                        "prode_loc": "1"
+                    },
+                    "puntosP": "0"
+                },
+                {
+                    "id": 14,
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_resul": "L",
                         "prode_penvis": "",
                         "prode_loc": "2",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_vis": "0"
+                        "prode_penloc": ""
                     },
-                    "id": 12,
-                    "puntos": "",
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "partido_n": 14,
                     "datosPartido": {
-                        "fecha": "23/11/2022",
-                        "eqlocal": "BÉLGICA",
-                        "icolocal": "belgica",
-                        "eqvisitante": "CANADÁ",
-                        "icovisitante": "canada",
-                        "dia": "MIÉRCOLES",
-                        "grupo": "GRUPO F",
-                        "hora": "16:00"
+                        "dia": "JUEVES",
+                        "hora": "10:00",
+                        "fecha": "24/11/2022",
+                        "eqvisitante": "COREA",
+                        "grupo": "GRUPO H",
+                        "icolocal": "uruguay",
+                        "eqlocal": "URUGUAY",
+                        "icovisitante": "corea"
                     },
                     "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_loc": "0",
+                        "resul_penvis": ""
                     }
                 },
                 {
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_resul": "E"
-                    },
-                    "datosPartido": {
-                        "eqlocal": "SUIZA",
-                        "icolocal": "suiza",
-                        "icovisitante": "camerun",
-                        "dia": "JUEVES",
-                        "fecha": "24/11/2022",
-                        "grupo": "GRUPO G",
-                        "eqvisitante": "CAMERÚN",
-                        "hora": "07:00"
-                    },
                     "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
-                    "id": 13,
-                    "puntos": "",
-                    "partido_n": 13
-                },
-                {
-                    "realPartido": {
+                        "resultado": "L",
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": "",
+                        "resul_vis": "2",
                         "resul_penloc": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "id": 14,
-                    "datosPartido": {
-                        "eqvisitante": "COREA",
-                        "grupo": "GRUPO H",
-                        "dia": "JUEVES",
-                        "icovisitante": "corea",
-                        "fecha": "24/11/2022",
-                        "eqlocal": "URUGUAY",
-                        "icolocal": "uruguay",
-                        "hora": "10:00"
-                    },
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_loc": "2",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 14
-                },
-                {
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
+                        "resul_loc": "3"
                     },
                     "id": 15,
+                    "puntosDG": "1",
                     "partido_n": 15,
+                    "puntosCG": "0",
+                    "puntos": 2,
+                    "datosPartido": {
+                        "hora": "13:00",
+                        "icolocal": "portugal",
+                        "grupo": "GRUPO H",
+                        "icovisitante": "ghana",
+                        "fecha": "24/11/2022",
+                        "dia": "JUEVES",
+                        "eqvisitante": "GHANA",
+                        "eqlocal": "PORTUGAL"
+                    },
                     "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_loc": "1",
                         "prode_vis": "0",
                         "prode_penvis": "",
-                        "prode_penloc": ""
+                        "prode_penloc": "",
+                        "prode_resul": "L",
+                        "prode_loc": "1"
                     },
-                    "datosPartido": {
-                        "eqvisitante": "GHANA",
-                        "dia": "JUEVES",
-                        "eqlocal": "PORTUGAL",
-                        "icovisitante": "ghana",
-                        "icolocal": "portugal",
-                        "hora": "13:00",
-                        "fecha": "24/11/2022",
-                        "grupo": "GRUPO H"
-                    },
-                    "puntos": ""
+                    "puntosP": "1"
                 },
                 {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
                     "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
                         "prode_penloc": "",
-                        "prode_loc": "5"
+                        "prode_resul": "L",
+                        "prode_loc": "5",
+                        "prode_penvis": "",
+                        "prode_vis": "1"
                     },
+                    "puntosDG": "0",
+                    "id": 16,
                     "partido_n": 16,
-                    "puntos": "",
+                    "puntos": 1,
                     "datosPartido": {
-                        "grupo": "GRUPO G",
                         "fecha": "24/11/2022",
-                        "hora": "16:00",
-                        "dia": "JUEVES",
-                        "eqlocal": "BRASIL",
-                        "icovisitante": "serbia",
                         "eqvisitante": "SERBIA",
-                        "icolocal": "brasil"
+                        "dia": "JUEVES",
+                        "grupo": "GRUPO G",
+                        "eqlocal": "BRASIL",
+                        "icolocal": "brasil",
+                        "icovisitante": "serbia",
+                        "hora": "16:00"
                     },
-                    "id": 16
+                    "puntosP": "1",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_loc": "2",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "puntosCG": "0"
                 }
-            ]
+            ],
+            "fecha_n": 1
         },
         {
             "partidos": [
                 {
-                    "id": 17,
-                    "partido_n": 17,
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_vis": "0",
-                        "prode_loc": "3"
-                    },
-                    "puntos": "",
+                    "puntosCG": "0",
                     "datosPartido": {
+                        "fecha": "25/11/2022",
                         "eqvisitante": "IRÁN",
                         "icovisitante": "iran",
-                        "dia": "VIERNES",
-                        "fecha": "25/11/2022",
+                        "hora": "07:00",
                         "grupo": "GRUPO B",
-                        "icolocal": "gales",
                         "eqlocal": "GALES",
-                        "hora": "07:00"
+                        "dia": "VIERNES",
+                        "icolocal": "gales"
                     },
+                    "partido_n": 17,
                     "realPartido": {
+                        "resul_vis": "2",
+                        "resul_penvis": "",
+                        "resultado": "V",
+                        "resul_loc": "0",
+                        "resul_penloc": ""
+                    },
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_loc": "3",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_penloc": ""
+                    },
+                    "id": 17,
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "puntosP": "0"
+                },
+                {
+                    "id": 18,
+                    "partido_n": 18,
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "puntosP": "1",
+                    "datosPartido": {
+                        "fecha": "25/11/2022",
+                        "eqlocal": "QATAR",
+                        "eqvisitante": "SENEGAL",
+                        "icovisitante": "senegal",
+                        "dia": "VIERNES",
+                        "icolocal": "qatar",
+                        "hora": "10:00",
+                        "grupo": "GRUPO A"
+                    },
+                    "prodePartido": {
+                        "prode_vis": "3",
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_penloc": ""
+                    },
+                    "puntos": 1,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "3",
+                        "resultado": "V",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
+                        "resul_loc": "1"
                     }
                 },
                 {
-                    "partido_n": 18,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "V",
-                        "prode_loc": "0",
-                        "prode_vis": "3"
-                    },
+                    "puntosDG": "1",
                     "datosPartido": {
-                        "eqlocal": "QATAR",
-                        "eqvisitante": "SENEGAL",
-                        "grupo": "GRUPO A",
-                        "icolocal": "qatar",
-                        "dia": "VIERNES",
-                        "fecha": "25/11/2022",
-                        "hora": "10:00",
-                        "icovisitante": "senegal"
-                    },
-                    "id": 18
-                },
-                {
-                    "id": 19,
-                    "puntos": "",
-                    "datosPartido": {
-                        "fecha": "25/11/2022",
-                        "dia": "VIERNES",
-                        "eqlocal": "PAÍSES BAJOS",
-                        "grupo": "GRUPO A",
                         "icovisitante": "ecuador",
-                        "eqvisitante": "ECUADOR",
+                        "eqlocal": "PAÍSES BAJOS",
                         "hora": "13:00",
+                        "dia": "VIERNES",
+                        "eqvisitante": "ECUADOR",
+                        "grupo": "GRUPO A",
+                        "fecha": "25/11/2022",
                         "icolocal": "paisesbajos"
                     },
+                    "puntosCG": "1",
+                    "puntosP": "3",
                     "realPartido": {
-                        "resultado": "",
+                        "resul_loc": "1",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
+                        "resul_vis": "1",
+                        "resultado": "E",
                         "resul_penloc": ""
                     },
+                    "id": 19,
+                    "puntos": 5,
                     "partido_n": 19,
                     "prodePartido": {
+                        "prode_penvis": "",
                         "prode_vis": "1",
                         "prode_resul": "E",
                         "prode_penloc": "",
-                        "prode_penvis": "",
                         "prode_loc": "1"
                     }
                 },
                 {
-                    "partido_n": 20,
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "puntosP": "0",
                     "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": ""
+                        "resul_vis": "0",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resultado": "E"
                     },
-                    "puntos": "",
                     "datosPartido": {
+                        "eqlocal": "INGLATERRA",
+                        "dia": "VIERNES",
+                        "icovisitante": "estadosunidos",
                         "fecha": "25/11/2022",
                         "eqvisitante": "ESTADOS UNIDOS",
-                        "dia": "VIERNES",
                         "hora": "16:00",
-                        "eqlocal": "INGLATERRA",
-                        "icolocal": "inglaterra",
                         "grupo": "GRUPO B",
-                        "icovisitante": "estadosunidos"
+                        "icolocal": "inglaterra"
                     },
                     "id": 20,
+                    "partido_n": 20,
+                    "puntosDG": "0",
                     "prodePartido": {
+                        "prode_vis": "1",
                         "prode_penloc": "",
-                        "prode_loc": "3",
                         "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_vis": "1"
+                        "prode_loc": "3",
+                        "prode_penvis": ""
                     }
                 },
                 {
-                    "partido_n": 21,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "0",
-                        "prode_vis": "1",
-                        "prode_resul": "V",
-                        "prode_penvis": ""
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "id": 21,
-                    "puntos": "",
                     "datosPartido": {
-                        "dia": "SÁBADO",
-                        "hora": "07:00",
                         "eqvisitante": "AUSTRALIA",
-                        "grupo": "GRUPO D",
+                        "hora": "07:00",
+                        "dia": "SÁBADO",
                         "icovisitante": "australia",
                         "eqlocal": "TÚNEZ",
                         "icolocal": "tunez",
-                        "fecha": "26/11/2022"
-                    }
-                },
-                {
+                        "fecha": "26/11/2022",
+                        "grupo": "GRUPO D"
+                    },
+                    "id": 21,
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
+                        "resul_loc": "0",
                         "resul_penloc": "",
-                        "resultado": "",
+                        "resultado": "V",
+                        "resul_vis": "1",
                         "resul_penvis": ""
                     },
-                    "partido_n": 22,
-                    "puntos": "",
-                    "id": 22,
-                    "datosPartido": {
-                        "grupo": "GRUPO C",
-                        "icovisitante": "arabiasaudita",
-                        "icolocal": "polonia",
-                        "fecha": "26/11/2022",
-                        "hora": "10:00",
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "dia": "SÁBADO",
-                        "eqlocal": "POLONIA"
-                    },
+                    "puntosCG": "1",
+                    "puntosDG": "1",
+                    "puntos": 5,
                     "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_loc": "2",
-                        "prode_penloc": ""
-                    }
-                },
-                {
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_resul": "L"
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "partido_n": 23,
-                    "datosPartido": {
-                        "grupo": "GRUPO D",
-                        "icolocal": "francia",
-                        "icovisitante": "dinamarca",
-                        "eqvisitante": "DINAMARCA",
-                        "fecha": "26/11/2022",
-                        "eqlocal": "FRANCIA",
-                        "hora": "13:00",
-                        "dia": "SÁBADO"
-                    },
-                    "id": 23
-                },
-                {
-                    "datosPartido": {
-                        "icovisitante": "mexico",
-                        "hora": "16:00",
-                        "eqvisitante": "MÉXICO",
-                        "eqlocal": "ARGENTINA",
-                        "dia": "SÁBADO",
-                        "fecha": "26/11/2022",
-                        "grupo": "GRUPO C",
-                        "icolocal": "argentina"
-                    },
-                    "puntos": "",
-                    "partido_n": 24,
-                    "id": 24,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "prodePartido": {
-                        "prode_loc": "3",
+                        "prode_resul": "V",
                         "prode_penloc": "",
                         "prode_penvis": "",
                         "prode_vis": "1",
-                        "prode_resul": "L"
-                    }
+                        "prode_loc": "0"
+                    },
+                    "partido_n": 21,
+                    "puntosP": "3"
                 },
                 {
                     "realPartido": {
-                        "resultado": "",
+                        "resul_loc": "2",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
+                        "resul_vis": "0",
+                        "resultado": "L",
                         "resul_penvis": ""
                     },
+                    "id": 22,
+                    "puntosP": "3",
+                    "partido_n": 22,
+                    "puntosCG": "1",
+                    "datosPartido": {
+                        "eqlocal": "POLONIA",
+                        "icolocal": "polonia",
+                        "icovisitante": "arabiasaudita",
+                        "fecha": "26/11/2022",
+                        "eqvisitante": "ARABIA SAUDITA",
+                        "grupo": "GRUPO C",
+                        "hora": "10:00",
+                        "dia": "SÁBADO"
+                    },
+                    "puntosDG": "1",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penvis": ""
+                    },
+                    "puntos": 5
+                },
+                {
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "2",
+                        "resul_vis": "1",
+                        "resul_penvis": "",
+                        "resultado": "L"
+                    },
+                    "datosPartido": {
+                        "eqvisitante": "DINAMARCA",
+                        "eqlocal": "FRANCIA",
+                        "icovisitante": "dinamarca",
+                        "icolocal": "francia",
+                        "hora": "13:00",
+                        "dia": "SÁBADO",
+                        "grupo": "GRUPO D",
+                        "fecha": "26/11/2022"
+                    },
+                    "partido_n": 23,
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penvis": ""
+                    },
+                    "id": 23,
+                    "puntos": 1,
+                    "puntosP": "1",
+                    "puntosCG": "0"
+                },
+                {
+                    "puntosDG": "1",
+                    "partido_n": 24,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_loc": "2",
+                        "resul_penloc": ""
+                    },
+                    "id": 24,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_loc": "3"
+                    },
+                    "datosPartido": {
+                        "icolocal": "argentina",
+                        "eqlocal": "ARGENTINA",
+                        "fecha": "26/11/2022",
+                        "hora": "16:00",
+                        "icovisitante": "mexico",
+                        "dia": "SÁBADO",
+                        "eqvisitante": "MÉXICO",
+                        "grupo": "GRUPO C"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "puntos": 2
+                },
+                {
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_vis": "1",
+                        "resultado": "V",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 25,
+                    "puntosDG": "0",
                     "datosPartido": {
                         "hora": "07:00",
                         "icolocal": "japon",
-                        "dia": "DOMINGO",
+                        "icovisitante": "costarica",
+                        "eqvisitante": "COSTA RICA",
+                        "eqlocal": "JAPÓN",
                         "fecha": "27/11/2022",
                         "grupo": "GRUPO E",
-                        "eqlocal": "JAPÓN",
-                        "icovisitante": "costarica",
-                        "eqvisitante": "COSTA RICA"
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "0"
-                    },
-                    "id": 25,
-                    "partido_n": 25
-                },
-                {
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_vis": "0"
-                    },
-                    "datosPartido": {
-                        "fecha": "27/11/2022",
-                        "icolocal": "belgica",
-                        "dia": "DOMINGO",
-                        "eqvisitante": "MARRUECOS",
-                        "icovisitante": "marruecos",
-                        "grupo": "GRUPO F",
-                        "hora": "10:00",
-                        "eqlocal": "BÉLGICA"
-                    },
-                    "puntos": "",
-                    "partido_n": 26,
-                    "id": 26
-                },
-                {
-                    "id": 27,
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_vis": "1"
-                    },
-                    "partido_n": 27,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "datosPartido": {
-                        "eqlocal": "CROACIA",
-                        "icovisitante": "canada",
-                        "icolocal": "croacia",
-                        "hora": "13:00",
-                        "grupo": "GRUPO F",
-                        "eqvisitante": "CANADÁ",
-                        "fecha": "27/11/2022",
                         "dia": "DOMINGO"
                     },
-                    "puntos": ""
+                    "id": 25,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_penvis": ""
+                    },
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "puntos": 0
                 },
                 {
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    },
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "eqlocal": "ESPAÑA",
-                        "icovisitante": "alemania",
-                        "dia": "DOMINGO",
-                        "icolocal": "espana",
-                        "fecha": "27/11/2022",
-                        "eqvisitante": "ALEMANIA",
-                        "grupo": "GRUPO E"
-                    },
+                    "puntosDG": "0",
+                    "puntosCG": "1",
                     "prodePartido": {
-                        "prode_resul": "E",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
                         "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_vis": "1",
+                        "prode_loc": "2",
                         "prode_penloc": ""
                     },
-                    "id": 28,
-                    "puntos": "",
-                    "partido_n": 28
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resultado": "V",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "2"
+                    },
+                    "id": 26,
+                    "puntos": 1,
+                    "datosPartido": {
+                        "eqlocal": "BÉLGICA",
+                        "eqvisitante": "MARRUECOS",
+                        "dia": "DOMINGO",
+                        "icolocal": "belgica",
+                        "fecha": "27/11/2022",
+                        "hora": "10:00",
+                        "icovisitante": "marruecos",
+                        "grupo": "GRUPO F"
+                    },
+                    "puntosP": "0",
+                    "partido_n": 26
+                },
+                {
+                    "puntosDG": "0",
+                    "partido_n": 27,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "4",
+                        "resul_vis": "1",
+                        "resul_penloc": "",
+                        "resultado": "L"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_loc": "2"
+                    },
+                    "datosPartido": {
+                        "icovisitante": "canada",
+                        "fecha": "27/11/2022",
+                        "dia": "DOMINGO",
+                        "grupo": "GRUPO F",
+                        "eqlocal": "CROACIA",
+                        "icolocal": "croacia",
+                        "eqvisitante": "CANADÁ",
+                        "hora": "13:00"
+                    },
+                    "id": 27,
+                    "puntos": 1
                 },
                 {
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
                         "resul_penloc": "",
-                        "resul_penvis": ""
+                        "resul_penvis": "",
+                        "resul_loc": "1",
+                        "resul_vis": "1",
+                        "resultado": "E"
                     },
-                    "puntos": "",
+                    "puntosDG": "1",
+                    "puntos": 5,
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "icovisitante": "alemania",
+                        "fecha": "27/11/2022",
+                        "eqlocal": "ESPAÑA",
+                        "icolocal": "espana",
+                        "grupo": "GRUPO E",
+                        "dia": "DOMINGO",
+                        "eqvisitante": "ALEMANIA"
+                    },
                     "prodePartido": {
+                        "prode_vis": "1",
                         "prode_penvis": "",
                         "prode_penloc": "",
                         "prode_loc": "1",
-                        "prode_vis": "1",
                         "prode_resul": "E"
                     },
-                    "id": 29,
-                    "datosPartido": {
-                        "eqvisitante": "SERBIA",
-                        "grupo": "GRUPO G",
-                        "dia": "LUNES",
-                        "eqlocal": "CAMERÚN",
-                        "icovisitante": "serbia",
-                        "icolocal": "camerun",
-                        "hora": "07:00",
-                        "fecha": "28/11/2022"
-                    },
-                    "partido_n": 29
+                    "id": 28,
+                    "puntosCG": "1",
+                    "partido_n": 28,
+                    "puntosP": "3"
                 },
                 {
-                    "partido_n": 30,
-                    "id": 30,
-                    "puntos": "",
+                    "datosPartido": {
+                        "eqlocal": "CAMERÚN",
+                        "dia": "LUNES",
+                        "icolocal": "camerun",
+                        "eqvisitante": "SERBIA",
+                        "icovisitante": "serbia",
+                        "grupo": "GRUPO G",
+                        "fecha": "28/11/2022",
+                        "hora": "07:00"
+                    },
+                    "id": 29,
+                    "puntosCG": "0",
                     "prodePartido": {
                         "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_resul": "E",
+                        "prode_penloc": "",
                         "prode_loc": "1",
-                        "prode_penloc": ""
+                        "prode_resul": "E",
+                        "prode_penvis": ""
                     },
+                    "puntosP": "1",
+                    "puntos": 2,
+                    "puntosDG": "1",
+                    "partido_n": 29,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
+                        "resultado": "E",
+                        "resul_loc": "3",
+                        "resul_vis": "3",
                         "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "datosPartido": {
-                        "icovisitante": "ghana",
-                        "dia": "LUNES",
-                        "fecha": "28/11/2022",
-                        "eqlocal": "COREA",
-                        "eqvisitante": "GHANA",
-                        "icolocal": "corea",
-                        "hora": "10:00",
-                        "grupo": "GRUPO H"
+                        "resul_penloc": ""
                     }
                 },
                 {
+                    "puntosCG": "0",
                     "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                        "resul_vis": "3",
+                        "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_loc": "2"
                     },
+                    "puntosP": "0",
+                    "puntosDG": "0",
+                    "partido_n": 30,
+                    "id": 30,
+                    "puntos": 0,
                     "datosPartido": {
-                        "fecha": "28/11/2022",
-                        "hora": "13:00",
-                        "icovisitante": "suiza",
-                        "icolocal": "brasil",
-                        "eqvisitante": "SUIZA",
+                        "eqvisitante": "GHANA",
+                        "eqlocal": "COREA",
                         "dia": "LUNES",
-                        "eqlocal": "BRASIL",
-                        "grupo": "GRUPO G"
+                        "grupo": "GRUPO H",
+                        "fecha": "28/11/2022",
+                        "icovisitante": "ghana",
+                        "hora": "10:00",
+                        "icolocal": "corea"
                     },
-                    "id": 31,
-                    "puntos": "",
                     "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_penloc": ""
+                    }
+                },
+                {
+                    "id": 31,
+                    "puntos": 2,
+                    "partido_n": 31,
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_loc": "1",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
+                    },
+                    "prodePartido": {
+                        "prode_vis": "1",
                         "prode_penvis": "",
                         "prode_penloc": "",
                         "prode_loc": "2",
-                        "prode_vis": "1",
                         "prode_resul": "L"
                     },
-                    "partido_n": 31
+                    "puntosP": "1",
+                    "datosPartido": {
+                        "eqlocal": "BRASIL",
+                        "grupo": "GRUPO G",
+                        "icolocal": "brasil",
+                        "eqvisitante": "SUIZA",
+                        "hora": "13:00",
+                        "dia": "LUNES",
+                        "fecha": "28/11/2022",
+                        "icovisitante": "suiza"
+                    },
+                    "puntosCG": "0",
+                    "puntosDG": "1"
                 },
                 {
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "icovisitante": "uruguay",
-                        "eqvisitante": "URUGUAY",
-                        "icolocal": "portugal",
-                        "eqlocal": "PORTUGAL",
-                        "fecha": "28/11/2022",
-                        "grupo": "GRUPO H",
-                        "dia": "LUNES"
-                    },
                     "prodePartido": {
-                        "prode_vis": "0",
                         "prode_penvis": "",
-                        "prode_loc": "1",
                         "prode_resul": "L",
+                        "prode_loc": "1",
+                        "prode_vis": "0",
                         "prode_penloc": ""
                     },
-                    "partido_n": 32,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    },
                     "id": 32,
-                    "puntos": ""
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resul_vis": "0",
+                        "resul_penloc": ""
+                    },
+                    "datosPartido": {
+                        "icovisitante": "uruguay",
+                        "dia": "LUNES",
+                        "icolocal": "portugal",
+                        "eqvisitante": "URUGUAY",
+                        "fecha": "28/11/2022",
+                        "grupo": "GRUPO H",
+                        "hora": "16:00",
+                        "eqlocal": "PORTUGAL"
+                    },
+                    "puntos": 1,
+                    "partido_n": 32,
+                    "puntosP": "1",
+                    "puntosCG": "0"
                 }
             ],
             "fecha_n": 2
@@ -943,413 +1045,330 @@ export var fechaSeba = {
             "partidos": [
                 {
                     "datosPartido": {
-                        "grupo": "GRUPO A",
-                        "eqvisitante": "QATAR",
-                        "eqlocal": "PAÍSES BAJOS",
-                        "dia": "MARTES",
-                        "fecha": "29/11/2022",
                         "hora": "12:00",
+                        "dia": "MARTES",
                         "icolocal": "paisesbajos",
+                        "eqvisitante": "QATAR",
+                        "fecha": "29/11/2022",
+                        "grupo": "GRUPO A",
+                        "eqlocal": "PAÍSES BAJOS",
                         "icovisitante": "qatar"
                     },
-                    "partido_n": 33,
+                    "puntosDG": "0",
+                    "puntos": 1,
                     "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
+                        "resultado": "L",
                         "resul_penvis": "",
+                        "resul_loc": "2",
                         "resul_penloc": "",
-                        "resul_vis": ""
+                        "resul_vis": "0"
                     },
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "0",
-                        "prode_loc": "3",
                         "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_penvis": "",
+                        "prode_loc": "3",
                         "prode_penloc": ""
                     },
-                    "id": 33,
-                    "puntos": ""
+                    "partido_n": 33,
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "id": 33
                 },
                 {
-                    "id": 34,
+                    "datosPartido": {
+                        "icovisitante": "senegal",
+                        "hora": "12:00",
+                        "eqvisitante": "SENEGAL",
+                        "dia": "MARTES",
+                        "icolocal": "ecuador",
+                        "eqlocal": "ECUADOR",
+                        "grupo": "GRUPO A",
+                        "fecha": "29/11/2022"
+                    },
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "1"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 0,
                     "prodePartido": {
-                        "prode_loc": "1",
                         "prode_penloc": "",
-                        "prode_penvis": "",
                         "prode_vis": "1",
+                        "prode_loc": "1",
+                        "prode_penvis": "",
                         "prode_resul": "E"
                     },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "puntos": "",
+                    "puntosP": "0",
                     "partido_n": 34,
-                    "datosPartido": {
-                        "grupo": "GRUPO A",
-                        "eqlocal": "ECUADOR",
-                        "fecha": "29/11/2022",
-                        "hora": "12:00",
-                        "icolocal": "ecuador",
-                        "dia": "MARTES",
-                        "icovisitante": "senegal",
-                        "eqvisitante": "SENEGAL"
-                    }
+                    "id": 34,
+                    "puntosDG": "0"
                 },
                 {
-                    "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_loc": "1",
-                        "prode_resul": "V",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 35,
-                    "id": 35,
-                    "puntos": "",
+                    "puntos": 2,
                     "realPartido": {
+                        "resultado": "V",
                         "resul_penvis": "",
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_loc": "0",
+                        "resul_vis": "3"
                     },
                     "datosPartido": {
-                        "eqvisitante": "INGLATERRA",
-                        "icolocal": "gales",
-                        "dia": "MARTES",
                         "hora": "16:00",
-                        "eqlocal": "GALES",
-                        "grupo": "GRUPO B",
                         "icovisitante": "inglaterra",
-                        "fecha": "29/11/2022"
-                    }
-                },
-                {
-                    "datosPartido": {
+                        "icolocal": "gales",
+                        "eqvisitante": "INGLATERRA",
                         "dia": "MARTES",
-                        "eqvisitante": "ESTADOS UNIDOS",
-                        "hora": "16:00",
-                        "icovisitante": "estadosunidos",
-                        "icolocal": "iran",
-                        "eqlocal": "IRÁN",
                         "fecha": "29/11/2022",
-                        "grupo": "GRUPO B"
+                        "grupo": "GRUPO B",
+                        "eqlocal": "GALES"
                     },
-                    "id": 36,
-                    "partido_n": 36,
-                    "puntos": "",
+                    "id": 35,
+                    "puntosCG": "1",
+                    "partido_n": 35,
+                    "puntosDG": "0",
+                    "puntosP": "1",
                     "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "0",
-                        "prode_resul": "V"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 37,
-                    "datosPartido": {
-                        "eqlocal": "TÚNEZ",
-                        "hora": "12:00",
-                        "fecha": "30/11/2022",
-                        "dia": "MIÉRCOLES",
-                        "eqvisitante": "FRANCIA",
-                        "grupo": "GRUPO D",
-                        "icolocal": "tunez",
-                        "icovisitante": "francia"
-                    },
-                    "partido_n": 37,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "0",
-                        "prode_penloc": "",
-                        "prode_vis": "3",
                         "prode_resul": "V",
+                        "prode_vis": "2",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
                         "prode_penvis": ""
                     }
                 },
                 {
-                    "partido_n": 38,
+                    "prodePartido": {
+                        "prode_vis": "2",
+                        "prode_resul": "V",
+                        "prode_loc": "0",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    },
                     "realPartido": {
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": ""
+                        "resul_loc": "0",
+                        "resul_vis": "1",
+                        "resultado": "V",
+                        "resul_penvis": ""
                     },
-                    "puntos": "",
                     "datosPartido": {
-                        "eqlocal": "AUSTRALIA",
-                        "eqvisitante": "DINAMARCA",
-                        "grupo": "GRUPO D",
-                        "icovisitante": "dinamarca",
-                        "dia": "MIÉRCOLES",
-                        "fecha": "30/11/2022",
-                        "icolocal": "australia",
-                        "hora": "12:00"
+                        "icolocal": "iran",
+                        "hora": "16:00",
+                        "eqlocal": "IRÁN",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "icovisitante": "estadosunidos",
+                        "dia": "MARTES",
+                        "fecha": "29/11/2022",
+                        "grupo": "GRUPO B"
                     },
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "E"
-                    },
-                    "id": 38
+                    "puntosP": "1",
+                    "puntosDG": "0",
+                    "id": 36,
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "partido_n": 36
                 },
                 {
-                    "partido_n": 39,
                     "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
+                        "resul_vis": "0",
+                        "resultado": "L",
+                        "resul_loc": "1",
                         "resul_penloc": "",
-                        "resul_loc": ""
+                        "resul_penvis": ""
+                    },
+                    "id": 37,
+                    "puntosDG": "0",
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "datosPartido": {
+                        "fecha": "30/11/2022",
+                        "hora": "12:00",
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "francia",
+                        "eqvisitante": "FRANCIA",
+                        "eqlocal": "TÚNEZ",
+                        "icolocal": "tunez",
+                        "grupo": "GRUPO D"
                     },
                     "prodePartido": {
-                        "prode_penloc": "",
                         "prode_resul": "V",
-                        "prode_vis": "2",
+                        "prode_vis": "3",
                         "prode_penvis": "",
+                        "prode_penloc": "",
                         "prode_loc": "0"
+                    },
+                    "partido_n": 37,
+                    "puntosCG": "0"
+                },
+                {
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "id": 38,
+                    "puntos": 0,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "E",
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_penloc": ""
+                    },
+                    "partido_n": 38,
+                    "realPartido": {
+                        "resul_loc": "1",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "0"
+                    },
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "fecha": "30/11/2022",
+                        "grupo": "GRUPO D",
+                        "eqvisitante": "DINAMARCA",
+                        "eqlocal": "AUSTRALIA",
+                        "dia": "MIÉRCOLES",
+                        "icolocal": "australia",
+                        "hora": "12:00",
+                        "icovisitante": "dinamarca"
+                    }
+                },
+                {
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "2",
+                        "prode_loc": "0",
+                        "prode_resul": "V"
+                    },
+                    "id": 39,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_vis": "2",
+                        "resul_penvis": "",
+                        "resultado": "V"
                     },
                     "datosPartido": {
                         "icolocal": "polonia",
                         "grupo": "GRUPO C",
-                        "eqvisitante": "ARGENTINA",
-                        "hora": "16:00",
-                        "eqlocal": "POLONIA",
-                        "dia": "MIÉRCOLES",
                         "icovisitante": "argentina",
-                        "fecha": "30/11/2022"
+                        "fecha": "30/11/2022",
+                        "dia": "MIÉRCOLES",
+                        "eqlocal": "POLONIA",
+                        "hora": "16:00",
+                        "eqvisitante": "ARGENTINA"
                     },
-                    "id": 39,
-                    "puntos": ""
+                    "puntosDG": "1",
+                    "puntosCG": "1",
+                    "puntosP": "3",
+                    "partido_n": 39,
+                    "puntos": 5
                 },
                 {
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "partido_n": 40,
                     "datosPartido": {
-                        "icolocal": "arabiasaudita",
-                        "grupo": "GRUPO C",
                         "hora": "16:00",
                         "icovisitante": "mexico",
-                        "dia": "MIÉRCOLES",
                         "fecha": "30/11/2022",
+                        "grupo": "GRUPO C",
+                        "dia": "MIÉRCOLES",
+                        "icolocal": "arabiasaudita",
                         "eqvisitante": "MÉXICO",
                         "eqlocal": "ARABIA SAUDITA"
                     },
                     "id": 40,
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resul_penloc": ""
+                    },
+                    "puntosCG": "0",
                     "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_resul": "E",
-                        "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_loc": "1"
-                    }
+                        "prode_resul": "E",
+                        "prode_loc": "1",
+                        "prode_penvis": "",
+                        "prode_vis": "1"
+                    },
+                    "puntosDG": "0",
+                    "partido_n": 40
                 },
                 {
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resul_vis": "0",
+                        "resultado": "E"
+                    },
+                    "partido_n": 41,
+                    "puntos": 2,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_resul": "E",
+                        "prode_vis": "1"
+                    },
+                    "puntosDG": "1",
                     "datosPartido": {
                         "icovisitante": "belgica",
                         "eqlocal": "CROACIA",
-                        "icolocal": "croacia",
                         "hora": "12:00",
-                        "eqvisitante": "BÉLGICA",
                         "dia": "JUEVES",
                         "fecha": "01/12/2022",
+                        "eqvisitante": "BÉLGICA",
+                        "icolocal": "croacia",
                         "grupo": "GRUPO F"
                     },
-                    "id": 41,
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_resul": "E",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "1"
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
-                    "partido_n": 41,
-                    "puntos": ""
+                    "puntosP": "1",
+                    "id": 41
                 },
                 {
-                    "id": 42,
-                    "partido_n": 42,
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_penloc": "",
-                        "prode_resul": "L"
-                    },
-                    "puntos": "",
                     "datosPartido": {
-                        "dia": "JUEVES",
                         "eqvisitante": "MARRUECOS",
                         "icovisitante": "marruecos",
-                        "hora": "12:00",
                         "icolocal": "canada",
-                        "fecha": "01/12/2022",
-                        "eqlocal": "CANADÁ",
-                        "grupo": "GRUPO F"
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    }
-                },
-                {
-                    "prodePartido": {
-                        "prode_loc": "0",
-                        "prode_resul": "V",
-                        "prode_penloc": "",
-                        "prode_vis": "2",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 43,
-                    "id": 43,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "puntos": "",
-                    "datosPartido": {
                         "dia": "JUEVES",
-                        "icolocal": "japon",
-                        "icovisitante": "espana",
                         "fecha": "01/12/2022",
-                        "hora": "16:00",
-                        "eqvisitante": "ESPAÑA",
-                        "eqlocal": "JAPÓN",
-                        "grupo": "GRUPO E"
-                    }
-                },
-                {
-                    "datosPartido": {
-                        "fecha": "01/12/2022",
-                        "hora": "16:00",
-                        "grupo": "GRUPO E",
-                        "dia": "JUEVES",
-                        "icolocal": "costarica",
-                        "icovisitante": "alemania",
-                        "eqlocal": "COSTA RICA",
-                        "eqvisitante": "ALEMANIA"
-                    },
-                    "partido_n": 44,
-                    "id": 44,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "0",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "V",
-                        "prode_vis": "4"
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    }
-                },
-                {
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_resul": "V",
-                        "prode_vis": "2",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 45,
-                    "id": 45,
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": ""
-                    },
-                    "datosPartido": {
-                        "eqvisitante": "PORTUGAL",
-                        "icovisitante": "portugal",
-                        "icolocal": "corea",
-                        "dia": "VIERNES",
-                        "fecha": "02/12/2022",
-                        "grupo": "GRUPO H",
-                        "eqlocal": "COREA",
-                        "hora": "12:00"
-                    },
-                    "puntos": ""
-                },
-                {
-                    "datosPartido": {
+                        "grupo": "GRUPO F",
                         "hora": "12:00",
-                        "icolocal": "ghana",
-                        "grupo": "GRUPO H",
-                        "fecha": "02/12/2022",
-                        "dia": "VIERNES",
-                        "icovisitante": "uruguay",
-                        "eqlocal": "GHANA",
-                        "eqvisitante": "URUGUAY"
+                        "eqlocal": "CANADÁ"
                     },
-                    "puntos": "",
-                    "partido_n": 46,
+                    "id": 42,
                     "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_resul": "E",
-                        "prode_penloc": "",
                         "prode_loc": "1",
-                        "prode_penvis": ""
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_vis": "0"
                     },
+                    "partido_n": 42,
+                    "puntosP": "0",
                     "realPartido": {
-                        "resul_vis": "",
+                        "resul_loc": "1",
                         "resul_penvis": "",
-                        "resul_loc": "",
                         "resul_penloc": "",
-                        "resultado": ""
+                        "resultado": "V",
+                        "resul_vis": "2"
                     },
-                    "id": 46
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "puntosDG": "0"
                 },
                 {
-                    "puntos": "",
-                    "id": 47,
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "id": 43,
+                    "partido_n": 43,
                     "prodePartido": {
                         "prode_vis": "2",
                         "prode_penvis": "",
@@ -1357,548 +1376,681 @@ export var fechaSeba = {
                         "prode_loc": "0",
                         "prode_resul": "V"
                     },
+                    "puntosP": "0",
                     "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
+                        "resul_loc": "2",
                         "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_vis": ""
+                        "resultado": "L",
+                        "resul_vis": "1"
                     },
                     "datosPartido": {
+                        "fecha": "01/12/2022",
+                        "grupo": "GRUPO E",
+                        "icovisitante": "espana",
+                        "dia": "JUEVES",
                         "hora": "16:00",
-                        "dia": "VIERNES",
-                        "eqvisitante": "BRASIL",
-                        "icolocal": "camerun",
-                        "icovisitante": "brasil",
-                        "eqlocal": "CAMERÚN",
-                        "grupo": "GRUPO G",
-                        "fecha": "02/12/2022"
-                    },
-                    "partido_n": 47
+                        "icolocal": "japon",
+                        "eqlocal": "JAPÓN",
+                        "eqvisitante": "ESPAÑA"
+                    }
                 },
                 {
-                    "partido_n": 48,
-                    "datosPartido": {
-                        "eqvisitante": "SUIZA",
-                        "fecha": "02/12/2022",
-                        "hora": "16:00",
-                        "dia": "VIERNES",
-                        "eqlocal": "SERBIA",
-                        "icovisitante": "suiza",
-                        "icolocal": "serbia",
-                        "grupo": "GRUPO G"
+                    "prodePartido": {
+                        "prode_loc": "0",
+                        "prode_penloc": "",
+                        "prode_resul": "V",
+                        "prode_vis": "4",
+                        "prode_penvis": ""
                     },
-                    "id": 48,
-                    "puntos": "",
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "id": 44,
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "dia": "JUEVES",
+                        "fecha": "01/12/2022",
+                        "eqvisitante": "ALEMANIA",
+                        "icovisitante": "alemania",
+                        "hora": "16:00",
+                        "eqlocal": "COSTA RICA",
+                        "grupo": "GRUPO E",
+                        "icolocal": "costarica"
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "4",
+                        "resultado": "V",
+                        "resul_loc": "2"
+                    },
+                    "puntosDG": "0",
+                    "partido_n": 44
+                },
+                {
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_loc": "1",
+                        "prode_vis": "2"
+                    },
+                    "puntos": 1,
+                    "datosPartido": {
+                        "icolocal": "corea",
+                        "eqlocal": "COREA",
+                        "grupo": "GRUPO H",
+                        "icovisitante": "portugal",
+                        "dia": "VIERNES",
+                        "hora": "12:00",
+                        "eqvisitante": "PORTUGAL",
+                        "fecha": "02/12/2022"
+                    },
+                    "partido_n": 45,
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "L",
+                        "resul_loc": "2",
+                        "resul_vis": "1",
+                        "resul_penvis": ""
+                    },
+                    "puntosCG": "1",
+                    "id": 45
+                },
+                {
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_loc": "1",
+                        "prode_penvis": ""
+                    },
+                    "id": 46,
+                    "datosPartido": {
+                        "hora": "12:00",
+                        "fecha": "02/12/2022",
+                        "eqvisitante": "URUGUAY",
+                        "grupo": "GRUPO H",
+                        "dia": "VIERNES",
+                        "eqlocal": "GHANA",
+                        "icolocal": "ghana",
+                        "icovisitante": "uruguay"
+                    },
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_vis": "2",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 46,
+                    "puntos": 1,
+                    "puntosCG": "1"
+                },
+                {
                     "prodePartido": {
                         "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_vis": "1",
+                        "prode_loc": "0",
                         "prode_resul": "V",
-                        "prode_loc": "0"
+                        "prode_vis": "2"
                     },
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
+                        "resul_loc": "1",
                         "resul_penloc": "",
-                        "resultado": ""
-                    }
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_vis": "0"
+                    },
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "id": 47,
+                    "partido_n": 47,
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "dia": "VIERNES",
+                        "icovisitante": "brasil",
+                        "hora": "16:00",
+                        "eqvisitante": "BRASIL",
+                        "grupo": "GRUPO G",
+                        "fecha": "02/12/2022",
+                        "icolocal": "camerun",
+                        "eqlocal": "CAMERÚN"
+                    },
+                    "puntosCG": "0"
+                },
+                {
+                    "id": 48,
+                    "puntos": 2,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resul_vis": "3",
+                        "resultado": "V",
+                        "resul_penloc": ""
+                    },
+                    "partido_n": 48,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_vis": "1",
+                        "prode_penloc": "",
+                        "prode_loc": "0"
+                    },
+                    "puntosCG": "0",
+                    "puntosP": "1",
+                    "datosPartido": {
+                        "fecha": "02/12/2022",
+                        "hora": "16:00",
+                        "grupo": "GRUPO G",
+                        "icolocal": "serbia",
+                        "dia": "VIERNES",
+                        "eqlocal": "SERBIA",
+                        "eqvisitante": "SUIZA",
+                        "icovisitante": "suiza"
+                    },
+                    "puntosDG": "1"
                 }
             ]
         },
         {
             "partidos": [
                 {
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "eqvisitante": "2° B",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "icovisitante": "vacio",
-                        "hora": "12:00",
-                        "eqlocal": "1° A",
-                        "fecha": "03/12/2022",
-                        "dia": "SÁBADO"
-                    },
-                    "partido_n": 49,
-                    "puntos": "",
                     "realPartido": {
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
+                        "resul_loc": "",
                         "resul_vis": "",
-                        "resul_loc": ""
+                        "resultado": "",
+                        "resul_penloc": ""
                     },
                     "id": 49,
                     "prodePartido": {
-                        "prode_loc": "",
-                        "prode_vis": "",
+                        "prode_vis": "1",
                         "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_resul": ""
+                        "prode_loc": "2",
+                        "prode_ext": "",
+                        "prode_resul": "L"
+                    },
+                    "partido_n": 49,
+                    "puntos": "",
+                    "datosPartido": {
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "estadosunidos",
+                        "icolocal": "paisesbajos",
+                        "eqlocal": "PAISES BAJOS",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "hora": "12:00",
+                        "dia": "SÁBADO",
+                        "fecha": "03/12/2022"
                     }
                 },
                 {
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_loc": ""
-                    },
-                    "puntos": "",
-                    "id": 50,
-                    "partido_n": 50,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
                     "datosPartido": {
-                        "eqlocal": "1° C",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqvisitante": "2° D",
                         "hora": "16:00",
+                        "eqvisitante": "AUSTRALIA",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "eqlocal": "ARGENTINA",
+                        "icovisitante": "australia",
                         "dia": "SÁBADO",
                         "fecha": "03/12/2022",
-                        "icovisitante": "vacio",
-                        "icolocal": "vacio"
+                        "icolocal": "argentina"
+                    },
+                    "partido_n": 50,
+                    "puntos": "",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_vis": "",
+                        "resul_loc": ""
+                    },
+                    "id": 50,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_ext": "",
+                        "prode_loc": "3"
                     }
                 },
                 {
-                    "partido_n": 51,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
                         "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": ""
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "datosPartido": {
+                        "fecha": "04/12/2022",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "hora": "12:00",
+                        "icolocal": "francia",
+                        "icovisitante": "polonia",
+                        "dia": "DOMINGO",
+                        "eqlocal": "FRANCIA",
+                        "eqvisitante": "POLONIA"
                     },
                     "puntos": "",
-                    "datosPartido": {
-                        "eqlocal": "1° D",
-                        "hora": "12:00",
-                        "eqvisitante": "2° C",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "dia": "DOMINGO",
-                        "fecha": "04/12/2022",
-                        "icovisitante": "vacio",
-                        "icolocal": "vacio"
-                    },
                     "id": 51,
                     "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_resul": "",
+                        "prode_ext": "",
+                        "prode_vis": "1",
+                        "prode_loc": "2",
                         "prode_penvis": "",
-                        "prode_penloc": ""
-                    }
+                        "prode_penloc": "",
+                        "prode_resul": "L"
+                    },
+                    "partido_n": 51
                 },
                 {
+                    "id": 52,
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_ext": "",
+                        "prode_vis": "0"
+                    },
+                    "partido_n": 52,
+                    "datosPartido": {
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "senegal",
+                        "fecha": "04/12/2022",
+                        "dia": "DOMINGO",
+                        "hora": "16:00",
+                        "eqvisitante": "SENEGAL",
+                        "icolocal": "inglaterra",
+                        "eqlocal": "INGLATERRA"
+                    },
                     "realPartido": {
-                        "resul_penvis": "",
                         "resul_vis": "",
+                        "resul_penvis": "",
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penloc": ""
+                    },
+                    "puntos": ""
+                },
+                {
+                    "datosPartido": {
+                        "fecha": "05/12/2022",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "eqlocal": "JAPON",
+                        "dia": "LUNES",
+                        "icovisitante": "croacia",
+                        "hora": "12:00",
+                        "eqvisitante": "CROACIA",
+                        "icolocal": "japon"
+                    },
+                    "id": 53,
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_ext": "V",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
+                    "realPartido": {
                         "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_penvis": "",
                         "resul_loc": "",
                         "resultado": ""
                     },
-                    "id": 52,
-                    "puntos": "",
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "eqlocal": "1° B",
-                        "eqvisitante": "2° A",
-                        "fecha": "04/12/2022",
-                        "dia": "DOMINGO",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "hora": "16:00",
-                        "icovisitante": "vacio"
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
-                    },
-                    "partido_n": 52
+                    "partido_n": 53,
+                    "puntos": ""
                 },
                 {
-                    "id": 53,
-                    "partido_n": 53,
                     "datosPartido": {
                         "fecha": "05/12/2022",
-                        "eqvisitante": "2° F",
-                        "eqlocal": "1° E",
                         "dia": "LUNES",
+                        "hora": "16:00",
+                        "icovisitante": "corea",
+                        "eqvisitante": "COREA",
                         "grupo": "OCTAVOS DE FINAL",
-                        "icolocal": "vacio",
-                        "hora": "12:00",
-                        "icovisitante": "vacio"
-                    },
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
+                        "eqlocal": "BRASIL",
+                        "icolocal": "brasil"
                     },
                     "puntos": "",
+                    "partido_n": 54,
+                    "id": 54,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resultado": ""
+                    },
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "",
                         "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_resul": ""
+                        "prode_penloc": "",
+                        "prode_ext": "",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_loc": "2"
                     }
                 },
                 {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "id": 54,
-                    "partido_n": 54,
                     "puntos": "",
+                    "partido_n": 55,
                     "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_loc": "1",
+                        "prode_ext": "V",
                         "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
                         "prode_penvis": ""
                     },
                     "datosPartido": {
-                        "grupo": "OCTAVOS DE FINAL",
-                        "icovisitante": "vacio",
-                        "hora": "16:00",
-                        "icolocal": "vacio",
-                        "dia": "LUNES",
-                        "eqvisitante": "2° H",
-                        "eqlocal": "1° G",
-                        "fecha": "05/12/2022"
-                    }
-                },
-                {
-                    "puntos": "",
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqvisitante": "2° E",
-                        "eqlocal": "1° F",
-                        "icovisitante": "vacio",
+                        "hora": "12:00",
                         "dia": "MARTES",
+                        "eqlocal": "MARRUECOS",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "eqvisitante": "ESPANA",
                         "fecha": "06/12/2022",
-                        "hora": "12:00"
-                    },
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": ""
+                        "icolocal": "marruecos",
+                        "icovisitante": "espana"
                     },
                     "id": 55,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
                         "resultado": "",
                         "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_vis": "",
                         "resul_loc": ""
-                    },
-                    "partido_n": 55
+                    }
                 },
                 {
+                    "prodePartido": {
+                        "prode_loc": "2",
+                        "prode_penloc": "",
+                        "prode_resul": "L",
+                        "prode_ext": "",
+                        "prode_vis": "1",
+                        "prode_penvis": ""
+                    },
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resul_penvis": ""
+                    },
                     "datosPartido": {
-                        "icolocal": "vacio",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icolocal": "portugal",
+                        "eqlocal": "PORTUGAL",
+                        "dia": "MARTES",
                         "fecha": "06/12/2022",
                         "hora": "16:00",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "dia": "MARTES",
-                        "eqvisitante": "2° G",
-                        "icovisitante": "vacio",
-                        "eqlocal": "1° H"
+                        "icovisitante": "suiza",
+                        "eqvisitante": "SUIZA"
                     },
-                    "partido_n": 56,
-                    "id": 56,
                     "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": ""
-                    }
+                    "id": 56,
+                    "partido_n": 56
                 }
             ],
             "fecha_n": 4
         },
         {
-            "fecha_n": 5,
             "partidos": [
                 {
-                    "id": 57,
-                    "puntos": "",
                     "datosPartido": {
                         "eqlocal": "GANADOR P. 5",
+                        "icovisitante": "vacio",
+                        "grupo": "CUARTOS DE FINAL",
+                        "fecha": "09/12/2022",
                         "eqvisitante": "GANADOR P. 6",
-                        "icolocal": "vacio",
-                        "fecha": "09/12/2022",
                         "hora": "12:00",
-                        "icovisitante": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "dia": "VIERNES"
+                        "dia": "VIERNES",
+                        "icolocal": "vacio"
                     },
                     "realPartido": {
                         "resultado": "",
                         "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    },
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 57
-                },
-                {
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
-                    },
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "icovisitante": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "eqlocal": "GANADOR P. 1",
-                        "icolocal": "vacio",
-                        "fecha": "09/12/2022",
-                        "eqvisitante": "GANADOR P. 2",
-                        "dia": "VIERNES"
-                    },
-                    "puntos": "",
-                    "id": 58,
-                    "realPartido": {
-                        "resul_penvis": "",
                         "resul_penloc": "",
                         "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "partido_n": 58
-                },
-                {
-                    "datosPartido": {
-                        "fecha": "10/12/2022",
-                        "dia": "SÁBADO",
-                        "eqlocal": "GANADOR P. 7",
-                        "eqvisitante": "GANADOR P. 8",
-                        "hora": "12:00",
-                        "grupo": "CUARTOS DE FINAL",
-                        "icolocal": "vacio",
-                        "icovisitante": "vacio"
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "partido_n": 59,
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_loc": ""
-                    },
-                    "id": 59,
-                    "puntos": ""
-                },
-                {
-                    "partido_n": 60,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
                         "resul_penvis": ""
                     },
-                    "id": 60,
+                    "puntos": "",
+                    "id": 57,
+                    "partido_n": 57,
+                    "prodePartido": {
+                        "prode_vis": "",
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    }
+                },
+                {
+                    "partido_n": 58,
                     "datosPartido": {
+                        "fecha": "09/12/2022",
+                        "eqvisitante": "GANADOR P. 2",
+                        "grupo": "CUARTOS DE FINAL",
+                        "icovisitante": "vacio",
+                        "icolocal": "vacio",
+                        "dia": "VIERNES",
                         "hora": "16:00",
+                        "eqlocal": "GANADOR P. 1"
+                    },
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_vis": "",
+                        "prode_penloc": ""
+                    },
+                    "id": 58,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penvis": ""
+                    }
+                },
+                {
+                    "partido_n": 59,
+                    "puntos": "",
+                    "datosPartido": {
+                        "grupo": "CUARTOS DE FINAL",
+                        "hora": "12:00",
+                        "icolocal": "vacio",
+                        "eqvisitante": "GANADOR P. 8",
+                        "icovisitante": "vacio",
+                        "eqlocal": "GANADOR P. 7",
+                        "fecha": "10/12/2022",
+                        "dia": "SÁBADO"
+                    },
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resul_vis": ""
+                    },
+                    "id": 59,
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": ""
+                    }
+                },
+                {
+                    "puntos": "",
+                    "partido_n": 60,
+                    "datosPartido": {
                         "eqlocal": "GANADOR P. 4",
                         "grupo": "CUARTOS DE FINAL",
-                        "dia": "SÁBADO",
                         "icolocal": "vacio",
                         "icovisitante": "vacio",
+                        "dia": "SÁBADO",
                         "eqvisitante": "GANADOR P. 3",
+                        "hora": "16:00",
                         "fecha": "10/12/2022"
                     },
                     "prodePartido": {
                         "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
                         "prode_penloc": "",
-                        "prode_loc": ""
-                    }
-                }
-            ]
-        },
-        {
-            "fecha_n": 6,
-            "partidos": [
-                {
-                    "prodePartido": {
                         "prode_penvis": "",
                         "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
                         "prode_vis": ""
                     },
+                    "id": 60,
                     "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
                         "resul_vis": "",
-                        "resul_loc": ""
-                    },
-                    "datosPartido": {
-                        "eqlocal": "GANADOR P. 10",
-                        "icovisitante": "vacio",
-                        "dia": "MARTES",
-                        "icolocal": "vacio",
-                        "grupo": "SEMIFINAL",
-                        "eqvisitante": "GANADOR P. 9",
-                        "hora": "16:00",
-                        "fecha": "13/12/2022"
-                    },
-                    "puntos": "",
-                    "partido_n": 61,
-                    "id": 61
-                },
-                {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
                         "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    },
-                    "partido_n": 62,
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_loc": ""
-                    },
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "grupo": "SEMIFINAL",
-                        "dia": "MIÉRCOLES",
-                        "eqlocal": "GANADOR P. 12",
-                        "hora": "16:00",
-                        "fecha": "14/12/2022",
-                        "eqvisitante": "GANADOR P. 11",
-                        "icovisitante": "vacio"
-                    },
-                    "puntos": "",
-                    "id": 62
+                        "resul_penvis": "",
+                        "resultado": "",
+                        "resul_penloc": ""
+                    }
                 }
-            ]
+            ],
+            "fecha_n": 5
         },
         {
-            "fecha_n": 7,
+            "partidos": [
+                {
+                    "partido_n": 61,
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "fecha": "13/12/2022",
+                        "eqvisitante": "GANADOR P. 9",
+                        "icovisitante": "vacio",
+                        "dia": "MARTES",
+                        "eqlocal": "GANADOR P. 10",
+                        "grupo": "SEMIFINAL",
+                        "icolocal": "vacio"
+                    },
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_vis": "",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": ""
+                    },
+                    "id": 61,
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_loc": "",
+                        "prode_vis": "",
+                        "prode_resul": "",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    }
+                },
+                {
+                    "partido_n": 62,
+                    "puntos": "",
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": ""
+                    },
+                    "datosPartido": {
+                        "fecha": "14/12/2022",
+                        "eqlocal": "GANADOR P. 12",
+                        "icovisitante": "vacio",
+                        "icolocal": "vacio",
+                        "dia": "MIÉRCOLES",
+                        "eqvisitante": "GANADOR P. 11",
+                        "grupo": "SEMIFINAL",
+                        "hora": "16:00"
+                    },
+                    "id": 62,
+                    "prodePartido": {
+                        "prode_loc": "",
+                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": ""
+                    }
+                }
+            ],
+            "fecha_n": 6
+        },
+        {
             "partidos": [
                 {
                     "partido_n": 63,
-                    "puntos": "",
                     "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
                         "resul_penvis": "",
+                        "resultado": "",
+                        "resul_vis": "",
                         "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_penloc": ""
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_loc": ""
+                    "datosPartido": {
+                        "hora": "12:00",
+                        "grupo": "3° Y 4° PUESTO",
+                        "icovisitante": "vacio",
+                        "eqvisitante": "PERDEDOR P. 14",
+                        "eqlocal": "PERDEDOR P.13",
+                        "dia": "SÁBADO",
+                        "icolocal": "vacio",
+                        "fecha": "17/12/2022"
                     },
                     "id": 63,
-                    "datosPartido": {
-                        "icovisitante": "vacio",
-                        "grupo": "3° Y 4° PUESTO",
-                        "eqlocal": "PERDEDOR P.13",
-                        "eqvisitante": "PERDEDOR P. 14",
-                        "fecha": "17/12/2022",
-                        "icolocal": "vacio",
-                        "hora": "12:00",
-                        "dia": "SÁBADO"
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_vis": "",
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_penloc": "",
+                        "prode_resul": ""
                     }
                 },
                 {
-                    "datosPartido": {
-                        "icovisitante": "vacio",
-                        "hora": "12:00",
-                        "eqvisitante": "GANADOR P. 14",
-                        "dia": "DOMINGO",
-                        "fecha": "18/12/2022",
-                        "eqlocal": "GANADOR P. 13",
-                        "grupo": "FINAL",
-                        "icolocal": "vacio"
-                    },
-                    "id": 64,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    },
+                    "puntos": "",
                     "prodePartido": {
-                        "prode_penvis": "",
+                        "prode_vis": "",
                         "prode_resul": "",
                         "prode_penloc": "",
                         "prode_loc": "",
-                        "prode_vis": ""
+                        "prode_penvis": ""
                     },
+                    "id": 64,
                     "partido_n": 64,
-                    "puntos": ""
+                    "datosPartido": {
+                        "eqlocal": "GANADOR P. 13",
+                        "icovisitante": "vacio",
+                        "hora": "12:00",
+                        "fecha": "18/12/2022",
+                        "eqvisitante": "GANADOR P. 14",
+                        "dia": "DOMINGO",
+                        "grupo": "FINAL",
+                        "icolocal": "vacio"
+                    },
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": ""
+                    }
                 }
-            ]
+            ],
+            "fecha_n": 7
         }
     ],
-    "user_version": 3,
-    "user_modificacion": "25/11/2022, 00:18:44",
-    "timestamp": {
-        "seconds": 1669346324,
-        "nanoseconds": 479000000
-    },
-    "user": "SEBASV2002@HOTMAIL.COM"
+    "user_version": 7
 }
 
 export var unicoSeba = {
@@ -5734,1417 +5886,1555 @@ export var unicoSeba = {
 
 
 export var fechaPablo = {
-    "user": "PEPRIETO@GMAIL.COM",
-    "user_modificacion": "22/11/2022, 13:41:52",
-    "user_version": 1,
-    "timestamp": {
-        "seconds": 1669135312,
-        "nanoseconds": 52000000
-    },
+    "user_modificacion": "29/11/2022, 02:24:09",
     "fechanro": [
         {
-            "fecha_n": 1,
             "partidos": [
                 {
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_penloc": "",
-                        "prode_resul": "V",
+                        "prode_resul": "E",
                         "prode_penvis": "",
-                        "prode_loc": "1"
-                    },
-                    "datosPartido": {
-                        "eqlocal": "QATAR",
-                        "eqvisitante": "ECUADOR",
-                        "icovisitante": "ecuador",
-                        "dia": "DOMINGO",
-                        "icolocal": "qatar",
-                        "grupo": "GRUPO A",
-                        "fecha": "20/11/2022",
-                        "hora": "13:00"
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_loc": "0"
                     },
                     "id": 1,
+                    "puntosCG": "0",
                     "partido_n": 1,
-                    "puntos": "",
+                    "datosPartido": {
+                        "fecha": "20/11/2022",
+                        "icovisitante": "ecuador",
+                        "grupo": "GRUPO A",
+                        "hora": "13:00",
+                        "eqlocal": "QATAR",
+                        "dia": "DOMINGO",
+                        "eqvisitante": "ECUADOR",
+                        "icolocal": "qatar"
+                    },
                     "realPartido": {
-                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": ""
-                    }
+                        "resultado": "V",
+                        "resul_vis": "2",
+                        "resul_loc": "0",
+                        "resul_penvis": ""
+                    },
+                    "puntos": 0,
+                    "puntosP": "0"
                 },
                 {
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "puntosCG": "0",
                     "partido_n": 2,
                     "id": 2,
                     "datosPartido": {
-                        "eqlocal": "INGLATERRA",
-                        "dia": "LUNES",
-                        "grupo": "GRUPO B",
-                        "icovisitante": "iran",
                         "hora": "10:00",
-                        "icolocal": "inglaterra",
+                        "dia": "LUNES",
+                        "icovisitante": "iran",
                         "eqvisitante": "IRÁN",
+                        "eqlocal": "INGLATERRA",
+                        "icolocal": "inglaterra",
+                        "grupo": "GRUPO B",
                         "fecha": "21/11/2022"
                     },
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    },
                     "prodePartido": {
-                        "prode_penvis": "",
+                        "prode_vis": "1",
                         "prode_penloc": "",
                         "prode_resul": "L",
                         "prode_loc": "2",
-                        "prode_vis": "1"
+                        "prode_penvis": ""
                     },
-                    "puntos": ""
+                    "realPartido": {
+                        "resul_loc": "6",
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resultado": "L",
+                        "resul_penloc": ""
+                    }
                 },
                 {
+                    "puntosDG": "1",
                     "id": 3,
                     "datosPartido": {
-                        "hora": "13:00",
-                        "fecha": "21/11/2022",
-                        "eqlocal": "SENEGAL",
-                        "eqvisitante": "PAÍSES BAJOS",
-                        "dia": "LUNES",
-                        "icovisitante": "paisesbajos",
                         "icolocal": "senegal",
-                        "grupo": "GRUPO A"
+                        "eqlocal": "SENEGAL",
+                        "icovisitante": "paisesbajos",
+                        "hora": "13:00",
+                        "grupo": "GRUPO A",
+                        "dia": "LUNES",
+                        "fecha": "21/11/2022",
+                        "eqvisitante": "PAÍSES BAJOS"
                     },
-                    "puntos": "",
+                    "puntos": 5,
+                    "puntosCG": "1",
                     "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_penvis": "",
                         "prode_penloc": "",
                         "prode_resul": "V",
-                        "prode_loc": "0"
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_vis": "2"
                     },
-                    "partido_n": 3,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
+                        "resultado": "V",
+                        "resul_penvis": "",
+                        "resul_loc": "0",
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    }
+                        "resul_vis": "2"
+                    },
+                    "puntosP": "3",
+                    "partido_n": 3
                 },
                 {
                     "partido_n": 4,
-                    "datosPartido": {
-                        "dia": "LUNES",
-                        "grupo": "GRUPO B",
-                        "eqvisitante": "GALES",
-                        "icolocal": "estadosunidos",
-                        "fecha": "21/11/2022",
-                        "eqlocal": "ESTADOS UNIDOS",
-                        "icovisitante": "gales",
-                        "hora": "16:00"
-                    },
+                    "puntosP": "1",
                     "prodePartido": {
                         "prode_loc": "0",
-                        "prode_resul": "E",
                         "prode_vis": "0",
+                        "prode_resul": "E",
                         "prode_penloc": "",
                         "prode_penvis": ""
                     },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                    "datosPartido": {
+                        "grupo": "GRUPO B",
+                        "icolocal": "estadosunidos",
+                        "fecha": "21/11/2022",
+                        "icovisitante": "gales",
+                        "eqvisitante": "GALES",
+                        "dia": "LUNES",
+                        "eqlocal": "ESTADOS UNIDOS",
+                        "hora": "16:00"
                     },
+                    "puntos": 2,
                     "id": 4,
-                    "puntos": ""
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resultado": "E",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "1",
+                        "resul_loc": "1"
+                    },
+                    "puntosDG": "1"
                 },
                 {
-                    "puntos": "",
-                    "partido_n": 5,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "id": 5,
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_loc": "2",
+                        "prode_penvis": ""
                     },
+                    "datosPartido": {
+                        "grupo": "GRUPO C",
+                        "hora": "07:00",
+                        "dia": "MARTES",
+                        "eqlocal": "ARGENTINA",
+                        "icolocal": "argentina",
+                        "fecha": "22/11/2022",
+                        "eqvisitante": "ARABIA SAUDITA",
+                        "icovisitante": "arabiasaudita"
+                    },
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resul_loc": "1",
+                        "resultado": "V",
+                        "resul_penloc": ""
+                    },
+                    "partido_n": 5
+                },
+                {
+                    "partido_n": 6,
+                    "datosPartido": {
+                        "hora": "10:00",
+                        "eqvisitante": "TÚNEZ",
+                        "icovisitante": "tunez",
+                        "eqlocal": "DINAMARCA",
+                        "dia": "MARTES",
+                        "icolocal": "dinamarca",
+                        "fecha": "22/11/2022",
+                        "grupo": "GRUPO D"
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "puntos": 0,
                     "prodePartido": {
                         "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
                         "prode_penloc": "",
-                        "prode_loc": "2",
+                        "prode_loc": "1"
+                    },
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "0"
+                    },
+                    "id": 6,
+                    "puntosP": "0"
+                },
+                {
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "E",
+                        "resul_loc": "0"
+                    },
+                    "id": 7,
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
                         "prode_resul": "L",
                         "prode_vis": "0"
                     },
+                    "partido_n": 7,
+                    "puntos": 0,
+                    "puntosP": "0",
                     "datosPartido": {
-                        "icovisitante": "arabiasaudita",
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "eqlocal": "ARGENTINA",
+                        "eqlocal": "MÉXICO",
+                        "fecha": "22/11/2022",
+                        "icovisitante": "polonia",
+                        "hora": "13:00",
+                        "icolocal": "mexico",
                         "dia": "MARTES",
-                        "fecha": "22/11/2022",
-                        "icolocal": "argentina",
-                        "hora": "07:00",
+                        "eqvisitante": "POLONIA",
                         "grupo": "GRUPO C"
-                    },
-                    "id": 5
-                },
-                {
-                    "datosPartido": {
-                        "icovisitante": "tunez",
-                        "icolocal": "dinamarca",
-                        "eqvisitante": "TÚNEZ",
-                        "fecha": "22/11/2022",
-                        "eqlocal": "DINAMARCA",
-                        "hora": "10:00",
-                        "grupo": "GRUPO D",
-                        "dia": "MARTES"
-                    },
-                    "partido_n": 6,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_vis": "0",
-                        "prode_loc": "1",
-                        "prode_penloc": ""
-                    },
-                    "id": 6,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
                     }
                 },
                 {
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
-                    "partido_n": 7,
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_vis": "0",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
+                    "id": 8,
                     "datosPartido": {
-                        "icolocal": "mexico",
-                        "hora": "13:00",
-                        "fecha": "22/11/2022",
-                        "dia": "MARTES",
-                        "eqlocal": "MÉXICO",
-                        "grupo": "GRUPO C",
-                        "eqvisitante": "POLONIA",
-                        "icovisitante": "polonia"
-                    },
-                    "puntos": "",
-                    "id": 7
-                },
-                {
-                    "partido_n": 8,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    },
-                    "datosPartido": {
-                        "dia": "MARTES",
                         "icolocal": "francia",
+                        "dia": "MARTES",
                         "grupo": "GRUPO D",
                         "eqlocal": "FRANCIA",
                         "eqvisitante": "AUSTRALIA",
-                        "fecha": "22/11/2022",
                         "hora": "16:00",
+                        "fecha": "22/11/2022",
                         "icovisitante": "australia"
                     },
-                    "id": 8,
-                    "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_penvis": ""
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_loc": "4",
+                        "resul_vis": "1",
+                        "resul_penvis": ""
                     },
-                    "puntos": ""
+                    "puntosP": "1",
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_loc": "2"
+                    },
+                    "partido_n": 8,
+                    "puntos": 1,
+                    "puntosCG": "0"
                 },
                 {
-                    "datosPartido": {
-                        "fecha": "23/11/2022",
-                        "icolocal": "marruecos",
-                        "icovisitante": "croacia",
-                        "grupo": "GRUPO F",
-                        "eqlocal": "MARRUECOS",
-                        "hora": "07:00",
-                        "dia": "MIÉRCOLES",
-                        "eqvisitante": "CROACIA"
-                    },
+                    "puntosCG": "0",
+                    "partido_n": 9,
                     "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
                         "resul_penvis": "",
-                        "resul_vis": "",
+                        "resul_loc": "0",
+                        "resultado": "E",
+                        "resul_vis": "0",
                         "resul_penloc": ""
                     },
-                    "puntos": "",
-                    "id": 9,
-                    "partido_n": 9,
+                    "puntos": 0,
+                    "puntosP": "0",
                     "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_penvis": "",
                         "prode_resul": "V",
-                        "prode_loc": "1",
-                        "prode_penloc": ""
+                        "prode_penvis": "",
+                        "prode_vis": "2",
+                        "prode_penloc": "",
+                        "prode_loc": "1"
+                    },
+                    "id": 9,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "eqlocal": "MARRUECOS",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO F",
+                        "icolocal": "marruecos",
+                        "hora": "07:00",
+                        "fecha": "23/11/2022",
+                        "eqvisitante": "CROACIA",
+                        "icovisitante": "croacia"
                     }
                 },
                 {
+                    "partido_n": 10,
                     "prodePartido": {
                         "prode_penvis": "",
-                        "prode_loc": "2",
-                        "prode_penloc": "",
                         "prode_resul": "L",
-                        "prode_vis": "0"
+                        "prode_loc": "2",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
+                    },
+                    "id": 10,
+                    "puntosP": "0",
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "grupo": "GRUPO E",
+                        "icolocal": "alemania",
+                        "eqlocal": "ALEMANIA",
+                        "icovisitante": "japon",
+                        "fecha": "23/11/2022",
+                        "dia": "MIÉRCOLES",
+                        "eqvisitante": "JAPÓN",
+                        "hora": "10:00"
                     },
                     "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": ""
+                        "resultado": "V",
+                        "resul_loc": "1",
+                        "resul_penloc": "",
+                        "resul_vis": "2"
                     },
-                    "puntos": "",
-                    "datosPartido": {
-                        "hora": "10:00",
-                        "grupo": "GRUPO E",
-                        "fecha": "23/11/2022",
-                        "icovisitante": "japon",
-                        "eqlocal": "ALEMANIA",
-                        "dia": "MIÉRCOLES",
-                        "icolocal": "alemania",
-                        "eqvisitante": "JAPÓN"
-                    },
-                    "partido_n": 10,
-                    "id": 10
+                    "puntos": 0
                 },
                 {
                     "id": 11,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "puntos": "",
                     "datosPartido": {
+                        "fecha": "23/11/2022",
+                        "dia": "MIÉRCOLES",
                         "grupo": "GRUPO E",
+                        "eqlocal": "ESPAÑA",
+                        "hora": "13:00",
                         "icolocal": "espana",
                         "eqvisitante": "COSTA RICA",
-                        "dia": "MIÉRCOLES",
-                        "hora": "13:00",
-                        "eqlocal": "ESPAÑA",
-                        "icovisitante": "costarica",
-                        "fecha": "23/11/2022"
+                        "icovisitante": "costarica"
                     },
+                    "puntosDG": "0",
                     "partido_n": 11,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resultado": "L",
+                        "resul_loc": "7"
+                    },
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "2",
-                        "prode_penvis": "",
                         "prode_vis": "1",
-                        "prode_resul": "L"
-                    }
-                },
-                {
-                    "id": 12,
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "0",
-                        "prode_loc": "2",
                         "prode_resul": "L",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 12,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "datosPartido": {
-                        "icolocal": "belgica",
-                        "hora": "16:00",
-                        "fecha": "23/11/2022",
-                        "eqlocal": "BÉLGICA",
-                        "grupo": "GRUPO F",
-                        "eqvisitante": "CANADÁ",
-                        "dia": "MIÉRCOLES",
-                        "icovisitante": "canada"
-                    }
-                },
-                {
-                    "partido_n": 13,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "id": 13,
-                    "datosPartido": {
-                        "grupo": "GRUPO G",
-                        "icovisitante": "camerun",
-                        "eqvisitante": "CAMERÚN",
-                        "fecha": "24/11/2022",
-                        "icolocal": "suiza",
-                        "eqlocal": "SUIZA",
-                        "dia": "JUEVES",
-                        "hora": "07:00"
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "1",
-                        "prode_resul": "E",
-                        "prode_loc": "1",
-                        "prode_penloc": ""
-                    }
-                },
-                {
-                    "id": 14,
-                    "partido_n": 14,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
-                    },
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_loc": "2",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_penloc": ""
-                    },
-                    "datosPartido": {
-                        "dia": "JUEVES",
-                        "hora": "10:00",
-                        "icolocal": "uruguay",
-                        "fecha": "24/11/2022",
-                        "grupo": "GRUPO H",
-                        "icovisitante": "corea",
-                        "eqlocal": "URUGUAY",
-                        "eqvisitante": "COREA"
-                    }
-                },
-                {
-                    "id": 15,
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "prodePartido": {
                         "prode_penloc": "",
-                        "prode_vis": "0",
                         "prode_penvis": "",
-                        "prode_resul": "L",
                         "prode_loc": "2"
                     },
-                    "puntos": "",
-                    "partido_n": 15,
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "puntosCG": "0"
+                },
+                {
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "puntosP": "1",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_vis": "0",
+                        "resul_penvis": ""
+                    },
                     "datosPartido": {
-                        "icovisitante": "ghana",
-                        "eqlocal": "PORTUGAL",
-                        "icolocal": "portugal",
-                        "dia": "JUEVES",
-                        "fecha": "24/11/2022",
-                        "eqvisitante": "GHANA",
-                        "grupo": "GRUPO H",
-                        "hora": "13:00"
+                        "fecha": "23/11/2022",
+                        "icolocal": "belgica",
+                        "hora": "16:00",
+                        "grupo": "GRUPO F",
+                        "eqvisitante": "CANADÁ",
+                        "icovisitante": "canada",
+                        "dia": "MIÉRCOLES",
+                        "eqlocal": "BÉLGICA"
+                    },
+                    "puntos": 1,
+                    "id": 12,
+                    "partido_n": 12,
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_loc": "2",
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
                     }
                 },
                 {
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resul_loc": "1"
+                    },
+                    "datosPartido": {
+                        "fecha": "24/11/2022",
+                        "grupo": "GRUPO G",
+                        "dia": "JUEVES",
+                        "icolocal": "suiza",
+                        "eqvisitante": "CAMERÚN",
+                        "icovisitante": "camerun",
+                        "eqlocal": "SUIZA",
+                        "hora": "07:00"
+                    },
+                    "puntosDG": "0",
+                    "partido_n": 13,
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "id": 13,
+                    "puntosP": "0",
                     "prodePartido": {
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_penvis": "",
+                        "prode_vis": "1"
+                    }
+                },
+                {
+                    "puntosDG": "0",
+                    "id": 14,
+                    "puntosP": "0",
+                    "partido_n": 14,
+                    "prodePartido": {
+                        "prode_penvis": "",
                         "prode_penloc": "",
                         "prode_resul": "L",
-                        "prode_vis": "0",
-                        "prode_loc": "3",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 16,
-                    "id": 16,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": ""
-                    },
-                    "datosPartido": {
-                        "grupo": "GRUPO G",
-                        "icovisitante": "serbia",
-                        "dia": "JUEVES",
-                        "eqvisitante": "SERBIA",
-                        "hora": "16:00",
-                        "fecha": "24/11/2022",
-                        "icolocal": "brasil",
-                        "eqlocal": "BRASIL"
-                    }
-                }
-            ]
-        },
-        {
-            "fecha_n": 2,
-            "partidos": [
-                {
-                    "datosPartido": {
-                        "dia": "VIERNES",
-                        "eqlocal": "GALES",
-                        "fecha": "25/11/2022",
-                        "eqvisitante": "IRÁN",
-                        "icovisitante": "iran",
-                        "hora": "07:00",
-                        "grupo": "GRUPO B",
-                        "icolocal": "gales"
+                        "prode_loc": "2",
+                        "prode_vis": "0"
                     },
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
+                        "resul_loc": "0",
                         "resul_penvis": "",
-                        "resultado": "",
+                        "resul_vis": "0",
+                        "resultado": "E",
                         "resul_penloc": ""
                     },
-                    "partido_n": 17,
-                    "puntos": "",
-                    "id": 17,
-                    "prodePartido": {
-                        "prode_loc": "0",
-                        "prode_penloc": "",
-                        "prode_vis": "1",
-                        "prode_resul": "V",
-                        "prode_penvis": ""
-                    }
+                    "puntos": 0,
+                    "datosPartido": {
+                        "hora": "10:00",
+                        "icolocal": "uruguay",
+                        "icovisitante": "corea",
+                        "dia": "JUEVES",
+                        "grupo": "GRUPO H",
+                        "eqlocal": "URUGUAY",
+                        "eqvisitante": "COREA",
+                        "fecha": "24/11/2022"
+                    },
+                    "puntosCG": "0"
                 },
                 {
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "0",
                         "prode_penvis": "",
-                        "prode_resul": "E",
-                        "prode_loc": "0"
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_loc": "2"
+                    },
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "eqvisitante": "GHANA",
+                        "icolocal": "portugal",
+                        "dia": "JUEVES",
+                        "grupo": "GRUPO H",
+                        "icovisitante": "ghana",
+                        "fecha": "24/11/2022",
+                        "hora": "13:00",
+                        "eqlocal": "PORTUGAL"
+                    },
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_loc": "3",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "2"
+                    },
+                    "puntos": 1,
+                    "id": 15,
+                    "puntosP": "1",
+                    "partido_n": 15
+                },
+                {
+                    "puntosP": "1",
+                    "id": 16,
+                    "puntosDG": "0",
+                    "partido_n": 16,
+                    "puntos": 1,
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_loc": "3",
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
+                    },
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_loc": "2"
                     },
                     "datosPartido": {
+                        "fecha": "24/11/2022",
+                        "dia": "JUEVES",
+                        "icolocal": "brasil",
+                        "icovisitante": "serbia",
+                        "grupo": "GRUPO G",
+                        "eqlocal": "BRASIL",
+                        "hora": "16:00",
+                        "eqvisitante": "SERBIA"
+                    }
+                }
+            ],
+            "fecha_n": 1
+        },
+        {
+            "partidos": [
+                {
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "0"
+                    },
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_resul": "V",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_vis": "1"
+                    },
+                    "datosPartido": {
+                        "eqlocal": "GALES",
+                        "eqvisitante": "IRÁN",
+                        "icolocal": "gales",
+                        "dia": "VIERNES",
+                        "icovisitante": "iran",
+                        "hora": "07:00",
+                        "fecha": "25/11/2022",
+                        "grupo": "GRUPO B"
+                    },
+                    "puntosCG": "0",
+                    "id": 17,
+                    "partido_n": 17,
+                    "puntosP": "1"
+                },
+                {
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "1",
+                        "resultado": "V",
+                        "resul_vis": "3",
+                        "resul_penloc": ""
+                    },
+                    "id": 18,
+                    "partido_n": 18,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_vis": "0"
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "icovisitante": "senegal",
+                        "eqvisitante": "SENEGAL",
+                        "grupo": "GRUPO A",
                         "dia": "VIERNES",
                         "eqlocal": "QATAR",
                         "icolocal": "qatar",
                         "fecha": "25/11/2022",
-                        "hora": "10:00",
-                        "icovisitante": "senegal",
-                        "grupo": "GRUPO A",
-                        "eqvisitante": "SENEGAL"
-                    },
-                    "puntos": "",
-                    "id": 18,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
-                    "partido_n": 18
+                        "hora": "10:00"
+                    }
                 },
                 {
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
+                    "partido_n": 19,
+                    "puntos": 0,
                     "id": 19,
+                    "puntosDG": "0",
                     "datosPartido": {
-                        "fecha": "25/11/2022",
-                        "grupo": "GRUPO A",
-                        "eqlocal": "PAÍSES BAJOS",
-                        "icovisitante": "ecuador",
                         "hora": "13:00",
-                        "eqvisitante": "ECUADOR",
+                        "icolocal": "paisesbajos",
+                        "grupo": "GRUPO A",
+                        "icovisitante": "ecuador",
                         "dia": "VIERNES",
-                        "icolocal": "paisesbajos"
+                        "fecha": "25/11/2022",
+                        "eqlocal": "PAÍSES BAJOS",
+                        "eqvisitante": "ECUADOR"
                     },
+                    "realPartido": {
+                        "resul_vis": "1",
+                        "resul_penvis": "",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_loc": "1"
+                    },
+                    "puntosCG": "0",
+                    "puntosP": "0",
                     "prodePartido": {
-                        "prode_resul": "L",
                         "prode_vis": "1",
+                        "prode_loc": "2",
                         "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "2"
-                    },
-                    "partido_n": 19
+                        "prode_resul": "L",
+                        "prode_penloc": ""
+                    }
                 },
                 {
-                    "partido_n": 20,
-                    "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_vis": "1"
-                    },
-                    "id": 20,
+                    "puntosCG": "0",
                     "realPartido": {
-                        "resul_vis": "",
+                        "resultado": "E",
+                        "resul_loc": "0",
+                        "resul_vis": "0",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
+                        "resul_penvis": ""
                     },
+                    "puntos": 0,
+                    "puntosDG": "0",
                     "datosPartido": {
                         "eqvisitante": "ESTADOS UNIDOS",
-                        "grupo": "GRUPO B",
-                        "icovisitante": "estadosunidos",
+                        "fecha": "25/11/2022",
                         "dia": "VIERNES",
-                        "icolocal": "inglaterra",
-                        "eqlocal": "INGLATERRA",
                         "hora": "16:00",
-                        "fecha": "25/11/2022"
+                        "grupo": "GRUPO B",
+                        "eqlocal": "INGLATERRA",
+                        "icovisitante": "estadosunidos",
+                        "icolocal": "inglaterra"
                     },
-                    "puntos": ""
+                    "puntosP": "0",
+                    "id": 20,
+                    "partido_n": 20,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_penvis": ""
+                    }
                 },
                 {
                     "id": 21,
-                    "puntos": "",
+                    "puntosP": "1",
+                    "partido_n": 21,
+                    "puntosCG": "0",
+                    "puntos": 2,
                     "datosPartido": {
                         "grupo": "GRUPO D",
+                        "dia": "SÁBADO",
                         "fecha": "26/11/2022",
                         "eqlocal": "TÚNEZ",
                         "eqvisitante": "AUSTRALIA",
-                        "dia": "SÁBADO",
                         "hora": "07:00",
                         "icovisitante": "australia",
                         "icolocal": "tunez"
                     },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "1",
+                        "resul_loc": "0",
+                        "resultado": "V",
+                        "resul_penloc": ""
+                    },
+                    "puntosDG": "1",
                     "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "V",
                         "prode_vis": "2",
                         "prode_loc": "1",
-                        "prode_resul": "V",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": ""
-                    },
-                    "partido_n": 21
+                        "prode_penloc": ""
+                    }
                 },
                 {
-                    "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_loc": "1",
-                        "prode_resul": "E",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
+                    "realPartido": {
+                        "resul_loc": "2",
+                        "resul_vis": "0",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
                     },
+                    "puntosDG": "0",
                     "datosPartido": {
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "hora": "10:00",
-                        "eqlocal": "POLONIA",
-                        "fecha": "26/11/2022",
-                        "dia": "SÁBADO",
                         "icovisitante": "arabiasaudita",
                         "icolocal": "polonia",
-                        "grupo": "GRUPO C"
+                        "eqvisitante": "ARABIA SAUDITA",
+                        "fecha": "26/11/2022",
+                        "eqlocal": "POLONIA",
+                        "grupo": "GRUPO C",
+                        "hora": "10:00",
+                        "dia": "SÁBADO"
                     },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_resul": "E"
                     },
-                    "id": 22,
+                    "puntosCG": "1",
+                    "puntosP": "0",
+                    "puntos": 1,
                     "partido_n": 22,
-                    "puntos": ""
+                    "id": 22
                 },
                 {
+                    "puntosCG": "0",
+                    "id": 23,
                     "datosPartido": {
                         "dia": "SÁBADO",
                         "fecha": "26/11/2022",
-                        "eqvisitante": "DINAMARCA",
-                        "icovisitante": "dinamarca",
-                        "grupo": "GRUPO D",
-                        "eqlocal": "FRANCIA",
                         "icolocal": "francia",
+                        "eqvisitante": "DINAMARCA",
+                        "grupo": "GRUPO D",
+                        "icovisitante": "dinamarca",
+                        "eqlocal": "FRANCIA",
                         "hora": "13:00"
                     },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": ""
-                    },
-                    "id": 23,
                     "partido_n": 23,
+                    "puntosDG": "0",
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resultado": "L",
+                        "resul_vis": "1"
+                    },
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "E",
-                        "prode_penvis": "",
+                        "prode_vis": "2",
                         "prode_loc": "2",
-                        "prode_vis": "2"
-                    }
-                },
-                {
-                    "id": 24,
-                    "puntos": "",
-                    "datosPartido": {
-                        "eqlocal": "ARGENTINA",
-                        "dia": "SÁBADO",
-                        "hora": "16:00",
-                        "icovisitante": "mexico",
-                        "grupo": "GRUPO C",
-                        "fecha": "26/11/2022",
-                        "eqvisitante": "MÉXICO",
-                        "icolocal": "argentina"
-                    },
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_vis": "",
+                        "prode_resul": "E",
                         "prode_penvis": "",
-                        "prode_loc": "",
                         "prode_penloc": ""
-                    },
-                    "partido_n": 24,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
                     }
                 },
                 {
-                    "id": 25,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    },
-                    "datosPartido": {
-                        "grupo": "GRUPO E",
-                        "fecha": "27/11/2022",
-                        "icolocal": "japon",
-                        "icovisitante": "costarica",
-                        "eqlocal": "JAPÓN",
-                        "dia": "DOMINGO",
-                        "hora": "07:00",
-                        "eqvisitante": "COSTA RICA"
-                    },
+                    "puntosP": "1",
+                    "partido_n": 24,
                     "prodePartido": {
-                        "prode_resul": "E",
-                        "prode_vis": "1",
-                        "prode_loc": "1",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 25,
-                    "puntos": ""
-                },
-                {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "id": 26,
-                    "datosPartido": {
-                        "icovisitante": "marruecos",
-                        "eqvisitante": "MARRUECOS",
-                        "grupo": "GRUPO F",
-                        "eqlocal": "BÉLGICA",
-                        "fecha": "27/11/2022",
-                        "hora": "10:00",
-                        "dia": "DOMINGO",
-                        "icolocal": "belgica"
-                    },
-                    "partido_n": 26,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "0",
-                        "prode_resul": "E",
-                        "prode_loc": "0"
-                    },
-                    "puntos": ""
-                },
-                {
-                    "id": 27,
-                    "prodePartido": {
-                        "prode_penloc": "",
                         "prode_resul": "L",
                         "prode_penvis": "",
                         "prode_loc": "2",
-                        "prode_vis": "0"
+                        "prode_penloc": "",
+                        "prode_vis": "1"
                     },
-                    "partido_n": 27,
+                    "puntosDG": "0",
                     "realPartido": {
+                        "resul_vis": "0",
+                        "resultado": "L",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": ""
+                        "resul_loc": "2",
+                        "resul_penvis": ""
                     },
+                    "puntos": 1,
+                    "puntosCG": "0",
+                    "id": 24,
                     "datosPartido": {
-                        "icovisitante": "canada",
-                        "fecha": "27/11/2022",
-                        "hora": "13:00",
-                        "eqvisitante": "CANADÁ",
-                        "dia": "DOMINGO",
-                        "icolocal": "croacia",
-                        "eqlocal": "CROACIA",
-                        "grupo": "GRUPO F"
-                    },
-                    "puntos": ""
+                        "grupo": "GRUPO C",
+                        "eqvisitante": "MÉXICO",
+                        "dia": "SÁBADO",
+                        "eqlocal": "ARGENTINA",
+                        "fecha": "26/11/2022",
+                        "hora": "16:00",
+                        "icovisitante": "mexico",
+                        "icolocal": "argentina"
+                    }
                 },
                 {
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "dia": "DOMINGO",
+                        "icolocal": "japon",
+                        "grupo": "GRUPO E",
+                        "hora": "07:00",
+                        "icovisitante": "costarica",
+                        "eqvisitante": "COSTA RICA",
+                        "fecha": "27/11/2022",
+                        "eqlocal": "JAPÓN"
+                    },
+                    "partido_n": 25,
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_vis": "1",
+                        "resul_penvis": "",
+                        "resultado": "V",
+                        "resul_loc": "0"
+                    },
+                    "id": 25,
                     "prodePartido": {
-                        "prode_resul": "V",
+                        "prode_vis": "1",
                         "prode_penloc": "",
-                        "prode_vis": "2",
+                        "prode_loc": "1",
+                        "prode_resul": "E",
+                        "prode_penvis": ""
+                    }
+                },
+                {
+                    "partido_n": 26,
+                    "puntos": 0,
+                    "id": 26,
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_penvis": ""
+                    },
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "eqvisitante": "MARRUECOS",
+                        "fecha": "27/11/2022",
+                        "eqlocal": "BÉLGICA",
+                        "hora": "10:00",
+                        "icolocal": "belgica",
+                        "icovisitante": "marruecos",
+                        "grupo": "GRUPO F",
+                        "dia": "DOMINGO"
+                    },
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_loc": "0",
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_resul": "E",
+                        "prode_penvis": ""
+                    }
+                },
+                {
+                    "datosPartido": {
+                        "hora": "13:00",
+                        "icolocal": "croacia",
+                        "eqlocal": "CROACIA",
+                        "eqvisitante": "CANADÁ",
+                        "fecha": "27/11/2022",
+                        "grupo": "GRUPO F",
+                        "icovisitante": "canada",
+                        "dia": "DOMINGO"
+                    },
+                    "puntosDG": "0",
+                    "puntos": 1,
+                    "puntosP": "1",
+                    "partido_n": 27,
+                    "id": 27,
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_vis": "1",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "4"
+                    },
+                    "prodePartido": {
+                        "prode_loc": "2",
                         "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penloc": ""
+                    },
+                    "puntosCG": "0"
+                },
+                {
+                    "puntosCG": "0",
+                    "id": 28,
+                    "datosPartido": {
+                        "grupo": "GRUPO E",
+                        "dia": "DOMINGO",
+                        "eqvisitante": "ALEMANIA",
+                        "hora": "16:00",
+                        "fecha": "27/11/2022",
+                        "icovisitante": "alemania",
+                        "icolocal": "espana",
+                        "eqlocal": "ESPAÑA"
+                    },
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resultado": "E",
+                        "resul_penvis": "",
+                        "resul_vis": "1"
+                    },
+                    "prodePartido": {
+                        "prode_vis": "2",
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
                         "prode_loc": "1"
                     },
                     "partido_n": 28,
-                    "id": 28,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "eqlocal": "ESPAÑA",
-                        "eqvisitante": "ALEMANIA",
-                        "icolocal": "espana",
-                        "icovisitante": "alemania",
-                        "grupo": "GRUPO E",
-                        "hora": "16:00",
-                        "dia": "DOMINGO",
-                        "fecha": "27/11/2022"
-                    }
+                    "puntos": 0,
+                    "puntosDG": "0"
                 },
                 {
+                    "id": 29,
                     "prodePartido": {
                         "prode_penvis": "",
-                        "prode_vis": "0",
                         "prode_loc": "1",
+                        "prode_vis": "0",
                         "prode_penloc": "",
-                        "prode_resul": "E"
-                    },
-                    "id": 29,
-                    "puntos": "",
-                    "datosPartido": {
-                        "eqlocal": "CAMERÚN",
-                        "fecha": "28/11/2022",
-                        "eqvisitante": "SERBIA",
-                        "icovisitante": "serbia",
-                        "icolocal": "camerun",
-                        "dia": "LUNES",
-                        "hora": "07:00",
-                        "grupo": "GRUPO G"
+                        "prode_resul": "L"
                     },
                     "partido_n": 29,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    }
-                },
-                {
+                    "puntosCG": "0",
+                    "puntosP": "0",
                     "realPartido": {
                         "resul_penloc": "",
-                        "resul_vis": "",
+                        "resul_vis": "3",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                        "resultado": "E",
+                        "resul_loc": "3"
                     },
+                    "puntos": 0,
                     "datosPartido": {
-                        "grupo": "GRUPO H",
-                        "hora": "10:00",
-                        "fecha": "28/11/2022",
-                        "eqvisitante": "GHANA",
-                        "eqlocal": "COREA",
+                        "eqlocal": "CAMERÚN",
                         "dia": "LUNES",
-                        "icovisitante": "ghana",
-                        "icolocal": "corea"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_resul": "E",
-                        "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 30,
-                    "id": 30,
-                    "puntos": ""
-                },
-                {
-                    "partido_n": 31,
-                    "puntos": "",
-                    "datosPartido": {
-                        "hora": "13:00",
+                        "icovisitante": "serbia",
                         "grupo": "GRUPO G",
-                        "icolocal": "brasil",
-                        "dia": "LUNES",
-                        "icovisitante": "suiza",
-                        "eqvisitante": "SUIZA",
-                        "fecha": "28/11/2022",
-                        "eqlocal": "BRASIL"
+                        "hora": "07:00",
+                        "eqvisitante": "SERBIA",
+                        "icolocal": "camerun",
+                        "fecha": "28/11/2022"
                     },
-                    "id": 31,
+                    "puntosDG": "0"
+                },
+                {
+                    "puntosP": "0",
+                    "puntosCG": "0",
+                    "id": 30,
                     "realPartido": {
+                        "resul_loc": "2",
+                        "resul_vis": "3",
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": ""
+                        "resultado": "V",
+                        "resul_penvis": ""
                     },
+                    "datosPartido": {
+                        "dia": "LUNES",
+                        "fecha": "28/11/2022",
+                        "icovisitante": "ghana",
+                        "grupo": "GRUPO H",
+                        "eqlocal": "COREA",
+                        "icolocal": "corea",
+                        "hora": "10:00",
+                        "eqvisitante": "GHANA"
+                    },
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "partido_n": 30,
                     "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_vis": "1"
+                        "prode_penvis": "",
+                        "prode_resul": "E",
+                        "prode_vis": "1",
+                        "prode_loc": "1"
                     }
                 },
                 {
-                    "partido_n": 32,
                     "prodePartido": {
                         "prode_vis": "1",
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_penvis": ""
+                    },
+                    "puntosCG": "0",
+                    "id": 31,
+                    "puntosP": "1",
+                    "puntosDG": "1",
+                    "partido_n": 31,
+                    "realPartido": {
+                        "resul_loc": "1",
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resultado": "L",
+                        "resul_penvis": ""
+                    },
+                    "puntos": 2,
+                    "datosPartido": {
+                        "fecha": "28/11/2022",
+                        "eqlocal": "BRASIL",
+                        "eqvisitante": "SUIZA",
+                        "grupo": "GRUPO G",
+                        "hora": "13:00",
+                        "dia": "LUNES",
+                        "icolocal": "brasil",
+                        "icovisitante": "suiza"
+                    }
+                },
+                {
+                    "prodePartido": {
+                        "prode_resul": "E",
                         "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_resul": "E",
+                        "prode_vis": "1",
                         "prode_loc": "1"
                     },
-                    "puntos": "",
                     "realPartido": {
+                        "resul_vis": "0",
                         "resul_penvis": "",
-                        "resul_vis": "",
+                        "resultado": "L",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                        "resul_loc": "2"
                     },
+                    "puntosCG": "1",
                     "datosPartido": {
-                        "icovisitante": "uruguay",
+                        "icolocal": "portugal",
                         "dia": "LUNES",
                         "eqvisitante": "URUGUAY",
-                        "eqlocal": "PORTUGAL",
-                        "icolocal": "portugal",
-                        "grupo": "GRUPO H",
                         "fecha": "28/11/2022",
-                        "hora": "16:00"
+                        "eqlocal": "PORTUGAL",
+                        "grupo": "GRUPO H",
+                        "hora": "16:00",
+                        "icovisitante": "uruguay"
                     },
-                    "id": 32
+                    "partido_n": 32,
+                    "puntosP": "0",
+                    "puntosDG": "0",
+                    "id": 32,
+                    "puntos": 1
                 }
-            ]
+            ],
+            "fecha_n": 2
         },
         {
             "partidos": [
                 {
                     "realPartido": {
-                        "resul_vis": "",
+                        "resul_vis": "0",
+                        "resultado": "L",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
+                        "resul_penvis": "",
+                        "resul_loc": "2"
                     },
-                    "id": 33,
                     "partido_n": 33,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_resul": ""
-                    },
                     "datosPartido": {
                         "grupo": "GRUPO A",
-                        "dia": "MARTES",
-                        "hora": "12:00",
                         "eqvisitante": "QATAR",
                         "eqlocal": "PAÍSES BAJOS",
-                        "icovisitante": "qatar",
                         "icolocal": "paisesbajos",
+                        "hora": "12:00",
+                        "icovisitante": "qatar",
+                        "dia": "MARTES",
                         "fecha": "29/11/2022"
-                    }
+                    },
+                    "puntosCG": "0",
+                    "puntosP": "1",
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "3",
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_resul": "L"
+                    },
+                    "id": 33,
+                    "puntos": 1
                 },
                 {
-                    "puntos": "",
+                    "id": 34,
+                    "puntosP": "0",
+                    "partido_n": 34,
+                    "puntos": 0,
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_loc": "2",
+                        "prode_penloc": ""
+                    },
+                    "puntosCG": "0",
                     "datosPartido": {
+                        "fecha": "29/11/2022",
+                        "icolocal": "ecuador",
+                        "eqvisitante": "SENEGAL",
+                        "dia": "MARTES",
                         "grupo": "GRUPO A",
                         "hora": "12:00",
                         "eqlocal": "ECUADOR",
-                        "dia": "MARTES",
-                        "fecha": "29/11/2022",
-                        "icolocal": "ecuador",
-                        "icovisitante": "senegal",
-                        "eqvisitante": "SENEGAL"
+                        "icovisitante": "senegal"
                     },
                     "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
+                        "resul_loc": "1",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resultado": "V"
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
-                    },
-                    "id": 34,
-                    "partido_n": 34
+                    "puntosDG": "0"
                 },
                 {
-                    "partido_n": 35,
-                    "puntos": "",
-                    "datosPartido": {
-                        "eqvisitante": "INGLATERRA",
-                        "hora": "16:00",
-                        "icovisitante": "inglaterra",
-                        "icolocal": "gales",
-                        "grupo": "GRUPO B",
-                        "fecha": "29/11/2022",
-                        "dia": "MARTES",
-                        "eqlocal": "GALES"
-                    },
+                    "puntosP": "0",
                     "prodePartido": {
                         "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
+                        "prode_penvis": "",
+                        "prode_resul": "E",
+                        "prode_loc": "1",
+                        "prode_vis": "1"
                     },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": "",
+                        "resul_loc": "0",
+                        "resul_vis": "3",
+                        "resultado": "V",
                         "resul_penvis": "",
                         "resul_penloc": ""
                     },
-                    "id": 35
-                },
-                {
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penvis": ""
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    },
-                    "partido_n": 36,
-                    "puntos": "",
                     "datosPartido": {
                         "grupo": "GRUPO B",
-                        "eqvisitante": "ESTADOS UNIDOS",
-                        "hora": "16:00",
                         "dia": "MARTES",
-                        "fecha": "29/11/2022",
-                        "icovisitante": "estadosunidos",
-                        "eqlocal": "IRÁN",
-                        "icolocal": "iran"
+                        "hora": "16:00",
+                        "eqvisitante": "INGLATERRA",
+                        "icolocal": "gales",
+                        "icovisitante": "inglaterra",
+                        "eqlocal": "GALES",
+                        "fecha": "29/11/2022"
                     },
-                    "id": 36
+                    "partido_n": 35,
+                    "id": 35,
+                    "puntos": 0
                 },
                 {
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penvis": ""
-                    },
-                    "datosPartido": {
-                        "hora": "12:00",
-                        "fecha": "30/11/2022",
-                        "icovisitante": "francia",
-                        "eqvisitante": "FRANCIA",
-                        "eqlocal": "TÚNEZ",
-                        "dia": "MIÉRCOLES",
-                        "grupo": "GRUPO D",
-                        "icolocal": "tunez"
-                    },
-                    "puntos": "",
-                    "id": 37,
+                    "partido_n": 36,
                     "realPartido": {
-                        "resul_vis": "",
+                        "resul_vis": "1",
+                        "resultado": "V",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
+                        "resul_loc": "0",
                         "resul_penvis": ""
                     },
-                    "partido_n": 37
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_resul": "E",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_penloc": ""
+                    },
+                    "id": 36,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "icolocal": "iran",
+                        "fecha": "29/11/2022",
+                        "dia": "MARTES",
+                        "grupo": "GRUPO B",
+                        "eqlocal": "IRÁN",
+                        "icovisitante": "estadosunidos",
+                        "hora": "16:00",
+                        "eqvisitante": "ESTADOS UNIDOS"
+                    },
+                    "puntos": 0
+                },
+                {
+                    "puntos": 0,
+                    "datosPartido": {
+                        "hora": "12:00",
+                        "eqvisitante": "FRANCIA",
+                        "fecha": "30/11/2022",
+                        "grupo": "GRUPO D",
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "francia",
+                        "eqlocal": "TÚNEZ",
+                        "icolocal": "tunez"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_vis": "2",
+                        "prode_resul": "V",
+                        "prode_penloc": ""
+                    },
+                    "puntosDG": "0",
+                    "id": 37,
+                    "puntosP": "0",
+                    "partido_n": 37,
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resul_loc": "1",
+                        "resultado": "L"
+                    }
                 },
                 {
                     "id": 38,
-                    "partido_n": 38,
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_penvis": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "30/11/2022",
-                        "grupo": "GRUPO D",
-                        "eqvisitante": "DINAMARCA",
-                        "dia": "MIÉRCOLES",
-                        "icolocal": "australia",
-                        "icovisitante": "dinamarca",
-                        "eqlocal": "AUSTRALIA",
-                        "hora": "12:00"
-                    },
-                    "puntos": "",
                     "realPartido": {
                         "resul_penloc": "",
-                        "resultado": "",
+                        "resul_vis": "0",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_loc": "1",
+                        "resultado": "L"
+                    },
+                    "datosPartido": {
+                        "icolocal": "australia",
+                        "eqvisitante": "DINAMARCA",
+                        "grupo": "GRUPO D",
+                        "icovisitante": "dinamarca",
+                        "hora": "12:00",
+                        "eqlocal": "AUSTRALIA",
+                        "dia": "MIÉRCOLES",
+                        "fecha": "30/11/2022"
+                    },
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "partido_n": 38,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "1",
+                        "prode_loc": "1",
+                        "prode_resul": "E"
                     }
                 },
                 {
-                    "puntos": "",
+                    "puntos": 5,
+                    "partido_n": 39,
                     "realPartido": {
-                        "resul_vis": "",
+                        "resul_vis": "2",
+                        "resultado": "V",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
-                    "id": 39,
-                    "datosPartido": {
-                        "eqlocal": "POLONIA",
-                        "fecha": "30/11/2022",
-                        "hora": "16:00",
-                        "icolocal": "polonia",
-                        "eqvisitante": "ARGENTINA",
-                        "grupo": "GRUPO C",
-                        "icovisitante": "argentina",
-                        "dia": "MIÉRCOLES"
-                    },
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_resul": ""
-                    },
-                    "partido_n": 39
-                },
-                {
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
-                    },
-                    "id": 40,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
+                        "resul_loc": "0",
                         "resul_penvis": ""
                     },
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "0",
+                        "prode_resul": "V",
+                        "prode_vis": "2",
+                        "prode_penvis": ""
+                    },
+                    "id": 39,
+                    "puntosP": "3",
+                    "puntosCG": "1",
+                    "puntosDG": "1",
                     "datosPartido": {
-                        "eqlocal": "ARABIA SAUDITA",
-                        "hora": "16:00",
-                        "fecha": "30/11/2022",
-                        "eqvisitante": "MÉXICO",
+                        "icolocal": "polonia",
+                        "icovisitante": "argentina",
                         "dia": "MIÉRCOLES",
                         "grupo": "GRUPO C",
-                        "icovisitante": "mexico",
-                        "icolocal": "arabiasaudita"
-                    },
-                    "puntos": "",
-                    "partido_n": 40
+                        "fecha": "30/11/2022",
+                        "eqvisitante": "ARGENTINA",
+                        "eqlocal": "POLONIA",
+                        "hora": "16:00"
+                    }
                 },
                 {
-                    "id": 41,
-                    "puntos": "",
+                    "partido_n": 40,
+                    "puntosDG": "0",
+                    "puntosP": "0",
                     "prodePartido": {
-                        "prode_resul": "",
-                        "prode_vis": "",
                         "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_penloc": ""
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_resul": "L",
+                        "prode_vis": "0"
                     },
-                    "partido_n": 41,
+                    "puntos": 0,
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_loc": "1",
+                        "resul_vis": "2",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "id": 40,
                     "datosPartido": {
+                        "eqlocal": "ARABIA SAUDITA",
+                        "eqvisitante": "MÉXICO",
+                        "hora": "16:00",
+                        "icovisitante": "mexico",
+                        "fecha": "30/11/2022",
+                        "icolocal": "arabiasaudita",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO C"
+                    },
+                    "puntosCG": "0"
+                },
+                {
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "id": 41,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "eqvisitante": "BÉLGICA",
+                        "icolocal": "croacia",
+                        "grupo": "GRUPO F",
                         "icovisitante": "belgica",
+                        "fecha": "01/12/2022",
                         "eqlocal": "CROACIA",
+                        "dia": "JUEVES",
+                        "hora": "12:00"
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_vis": "0"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_loc": "2"
+                    },
+                    "puntosCG": "0",
+                    "partido_n": 41
+                },
+                {
+                    "datosPartido": {
+                        "icolocal": "canada",
+                        "eqlocal": "CANADÁ",
+                        "icovisitante": "marruecos",
+                        "eqvisitante": "MARRUECOS",
                         "hora": "12:00",
                         "grupo": "GRUPO F",
                         "dia": "JUEVES",
-                        "eqvisitante": "BÉLGICA",
-                        "icolocal": "croacia",
                         "fecha": "01/12/2022"
                     },
                     "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
                         "resul_penloc": "",
                         "resul_penvis": "",
-                        "resul_loc": ""
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
+                        "resul_loc": "1",
+                        "resul_vis": "2",
+                        "resultado": "V"
                     },
-                    "datosPartido": {
-                        "fecha": "01/12/2022",
-                        "eqvisitante": "MARRUECOS",
-                        "grupo": "GRUPO F",
-                        "eqlocal": "CANADÁ",
-                        "icolocal": "canada",
-                        "dia": "JUEVES",
-                        "hora": "12:00",
-                        "icovisitante": "marruecos"
-                    },
+                    "puntos": 0,
+                    "puntosDG": "0",
                     "id": 42,
-                    "puntos": "",
-                    "partido_n": 42,
+                    "puntosCG": "0",
+                    "puntosP": "0",
                     "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_vis": "0",
                         "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
-                    }
+                        "prode_resul": "E",
+                        "prode_loc": "0"
+                    },
+                    "partido_n": 42
                 },
                 {
-                    "puntos": "",
-                    "partido_n": 43,
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_penvis": "",
-                        "prode_resul": ""
-                    },
                     "realPartido": {
-                        "resultado": "",
                         "resul_penvis": "",
-                        "resul_vis": "",
                         "resul_penloc": "",
-                        "resul_loc": ""
+                        "resul_loc": "2",
+                        "resultado": "L",
+                        "resul_vis": "1"
                     },
-                    "id": 43,
+                    "puntosP": "0",
+                    "puntosDG": "0",
                     "datosPartido": {
+                        "eqvisitante": "ESPAÑA",
+                        "icolocal": "japon",
                         "fecha": "01/12/2022",
-                        "hora": "16:00",
                         "grupo": "GRUPO E",
                         "dia": "JUEVES",
-                        "icolocal": "japon",
-                        "eqvisitante": "ESPAÑA",
-                        "icovisitante": "espana",
-                        "eqlocal": "JAPÓN"
+                        "hora": "16:00",
+                        "eqlocal": "JAPÓN",
+                        "icovisitante": "espana"
+                    },
+                    "partido_n": 43,
+                    "id": 43,
+                    "puntos": 0,
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_vis": "2",
+                        "prode_resul": "V",
+                        "prode_penloc": ""
                     }
                 },
                 {
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": ""
-                    },
-                    "id": 44,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
+                    "puntos": 0,
                     "datosPartido": {
+                        "fecha": "01/12/2022",
+                        "icovisitante": "alemania",
                         "icolocal": "costarica",
                         "eqvisitante": "ALEMANIA",
-                        "hora": "16:00",
                         "eqlocal": "COSTA RICA",
-                        "icovisitante": "alemania",
+                        "dia": "JUEVES",
                         "grupo": "GRUPO E",
-                        "fecha": "01/12/2022",
-                        "dia": "JUEVES"
+                        "hora": "16:00"
                     },
-                    "partido_n": 44
+                    "partido_n": 44,
+                    "realPartido": {
+                        "resul_loc": "2",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_vis": "4",
+                        "resul_penvis": ""
+                    },
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_penvis": "",
+                        "prode_vis": "2"
+                    },
+                    "puntosP": "0",
+                    "id": 44
                 },
                 {
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "3",
+                        "prode_loc": "0",
+                        "prode_resul": "V",
+                        "prode_penvis": ""
+                    },
+                    "puntosCG": "1",
+                    "id": 45,
+                    "partido_n": 45,
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_loc": "2",
+                        "resul_vis": "1",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
+                    },
                     "datosPartido": {
-                        "fecha": "02/12/2022",
-                        "dia": "VIERNES",
                         "grupo": "GRUPO H",
-                        "hora": "12:00",
-                        "eqlocal": "COREA",
                         "icovisitante": "portugal",
                         "icolocal": "corea",
-                        "eqvisitante": "PORTUGAL"
-                    },
-                    "id": 45,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": ""
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
-                    },
-                    "partido_n": 45
-                },
-                {
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": ""
-                    },
-                    "datosPartido": {
-                        "icovisitante": "uruguay",
-                        "icolocal": "ghana",
-                        "fecha": "02/12/2022",
-                        "grupo": "GRUPO H",
-                        "eqlocal": "GHANA",
-                        "eqvisitante": "URUGUAY",
+                        "eqlocal": "COREA",
                         "hora": "12:00",
-                        "dia": "VIERNES"
+                        "eqvisitante": "PORTUGAL",
+                        "dia": "VIERNES",
+                        "fecha": "02/12/2022"
                     },
-                    "partido_n": 46,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "id": 46,
-                    "puntos": ""
+                    "puntosDG": "0",
+                    "puntos": 1
                 },
                 {
-                    "partido_n": 47,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
+                    "puntosP": "3",
                     "prodePartido": {
-                        "prode_resul": "",
-                        "prode_vis": "",
+                        "prode_resul": "V",
+                        "prode_vis": "2",
                         "prode_penvis": "",
-                        "prode_loc": "",
+                        "prode_loc": "0",
                         "prode_penloc": ""
                     },
-                    "id": 47,
+                    "puntosCG": "1",
+                    "puntos": 5,
+                    "id": 46,
+                    "partido_n": 46,
+                    "puntosDG": "1",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resultado": "V",
+                        "resul_vis": "2"
+                    },
                     "datosPartido": {
-                        "eqlocal": "CAMERÚN",
                         "dia": "VIERNES",
-                        "grupo": "GRUPO G",
-                        "icolocal": "camerun",
+                        "icolocal": "ghana",
+                        "hora": "12:00",
+                        "eqlocal": "GHANA",
                         "fecha": "02/12/2022",
-                        "eqvisitante": "BRASIL",
-                        "hora": "16:00",
-                        "icovisitante": "brasil"
+                        "icovisitante": "uruguay",
+                        "grupo": "GRUPO H",
+                        "eqvisitante": "URUGUAY"
                     }
                 },
                 {
+                    "puntosP": "0",
+                    "partido_n": 47,
                     "datosPartido": {
-                        "icolocal": "serbia",
-                        "eqlocal": "SERBIA",
-                        "icovisitante": "suiza",
-                        "fecha": "02/12/2022",
-                        "eqvisitante": "SUIZA",
-                        "dia": "VIERNES",
+                        "grupo": "GRUPO G",
+                        "icolocal": "camerun",
+                        "icovisitante": "brasil",
                         "hora": "16:00",
-                        "grupo": "GRUPO G"
+                        "eqvisitante": "BRASIL",
+                        "eqlocal": "CAMERÚN",
+                        "dia": "VIERNES",
+                        "fecha": "02/12/2022"
                     },
+                    "prodePartido": {
+                        "prode_vis": "2",
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_loc": "1",
+                        "prode_penloc": ""
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "id": 47,
+                    "puntos": 0,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
+                        "resul_vis": "0",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_loc": "",
+                        "resultado": "L"
+                    }
+                },
+                {
+                    "id": 48,
+                    "puntosCG": "0",
+                    "puntosP": "1",
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_loc": "2",
+                        "resul_penloc": "",
+                        "resul_vis": "3",
                         "resul_penvis": ""
                     },
-                    "puntos": "",
-                    "id": 48,
+                    "puntos": 2,
                     "prodePartido": {
-                        "prode_penloc": "",
                         "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": ""
+                        "prode_resul": "V",
+                        "prode_penloc": "",
+                        "prode_loc": "0",
+                        "prode_vis": "1"
                     },
-                    "partido_n": 48
+                    "partido_n": 48,
+                    "puntosDG": "1",
+                    "datosPartido": {
+                        "eqlocal": "SERBIA",
+                        "icolocal": "serbia",
+                        "grupo": "GRUPO G",
+                        "fecha": "02/12/2022",
+                        "dia": "VIERNES",
+                        "eqvisitante": "SUIZA",
+                        "icovisitante": "suiza",
+                        "hora": "16:00"
+                    }
                 }
             ],
             "fecha_n": 3
@@ -7153,102 +7443,111 @@ export var fechaPablo = {
             "fecha_n": 4,
             "partidos": [
                 {
+                    "prodePartido": {
+                        "prode_vis": "",
+                        "prode_loc": "",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_resul": ""
+                    },
+                    "partido_n": 49,
+                    "puntos": "",
                     "id": 49,
-                    "puntos": "",
                     "realPartido": {
-                        "resul_penloc": "",
                         "resul_vis": "",
                         "resul_loc": "",
+                        "resul_penloc": "",
                         "resultado": "",
                         "resul_penvis": ""
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": ""
-                    },
                     "datosPartido": {
-                        "icolocal": "vacio",
                         "hora": "12:00",
+                        "eqlocal": "PAISES BAJOS",
                         "dia": "SÁBADO",
-                        "eqvisitante": "2° B",
-                        "icovisitante": "vacio",
-                        "eqlocal": "1° A",
-                        "fecha": "03/12/2022",
-                        "grupo": "OCTAVOS DE FINAL"
-                    },
-                    "partido_n": 49
-                },
-                {
-                    "partido_n": 50,
-                    "datosPartido": {
-                        "dia": "SÁBADO",
-                        "eqlocal": "1° C",
-                        "icolocal": "vacio",
-                        "eqvisitante": "2° D",
-                        "icovisitante": "vacio",
-                        "fecha": "03/12/2022",
                         "grupo": "OCTAVOS DE FINAL",
-                        "hora": "16:00"
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_loc": ""
-                    },
-                    "id": 50,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
-                    "puntos": ""
+                        "icolocal": "paisesbajos",
+                        "fecha": "03/12/2022",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "icovisitante": "estadosunidos"
+                    }
                 },
                 {
-                    "puntos": "",
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
                         "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "",
+                        "prode_resul": "",
                         "prode_penvis": ""
                     },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
                     "datosPartido": {
-                        "hora": "12:00",
-                        "icovisitante": "vacio",
-                        "eqvisitante": "2° C",
-                        "eqlocal": "1° D",
+                        "eqvisitante": "AUSTRALIA",
+                        "icolocal": "argentina",
                         "grupo": "OCTAVOS DE FINAL",
-                        "fecha": "04/12/2022",
-                        "dia": "DOMINGO",
-                        "icolocal": "vacio"
+                        "hora": "16:00",
+                        "eqlocal": "ARGENTINA",
+                        "fecha": "03/12/2022",
+                        "icovisitante": "australia",
+                        "dia": "SÁBADO"
                     },
-                    "partido_n": 51,
-                    "id": 51
+                    "partido_n": 50,
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_penvis": "",
+                        "resul_loc": ""
+                    },
+                    "puntos": "",
+                    "id": 50
                 },
                 {
+                    "partido_n": 51,
                     "puntos": "",
-                    "partido_n": 52,
-                    "id": 52,
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": ""
+                    },
                     "realPartido": {
-                        "resul_penvis": "",
-                        "resul_vis": "",
+                        "resultado": "",
                         "resul_loc": "",
                         "resul_penloc": "",
-                        "resultado": ""
+                        "resul_penvis": "",
+                        "resul_vis": ""
+                    },
+                    "id": 51,
+                    "datosPartido": {
+                        "eqvisitante": "POLONIA",
+                        "fecha": "04/12/2022",
+                        "hora": "12:00",
+                        "eqlocal": "FRANCIA",
+                        "icolocal": "francia",
+                        "dia": "DOMINGO",
+                        "icovisitante": "polonia",
+                        "grupo": "OCTAVOS DE FINAL"
+                    }
+                },
+                {
+                    "id": 52,
+                    "puntos": "",
+                    "datosPartido": {
+                        "fecha": "04/12/2022",
+                        "eqlocal": "INGLATERRA",
+                        "dia": "DOMINGO",
+                        "eqvisitante": "SENEGAL",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "senegal",
+                        "icolocal": "inglaterra",
+                        "hora": "16:00"
+                    },
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_loc": "",
+                        "resul_penloc": ""
                     },
                     "prodePartido": {
                         "prode_penvis": "",
@@ -7257,383 +7556,380 @@ export var fechaPablo = {
                         "prode_resul": "",
                         "prode_vis": ""
                     },
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "eqlocal": "1° B",
-                        "eqvisitante": "2° A",
-                        "dia": "DOMINGO",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "hora": "16:00",
-                        "icovisitante": "vacio",
-                        "fecha": "04/12/2022"
-                    }
+                    "partido_n": 52
                 },
                 {
+                    "puntos": "",
                     "datosPartido": {
-                        "eqvisitante": "2° F",
-                        "hora": "12:00",
-                        "eqlocal": "1° E",
-                        "icovisitante": "vacio",
-                        "grupo": "OCTAVOS DE FINAL",
                         "fecha": "05/12/2022",
-                        "icolocal": "vacio",
-                        "dia": "LUNES"
+                        "icolocal": "japon",
+                        "eqvisitante": "CROACIA",
+                        "dia": "LUNES",
+                        "eqlocal": "JAPON",
+                        "hora": "12:00",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "croacia"
                     },
-                    "id": 53,
-                    "partido_n": 53,
                     "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
                         "resul_loc": "",
+                        "resul_penloc": "",
+                        "resultado": "",
                         "resul_penvis": "",
                         "resul_vis": ""
                     },
                     "prodePartido": {
-                        "prode_resul": "",
                         "prode_penvis": "",
-                        "prode_vis": "",
+                        "prode_resul": "",
                         "prode_loc": "",
-                        "prode_penloc": ""
-                    },
-                    "puntos": ""
-                },
-                {
-                    "puntos": "",
-                    "prodePartido": {
                         "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_resul": "",
                         "prode_vis": ""
                     },
-                    "datosPartido": {
-                        "fecha": "05/12/2022",
-                        "icovisitante": "vacio",
-                        "hora": "16:00",
-                        "icolocal": "vacio",
-                        "dia": "LUNES",
-                        "eqlocal": "1° G",
-                        "eqvisitante": "2° H",
-                        "grupo": "OCTAVOS DE FINAL"
+                    "partido_n": 53,
+                    "id": 53
+                },
+                {
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_vis": ""
                     },
-                    "partido_n": 54,
+                    "puntos": "",
+                    "datosPartido": {
+                        "eqvisitante": "COREA",
+                        "hora": "16:00",
+                        "icolocal": "brasil",
+                        "icovisitante": "corea",
+                        "dia": "LUNES",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "fecha": "05/12/2022",
+                        "eqlocal": "BRASIL"
+                    },
                     "realPartido": {
-                        "resul_penvis": "",
                         "resul_vis": "",
-                        "resultado": "",
                         "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
                         "resul_loc": ""
                     },
-                    "id": 54
+                    "id": 54,
+                    "partido_n": 54
                 },
                 {
                     "partido_n": 55,
-                    "id": 55,
-                    "datosPartido": {
-                        "fecha": "06/12/2022",
-                        "dia": "MARTES",
-                        "hora": "12:00",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqlocal": "1° F",
-                        "eqvisitante": "2° E",
-                        "icovisitante": "vacio",
-                        "icolocal": "vacio"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
                     "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "",
                         "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
                         "prode_resul": ""
-                    }
-                },
-                {
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": ""
                     },
-                    "id": 56,
-                    "partido_n": 56,
-                    "puntos": "",
                     "realPartido": {
                         "resultado": "",
                         "resul_vis": "",
-                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_loc": ""
+                        "resul_loc": "",
+                        "resul_penvis": ""
+                    },
+                    "id": 55,
+                    "puntos": "",
+                    "datosPartido": {
+                        "icolocal": "marruecos",
+                        "eqvisitante": "ESPANA",
+                        "icovisitante": "espana",
+                        "fecha": "06/12/2022",
+                        "hora": "12:00",
+                        "dia": "MARTES",
+                        "eqlocal": "MARRUECOS",
+                        "grupo": "OCTAVOS DE FINAL"
+                    }
+                },
+                {
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_penvis": "",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_penloc": ""
+                    },
+                    "puntos": "",
+                    "id": 56,
+                    "partido_n": 56,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_penloc": "",
+                        "prode_resul": "",
+                        "prode_vis": ""
                     },
                     "datosPartido": {
-                        "eqlocal": "1° H",
-                        "eqvisitante": "2° G",
-                        "icolocal": "vacio",
-                        "icovisitante": "vacio",
                         "fecha": "06/12/2022",
-                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "suiza",
+                        "icolocal": "portugal",
                         "hora": "16:00",
-                        "dia": "MARTES"
+                        "dia": "MARTES",
+                        "eqlocal": "PORTUGAL",
+                        "eqvisitante": "SUIZA",
+                        "grupo": "OCTAVOS DE FINAL"
                     }
                 }
             ]
         },
         {
-            "fecha_n": 5,
             "partidos": [
                 {
                     "id": 57,
                     "puntos": "",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "",
+                        "prode_penloc": "",
+                        "prode_vis": "",
+                        "prode_loc": ""
+                    },
+                    "partido_n": 57,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_vis": ""
+                    },
                     "datosPartido": {
+                        "grupo": "CUARTOS DE FINAL",
+                        "hora": "12:00",
+                        "fecha": "09/12/2022",
                         "icolocal": "vacio",
+                        "eqvisitante": "GANADOR P. 6",
                         "eqlocal": "GANADOR P. 5",
-                        "icovisitante": "vacio",
-                        "hora": "12:00",
-                        "grupo": "CUARTOS DE FINAL",
                         "dia": "VIERNES",
-                        "fecha": "09/12/2022",
-                        "eqvisitante": "GANADOR P. 6"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 57
-                },
-                {
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "puntos": "",
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "hora": "16:00",
-                        "grupo": "CUARTOS DE FINAL",
-                        "eqvisitante": "GANADOR P. 2",
-                        "icovisitante": "vacio",
-                        "eqlocal": "GANADOR P. 1",
-                        "fecha": "09/12/2022",
-                        "dia": "VIERNES"
-                    },
-                    "id": 58,
-                    "partido_n": 58,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    }
-                },
-                {
-                    "id": 59,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_resul": ""
-                    },
-                    "datosPartido": {
-                        "eqvisitante": "GANADOR P. 8",
-                        "hora": "12:00",
-                        "dia": "SÁBADO",
-                        "eqlocal": "GANADOR P. 7",
-                        "icovisitante": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "icolocal": "vacio",
-                        "fecha": "10/12/2022"
-                    },
-                    "partido_n": 59
-                },
-                {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 60,
-                    "datosPartido": {
-                        "eqlocal": "GANADOR P. 4",
-                        "icolocal": "vacio",
-                        "icovisitante": "vacio",
-                        "fecha": "10/12/2022",
-                        "eqvisitante": "GANADOR P. 3",
-                        "hora": "16:00",
-                        "dia": "SÁBADO",
-                        "grupo": "CUARTOS DE FINAL"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_resul": ""
-                    },
-                    "partido_n": 60,
-                    "puntos": ""
-                }
-            ]
-        },
-        {
-            "partidos": [
-                {
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": ""
-                    },
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 61,
-                    "id": 61,
-                    "datosPartido": {
-                        "fecha": "13/12/2022",
-                        "eqlocal": "GANADOR P. 10",
-                        "dia": "MARTES",
-                        "icolocal": "vacio",
-                        "hora": "16:00",
-                        "grupo": "SEMIFINAL",
-                        "eqvisitante": "GANADOR P. 9",
                         "icovisitante": "vacio"
                     }
                 },
                 {
-                    "partido_n": 62,
+                    "puntos": "",
+                    "id": 58,
                     "prodePartido": {
                         "prode_resul": "",
-                        "prode_penvis": "",
                         "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
+                        "prode_loc": "",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
                     },
-                    "puntos": "",
                     "realPartido": {
-                        "resul_loc": "",
+                        "resul_penvis": "",
                         "resul_penloc": "",
                         "resultado": "",
-                        "resul_penvis": "",
+                        "resul_loc": "",
                         "resul_vis": ""
                     },
-                    "id": 62,
+                    "partido_n": 58,
                     "datosPartido": {
-                        "eqlocal": "GANADOR P. 12",
-                        "grupo": "SEMIFINAL",
-                        "icovisitante": "vacio",
-                        "fecha": "14/12/2022",
-                        "eqvisitante": "GANADOR P. 11",
+                        "hora": "16:00",
                         "icolocal": "vacio",
-                        "dia": "MIÉRCOLES",
+                        "icovisitante": "vacio",
+                        "fecha": "09/12/2022",
+                        "dia": "VIERNES",
+                        "eqvisitante": "GANADOR P. 2",
+                        "eqlocal": "GANADOR P. 1",
+                        "grupo": "CUARTOS DE FINAL"
+                    }
+                },
+                {
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_vis": "",
+                        "prode_penvis": ""
+                    },
+                    "partido_n": 59,
+                    "datosPartido": {
+                        "icolocal": "vacio",
+                        "icovisitante": "vacio",
+                        "eqvisitante": "GANADOR P. 8",
+                        "dia": "SÁBADO",
+                        "hora": "12:00",
+                        "fecha": "10/12/2022",
+                        "eqlocal": "GANADOR P. 7",
+                        "grupo": "CUARTOS DE FINAL"
+                    },
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_penvis": ""
+                    },
+                    "id": 59,
+                    "puntos": ""
+                },
+                {
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "datosPartido": {
+                        "eqlocal": "GANADOR P. 4",
+                        "grupo": "CUARTOS DE FINAL",
+                        "fecha": "10/12/2022",
+                        "dia": "SÁBADO",
+                        "icovisitante": "vacio",
+                        "icolocal": "vacio",
+                        "eqvisitante": "GANADOR P. 3",
                         "hora": "16:00"
+                    },
+                    "partido_n": 60,
+                    "id": 60,
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_vis": "",
+                        "prode_penvis": "",
+                        "prode_resul": "",
+                        "prode_penloc": "",
+                        "prode_loc": ""
                     }
                 }
             ],
-            "fecha_n": 6
+            "fecha_n": 5
+        },
+        {
+            "fecha_n": 6,
+            "partidos": [
+                {
+                    "datosPartido": {
+                        "fecha": "13/12/2022",
+                        "icovisitante": "vacio",
+                        "grupo": "SEMIFINAL",
+                        "hora": "16:00",
+                        "icolocal": "vacio",
+                        "eqvisitante": "GANADOR P. 9",
+                        "eqlocal": "GANADOR P. 10",
+                        "dia": "MARTES"
+                    },
+                    "prodePartido": {
+                        "prode_loc": "",
+                        "prode_vis": "",
+                        "prode_resul": "",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resul_penvis": ""
+                    },
+                    "id": 61,
+                    "partido_n": 61,
+                    "puntos": ""
+                },
+                {
+                    "partido_n": 62,
+                    "id": 62,
+                    "datosPartido": {
+                        "eqvisitante": "GANADOR P. 11",
+                        "eqlocal": "GANADOR P. 12",
+                        "icolocal": "vacio",
+                        "fecha": "14/12/2022",
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "vacio",
+                        "hora": "16:00",
+                        "grupo": "SEMIFINAL"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_penloc": "",
+                        "prode_resul": "",
+                        "prode_vis": ""
+                    },
+                    "puntos": "",
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    }
+                }
+            ]
         },
         {
             "fecha_n": 7,
             "partidos": [
                 {
-                    "id": 63,
                     "puntos": "",
+                    "id": 63,
+                    "partido_n": 63,
                     "datosPartido": {
-                        "eqvisitante": "PERDEDOR P. 14",
-                        "grupo": "3° Y 4° PUESTO",
-                        "dia": "SÁBADO",
-                        "hora": "12:00",
-                        "fecha": "17/12/2022",
                         "icovisitante": "vacio",
+                        "eqvisitante": "PERDEDOR P. 14",
                         "icolocal": "vacio",
-                        "eqlocal": "PERDEDOR P.13"
+                        "hora": "12:00",
+                        "eqlocal": "PERDEDOR P.13",
+                        "fecha": "17/12/2022",
+                        "grupo": "3° Y 4° PUESTO",
+                        "dia": "SÁBADO"
+                    },
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resul_penvis": ""
                     },
                     "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
                         "prode_penvis": "",
                         "prode_resul": "",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 63,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
+                        "prode_penloc": "",
+                        "prode_loc": "",
+                        "prode_vis": ""
                     }
                 },
                 {
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 64,
                     "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penvis": "",
                         "prode_resul": "",
                         "prode_loc": "",
-                        "prode_penloc": ""
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": ""
                     },
-                    "id": 64,
-                    "puntos": "",
                     "datosPartido": {
-                        "eqvisitante": "GANADOR P. 14",
-                        "fecha": "18/12/2022",
                         "hora": "12:00",
+                        "icolocal": "vacio",
                         "icovisitante": "vacio",
                         "grupo": "FINAL",
                         "dia": "DOMINGO",
-                        "icolocal": "vacio",
-                        "eqlocal": "GANADOR P. 13"
+                        "fecha": "18/12/2022",
+                        "eqlocal": "GANADOR P. 13",
+                        "eqvisitante": "GANADOR P. 14"
                     },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    },
-                    "partido_n": 64
+                    "id": 64,
+                    "puntos": ""
                 }
             ]
         }
-    ]
+    ],
+    "timestamp": {
+        "nanoseconds": 991000000,
+        "seconds": 1669699789
+    },
+    "user": "PEPRIETO@GMAIL.COM",
+    "user_version": 4
 }
 
 export var unicoPablo = {
@@ -11469,472 +11765,527 @@ export var unicoPablo = {
 
 
 export var fechaAriel = {
+    "user_version": 6,
+    "user_modificacion": "2/12/2022 23:47:24",
+    "user": "ARIELMORENO85@HOTMAIL.COM",
+    "timestamp": {
+        "seconds": 1670035644,
+        "nanoseconds": 343000000
+    },
     "fechanro": [
         {
             "partidos": [
                 {
-                    "partido_n": 1,
-                    "id": 1,
-                    "puntos": "",
+                    "puntosP": "0",
                     "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
+                        "resultado": "V",
+                        "resul_loc": "0",
+                        "resul_penloc": "",
                         "resul_penvis": "",
-                        "resul_penloc": ""
+                        "resul_vis": "2"
+                    },
+                    "id": 1,
+                    "puntosDG": "0",
+                    "partido_n": 1,
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_resul": "E",
+                        "prode_loc": "0",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
                     },
                     "datosPartido": {
                         "fecha": "20/11/2022",
-                        "eqlocal": "QATAR",
-                        "dia": "DOMINGO",
                         "icolocal": "qatar",
-                        "eqvisitante": "ECUADOR",
-                        "grupo": "GRUPO A",
+                        "eqlocal": "QATAR",
                         "icovisitante": "ecuador",
-                        "hora": "13:00"
+                        "dia": "DOMINGO",
+                        "hora": "13:00",
+                        "grupo": "GRUPO A",
+                        "eqvisitante": "ECUADOR"
                     },
-                    "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_resul": "V",
-                        "prode_penloc": "",
-                        "prode_loc": "0",
-                        "prode_penvis": ""
-                    }
+                    "puntos": 0
                 },
                 {
-                    "id": 2,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_vis": "1",
+                        "prode_loc": "3"
+                    },
+                    "puntosP": "1",
                     "partido_n": 2,
+                    "puntos": 1,
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_loc": "6",
+                        "resul_penvis": "",
+                        "resul_vis": "2"
+                    },
                     "datosPartido": {
-                        "grupo": "GRUPO B",
+                        "fecha": "21/11/2022",
+                        "eqvisitante": "IRÁN",
                         "icolocal": "inglaterra",
                         "eqlocal": "INGLATERRA",
                         "dia": "LUNES",
+                        "grupo": "GRUPO B",
                         "hora": "10:00",
-                        "eqvisitante": "IRÁN",
-                        "icovisitante": "iran",
-                        "fecha": "21/11/2022"
+                        "icovisitante": "iran"
                     },
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "prodePartido": {
-                        "prode_loc": "3",
-                        "prode_vis": "1",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "L"
-                    }
+                    "id": 2,
+                    "puntosDG": "0"
                 },
                 {
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "0",
-                        "prode_vis": "1",
-                        "prode_resul": "V"
-                    },
-                    "id": 3,
-                    "datosPartido": {
-                        "fecha": "21/11/2022",
-                        "icolocal": "senegal",
-                        "icovisitante": "paisesbajos",
-                        "grupo": "GRUPO A",
-                        "hora": "13:00",
-                        "dia": "LUNES",
-                        "eqlocal": "SENEGAL",
-                        "eqvisitante": "PAÍSES BAJOS"
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resul_vis": "2",
+                        "resul_penvis": ""
                     },
                     "partido_n": 3,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_resul": "V",
+                        "prode_vis": "1"
+                    },
+                    "puntosDG": "0",
+                    "id": 3,
+                    "datosPartido": {
+                        "icovisitante": "paisesbajos",
+                        "fecha": "21/11/2022",
+                        "grupo": "GRUPO A",
+                        "icolocal": "senegal",
+                        "eqlocal": "SENEGAL",
+                        "hora": "13:00",
+                        "dia": "LUNES",
+                        "eqvisitante": "PAÍSES BAJOS"
                     }
                 },
                 {
-                    "puntos": "",
-                    "datosPartido": {
-                        "grupo": "GRUPO B",
-                        "dia": "LUNES",
-                        "eqvisitante": "GALES",
-                        "fecha": "21/11/2022",
-                        "icolocal": "estadosunidos",
-                        "eqlocal": "ESTADOS UNIDOS",
-                        "hora": "16:00",
-                        "icovisitante": "gales"
-                    },
+                    "puntosDG": "1",
                     "id": 4,
                     "realPartido": {
-                        "resul_penvis": "",
-                        "resultado": "",
+                        "resultado": "E",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_loc": "1",
+                        "resul_vis": "1",
+                        "resul_penvis": ""
                     },
+                    "puntosP": "3",
                     "partido_n": 4,
+                    "puntos": 5,
+                    "puntosCG": "1",
+                    "datosPartido": {
+                        "eqvisitante": "GALES",
+                        "fecha": "21/11/2022",
+                        "hora": "16:00",
+                        "icolocal": "estadosunidos",
+                        "grupo": "GRUPO B",
+                        "eqlocal": "ESTADOS UNIDOS",
+                        "dia": "LUNES",
+                        "icovisitante": "gales"
+                    },
                     "prodePartido": {
-                        "prode_penloc": "",
                         "prode_resul": "E",
+                        "prode_loc": "1",
                         "prode_penvis": "",
                         "prode_vis": "1",
-                        "prode_loc": "1"
+                        "prode_penloc": ""
                     }
                 },
                 {
-                    "id": 5,
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_loc": "2",
+                        "prode_resul": "L"
+                    },
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "puntosP": "0",
                     "partido_n": 5,
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
+                        "resul_vis": "2",
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
+                        "resultado": "V",
+                        "resul_loc": "1",
+                        "resul_penvis": ""
                     },
+                    "id": 5,
                     "datosPartido": {
-                        "hora": "07:00",
-                        "icovisitante": "arabiasaudita",
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "eqlocal": "ARGENTINA",
-                        "grupo": "GRUPO C",
                         "fecha": "22/11/2022",
+                        "icolocal": "argentina",
+                        "icovisitante": "arabiasaudita",
+                        "grupo": "GRUPO C",
+                        "eqlocal": "ARGENTINA",
                         "dia": "MARTES",
-                        "icolocal": "argentina"
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_resul": "L"
+                        "hora": "07:00",
+                        "eqvisitante": "ARABIA SAUDITA"
                     }
                 },
                 {
-                    "puntos": "",
+                    "puntosCG": "0",
                     "partido_n": 6,
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "2",
-                        "prode_vis": "0",
-                        "prode_resul": "L"
-                    },
                     "id": 6,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_loc": "2"
+                    },
+                    "puntosDG": "0",
                     "datosPartido": {
-                        "fecha": "22/11/2022",
-                        "grupo": "GRUPO D",
                         "dia": "MARTES",
-                        "eqvisitante": "TÚNEZ",
-                        "icovisitante": "tunez",
-                        "eqlocal": "DINAMARCA",
                         "hora": "10:00",
+                        "grupo": "GRUPO D",
+                        "eqlocal": "DINAMARCA",
+                        "icovisitante": "tunez",
+                        "fecha": "22/11/2022",
+                        "eqvisitante": "TÚNEZ",
                         "icolocal": "dinamarca"
                     },
+                    "puntosP": "0",
+                    "puntos": 0,
                     "realPartido": {
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_loc": "0",
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
                         "resul_penvis": ""
                     }
                 },
                 {
-                    "id": 7,
                     "datosPartido": {
+                        "icovisitante": "polonia",
+                        "eqlocal": "MÉXICO",
                         "dia": "MARTES",
                         "grupo": "GRUPO C",
-                        "icovisitante": "polonia",
-                        "fecha": "22/11/2022",
                         "icolocal": "mexico",
+                        "fecha": "22/11/2022",
                         "hora": "13:00",
-                        "eqvisitante": "POLONIA",
-                        "eqlocal": "MÉXICO"
+                        "eqvisitante": "POLONIA"
                     },
+                    "puntos": 0,
                     "partido_n": 7,
-                    "puntos": "",
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "id": 7,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "E",
+                        "resul_loc": "0",
+                        "resul_vis": "0",
+                        "resul_penvis": ""
+                    }
+                },
+                {
                     "prodePartido": {
                         "prode_resul": "L",
+                        "prode_loc": "3",
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
+                    "realPartido": {
+                        "resul_vis": "1",
+                        "resul_penloc": "",
+                        "resul_loc": "4",
+                        "resul_penvis": "",
+                        "resultado": "L"
+                    },
+                    "puntos": 2,
+                    "puntosCG": "0",
+                    "puntosP": "1",
+                    "puntosDG": "1",
+                    "datosPartido": {
+                        "eqlocal": "FRANCIA",
+                        "dia": "MARTES",
+                        "eqvisitante": "AUSTRALIA",
+                        "icolocal": "francia",
+                        "icovisitante": "australia",
+                        "hora": "16:00",
+                        "fecha": "22/11/2022",
+                        "grupo": "GRUPO D"
+                    },
+                    "partido_n": 8,
+                    "id": 8
+                },
+                {
+                    "partido_n": 9,
+                    "datosPartido": {
+                        "icovisitante": "croacia",
+                        "hora": "07:00",
+                        "fecha": "23/11/2022",
+                        "grupo": "GRUPO F",
+                        "dia": "MIÉRCOLES",
+                        "eqlocal": "MARRUECOS",
+                        "eqvisitante": "CROACIA",
+                        "icolocal": "marruecos"
+                    },
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "id": 9,
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_penvis": ""
+                    },
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_loc": "0",
+                        "prode_vis": "2"
+                    }
+                },
+                {
+                    "puntosCG": "1",
+                    "puntos": 1,
+                    "partido_n": 10,
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_loc": "3",
+                        "prode_resul": "L",
+                        "prode_penvis": ""
+                    },
+                    "id": 10,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "icovisitante": "japon",
+                        "eqvisitante": "JAPÓN",
+                        "icolocal": "alemania",
+                        "fecha": "23/11/2022",
+                        "eqlocal": "ALEMANIA",
+                        "hora": "10:00",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO E"
+                    },
+                    "realPartido": {
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resultado": "V"
+                    },
+                    "puntosP": "0"
+                },
+                {
+                    "id": 11,
+                    "datosPartido": {
+                        "eqvisitante": "COSTA RICA",
+                        "icovisitante": "costarica",
+                        "grupo": "GRUPO E",
+                        "fecha": "23/11/2022",
+                        "icolocal": "espana",
+                        "dia": "MIÉRCOLES",
+                        "eqlocal": "ESPAÑA",
+                        "hora": "13:00"
+                    },
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "3",
+                        "prode_resul": "L"
+                    },
+                    "partido_n": 11,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_loc": "7"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "puntosP": "1"
+                },
+                {
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "datosPartido": {
+                        "grupo": "GRUPO F",
+                        "fecha": "23/11/2022",
+                        "dia": "MIÉRCOLES",
+                        "hora": "16:00",
+                        "eqvisitante": "CANADÁ",
+                        "icolocal": "belgica",
+                        "icovisitante": "canada",
+                        "eqlocal": "BÉLGICA"
+                    },
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_loc": "1",
+                        "resul_vis": "0",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
+                    },
+                    "puntosCG": "0",
+                    "id": 12,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_resul": "L",
                         "prode_loc": "2",
+                        "prode_vis": "0",
+                        "prode_penvis": ""
+                    },
+                    "partido_n": 12,
+                    "puntosDG": "0"
+                },
+                {
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "E",
                         "prode_penvis": "",
                         "prode_penloc": "",
                         "prode_vis": "1"
                     },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    }
-                },
-                {
-                    "datosPartido": {
-                        "eqvisitante": "AUSTRALIA",
-                        "hora": "16:00",
-                        "grupo": "GRUPO D",
-                        "dia": "MARTES",
-                        "eqlocal": "FRANCIA",
-                        "icolocal": "francia",
-                        "fecha": "22/11/2022",
-                        "icovisitante": "australia"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "3",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 8,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "id": 8
-                },
-                {
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "eqlocal": "MARRUECOS",
-                        "icovisitante": "croacia",
-                        "fecha": "23/11/2022",
-                        "icolocal": "marruecos",
-                        "grupo": "GRUPO F",
-                        "eqvisitante": "CROACIA",
-                        "hora": "07:00",
-                        "dia": "MIÉRCOLES"
-                    },
-                    "id": 9,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "2",
-                        "prode_penvis": "",
-                        "prode_resul": "V",
-                        "prode_loc": "0"
-                    },
-                    "partido_n": 9,
-                    "puntos": ""
-                },
-                {
-                    "partido_n": 10,
-                    "id": 10,
-                    "puntos": "",
-                    "datosPartido": {
-                        "hora": "10:00",
-                        "icovisitante": "japon",
-                        "dia": "MIÉRCOLES",
-                        "icolocal": "alemania",
-                        "fecha": "23/11/2022",
-                        "eqlocal": "ALEMANIA",
-                        "eqvisitante": "JAPÓN",
-                        "grupo": "GRUPO E"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "3",
-                        "prode_vis": "0",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    }
-                },
-                {
-                    "datosPartido": {
-                        "eqvisitante": "COSTA RICA",
-                        "icovisitante": "costarica",
-                        "dia": "MIÉRCOLES",
-                        "icolocal": "espana",
-                        "hora": "13:00",
-                        "grupo": "GRUPO E",
-                        "fecha": "23/11/2022",
-                        "eqlocal": "ESPAÑA"
-                    },
-                    "partido_n": 11,
-                    "id": 11,
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_loc": "3",
-                        "prode_penvis": ""
-                    }
-                },
-                {
-                    "partido_n": 12,
-                    "id": 12,
-                    "datosPartido": {
-                        "icovisitante": "canada",
-                        "grupo": "GRUPO F",
-                        "hora": "16:00",
-                        "eqlocal": "BÉLGICA",
-                        "icolocal": "belgica",
-                        "fecha": "23/11/2022",
-                        "eqvisitante": "CANADÁ",
-                        "dia": "MIÉRCOLES"
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_loc": "2",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_penloc": ""
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    }
-                },
-                {
+                    "puntosCG": "0",
+                    "puntos": 0,
                     "id": 13,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "1",
-                        "prode_resul": "E"
-                    },
-                    "partido_n": 13,
                     "datosPartido": {
-                        "icovisitante": "camerun",
-                        "fecha": "24/11/2022",
-                        "hora": "07:00",
-                        "eqvisitante": "CAMERÚN",
                         "eqlocal": "SUIZA",
                         "icolocal": "suiza",
+                        "hora": "07:00",
+                        "eqvisitante": "CAMERÚN",
+                        "icovisitante": "camerun",
+                        "fecha": "24/11/2022",
                         "grupo": "GRUPO G",
                         "dia": "JUEVES"
                     },
                     "realPartido": {
+                        "resul_vis": "0",
+                        "resul_loc": "1",
                         "resul_penloc": "",
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    }
+                        "resultado": "L"
+                    },
+                    "puntosP": "0",
+                    "partido_n": 13
                 },
                 {
-                    "id": 14,
+                    "puntos": 0,
+                    "puntosP": "0",
                     "realPartido": {
-                        "resultado": "",
+                        "resultado": "E",
+                        "resul_loc": "0",
                         "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
+                        "resul_vis": "0",
+                        "resul_penloc": ""
                     },
-                    "puntos": "",
-                    "partido_n": 14,
                     "datosPartido": {
-                        "eqlocal": "URUGUAY",
-                        "dia": "JUEVES",
-                        "eqvisitante": "COREA",
-                        "fecha": "24/11/2022",
-                        "icovisitante": "corea",
-                        "icolocal": "uruguay",
                         "hora": "10:00",
-                        "grupo": "GRUPO H"
+                        "eqvisitante": "COREA",
+                        "grupo": "GRUPO H",
+                        "icovisitante": "corea",
+                        "dia": "JUEVES",
+                        "eqlocal": "URUGUAY",
+                        "icolocal": "uruguay",
+                        "fecha": "24/11/2022"
                     },
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "id": 14,
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "0",
+                        "prode_resul": "L",
                         "prode_penvis": "",
                         "prode_loc": "2",
-                        "prode_resul": "L"
-                    }
+                        "prode_vis": "0",
+                        "prode_penloc": ""
+                    },
+                    "partido_n": 14
                 },
                 {
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "partido_n": 15,
                     "id": 15,
+                    "puntosP": "1",
                     "datosPartido": {
-                        "grupo": "GRUPO H",
                         "icovisitante": "ghana",
-                        "eqvisitante": "GHANA",
-                        "fecha": "24/11/2022",
-                        "icolocal": "portugal",
+                        "grupo": "GRUPO H",
                         "hora": "13:00",
                         "dia": "JUEVES",
-                        "eqlocal": "PORTUGAL"
+                        "eqvisitante": "GHANA",
+                        "icolocal": "portugal",
+                        "eqlocal": "PORTUGAL",
+                        "fecha": "24/11/2022"
                     },
                     "prodePartido": {
-                        "prode_vis": "0",
                         "prode_penvis": "",
                         "prode_loc": "2",
                         "prode_penloc": "",
+                        "prode_vis": "0",
                         "prode_resul": "L"
                     },
-                    "partido_n": 15,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "puntos": ""
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_loc": "3",
+                        "resul_vis": "2"
+                    }
                 },
                 {
-                    "datosPartido": {
-                        "eqlocal": "BRASIL",
-                        "eqvisitante": "SERBIA",
-                        "icovisitante": "serbia",
-                        "fecha": "24/11/2022",
-                        "grupo": "GRUPO G",
-                        "hora": "16:00",
-                        "icolocal": "brasil",
-                        "dia": "JUEVES"
-                    },
-                    "id": 16,
-                    "partido_n": 16,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
                     "prodePartido": {
                         "prode_penloc": "",
-                        "prode_resul": "L",
                         "prode_loc": "3",
+                        "prode_penvis": "",
                         "prode_vis": "1",
-                        "prode_penvis": ""
-                    }
+                        "prode_resul": "L"
+                    },
+                    "id": 16,
+                    "puntosDG": "1",
+                    "realPartido": {
+                        "resul_loc": "2",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_penloc": ""
+                    },
+                    "partido_n": 16,
+                    "puntos": 2,
+                    "datosPartido": {
+                        "icolocal": "brasil",
+                        "grupo": "GRUPO G",
+                        "dia": "JUEVES",
+                        "icovisitante": "serbia",
+                        "eqlocal": "BRASIL",
+                        "fecha": "24/11/2022",
+                        "eqvisitante": "SERBIA",
+                        "hora": "16:00"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0"
                 }
             ],
             "fecha_n": 1
@@ -11942,775 +12293,694 @@ export var fechaAriel = {
         {
             "partidos": [
                 {
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_loc": "2",
+                        "prode_vis": "1",
+                        "prode_penloc": ""
+                    },
+                    "puntosDG": "0",
+                    "puntosP": "0",
+                    "partido_n": 17,
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resul_loc": "0",
+                        "resultado": "V",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "id": 17,
+                    "puntosCG": "0",
+                    "puntos": 0,
                     "datosPartido": {
                         "dia": "VIERNES",
                         "grupo": "GRUPO B",
+                        "hora": "07:00",
                         "icolocal": "gales",
                         "eqlocal": "GALES",
                         "fecha": "25/11/2022",
-                        "eqvisitante": "IRÁN",
                         "icovisitante": "iran",
-                        "hora": "07:00"
-                    },
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_vis": "1",
-                        "prode_loc": "2",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 17,
-                    "id": 17,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": ""
-                    },
-                    "puntos": ""
+                        "eqvisitante": "IRÁN"
+                    }
                 },
                 {
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_penloc": ""
+                    },
+                    "puntosP": "1",
+                    "partido_n": 18,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "icolocal": "qatar",
+                        "grupo": "GRUPO A",
+                        "eqlocal": "QATAR",
+                        "hora": "10:00",
+                        "icovisitante": "senegal",
+                        "fecha": "25/11/2022",
+                        "dia": "VIERNES",
+                        "eqvisitante": "SENEGAL"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 1,
                     "id": 18,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
+                        "resultado": "V",
+                        "resul_loc": "1",
                         "resul_penloc": "",
-                        "resultado": ""
-                    },
-                    "puntos": "",
+                        "resul_penvis": "",
+                        "resul_vis": "3"
+                    }
+                },
+                {
+                    "puntos": 5,
+                    "puntosDG": "1",
+                    "id": 19,
+                    "partido_n": 19,
                     "prodePartido": {
-                        "prode_loc": "0",
-                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "E",
+                        "prode_loc": "1",
                         "prode_penloc": "",
+                        "prode_vis": "1"
+                    },
+                    "datosPartido": {
+                        "grupo": "GRUPO A",
+                        "eqvisitante": "ECUADOR",
+                        "icolocal": "paisesbajos",
+                        "fecha": "25/11/2022",
+                        "icovisitante": "ecuador",
+                        "eqlocal": "PAÍSES BAJOS",
+                        "hora": "13:00",
+                        "dia": "VIERNES"
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "1",
+                        "resul_penloc": "",
+                        "resultado": "E",
+                        "resul_loc": "1"
+                    },
+                    "puntosCG": "1",
+                    "puntosP": "3"
+                },
+                {
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_loc": "3",
+                        "prode_penloc": "",
+                        "prode_resul": "L",
+                        "prode_vis": "1",
+                        "prode_penvis": ""
+                    },
+                    "partido_n": 20,
+                    "puntosP": "0",
+                    "id": 20,
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "grupo": "GRUPO B",
+                        "icolocal": "inglaterra",
+                        "eqlocal": "INGLATERRA",
+                        "dia": "VIERNES",
+                        "fecha": "25/11/2022",
+                        "icovisitante": "estadosunidos"
+                    },
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "E",
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resul_vis": "0"
+                    }
+                },
+                {
+                    "puntosDG": "1",
+                    "datosPartido": {
+                        "eqlocal": "TÚNEZ",
+                        "icovisitante": "australia",
+                        "grupo": "GRUPO D",
+                        "icolocal": "tunez",
+                        "hora": "07:00",
+                        "eqvisitante": "AUSTRALIA",
+                        "dia": "SÁBADO",
+                        "fecha": "26/11/2022"
+                    },
+                    "id": 21,
+                    "puntosP": "3",
+                    "puntosCG": "1",
+                    "puntos": 5,
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resul_vis": "1"
+                    },
+                    "partido_n": 21,
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_loc": "0",
+                        "prode_penloc": "",
+                        "prode_resul": "V",
+                        "prode_penvis": ""
+                    }
+                },
+                {
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "2",
+                        "prode_loc": "1",
                         "prode_penvis": "",
                         "prode_resul": "V"
                     },
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "partido_n": 22,
+                    "id": 22,
+                    "puntosCG": "0",
                     "datosPartido": {
-                        "eqlocal": "QATAR",
-                        "icovisitante": "senegal",
-                        "icolocal": "qatar",
-                        "dia": "VIERNES",
-                        "grupo": "GRUPO A",
-                        "eqvisitante": "SENEGAL",
-                        "hora": "10:00",
-                        "fecha": "25/11/2022"
-                    },
-                    "partido_n": 18
-                },
-                {
-                    "partido_n": 19,
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_resul": "E",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "1"
-                    },
-                    "datosPartido": {
-                        "fecha": "25/11/2022",
-                        "icolocal": "paisesbajos",
-                        "grupo": "GRUPO A",
-                        "hora": "13:00",
-                        "icovisitante": "ecuador",
-                        "eqvisitante": "ECUADOR",
-                        "dia": "VIERNES",
-                        "eqlocal": "PAÍSES BAJOS"
-                    },
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "id": 19,
-                    "puntos": ""
-                },
-                {
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "3",
-                        "prode_vis": "1"
-                    },
-                    "id": 20,
-                    "partido_n": 20,
-                    "datosPartido": {
-                        "fecha": "25/11/2022",
-                        "icovisitante": "estadosunidos",
-                        "hora": "16:00",
-                        "grupo": "GRUPO B",
-                        "icolocal": "inglaterra",
-                        "eqvisitante": "ESTADOS UNIDOS",
-                        "dia": "VIERNES",
-                        "eqlocal": "INGLATERRA"
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_penvis": ""
-                    },
-                    "puntos": ""
-                },
-                {
-                    "datosPartido": {
-                        "dia": "SÁBADO",
-                        "eqvisitante": "AUSTRALIA",
-                        "hora": "07:00",
-                        "icolocal": "tunez",
-                        "fecha": "26/11/2022",
-                        "grupo": "GRUPO D",
-                        "icovisitante": "australia",
-                        "eqlocal": "TÚNEZ"
-                    },
-                    "puntos": "",
-                    "partido_n": 21,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "V",
-                        "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_loc": "0"
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    },
-                    "id": 21
-                },
-                {
-                    "datosPartido": {
-                        "hora": "10:00",
-                        "fecha": "26/11/2022",
                         "eqlocal": "POLONIA",
                         "eqvisitante": "ARABIA SAUDITA",
-                        "dia": "SÁBADO",
-                        "icolocal": "polonia",
                         "grupo": "GRUPO C",
-                        "icovisitante": "arabiasaudita"
-                    },
-                    "id": 22,
-                    "prodePartido": {
-                        "prode_resul": "V",
-                        "prode_vis": "2",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_loc": "1"
+                        "icovisitante": "arabiasaudita",
+                        "hora": "10:00",
+                        "fecha": "26/11/2022",
+                        "dia": "SÁBADO",
+                        "icolocal": "polonia"
                     },
                     "realPartido": {
-                        "resultado": "",
                         "resul_penloc": "",
                         "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    },
-                    "partido_n": 22,
-                    "puntos": ""
+                        "resul_loc": "2",
+                        "resul_vis": "0",
+                        "resultado": "L"
+                    }
                 },
                 {
+                    "datosPartido": {
+                        "icovisitante": "dinamarca",
+                        "icolocal": "francia",
+                        "eqvisitante": "DINAMARCA",
+                        "fecha": "26/11/2022",
+                        "eqlocal": "FRANCIA",
+                        "dia": "SÁBADO",
+                        "grupo": "GRUPO D",
+                        "hora": "13:00"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "puntosP": "1",
+                    "puntosDG": "0",
+                    "id": 23,
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "0",
                         "prode_resul": "L",
+                        "prode_penvis": "",
                         "prode_loc": "2",
-                        "prode_penloc": ""
+                        "prode_penloc": "",
+                        "prode_vis": "0"
                     },
                     "partido_n": 23,
-                    "puntos": "",
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
-                    },
-                    "datosPartido": {
-                        "grupo": "GRUPO D",
-                        "eqvisitante": "DINAMARCA",
-                        "icovisitante": "dinamarca",
-                        "hora": "13:00",
-                        "fecha": "26/11/2022",
-                        "icolocal": "francia",
-                        "eqlocal": "FRANCIA",
-                        "dia": "SÁBADO"
-                    },
-                    "id": 23
+                        "resul_vis": "1",
+                        "resul_penloc": "",
+                        "resultado": "L",
+                        "resul_loc": "2",
+                        "resul_penvis": ""
+                    }
                 },
                 {
-                    "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "L"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
                     "partido_n": 24,
-                    "id": 24,
+                    "puntos": 5,
+                    "puntosDG": "1",
                     "datosPartido": {
-                        "grupo": "GRUPO C",
-                        "eqvisitante": "MÉXICO",
-                        "dia": "SÁBADO",
                         "eqlocal": "ARGENTINA",
                         "hora": "16:00",
+                        "fecha": "26/11/2022",
+                        "grupo": "GRUPO C",
+                        "eqvisitante": "MÉXICO",
                         "icolocal": "argentina",
-                        "icovisitante": "mexico",
-                        "fecha": "26/11/2022"
-                    }
+                        "dia": "SÁBADO",
+                        "icovisitante": "mexico"
+                    },
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resul_loc": "2"
+                    },
+                    "puntosCG": "1",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_resul": "L",
+                        "prode_loc": "2"
+                    },
+                    "id": 24,
+                    "puntosP": "3"
                 },
                 {
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_vis": "1",
+                        "resul_penvis": "",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_loc": "0"
+                    },
+                    "partido_n": 25,
+                    "puntosCG": "0",
+                    "id": 25,
+                    "puntosP": "0",
+                    "puntos": 0,
                     "datosPartido": {
-                        "icovisitante": "costarica",
-                        "eqvisitante": "COSTA RICA",
                         "grupo": "GRUPO E",
-                        "dia": "DOMINGO",
-                        "hora": "07:00",
-                        "fecha": "27/11/2022",
                         "eqlocal": "JAPÓN",
+                        "dia": "DOMINGO",
+                        "eqvisitante": "COSTA RICA",
+                        "hora": "07:00",
+                        "icovisitante": "costarica",
+                        "fecha": "27/11/2022",
                         "icolocal": "japon"
                     },
-                    "id": 25,
-                    "partido_n": 25,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
                     "prodePartido": {
-                        "prode_resul": "L",
                         "prode_loc": "3",
                         "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_penvis": ""
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_vis": "0"
                     }
                 },
                 {
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
                     "prodePartido": {
                         "prode_penloc": "",
+                        "prode_vis": "0",
                         "prode_resul": "L",
                         "prode_loc": "2",
-                        "prode_vis": "0",
                         "prode_penvis": ""
                     },
+                    "puntosP": "0",
                     "id": 26,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_loc": "0",
+                        "resul_penvis": "",
+                        "resul_vis": "2"
+                    },
+                    "puntos": 1,
                     "partido_n": 26,
                     "datosPartido": {
-                        "hora": "10:00",
-                        "icovisitante": "marruecos",
-                        "dia": "DOMINGO",
                         "fecha": "27/11/2022",
-                        "eqvisitante": "MARRUECOS",
-                        "eqlocal": "BÉLGICA",
+                        "grupo": "GRUPO F",
+                        "icovisitante": "marruecos",
                         "icolocal": "belgica",
-                        "grupo": "GRUPO F"
-                    }
+                        "dia": "DOMINGO",
+                        "eqvisitante": "MARRUECOS",
+                        "hora": "10:00",
+                        "eqlocal": "BÉLGICA"
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "1"
                 },
                 {
-                    "partido_n": 27,
-                    "puntos": "",
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "puntosCG": "0",
                     "prodePartido": {
                         "prode_vis": "1",
                         "prode_loc": "2",
-                        "prode_resul": "L",
                         "prode_penvis": "",
+                        "prode_resul": "L",
                         "prode_penloc": ""
                     },
-                    "datosPartido": {
-                        "icolocal": "croacia",
-                        "eqlocal": "CROACIA",
-                        "hora": "13:00",
-                        "icovisitante": "canada",
-                        "eqvisitante": "CANADÁ",
-                        "grupo": "GRUPO F",
-                        "fecha": "27/11/2022",
-                        "dia": "DOMINGO"
-                    },
+                    "id": 27,
+                    "partido_n": 27,
                     "realPartido": {
-                        "resul_penloc": "",
+                        "resul_loc": "4",
+                        "resultado": "L",
                         "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                        "resul_vis": "1",
+                        "resul_penloc": ""
                     },
-                    "id": 27
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "hora": "13:00",
+                        "eqvisitante": "CANADÁ",
+                        "eqlocal": "CROACIA",
+                        "fecha": "27/11/2022",
+                        "grupo": "GRUPO F",
+                        "dia": "DOMINGO",
+                        "icovisitante": "canada",
+                        "icolocal": "croacia"
+                    }
                 },
                 {
-                    "id": 28,
+                    "puntosDG": "1",
+                    "puntosCG": "1",
+                    "puntosP": "3",
+                    "puntos": 5,
                     "realPartido": {
-                        "resultado": "",
+                        "resul_loc": "1",
                         "resul_penvis": "",
-                        "resul_loc": "",
+                        "resul_vis": "1",
                         "resul_penloc": "",
-                        "resul_vis": ""
+                        "resultado": "E"
                     },
-                    "puntos": "",
                     "partido_n": 28,
+                    "id": 28,
                     "datosPartido": {
-                        "dia": "DOMINGO",
                         "icovisitante": "alemania",
-                        "eqvisitante": "ALEMANIA",
                         "fecha": "27/11/2022",
                         "hora": "16:00",
+                        "dia": "DOMINGO",
                         "grupo": "GRUPO E",
+                        "eqvisitante": "ALEMANIA",
                         "icolocal": "espana",
                         "eqlocal": "ESPAÑA"
                     },
                     "prodePartido": {
-                        "prode_penloc": "",
                         "prode_vis": "1",
-                        "prode_loc": "1",
+                        "prode_penloc": "",
                         "prode_penvis": "",
-                        "prode_resul": "E"
+                        "prode_resul": "E",
+                        "prode_loc": "1"
                     }
                 },
                 {
+                    "id": 29,
+                    "puntosP": "0",
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "hora": "07:00",
+                        "eqlocal": "CAMERÚN",
+                        "icolocal": "camerun",
+                        "grupo": "GRUPO G",
+                        "icovisitante": "serbia",
+                        "eqvisitante": "SERBIA",
+                        "fecha": "28/11/2022",
+                        "dia": "LUNES"
+                    },
                     "prodePartido": {
-                        "prode_loc": "1",
                         "prode_resul": "V",
+                        "prode_penloc": "",
                         "prode_penvis": "",
                         "prode_vis": "2",
-                        "prode_penloc": ""
+                        "prode_loc": "1"
                     },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "id": 29,
                     "partido_n": 29,
-                    "puntos": "",
-                    "datosPartido": {
-                        "icolocal": "camerun",
-                        "dia": "LUNES",
-                        "eqlocal": "CAMERÚN",
-                        "fecha": "28/11/2022",
-                        "eqvisitante": "SERBIA",
-                        "grupo": "GRUPO G",
-                        "hora": "07:00",
-                        "icovisitante": "serbia"
-                    }
+                    "puntos": 0,
+                    "realPartido": {
+                        "resultado": "E",
+                        "resul_loc": "3",
+                        "resul_penvis": "",
+                        "resul_vis": "3",
+                        "resul_penloc": ""
+                    },
+                    "puntosDG": "0"
                 },
                 {
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    },
-                    "partido_n": 30,
+                    "puntosDG": "1",
                     "datosPartido": {
-                        "eqvisitante": "GHANA",
-                        "icovisitante": "ghana",
-                        "hora": "10:00",
+                        "dia": "LUNES",
                         "icolocal": "corea",
                         "eqlocal": "COREA",
-                        "dia": "LUNES",
-                        "fecha": "28/11/2022",
-                        "grupo": "GRUPO H"
-                    },
-                    "id": 30,
-                    "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_penloc": "",
-                        "prode_loc": "1",
-                        "prode_resul": "V",
-                        "prode_penvis": ""
-                    },
-                    "puntos": ""
-                },
-                {
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_loc": "3"
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
-                    "partido_n": 31,
-                    "puntos": "",
-                    "id": 31,
-                    "datosPartido": {
-                        "icovisitante": "suiza",
-                        "eqvisitante": "SUIZA",
-                        "grupo": "GRUPO G",
-                        "fecha": "28/11/2022",
-                        "hora": "13:00",
-                        "dia": "LUNES",
-                        "eqlocal": "BRASIL",
-                        "icolocal": "brasil"
-                    }
-                },
-                {
-                    "partido_n": 32,
-                    "datosPartido": {
-                        "eqlocal": "PORTUGAL",
-                        "dia": "LUNES",
-                        "hora": "16:00",
+                        "eqvisitante": "GHANA",
+                        "hora": "10:00",
                         "grupo": "GRUPO H",
                         "fecha": "28/11/2022",
-                        "eqvisitante": "URUGUAY",
-                        "icovisitante": "uruguay",
-                        "icolocal": "portugal"
+                        "icovisitante": "ghana"
+                    },
+                    "puntos": 2,
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "partido_n": 30,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resul_vis": "3",
+                        "resul_penloc": "",
+                        "resultado": "V"
                     },
                     "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "V",
                         "prode_penloc": "",
                         "prode_vis": "2",
-                        "prode_loc": "1",
-                        "prode_penvis": "",
-                        "prode_resul": "V"
+                        "prode_penvis": ""
                     },
-                    "puntos": "",
+                    "id": 30
+                },
+                {
+                    "partido_n": 31,
+                    "puntos": 1,
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "3",
+                        "prode_vis": "0"
+                    },
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "dia": "LUNES",
+                        "eqlocal": "BRASIL",
+                        "fecha": "28/11/2022",
+                        "hora": "13:00",
+                        "grupo": "GRUPO G",
+                        "icolocal": "brasil",
+                        "eqvisitante": "SUIZA",
+                        "icovisitante": "suiza"
+                    },
+                    "puntosCG": "0",
+                    "id": 31,
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "1"
+                    },
+                    "puntosP": "1"
+                },
+                {
+                    "puntosCG": "0",
                     "id": 32,
                     "realPartido": {
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    }
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resul_loc": "2"
+                    },
+                    "puntosP": "0",
+                    "partido_n": 32,
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "icovisitante": "uruguay",
+                        "grupo": "GRUPO H",
+                        "eqvisitante": "URUGUAY",
+                        "eqlocal": "PORTUGAL",
+                        "dia": "LUNES",
+                        "icolocal": "portugal",
+                        "fecha": "28/11/2022"
+                    },
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_vis": "2",
+                        "prode_loc": "1",
+                        "prode_penloc": ""
+                    },
+                    "puntos": 0
                 }
             ],
             "fecha_n": 2
         },
         {
+            "fecha_n": 3,
             "partidos": [
                 {
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "2",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_vis": "0"
+                    },
+                    "puntosCG": "0",
+                    "partido_n": 33,
                     "prodePartido": {
-                        "prode_penloc": "",
                         "prode_resul": "L",
                         "prode_vis": "0",
-                        "prode_loc": "4",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 33,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "4"
                     },
                     "id": 33,
-                    "puntos": "",
+                    "puntos": 1,
+                    "puntosP": "1",
                     "datosPartido": {
-                        "eqlocal": "PAÍSES BAJOS",
-                        "grupo": "GRUPO A",
-                        "dia": "MARTES",
-                        "eqvisitante": "QATAR",
-                        "icovisitante": "qatar",
                         "icolocal": "paisesbajos",
+                        "dia": "MARTES",
+                        "grupo": "GRUPO A",
+                        "eqlocal": "PAÍSES BAJOS",
+                        "icovisitante": "qatar",
+                        "eqvisitante": "QATAR",
                         "hora": "12:00",
                         "fecha": "29/11/2022"
                     }
                 },
                 {
+                    "partido_n": 34,
+                    "puntosP": "0",
+                    "puntosDG": "0",
+                    "id": 34,
                     "datosPartido": {
                         "eqlocal": "ECUADOR",
+                        "icovisitante": "senegal",
+                        "dia": "MARTES",
+                        "icolocal": "ecuador",
                         "eqvisitante": "SENEGAL",
                         "fecha": "29/11/2022",
-                        "dia": "MARTES",
-                        "icovisitante": "senegal",
-                        "icolocal": "ecuador",
                         "hora": "12:00",
                         "grupo": "GRUPO A"
                     },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
-                    "id": 34,
                     "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_resul": "L",
                         "prode_vis": "1",
+                        "prode_resul": "L",
+                        "prode_loc": "2",
                         "prode_penvis": "",
                         "prode_penloc": ""
                     },
-                    "partido_n": 34
-                },
-                {
                     "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_loc": "1",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
+                        "resultado": "V",
+                        "resul_vis": "2"
                     },
-                    "puntos": "",
-                    "datosPartido": {
-                        "icovisitante": "inglaterra",
-                        "icolocal": "gales",
-                        "grupo": "GRUPO B",
-                        "fecha": "29/11/2022",
-                        "eqvisitante": "INGLATERRA",
-                        "dia": "MARTES",
-                        "eqlocal": "GALES",
-                        "hora": "16:00"
-                    },
-                    "id": 35,
-                    "prodePartido": {
-                        "prode_resul": "V",
-                        "prode_vis": "3",
-                        "prode_loc": "1",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 35
+                    "puntosCG": "1",
+                    "puntos": 1
                 },
                 {
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_resul": "V",
-                        "prode_penloc": "",
-                        "prode_vis": "2"
-                    },
-                    "partido_n": 36,
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "id": 35,
+                    "partido_n": 35,
+                    "puntosP": "1",
                     "datosPartido": {
-                        "eqlocal": "IRÁN",
+                        "eqvisitante": "INGLATERRA",
+                        "icolocal": "gales",
                         "dia": "MARTES",
-                        "icolocal": "iran",
                         "fecha": "29/11/2022",
                         "hora": "16:00",
-                        "icovisitante": "estadosunidos",
-                        "eqvisitante": "ESTADOS UNIDOS",
+                        "eqlocal": "GALES",
+                        "icovisitante": "inglaterra",
                         "grupo": "GRUPO B"
                     },
-                    "puntos": "",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_vis": "3",
+                        "prode_resul": "V"
+                    },
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_vis": "3",
+                        "resultado": "V",
+                        "resul_loc": "0",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    }
+                },
+                {
+                    "partido_n": 36,
                     "id": 36,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "id": 37,
-                    "partido_n": 37,
-                    "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_penloc": "",
-                        "prode_resul": "V",
-                        "prode_penvis": "",
-                        "prode_loc": "0"
-                    },
+                    "puntos": 2,
+                    "puntosCG": "0",
                     "datosPartido": {
-                        "eqvisitante": "FRANCIA",
-                        "hora": "12:00",
-                        "icolocal": "tunez",
-                        "fecha": "30/11/2022",
-                        "grupo": "GRUPO D",
-                        "dia": "MIÉRCOLES",
-                        "icovisitante": "francia",
-                        "eqlocal": "TÚNEZ"
-                    },
-                    "puntos": ""
-                },
-                {
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_resul": "V",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "3"
-                    },
-                    "datosPartido": {
-                        "icolocal": "australia",
-                        "dia": "MIÉRCOLES",
-                        "hora": "12:00",
-                        "eqlocal": "AUSTRALIA",
-                        "grupo": "GRUPO D",
-                        "eqvisitante": "DINAMARCA",
-                        "fecha": "30/11/2022",
-                        "icovisitante": "dinamarca"
-                    },
-                    "puntos": "",
-                    "partido_n": 38,
-                    "id": 38,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    }
-                },
-                {
-                    "puntos": "",
-                    "id": 39,
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                        "dia": "MARTES",
+                        "eqlocal": "IRÁN",
+                        "grupo": "GRUPO B",
+                        "icolocal": "iran",
+                        "hora": "16:00",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "fecha": "29/11/2022",
+                        "icovisitante": "estadosunidos"
                     },
                     "prodePartido": {
-                        "prode_penvis": "",
                         "prode_resul": "V",
                         "prode_loc": "1",
-                        "prode_penloc": "",
-                        "prode_vis": "3"
-                    },
-                    "datosPartido": {
-                        "fecha": "30/11/2022",
-                        "hora": "16:00",
-                        "icolocal": "polonia",
-                        "dia": "MIÉRCOLES",
-                        "eqvisitante": "ARGENTINA",
-                        "eqlocal": "POLONIA",
-                        "grupo": "GRUPO C",
-                        "icovisitante": "argentina"
-                    },
-                    "partido_n": 39
-                },
-                {
-                    "id": 40,
-                    "prodePartido": {
                         "prode_vis": "2",
-                        "prode_resul": "E",
-                        "prode_penloc": "",
                         "prode_penvis": "",
-                        "prode_loc": "2"
-                    },
-                    "datosPartido": {
-                        "dia": "MIÉRCOLES",
-                        "grupo": "GRUPO C",
-                        "eqvisitante": "MÉXICO",
-                        "icolocal": "arabiasaudita",
-                        "fecha": "30/11/2022",
-                        "eqlocal": "ARABIA SAUDITA",
-                        "hora": "16:00",
-                        "icovisitante": "mexico"
-                    },
-                    "partido_n": 40,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    }
-                },
-                {
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "0",
-                        "prode_penvis": "",
-                        "prode_vis": "2",
-                        "prode_resul": "V",
                         "prode_penloc": ""
                     },
-                    "id": 41,
-                    "datosPartido": {
-                        "eqvisitante": "BÉLGICA",
-                        "fecha": "01/12/2022",
-                        "icolocal": "croacia",
-                        "grupo": "GRUPO F",
-                        "eqlocal": "CROACIA",
-                        "icovisitante": "belgica",
-                        "hora": "12:00",
-                        "dia": "JUEVES"
-                    },
+                    "puntosP": "1",
+                    "puntosDG": "1",
                     "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
+                        "resultado": "V",
                         "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "partido_n": 41
-                },
-                {
-                    "id": 42,
-                    "partido_n": 42,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_loc": "2",
-                        "prode_vis": "1",
-                        "prode_penvis": ""
-                    },
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
+                        "resul_loc": "0",
+                        "resul_vis": "1",
                         "resul_penloc": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "01/12/2022",
-                        "grupo": "GRUPO F",
-                        "icovisitante": "marruecos",
-                        "icolocal": "canada",
-                        "eqlocal": "CANADÁ",
-                        "hora": "12:00",
-                        "eqvisitante": "MARRUECOS",
-                        "dia": "JUEVES"
                     }
                 },
                 {
+                    "id": 37,
                     "datosPartido": {
-                        "icolocal": "japon",
-                        "dia": "JUEVES",
-                        "eqlocal": "JAPÓN",
-                        "hora": "16:00",
-                        "icovisitante": "espana",
-                        "grupo": "GRUPO E",
-                        "fecha": "01/12/2022",
-                        "eqvisitante": "ESPAÑA"
+                        "icolocal": "tunez",
+                        "icovisitante": "francia",
+                        "hora": "12:00",
+                        "eqvisitante": "FRANCIA",
+                        "grupo": "GRUPO D",
+                        "dia": "MIÉRCOLES",
+                        "fecha": "30/11/2022",
+                        "eqlocal": "TÚNEZ"
                     },
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_loc": "0",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_vis": "2"
+                    },
+                    "partido_n": 37,
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "0"
+                    }
+                },
+                {
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resul_penloc": "",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_loc": "1"
+                    },
+                    "puntosP": "0",
+                    "partido_n": 38,
                     "prodePartido": {
                         "prode_resul": "V",
                         "prode_loc": "1",
@@ -12718,657 +12988,835 @@ export var fechaAriel = {
                         "prode_penloc": "",
                         "prode_vis": "3"
                     },
-                    "partido_n": 43,
-                    "id": 43,
-                    "puntos": "",
+                    "puntos": 0,
+                    "id": 38,
+                    "datosPartido": {
+                        "fecha": "30/11/2022",
+                        "icolocal": "australia",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO D",
+                        "eqvisitante": "DINAMARCA",
+                        "hora": "12:00",
+                        "eqlocal": "AUSTRALIA",
+                        "icovisitante": "dinamarca"
+                    },
+                    "puntosCG": "0"
+                },
+                {
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_resul": "V",
+                        "prode_loc": "1",
+                        "prode_vis": "3"
+                    },
                     "realPartido": {
-                        "resul_loc": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
+                        "resul_loc": "0",
                         "resul_penvis": "",
-                        "resultado": ""
+                        "resul_vis": "2",
+                        "resultado": "V"
+                    },
+                    "puntos": 2,
+                    "puntosCG": "0",
+                    "partido_n": 39,
+                    "puntosP": "1",
+                    "puntosDG": "1",
+                    "datosPartido": {
+                        "icolocal": "polonia",
+                        "hora": "16:00",
+                        "dia": "MIÉRCOLES",
+                        "eqvisitante": "ARGENTINA",
+                        "fecha": "30/11/2022",
+                        "grupo": "GRUPO C",
+                        "eqlocal": "POLONIA",
+                        "icovisitante": "argentina"
+                    },
+                    "id": 39
+                },
+                {
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": "2",
+                        "prode_loc": "2",
+                        "prode_resul": "E"
+                    },
+                    "puntosDG": "0",
+                    "partido_n": 40,
+                    "id": 40,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resultado": "V"
+                    },
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "eqvisitante": "MÉXICO",
+                        "dia": "MIÉRCOLES",
+                        "fecha": "30/11/2022",
+                        "hora": "16:00",
+                        "eqlocal": "ARABIA SAUDITA",
+                        "grupo": "GRUPO C",
+                        "icolocal": "arabiasaudita",
+                        "icovisitante": "mexico"
                     }
                 },
                 {
-                    "partido_n": 44,
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resultado": "E"
+                    },
+                    "datosPartido": {
+                        "eqlocal": "CROACIA",
+                        "icolocal": "croacia",
+                        "dia": "JUEVES",
+                        "hora": "12:00",
+                        "eqvisitante": "BÉLGICA",
+                        "fecha": "01/12/2022",
+                        "grupo": "GRUPO F",
+                        "icovisitante": "belgica"
+                    },
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "id": 41,
+                    "partido_n": 41,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_penloc": "",
+                        "prode_resul": "V",
+                        "prode_vis": "2"
+                    },
+                    "puntosCG": "0"
+                },
+                {
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_penvis": ""
+                    },
+                    "puntos": 1,
+                    "id": 42,
+                    "puntosP": "0",
+                    "puntosCG": "1",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_vis": "1"
+                    },
+                    "partido_n": 42,
+                    "datosPartido": {
+                        "fecha": "01/12/2022",
+                        "grupo": "GRUPO F",
+                        "eqlocal": "CANADÁ",
+                        "icolocal": "canada",
+                        "eqvisitante": "MARRUECOS",
+                        "dia": "JUEVES",
+                        "hora": "12:00",
+                        "icovisitante": "marruecos"
+                    },
+                    "puntosDG": "0"
+                },
+                {
+                    "puntosP": "0",
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_vis": "1",
+                        "resul_loc": "2",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "puntos": 0,
+                    "partido_n": 43,
+                    "datosPartido": {
+                        "dia": "JUEVES",
+                        "hora": "16:00",
+                        "icolocal": "japon",
+                        "eqvisitante": "ESPAÑA",
+                        "icovisitante": "espana",
+                        "grupo": "GRUPO E",
+                        "eqlocal": "JAPÓN",
+                        "fecha": "01/12/2022"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_vis": "3",
+                        "prode_penloc": "",
+                        "prode_loc": "1"
+                    },
+                    "id": 43,
+                    "puntosCG": "0"
+                },
+                {
+                    "puntos": 1,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_vis": "4",
+                        "resul_loc": "2"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0",
                     "datosPartido": {
                         "grupo": "GRUPO E",
                         "hora": "16:00",
-                        "dia": "JUEVES",
-                        "icovisitante": "alemania",
-                        "fecha": "01/12/2022",
-                        "eqvisitante": "ALEMANIA",
                         "eqlocal": "COSTA RICA",
-                        "icolocal": "costarica"
+                        "icovisitante": "alemania",
+                        "eqvisitante": "ALEMANIA",
+                        "dia": "JUEVES",
+                        "icolocal": "costarica",
+                        "fecha": "01/12/2022"
                     },
-                    "puntos": "",
-                    "id": 44,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_resul": "V",
                         "prode_penvis": "",
+                        "prode_resul": "V",
                         "prode_vis": "2",
                         "prode_penloc": "",
                         "prode_loc": "1"
-                    }
+                    },
+                    "id": 44,
+                    "partido_n": 44
                 },
                 {
-                    "datosPartido": {
-                        "grupo": "GRUPO H",
-                        "eqvisitante": "PORTUGAL",
-                        "hora": "12:00",
-                        "dia": "VIERNES",
-                        "fecha": "02/12/2022",
-                        "icovisitante": "portugal",
-                        "eqlocal": "COREA",
-                        "icolocal": "corea"
-                    },
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    },
-                    "partido_n": 45,
-                    "puntos": "",
-                    "id": 45,
                     "prodePartido": {
-                        "prode_loc": "1",
                         "prode_resul": "V",
                         "prode_vis": "3",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
-                    }
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_penvis": ""
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "2",
+                        "resul_vis": "1",
+                        "resultado": "L"
+                    },
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "id": 45,
+                    "puntosP": "0",
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "hora": "12:00",
+                        "fecha": "02/12/2022",
+                        "icovisitante": "portugal",
+                        "icolocal": "corea",
+                        "grupo": "GRUPO H",
+                        "eqvisitante": "PORTUGAL",
+                        "dia": "VIERNES",
+                        "eqlocal": "COREA"
+                    },
+                    "partido_n": 45
                 },
                 {
+                    "partido_n": 46,
+                    "puntosP": "0",
                     "id": 46,
-                    "datosPartido": {
-                        "eqlocal": "GHANA",
-                        "dia": "VIERNES",
-                        "grupo": "GRUPO H",
-                        "icovisitante": "uruguay",
-                        "fecha": "02/12/2022",
-                        "icolocal": "ghana",
-                        "hora": "12:00",
-                        "eqvisitante": "URUGUAY"
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resul_loc": "0",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resultado": "V"
                     },
+                    "puntosDG": "0",
+                    "puntos": 0,
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "L",
+                        "prode_penloc": "",
                         "prode_vis": "1",
                         "prode_loc": "2",
-                        "prode_penloc": ""
+                        "prode_resul": "L",
+                        "prode_penvis": ""
                     },
-                    "partido_n": 46,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    }
+                    "datosPartido": {
+                        "eqvisitante": "URUGUAY",
+                        "hora": "12:00",
+                        "eqlocal": "GHANA",
+                        "icolocal": "ghana",
+                        "icovisitante": "uruguay",
+                        "grupo": "GRUPO H",
+                        "fecha": "02/12/2022",
+                        "dia": "VIERNES"
+                    },
+                    "puntosCG": "0"
                 },
                 {
+                    "puntosDG": "0",
+                    "id": 47,
                     "datosPartido": {
-                        "eqlocal": "CAMERÚN",
-                        "icovisitante": "brasil",
-                        "dia": "VIERNES",
-                        "icolocal": "camerun",
-                        "grupo": "GRUPO G",
-                        "hora": "16:00",
                         "eqvisitante": "BRASIL",
-                        "fecha": "02/12/2022"
+                        "fecha": "02/12/2022",
+                        "grupo": "GRUPO G",
+                        "eqlocal": "CAMERÚN",
+                        "icolocal": "camerun",
+                        "icovisitante": "brasil",
+                        "hora": "16:00",
+                        "dia": "VIERNES"
                     },
-                    "partido_n": 47,
                     "prodePartido": {
-                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
                         "prode_loc": "1",
                         "prode_vis": "4",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
+                        "prode_resul": "V"
                     },
-                    "puntos": "",
                     "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
+                        "resul_loc": "1",
+                        "resul_vis": "0",
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": ""
+                        "resul_penvis": "",
+                        "resultado": "L"
                     },
-                    "id": 47
+                    "puntos": 0,
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "partido_n": 47
                 },
                 {
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "2",
-                        "prode_resul": "L",
-                        "prode_vis": "0",
-                        "prode_penloc": ""
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
-                    "partido_n": 48,
+                    "puntos": 0,
                     "datosPartido": {
-                        "hora": "16:00",
-                        "grupo": "GRUPO G",
-                        "icovisitante": "suiza",
                         "dia": "VIERNES",
-                        "icolocal": "serbia",
-                        "fecha": "02/12/2022",
                         "eqlocal": "SERBIA",
-                        "eqvisitante": "SUIZA"
+                        "icolocal": "serbia",
+                        "grupo": "GRUPO G",
+                        "fecha": "02/12/2022",
+                        "icovisitante": "suiza",
+                        "eqvisitante": "SUIZA",
+                        "hora": "16:00"
                     },
-                    "id": 48
-                }
-            ],
-            "fecha_n": 3
-        },
-        {
-            "fecha_n": 4,
-            "partidos": [
-                {
+                    "id": 48,
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
                         "prode_penvis": "",
-                        "prode_vis": ""
-                    },
-                    "partido_n": 49,
-                    "puntos": "",
-                    "id": 49,
-                    "datosPartido": {
-                        "dia": "SÁBADO",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqvisitante": "2° B",
-                        "hora": "12:00",
-                        "icolocal": "vacio",
-                        "eqlocal": "1° A",
-                        "fecha": "03/12/2022",
-                        "icovisitante": "vacio"
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_vis": "0"
                     },
                     "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
                         "resul_penvis": "",
+                        "resul_vis": "3",
+                        "resultado": "V",
+                        "resul_loc": "2",
                         "resul_penloc": ""
-                    }
-                },
-                {
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
                     },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "03/12/2022",
-                        "eqvisitante": "2° D",
-                        "eqlocal": "1° C",
-                        "dia": "SÁBADO",
-                        "icolocal": "vacio",
-                        "hora": "16:00",
-                        "icovisitante": "vacio",
-                        "grupo": "OCTAVOS DE FINAL"
-                    },
-                    "partido_n": 50,
-                    "id": 50
-                },
-                {
-                    "id": 51,
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "fecha": "04/12/2022",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqvisitante": "2° C",
-                        "hora": "12:00",
-                        "eqlocal": "1° D",
-                        "dia": "DOMINGO",
-                        "icovisitante": "vacio"
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 51,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": ""
-                    }
-                },
-                {
-                    "puntos": "",
-                    "id": 52,
-                    "datosPartido": {
-                        "fecha": "04/12/2022",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqvisitante": "2° A",
-                        "icolocal": "vacio",
-                        "eqlocal": "1° B",
-                        "hora": "16:00",
-                        "icovisitante": "vacio",
-                        "dia": "DOMINGO"
-                    },
-                    "partido_n": 52,
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_penloc": ""
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": ""
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "partido_n": 53,
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_loc": ""
-                    },
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "hora": "12:00",
-                        "dia": "LUNES",
-                        "fecha": "05/12/2022",
-                        "eqvisitante": "2° F",
-                        "icovisitante": "vacio",
-                        "eqlocal": "1° E",
-                        "grupo": "OCTAVOS DE FINAL"
-                    },
-                    "id": 53
-                },
-                {
-                    "datosPartido": {
-                        "dia": "LUNES",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "icolocal": "vacio",
-                        "icovisitante": "vacio",
-                        "eqvisitante": "2° H",
-                        "fecha": "05/12/2022",
-                        "hora": "16:00",
-                        "eqlocal": "1° G"
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penloc": ""
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    },
-                    "id": 54,
-                    "puntos": "",
-                    "partido_n": 54
-                },
-                {
-                    "datosPartido": {
-                        "eqlocal": "1° F",
-                        "hora": "12:00",
-                        "eqvisitante": "2° E",
-                        "icovisitante": "vacio",
-                        "icolocal": "vacio",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "fecha": "06/12/2022",
-                        "dia": "MARTES"
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_vis": ""
-                    },
-                    "partido_n": 55,
-                    "id": 55
-                },
-                {
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_vis": ""
-                    },
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqvisitante": "2° G",
-                        "dia": "MARTES",
-                        "icolocal": "vacio",
-                        "icovisitante": "vacio",
-                        "eqlocal": "1° H",
-                        "fecha": "06/12/2022"
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": ""
-                    },
-                    "id": 56,
-                    "partido_n": 56
+                    "puntosP": "0",
+                    "puntosCG": "0",
+                    "partido_n": 48
                 }
             ]
         },
         {
             "partidos": [
                 {
-                    "id": 57,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": ""
-                    },
-                    "partido_n": 57,
                     "prodePartido": {
                         "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_loc": ""
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_ext": "",
+                        "prode_vis": "0",
+                        "prode_penvis": ""
                     },
                     "datosPartido": {
-                        "icovisitante": "vacio",
-                        "eqlocal": "GANADOR P. 5",
-                        "fecha": "09/12/2022",
-                        "icolocal": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "dia": "VIERNES",
-                        "eqvisitante": "GANADOR P. 6",
-                        "hora": "12:00"
+                        "eqlocal": "PAISES BAJOS",
+                        "hora": "12:00",
+                        "dia": "SÁBADO",
+                        "icolocal": "paisesbajos",
+                        "fecha": "03/12/2022",
+                        "icovisitante": "estadosunidos",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "grupo": "OCTAVOS DE FINAL"
+                    },
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 49,
+                    "puntos": "",
+                    "id": 49
+                },
+                {
+                    "id": 50,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resultado": ""
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "3",
+                        "prode_resul": "L",
+                        "prode_vis": "1",
+                        "prode_ext": ""
+                    },
+                    "puntos": "",
+                    "partido_n": 50,
+                    "datosPartido": {
+                        "fecha": "03/12/2022",
+                        "eqlocal": "ARGENTINA",
+                        "eqvisitante": "AUSTRALIA",
+                        "icolocal": "argentina",
+                        "dia": "SÁBADO",
+                        "hora": "16:00",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "australia"
                     }
                 },
                 {
-                    "datosPartido": {
-                        "icovisitante": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "eqlocal": "GANADOR P. 1",
-                        "dia": "VIERNES",
-                        "icolocal": "vacio",
-                        "hora": "16:00",
-                        "eqvisitante": "GANADOR P. 2",
-                        "fecha": "09/12/2022"
-                    },
-                    "partido_n": 58,
-                    "id": 58,
                     "realPartido": {
+                        "resul_loc": "",
                         "resul_vis": "",
-                        "resul_penvis": "",
                         "resul_penloc": "",
                         "resultado": "",
-                        "resul_loc": ""
+                        "resul_penvis": ""
                     },
                     "prodePartido": {
+                        "prode_ext": "",
                         "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
+                        "prode_vis": "0",
+                        "prode_loc": "3",
+                        "prode_resul": "L",
                         "prode_penvis": ""
+                    },
+                    "datosPartido": {
+                        "fecha": "04/12/2022",
+                        "hora": "12:00",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "eqvisitante": "POLONIA",
+                        "dia": "DOMINGO",
+                        "eqlocal": "FRANCIA",
+                        "icovisitante": "polonia",
+                        "icolocal": "francia"
+                    },
+                    "id": 51,
+                    "puntos": "",
+                    "partido_n": 51
+                },
+                {
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_loc": ""
+                    },
+                    "id": 52,
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_ext": "",
+                        "prode_vis": "1",
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_penvis": ""
+                    },
+                    "datosPartido": {
+                        "eqlocal": "INGLATERRA",
+                        "dia": "DOMINGO",
+                        "eqvisitante": "SENEGAL",
+                        "fecha": "04/12/2022",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "senegal",
+                        "icolocal": "inglaterra",
+                        "hora": "16:00"
+                    },
+                    "puntos": "",
+                    "partido_n": 52
+                },
+                {
+                    "puntos": "",
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": ""
+                    },
+                    "prodePartido": {
+                        "prode_loc": "2",
+                        "prode_ext": "",
+                        "prode_resul": "L",
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    },
+                    "partido_n": 53,
+                    "datosPartido": {
+                        "icovisitante": "croacia",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "fecha": "05/12/2022",
+                        "eqlocal": "JAPON",
+                        "dia": "LUNES",
+                        "hora": "12:00",
+                        "icolocal": "japon",
+                        "eqvisitante": "CROACIA"
+                    },
+                    "id": 53
+                },
+                {
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_ext": "",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
+                    },
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": ""
+                    },
+                    "partido_n": 54,
+                    "id": 54,
+                    "datosPartido": {
+                        "icolocal": "brasil",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "eqlocal": "BRASIL",
+                        "fecha": "05/12/2022",
+                        "hora": "16:00",
+                        "icovisitante": "corea",
+                        "eqvisitante": "COREA",
+                        "dia": "LUNES"
                     },
                     "puntos": ""
                 },
                 {
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "eqvisitante": "GANADOR P. 8",
-                        "grupo": "CUARTOS DE FINAL",
-                        "dia": "SÁBADO",
-                        "fecha": "10/12/2022",
-                        "eqlocal": "GANADOR P. 7",
-                        "hora": "12:00",
-                        "icovisitante": "vacio"
-                    },
                     "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
                         "resul_penvis": "",
                         "resultado": "",
-                        "resul_loc": ""
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resul_penloc": ""
                     },
-                    "puntos": "",
-                    "partido_n": 59,
-                    "id": 59
+                    "datosPartido": {
+                        "dia": "MARTES",
+                        "hora": "12:00",
+                        "fecha": "06/12/2022",
+                        "icovisitante": "espana",
+                        "eqlocal": "MARRUECOS",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "eqvisitante": "ESPANA",
+                        "icolocal": "marruecos"
+                    },
+                    "id": 55,
+                    "partido_n": 55,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_ext": "",
+                        "prode_vis": "3"
+                    },
+                    "puntos": ""
                 },
                 {
+                    "partido_n": 56,
+                    "datosPartido": {
+                        "icolocal": "portugal",
+                        "hora": "16:00",
+                        "eqvisitante": "SUIZA",
+                        "eqlocal": "PORTUGAL",
+                        "icovisitante": "suiza",
+                        "fecha": "06/12/2022",
+                        "dia": "MARTES",
+                        "grupo": "OCTAVOS DE FINAL"
+                    },
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
+                    },
+                    "puntos": "",
+                    "id": 56,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_ext": ""
+                    }
+                }
+            ],
+            "fecha_n": 4
+        },
+        {
+            "fecha_n": 5,
+            "partidos": [
+                {
+                    "puntos": "",
+                    "id": 57,
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": ""
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_vis": ""
+                    },
+                    "partido_n": 57,
+                    "datosPartido": {
+                        "grupo": "CUARTOS DE FINAL",
+                        "eqlocal": "GANADOR P. 5",
+                        "icovisitante": "vacio",
+                        "eqvisitante": "GANADOR P. 6",
+                        "hora": "12:00",
+                        "fecha": "09/12/2022",
+                        "icolocal": "vacio",
+                        "dia": "VIERNES"
+                    }
+                },
+                {
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_resul": "",
+                        "prode_vis": ""
+                    },
+                    "id": 58,
                     "puntos": "",
                     "realPartido": {
                         "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resultado": ""
+                    },
+                    "partido_n": 58,
+                    "datosPartido": {
+                        "icovisitante": "vacio",
+                        "fecha": "09/12/2022",
+                        "icolocal": "vacio",
+                        "dia": "VIERNES",
+                        "grupo": "CUARTOS DE FINAL",
+                        "eqlocal": "GANADOR P. 1",
+                        "eqvisitante": "GANADOR P. 2",
+                        "hora": "16:00"
+                    }
+                },
+                {
+                    "partido_n": 59,
+                    "puntos": "",
+                    "id": 59,
+                    "datosPartido": {
+                        "fecha": "10/12/2022",
+                        "hora": "12:00",
+                        "icolocal": "vacio",
+                        "dia": "SÁBADO",
+                        "grupo": "CUARTOS DE FINAL",
+                        "eqvisitante": "GANADOR P. 8",
+                        "icovisitante": "vacio",
+                        "eqlocal": "GANADOR P. 7"
+                    },
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "",
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_resul": ""
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resultado": ""
+                    }
+                },
+                {
+                    "realPartido": {
+                        "resul_vis": "",
                         "resultado": "",
                         "resul_penloc": "",
                         "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_penvis": ""
                     },
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
-                    },
+                    "id": 60,
                     "datosPartido": {
-                        "fecha": "10/12/2022",
-                        "eqvisitante": "GANADOR P. 3",
-                        "icolocal": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "hora": "16:00",
-                        "eqlocal": "GANADOR P. 4",
                         "dia": "SÁBADO",
-                        "icovisitante": "vacio"
+                        "hora": "16:00",
+                        "icolocal": "vacio",
+                        "eqvisitante": "GANADOR P. 3",
+                        "grupo": "CUARTOS DE FINAL",
+                        "fecha": "10/12/2022",
+                        "icovisitante": "vacio",
+                        "eqlocal": "GANADOR P. 4"
                     },
                     "partido_n": 60,
-                    "id": 60
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "",
+                        "prode_resul": "",
+                        "prode_vis": "",
+                        "prode_penvis": ""
+                    },
+                    "puntos": ""
                 }
-            ],
-            "fecha_n": 5
+            ]
         },
         {
             "partidos": [
                 {
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_loc": ""
+                    },
+                    "partido_n": 61,
                     "datosPartido": {
                         "eqlocal": "GANADOR P. 10",
-                        "icolocal": "vacio",
-                        "eqvisitante": "GANADOR P. 9",
-                        "fecha": "13/12/2022",
-                        "grupo": "SEMIFINAL",
                         "hora": "16:00",
+                        "grupo": "SEMIFINAL",
+                        "icolocal": "vacio",
+                        "dia": "MARTES",
                         "icovisitante": "vacio",
-                        "dia": "MARTES"
+                        "eqvisitante": "GANADOR P. 9",
+                        "fecha": "13/12/2022"
                     },
-                    "id": 61,
-                    "partido_n": 61,
                     "prodePartido": {
+                        "prode_vis": "",
                         "prode_resul": "",
                         "prode_loc": "",
                         "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": ""
+                        "prode_penloc": ""
                     },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    },
+                    "id": 61,
                     "puntos": ""
                 },
                 {
                     "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_vis": ""
-                    },
                     "partido_n": 62,
                     "id": 62,
                     "datosPartido": {
-                        "icolocal": "vacio",
                         "dia": "MIÉRCOLES",
+                        "hora": "16:00",
+                        "eqvisitante": "GANADOR P. 11",
+                        "grupo": "SEMIFINAL",
+                        "icolocal": "vacio",
                         "fecha": "14/12/2022",
                         "eqlocal": "GANADOR P. 12",
-                        "icovisitante": "vacio",
-                        "hora": "16:00",
-                        "grupo": "SEMIFINAL",
-                        "eqvisitante": "GANADOR P. 11"
+                        "icovisitante": "vacio"
+                    },
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "",
+                        "prode_penvis": ""
+                    },
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_penvis": ""
                     }
                 }
             ],
             "fecha_n": 6
         },
         {
-            "fecha_n": 7,
             "partidos": [
                 {
-                    "id": 63,
-                    "puntos": "",
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "",
+                        "prode_loc": ""
+                    },
                     "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
                         "resul_loc": "",
+                        "resul_penloc": "",
                         "resul_penvis": "",
+                        "resultado": "",
                         "resul_vis": ""
                     },
+                    "puntos": "",
                     "datosPartido": {
-                        "icolocal": "vacio",
                         "dia": "SÁBADO",
+                        "fecha": "17/12/2022",
+                        "eqvisitante": "PERDEDOR P. 14",
                         "icovisitante": "vacio",
                         "eqlocal": "PERDEDOR P.13",
-                        "fecha": "17/12/2022",
                         "hora": "12:00",
-                        "grupo": "3° Y 4° PUESTO",
-                        "eqvisitante": "PERDEDOR P. 14"
+                        "icolocal": "vacio",
+                        "grupo": "3° Y 4° PUESTO"
                     },
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": ""
-                    },
-                    "partido_n": 63
+                    "partido_n": 63,
+                    "id": 63
                 },
                 {
-                    "partido_n": 64,
+                    "datosPartido": {
+                        "icolocal": "vacio",
+                        "hora": "12:00",
+                        "dia": "DOMINGO",
+                        "fecha": "18/12/2022",
+                        "eqlocal": "GANADOR P. 13",
+                        "grupo": "FINAL",
+                        "icovisitante": "vacio",
+                        "eqvisitante": "GANADOR P. 14"
+                    },
+                    "id": 64,
+                    "prodePartido": {
+                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_resul": ""
+                    },
                     "puntos": "",
                     "realPartido": {
                         "resul_loc": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
+                        "resul_penvis": "",
                         "resultado": "",
-                        "resul_penvis": ""
+                        "resul_vis": ""
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penloc": ""
-                    },
-                    "id": 64,
-                    "datosPartido": {
-                        "dia": "DOMINGO",
-                        "grupo": "FINAL",
-                        "icovisitante": "vacio",
-                        "eqvisitante": "GANADOR P. 14",
-                        "eqlocal": "GANADOR P. 13",
-                        "hora": "12:00",
-                        "fecha": "18/12/2022",
-                        "icolocal": "vacio"
-                    }
+                    "partido_n": 64
                 }
-            ]
+            ],
+            "fecha_n": 7
         }
-    ],
-    "user": "ARIELMORENO85@HOTMAIL.COM",
-    "user_version": 4,
-    "user_modificacion": "24/11/2022 18:48:19",
-    "timestamp": {
-        "seconds": 1669326499,
-        "nanoseconds": 376000000
-    }
+    ]
 }
 
 export var unicoAriel = {
@@ -17204,282 +17652,336 @@ export var unicoAriel = {
 
 
 export var fechaDiego = {
+    "user_modificacion": "3/12/2022, 2:26:30",
+    "user": "VILLAFANEDIEGO@GMAIL.COM",
+    "user_version": 5,
     "fechanro": [
         {
-            "fecha_n": 1,
             "partidos": [
                 {
-                    "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_loc": "0",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "V"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    },
                     "partido_n": 1,
-                    "id": 1,
+                    "puntosDG": "0",
                     "datosPartido": {
+                        "hora": "13:00",
                         "grupo": "GRUPO A",
-                        "icovisitante": "ecuador",
                         "icolocal": "qatar",
                         "eqvisitante": "ECUADOR",
-                        "dia": "DOMINGO",
+                        "fecha": "20/11/2022",
+                        "icovisitante": "ecuador",
                         "eqlocal": "QATAR",
-                        "hora": "13:00",
-                        "fecha": "20/11/2022"
+                        "dia": "DOMINGO"
+                    },
+                    "id": 1,
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_loc": "0",
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resultado": "V"
                     }
                 },
                 {
-                    "datosPartido": {
-                        "hora": "10:00",
-                        "icovisitante": "iran",
-                        "eqlocal": "INGLATERRA",
-                        "eqvisitante": "IRÁN",
-                        "icolocal": "inglaterra",
-                        "grupo": "GRUPO B",
-                        "dia": "LUNES",
-                        "fecha": "21/11/2022"
-                    },
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_penloc": "",
+                        "prode_vis": "0",
                         "prode_resul": "L",
-                        "prode_vis": "0"
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "1"
                     },
-                    "id": 2,
                     "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
                         "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
+                        "resul_loc": "6",
+                        "resul_vis": "2"
                     },
+                    "puntosP": "1",
                     "partido_n": 2,
-                    "puntos": ""
+                    "datosPartido": {
+                        "fecha": "21/11/2022",
+                        "dia": "LUNES",
+                        "grupo": "GRUPO B",
+                        "eqlocal": "INGLATERRA",
+                        "icolocal": "inglaterra",
+                        "eqvisitante": "IRÁN",
+                        "icovisitante": "iran",
+                        "hora": "10:00"
+                    },
+                    "puntos": 1,
+                    "id": 2,
+                    "puntosCG": "0"
                 },
                 {
+                    "id": 3,
                     "prodePartido": {
-                        "prode_loc": "0",
                         "prode_penloc": "",
                         "prode_penvis": "",
+                        "prode_resul": "V",
                         "prode_vis": "1",
-                        "prode_resul": "V"
+                        "prode_loc": "0"
                     },
-                    "id": 3,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
+                        "resul_vis": "2",
                         "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_loc": "0",
                         "resul_penvis": ""
                     },
-                    "puntos": "",
                     "partido_n": 3,
                     "datosPartido": {
-                        "fecha": "21/11/2022",
-                        "icolocal": "senegal",
-                        "dia": "LUNES",
                         "grupo": "GRUPO A",
                         "eqlocal": "SENEGAL",
-                        "eqvisitante": "PAÍSES BAJOS",
                         "icovisitante": "paisesbajos",
+                        "icolocal": "senegal",
+                        "eqvisitante": "PAÍSES BAJOS",
+                        "dia": "LUNES",
+                        "fecha": "21/11/2022",
                         "hora": "13:00"
-                    }
+                    },
+                    "puntos": 1,
+                    "puntosP": "1",
+                    "puntosDG": "0",
+                    "puntosCG": "0"
                 },
                 {
                     "realPartido": {
-                        "resul_penvis": "",
+                        "resul_vis": "1",
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_penvis": "",
+                        "resul_loc": "1",
+                        "resultado": "E"
                     },
                     "id": 4,
-                    "puntos": "",
+                    "puntosDG": "1",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_resul": "E",
+                        "prode_vis": "1"
+                    },
+                    "puntos": 5,
+                    "puntosCG": "1",
                     "partido_n": 4,
+                    "puntosP": "3",
                     "datosPartido": {
                         "eqvisitante": "GALES",
-                        "icovisitante": "gales",
                         "eqlocal": "ESTADOS UNIDOS",
-                        "hora": "16:00",
                         "fecha": "21/11/2022",
                         "icolocal": "estadosunidos",
+                        "hora": "16:00",
+                        "grupo": "GRUPO B",
                         "dia": "LUNES",
-                        "grupo": "GRUPO B"
-                    },
-                    "prodePartido": {
-                        "prode_resul": "E",
-                        "prode_vis": "1",
-                        "prode_penloc": "",
-                        "prode_loc": "1",
-                        "prode_penvis": ""
+                        "icovisitante": "gales"
                     }
                 },
                 {
+                    "puntosP": "0",
+                    "puntosCG": "1",
+                    "partido_n": 5,
+                    "puntos": 1,
+                    "puntosDG": "0",
                     "datosPartido": {
-                        "grupo": "GRUPO C",
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "eqlocal": "ARGENTINA",
-                        "icolocal": "argentina",
-                        "hora": "07:00",
-                        "dia": "MARTES",
                         "icovisitante": "arabiasaudita",
-                        "fecha": "22/11/2022"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "3",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_vis": "0",
-                        "prode_penloc": ""
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
+                        "grupo": "GRUPO C",
+                        "hora": "07:00",
+                        "fecha": "22/11/2022",
+                        "icolocal": "argentina",
+                        "dia": "MARTES",
+                        "eqvisitante": "ARABIA SAUDITA",
+                        "eqlocal": "ARGENTINA"
                     },
                     "id": 5,
-                    "partido_n": 5
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_penvis": "",
+                        "resul_loc": "1"
+                    },
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_loc": "3",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    }
                 },
                 {
-                    "id": 6,
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_vis": "0",
-                        "prode_penloc": ""
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resultado": "E",
+                        "resul_loc": "0",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "0"
                     },
+                    "id": 6,
                     "partido_n": 6,
-                    "puntos": "",
                     "datosPartido": {
+                        "icolocal": "dinamarca",
                         "eqvisitante": "TÚNEZ",
+                        "icovisitante": "tunez",
+                        "dia": "MARTES",
                         "eqlocal": "DINAMARCA",
                         "fecha": "22/11/2022",
                         "hora": "10:00",
-                        "grupo": "GRUPO D",
-                        "icovisitante": "tunez",
-                        "icolocal": "dinamarca",
-                        "dia": "MARTES"
+                        "grupo": "GRUPO D"
                     },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": ""
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
                     }
                 },
                 {
-                    "datosPartido": {
-                        "eqvisitante": "POLONIA",
-                        "icovisitante": "polonia",
-                        "dia": "MARTES",
-                        "hora": "13:00",
-                        "fecha": "22/11/2022",
-                        "eqlocal": "MÉXICO",
-                        "grupo": "GRUPO C",
-                        "icolocal": "mexico"
+                    "id": 7,
+                    "puntosP": "1",
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_resul": "E",
+                        "prode_penloc": ""
                     },
+                    "puntosCG": "0",
                     "realPartido": {
-                        "resul_loc": "",
                         "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": ""
+                        "resul_loc": "0",
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_penloc": ""
+                    },
+                    "puntos": 2,
+                    "datosPartido": {
+                        "dia": "MARTES",
+                        "icolocal": "mexico",
+                        "fecha": "22/11/2022",
+                        "icovisitante": "polonia",
+                        "grupo": "GRUPO C",
+                        "hora": "13:00",
+                        "eqvisitante": "POLONIA",
+                        "eqlocal": "MÉXICO"
                     },
                     "partido_n": 7,
-                    "id": 7,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "1",
-                        "prode_vis": "1",
-                        "prode_resul": "E",
-                        "prode_penvis": ""
-                    }
+                    "puntosDG": "1"
                 },
                 {
-                    "datosPartido": {
-                        "dia": "MARTES",
-                        "fecha": "22/11/2022",
-                        "icovisitante": "australia",
-                        "eqlocal": "FRANCIA",
-                        "icolocal": "francia",
-                        "grupo": "GRUPO D",
-                        "eqvisitante": "AUSTRALIA",
-                        "hora": "16:00"
-                    },
                     "partido_n": 8,
-                    "id": 8,
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_penvis": ""
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "eqlocal": "FRANCIA",
+                        "grupo": "GRUPO D",
+                        "dia": "MARTES",
+                        "eqvisitante": "AUSTRALIA",
+                        "icolocal": "francia",
+                        "icovisitante": "australia",
+                        "fecha": "22/11/2022"
                     },
+                    "id": 8,
+                    "puntosP": "1",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_vis": "1",
+                        "resul_loc": "4",
+                        "resultado": "L"
+                    },
+                    "puntos": 2,
+                    "puntosCG": "0",
                     "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penvis": "",
                         "prode_vis": "0",
                         "prode_loc": "3",
-                        "prode_penloc": "",
+                        "prode_penloc": ""
+                    },
+                    "puntosDG": "1"
+                },
+                {
+                    "puntos": 0,
+                    "id": 9,
+                    "datosPartido": {
+                        "grupo": "GRUPO F",
+                        "icolocal": "marruecos",
+                        "fecha": "23/11/2022",
+                        "icovisitante": "croacia",
+                        "eqvisitante": "CROACIA",
+                        "hora": "07:00",
+                        "dia": "MIÉRCOLES",
+                        "eqlocal": "MARRUECOS"
+                    },
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "partido_n": 9,
+                    "prodePartido": {
                         "prode_penvis": "",
-                        "prode_resul": "L"
+                        "prode_vis": "1",
+                        "prode_penloc": "",
+                        "prode_resul": "V",
+                        "prode_loc": "0"
+                    },
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resultado": "E",
+                        "resul_vis": "0"
                     }
                 },
                 {
+                    "puntosCG": "0",
                     "datosPartido": {
-                        "icovisitante": "croacia",
-                        "grupo": "GRUPO F",
-                        "icolocal": "marruecos",
-                        "eqlocal": "MARRUECOS",
-                        "eqvisitante": "CROACIA",
-                        "hora": "07:00",
+                        "grupo": "GRUPO E",
+                        "hora": "10:00",
+                        "eqlocal": "ALEMANIA",
+                        "icolocal": "alemania",
+                        "dia": "MIÉRCOLES",
                         "fecha": "23/11/2022",
-                        "dia": "MIÉRCOLES"
+                        "icovisitante": "japon",
+                        "eqvisitante": "JAPÓN"
                     },
-                    "partido_n": 9,
-                    "puntos": "",
-                    "id": 9,
+                    "puntos": 0,
+                    "id": 10,
+                    "partido_n": 10,
+                    "puntosP": "0",
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "1",
-                        "prode_loc": "0",
                         "prode_penvis": "",
-                        "prode_resul": "V"
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_vis": "0"
                     },
+                    "puntosDG": "0",
                     "realPartido": {
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
+                        "resul_loc": "1",
+                        "resultado": "V",
+                        "resul_vis": "2",
                         "resul_penloc": ""
                     }
                 },
                 {
-                    "datosPartido": {
-                        "icovisitante": "japon",
-                        "grupo": "GRUPO E",
-                        "dia": "MIÉRCOLES",
-                        "eqvisitante": "JAPÓN",
-                        "hora": "10:00",
-                        "fecha": "23/11/2022",
-                        "eqlocal": "ALEMANIA",
-                        "icolocal": "alemania"
-                    },
+                    "id": 11,
+                    "partido_n": 11,
+                    "puntosDG": "0",
                     "prodePartido": {
                         "prode_vis": "0",
                         "prode_penvis": "",
@@ -17487,1623 +17989,1685 @@ export var fechaDiego = {
                         "prode_penloc": "",
                         "prode_loc": "2"
                     },
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "puntosP": "1",
                     "realPartido": {
+                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": ""
+                        "resul_loc": "7",
+                        "resultado": "L",
+                        "resul_vis": "0"
                     },
-                    "partido_n": 10,
-                    "puntos": "",
-                    "id": 10
-                },
-                {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 11,
                     "datosPartido": {
-                        "icovisitante": "costarica",
-                        "eqlocal": "ESPAÑA",
-                        "fecha": "23/11/2022",
-                        "eqvisitante": "COSTA RICA",
-                        "icolocal": "espana",
                         "hora": "13:00",
+                        "icolocal": "espana",
+                        "fecha": "23/11/2022",
                         "dia": "MIÉRCOLES",
-                        "grupo": "GRUPO E"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_resul": "L"
-                    },
-                    "puntos": "",
-                    "partido_n": 11
+                        "eqlocal": "ESPAÑA",
+                        "eqvisitante": "COSTA RICA",
+                        "grupo": "GRUPO E",
+                        "icovisitante": "costarica"
+                    }
                 },
                 {
-                    "partido_n": 12,
-                    "puntos": "",
+                    "puntosDG": "1",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "0"
+                    },
+                    "id": 12,
+                    "puntosP": "3",
+                    "puntos": 5,
+                    "datosPartido": {
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "canada",
+                        "eqlocal": "BÉLGICA",
+                        "fecha": "23/11/2022",
+                        "grupo": "GRUPO F",
+                        "hora": "16:00",
+                        "eqvisitante": "CANADÁ",
+                        "icolocal": "belgica"
+                    },
                     "prodePartido": {
+                        "prode_resul": "L",
                         "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_resul": "L",
                         "prode_vis": "0",
                         "prode_loc": "1"
                     },
-                    "id": 12,
-                    "datosPartido": {
-                        "icolocal": "belgica",
-                        "eqvisitante": "CANADÁ",
-                        "eqlocal": "BÉLGICA",
-                        "dia": "MIÉRCOLES",
-                        "grupo": "GRUPO F",
-                        "hora": "16:00",
-                        "icovisitante": "canada",
-                        "fecha": "23/11/2022"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    }
+                    "puntosCG": "1",
+                    "partido_n": 12
                 },
                 {
                     "id": 13,
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_vis": "1",
                         "prode_penvis": "",
+                        "prode_resul": "V",
                         "prode_loc": "0",
-                        "prode_penloc": "",
-                        "prode_resul": "V"
+                        "prode_vis": "1",
+                        "prode_penloc": ""
                     },
+                    "puntosP": "0",
                     "partido_n": 13,
+                    "puntosCG": "1",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_loc": "1"
+                    },
                     "datosPartido": {
                         "eqlocal": "SUIZA",
                         "grupo": "GRUPO G",
-                        "icovisitante": "camerun",
-                        "hora": "07:00",
-                        "icolocal": "suiza",
-                        "fecha": "24/11/2022",
                         "eqvisitante": "CAMERÚN",
+                        "icovisitante": "camerun",
+                        "icolocal": "suiza",
+                        "hora": "07:00",
+                        "fecha": "24/11/2022",
                         "dia": "JUEVES"
                     },
-                    "puntos": "",
+                    "puntos": 1
+                },
+                {
+                    "datosPartido": {
+                        "icovisitante": "corea",
+                        "fecha": "24/11/2022",
+                        "eqvisitante": "COREA",
+                        "hora": "10:00",
+                        "dia": "JUEVES",
+                        "grupo": "GRUPO H",
+                        "icolocal": "uruguay",
+                        "eqlocal": "URUGUAY"
+                    },
+                    "partido_n": 14,
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_vis": "0"
+                    },
+                    "puntosCG": "0",
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resultado": "E",
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": ""
+                        "resul_penloc": "",
+                        "resul_loc": "0"
+                    },
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "id": 14
+                },
+                {
+                    "id": 15,
+                    "puntosP": "1",
+                    "puntosDG": "1",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resultado": "L",
+                        "resul_loc": "3",
+                        "resul_penloc": ""
+                    },
+                    "puntos": 2,
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_loc": "1",
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
+                    "partido_n": 15,
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "fecha": "24/11/2022",
+                        "dia": "JUEVES",
+                        "eqlocal": "PORTUGAL",
+                        "hora": "13:00",
+                        "grupo": "GRUPO H",
+                        "icovisitante": "ghana",
+                        "icolocal": "portugal",
+                        "eqvisitante": "GHANA"
                     }
                 },
                 {
+                    "partido_n": 16,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "eqvisitante": "SERBIA",
+                        "eqlocal": "BRASIL",
+                        "icovisitante": "serbia",
+                        "icolocal": "brasil",
+                        "dia": "JUEVES",
+                        "fecha": "24/11/2022",
+                        "grupo": "GRUPO G",
+                        "hora": "16:00"
+                    },
                     "realPartido": {
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_loc": "2",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": ""
+                        "resul_penvis": ""
                     },
-                    "id": 14,
-                    "datosPartido": {
-                        "grupo": "GRUPO H",
-                        "icolocal": "uruguay",
-                        "dia": "JUEVES",
-                        "eqvisitante": "COREA",
-                        "hora": "10:00",
-                        "eqlocal": "URUGUAY",
-                        "fecha": "24/11/2022",
-                        "icovisitante": "corea"
-                    },
+                    "puntosCG": "0",
+                    "id": 16,
                     "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_vis": "0",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_penvis": ""
-                    },
-                    "puntos": "",
-                    "partido_n": 14
-                },
-                {
-                    "datosPartido": {
-                        "grupo": "GRUPO H",
-                        "dia": "JUEVES",
-                        "eqvisitante": "GHANA",
-                        "hora": "13:00",
-                        "icolocal": "portugal",
-                        "fecha": "24/11/2022",
-                        "eqlocal": "PORTUGAL",
-                        "icovisitante": "ghana"
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_loc": "1",
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_penvis": ""
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 15,
-                    "partido_n": 15
-                },
-                {
-                    "prodePartido": {
+                        "prode_loc": "3",
                         "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_loc": "3",
-                        "prode_resul": "L"
+                        "prode_resul": "L",
+                        "prode_vis": "0"
                     },
-                    "partido_n": 16,
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    },
-                    "datosPartido": {
-                        "icolocal": "brasil",
-                        "eqvisitante": "SERBIA",
-                        "grupo": "GRUPO G",
-                        "eqlocal": "BRASIL",
-                        "fecha": "24/11/2022",
-                        "hora": "16:00",
-                        "icovisitante": "serbia",
-                        "dia": "JUEVES"
-                    },
-                    "id": 16
+                    "puntos": 1,
+                    "puntosP": "1"
                 }
-            ]
+            ],
+            "fecha_n": 1
         },
         {
             "partidos": [
                 {
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_loc": "1",
-                        "prode_penloc": ""
-                    },
                     "datosPartido": {
+                        "dia": "VIERNES",
                         "eqlocal": "GALES",
                         "icovisitante": "iran",
+                        "fecha": "25/11/2022",
+                        "eqvisitante": "IRÁN",
+                        "hora": "07:00",
                         "icolocal": "gales",
-                        "hora": "07:00",
-                        "dia": "VIERNES",
-                        "fecha": "25/11/2022",
-                        "grupo": "GRUPO B",
-                        "eqvisitante": "IRÁN"
+                        "grupo": "GRUPO B"
                     },
-                    "puntos": "",
+                    "partido_n": 17,
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resultado": "V"
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
                     "id": 17,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    },
-                    "partido_n": 17
-                },
-                {
-                    "datosPartido": {
-                        "eqlocal": "QATAR",
-                        "icolocal": "qatar",
-                        "grupo": "GRUPO A",
-                        "dia": "VIERNES",
-                        "fecha": "25/11/2022",
-                        "hora": "10:00",
-                        "eqvisitante": "SENEGAL",
-                        "icovisitante": "senegal"
-                    },
-                    "puntos": "",
-                    "id": 18,
                     "prodePartido": {
-                        "prode_resul": "V",
-                        "prode_loc": "0",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "1"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    },
-                    "partido_n": 18
-                },
-                {
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "1",
                         "prode_loc": "1",
-                        "prode_resul": "E"
-                    },
-                    "id": 19,
-                    "partido_n": 19,
-                    "datosPartido": {
-                        "eqvisitante": "ECUADOR",
-                        "eqlocal": "PAÍSES BAJOS",
-                        "icolocal": "paisesbajos",
-                        "dia": "VIERNES",
-                        "hora": "13:00",
-                        "icovisitante": "ecuador",
-                        "fecha": "25/11/2022",
-                        "grupo": "GRUPO A"
-                    }
-                },
-                {
-                    "id": 20,
-                    "partido_n": 20,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "25/11/2022",
-                        "icovisitante": "estadosunidos",
-                        "grupo": "GRUPO B",
-                        "eqvisitante": "ESTADOS UNIDOS",
-                        "dia": "VIERNES",
-                        "icolocal": "inglaterra",
-                        "eqlocal": "INGLATERRA",
-                        "hora": "16:00"
-                    },
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_loc": "2",
                         "prode_vis": "0",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "puntos": ""
-                },
-                {
-                    "datosPartido": {
-                        "dia": "SÁBADO",
-                        "icovisitante": "australia",
-                        "icolocal": "tunez",
-                        "grupo": "GRUPO D",
-                        "hora": "07:00",
-                        "fecha": "26/11/2022",
-                        "eqlocal": "TÚNEZ",
-                        "eqvisitante": "AUSTRALIA"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_penloc": "",
-                        "prode_resul": "E",
-                        "prode_loc": "0",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 21,
-                    "id": 21
-                },
-                {
-                    "prodePartido": {
-                        "prode_resul": "E",
                         "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "1",
-                        "prode_vis": "1"
-                    },
-                    "datosPartido": {
-                        "grupo": "GRUPO C",
-                        "dia": "SÁBADO",
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "hora": "10:00",
-                        "icolocal": "polonia",
-                        "icovisitante": "arabiasaudita",
-                        "eqlocal": "POLONIA",
-                        "fecha": "26/11/2022"
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": ""
-                    },
-                    "puntos": "",
-                    "partido_n": 22,
-                    "id": 22
-                },
-                {
-                    "datosPartido": {
-                        "dia": "SÁBADO",
-                        "grupo": "GRUPO D",
-                        "hora": "13:00",
-                        "fecha": "26/11/2022",
-                        "eqvisitante": "DINAMARCA",
-                        "icovisitante": "dinamarca",
-                        "eqlocal": "FRANCIA",
-                        "icolocal": "francia"
-                    },
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "2",
-                        "prode_vis": "1",
-                        "prode_resul": "L",
-                        "prode_penvis": ""
-                    },
-                    "id": 23,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "partido_n": 23,
-                    "puntos": ""
-                },
-                {
-                    "datosPartido": {
-                        "eqvisitante": "MÉXICO",
-                        "icovisitante": "mexico",
-                        "eqlocal": "ARGENTINA",
-                        "dia": "SÁBADO",
-                        "icolocal": "argentina",
-                        "fecha": "26/11/2022",
-                        "hora": "16:00",
-                        "grupo": "GRUPO C"
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": ""
-                    },
-                    "id": 24,
-                    "puntos": "",
-                    "partido_n": 24,
-                    "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_penvis": "",
-                        "prode_vis": "0",
                         "prode_penloc": "",
                         "prode_resul": "L"
                     }
                 },
                 {
-                    "partido_n": 25,
                     "datosPartido": {
-                        "fecha": "27/11/2022",
-                        "dia": "DOMINGO",
-                        "grupo": "GRUPO E",
-                        "eqlocal": "JAPÓN",
-                        "eqvisitante": "COSTA RICA",
-                        "hora": "07:00",
-                        "icolocal": "japon",
-                        "icovisitante": "costarica"
+                        "icolocal": "qatar",
+                        "dia": "VIERNES",
+                        "icovisitante": "senegal",
+                        "hora": "10:00",
+                        "fecha": "25/11/2022",
+                        "eqvisitante": "SENEGAL",
+                        "eqlocal": "QATAR",
+                        "grupo": "GRUPO A"
+                    },
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_vis": "1",
+                        "prode_loc": "0",
+                        "prode_resul": "V",
+                        "prode_penloc": ""
                     },
                     "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
+                        "resultado": "V",
+                        "resul_loc": "1",
+                        "resul_vis": "3",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
                     },
-                    "puntos": "",
-                    "id": 25,
+                    "id": 18,
+                    "puntos": 1,
+                    "puntosP": "1",
+                    "partido_n": 18
+                },
+                {
+                    "puntosDG": "1",
                     "prodePartido": {
                         "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "L",
+                        "prode_resul": "E",
+                        "prode_vis": "1",
                         "prode_loc": "1",
+                        "prode_penvis": ""
+                    },
+                    "puntos": 5,
+                    "realPartido": {
+                        "resul_vis": "1",
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resultado": "E"
+                    },
+                    "partido_n": 19,
+                    "datosPartido": {
+                        "eqvisitante": "ECUADOR",
+                        "hora": "13:00",
+                        "eqlocal": "PAÍSES BAJOS",
+                        "icovisitante": "ecuador",
+                        "fecha": "25/11/2022",
+                        "icolocal": "paisesbajos",
+                        "grupo": "GRUPO A",
+                        "dia": "VIERNES"
+                    },
+                    "id": 19,
+                    "puntosCG": "1",
+                    "puntosP": "3"
+                },
+                {
+                    "datosPartido": {
+                        "icovisitante": "estadosunidos",
+                        "eqlocal": "INGLATERRA",
+                        "dia": "VIERNES",
+                        "hora": "16:00",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "grupo": "GRUPO B",
+                        "fecha": "25/11/2022",
+                        "icolocal": "inglaterra"
+                    },
+                    "partido_n": 20,
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
+                    },
+                    "id": 20,
+                    "puntos": 0,
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resultado": "E"
+                    }
+                },
+                {
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resultado": "V",
+                        "resul_vis": "1",
+                        "resul_penvis": ""
+                    },
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "eqlocal": "TÚNEZ",
+                        "fecha": "26/11/2022",
+                        "eqvisitante": "AUSTRALIA",
+                        "dia": "SÁBADO",
+                        "grupo": "GRUPO D",
+                        "icovisitante": "australia",
+                        "hora": "07:00",
+                        "icolocal": "tunez"
+                    },
+                    "id": 21,
+                    "puntosP": "0",
+                    "puntos": 0,
+                    "partido_n": 21,
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "0",
+                        "prode_penvis": "",
+                        "prode_resul": "E",
                         "prode_vis": "0"
                     }
                 },
                 {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
+                    "datosPartido": {
+                        "eqvisitante": "ARABIA SAUDITA",
+                        "dia": "SÁBADO",
+                        "fecha": "26/11/2022",
+                        "eqlocal": "POLONIA",
+                        "icolocal": "polonia",
+                        "hora": "10:00",
+                        "icovisitante": "arabiasaudita",
+                        "grupo": "GRUPO C"
                     },
-                    "puntos": "",
+                    "puntos": 1,
                     "prodePartido": {
+                        "prode_vis": "1",
                         "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_vis": "0",
+                        "prode_resul": "E",
                         "prode_penloc": "",
                         "prode_loc": "1"
                     },
-                    "datosPartido": {
-                        "dia": "DOMINGO",
-                        "eqvisitante": "MARRUECOS",
-                        "grupo": "GRUPO F",
-                        "icovisitante": "marruecos",
-                        "fecha": "27/11/2022",
-                        "hora": "10:00",
-                        "eqlocal": "BÉLGICA",
-                        "icolocal": "belgica"
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resul_vis": "0",
+                        "resultado": "L"
                     },
-                    "id": 26,
-                    "partido_n": 26
+                    "partido_n": 22,
+                    "puntosCG": "1",
+                    "puntosDG": "0",
+                    "id": 22,
+                    "puntosP": "0"
                 },
                 {
-                    "id": 27,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
-                    "puntos": "",
+                    "puntosDG": "1",
                     "datosPartido": {
-                        "icovisitante": "canada",
-                        "dia": "DOMINGO",
-                        "fecha": "27/11/2022",
-                        "grupo": "GRUPO F",
-                        "icolocal": "croacia",
-                        "eqlocal": "CROACIA",
-                        "eqvisitante": "CANADÁ",
+                        "grupo": "GRUPO D",
+                        "icolocal": "francia",
+                        "fecha": "26/11/2022",
+                        "eqvisitante": "DINAMARCA",
+                        "icovisitante": "dinamarca",
+                        "eqlocal": "FRANCIA",
+                        "dia": "SÁBADO",
                         "hora": "13:00"
                     },
                     "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_resul": "L",
+                        "prode_loc": "2"
+                    },
+                    "id": 23,
+                    "puntosP": "3",
+                    "puntosCG": "1",
+                    "puntos": 5,
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "L",
+                        "resul_vis": "1",
+                        "resul_loc": "2",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 23
+                },
+                {
+                    "prodePartido": {
                         "prode_penloc": "",
                         "prode_vis": "0",
-                        "prode_loc": "1",
+                        "prode_loc": "2",
                         "prode_penvis": "",
                         "prode_resul": "L"
                     },
-                    "partido_n": 27
-                },
-                {
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "1",
-                        "prode_resul": "E",
-                        "prode_loc": "1",
-                        "prode_penloc": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "27/11/2022",
-                        "eqvisitante": "ALEMANIA",
-                        "eqlocal": "ESPAÑA",
-                        "icovisitante": "alemania",
-                        "hora": "16:00",
-                        "grupo": "GRUPO E",
-                        "dia": "DOMINGO",
-                        "icolocal": "espana"
-                    },
-                    "partido_n": 28,
+                    "puntosCG": "1",
                     "realPartido": {
                         "resul_penloc": "",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": ""
+                        "resul_vis": "0",
+                        "resul_loc": "2",
+                        "resultado": "L"
                     },
-                    "id": 28,
-                    "puntos": ""
-                },
-                {
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
-                    "partido_n": 29,
-                    "puntos": "",
-                    "id": 29,
+                    "puntosP": "3",
+                    "partido_n": 24,
+                    "puntos": 5,
+                    "puntosDG": "1",
+                    "id": 24,
                     "datosPartido": {
-                        "hora": "07:00",
-                        "eqvisitante": "SERBIA",
-                        "dia": "LUNES",
-                        "eqlocal": "CAMERÚN",
-                        "icolocal": "camerun",
-                        "icovisitante": "serbia",
-                        "fecha": "28/11/2022",
-                        "grupo": "GRUPO G"
-                    },
-                    "prodePartido": {
-                        "prode_resul": "E",
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_penloc": "",
-                        "prode_vis": "1"
+                        "eqlocal": "ARGENTINA",
+                        "icolocal": "argentina",
+                        "icovisitante": "mexico",
+                        "grupo": "GRUPO C",
+                        "eqvisitante": "MÉXICO",
+                        "dia": "SÁBADO",
+                        "fecha": "26/11/2022",
+                        "hora": "16:00"
                     }
                 },
                 {
-                    "id": 30,
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_resul": "L",
+                        "prode_penvis": ""
+                    },
+                    "partido_n": 25,
+                    "datosPartido": {
+                        "dia": "DOMINGO",
+                        "eqvisitante": "COSTA RICA",
+                        "grupo": "GRUPO E",
+                        "hora": "07:00",
+                        "eqlocal": "JAPÓN",
+                        "icovisitante": "costarica",
+                        "fecha": "27/11/2022",
+                        "icolocal": "japon"
+                    },
+                    "id": 25,
+                    "puntos": 1,
+                    "puntosCG": "1",
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resultado": "V",
+                        "resul_vis": "1",
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resul_penloc": ""
+                    },
+                    "puntosDG": "0"
+                },
+                {
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resul_vis": "2",
+                        "resul_penvis": "",
+                        "resultado": "V"
+                    },
+                    "puntosCG": "0",
+                    "partido_n": 26,
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_penvis": ""
+                    },
+                    "datosPartido": {
+                        "grupo": "GRUPO F",
+                        "icolocal": "belgica",
+                        "eqvisitante": "MARRUECOS",
+                        "dia": "DOMINGO",
+                        "fecha": "27/11/2022",
+                        "icovisitante": "marruecos",
+                        "eqlocal": "BÉLGICA",
+                        "hora": "10:00"
+                    },
+                    "puntosDG": "0",
+                    "id": 26,
+                    "puntos": 0
+                },
+                {
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_vis": "1",
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_loc": "4"
+                    },
+                    "id": 27,
+                    "partido_n": 27,
+                    "puntosP": "1",
+                    "datosPartido": {
+                        "fecha": "27/11/2022",
+                        "hora": "13:00",
+                        "icovisitante": "canada",
+                        "eqvisitante": "CANADÁ",
+                        "eqlocal": "CROACIA",
+                        "grupo": "GRUPO F",
+                        "icolocal": "croacia",
+                        "dia": "DOMINGO"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_resul": "L"
+                    }
+                },
+                {
+                    "partido_n": 28,
+                    "puntosCG": "1",
+                    "puntosDG": "1",
+                    "id": 28,
+                    "puntosP": "3",
+                    "realPartido": {
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_vis": "1",
+                        "resul_penvis": ""
+                    },
+                    "datosPartido": {
+                        "icovisitante": "alemania",
+                        "fecha": "27/11/2022",
+                        "hora": "16:00",
+                        "eqvisitante": "ALEMANIA",
+                        "dia": "DOMINGO",
+                        "grupo": "GRUPO E",
+                        "eqlocal": "ESPAÑA",
+                        "icolocal": "espana"
+                    },
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    },
+                    "puntos": 5
+                },
+                {
                     "realPartido": {
                         "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
+                        "resul_vis": "3",
+                        "resul_loc": "3",
                         "resul_penloc": "",
-                        "resultado": ""
+                        "resultado": "E"
                     },
-                    "partido_n": 30,
+                    "id": 29,
+                    "datosPartido": {
+                        "fecha": "28/11/2022",
+                        "eqlocal": "CAMERÚN",
+                        "dia": "LUNES",
+                        "grupo": "GRUPO G",
+                        "eqvisitante": "SERBIA",
+                        "hora": "07:00",
+                        "icolocal": "camerun",
+                        "icovisitante": "serbia"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "puntosDG": "1",
                     "prodePartido": {
-                        "prode_penloc": "",
                         "prode_vis": "1",
                         "prode_penvis": "",
+                        "prode_penloc": "",
                         "prode_resul": "E",
                         "prode_loc": "1"
                     },
-                    "datosPartido": {
-                        "icovisitante": "ghana",
-                        "hora": "10:00",
-                        "eqvisitante": "GHANA",
-                        "grupo": "GRUPO H",
-                        "eqlocal": "COREA",
-                        "icolocal": "corea",
-                        "fecha": "28/11/2022",
-                        "dia": "LUNES"
-                    },
-                    "puntos": ""
+                    "partido_n": 29,
+                    "puntos": 2
                 },
                 {
-                    "partido_n": 31,
+                    "partido_n": 30,
                     "datosPartido": {
-                        "grupo": "GRUPO G",
-                        "icolocal": "brasil",
+                        "eqlocal": "COREA",
+                        "fecha": "28/11/2022",
+                        "eqvisitante": "GHANA",
+                        "icolocal": "corea",
+                        "grupo": "GRUPO H",
+                        "hora": "10:00",
                         "dia": "LUNES",
-                        "hora": "13:00",
-                        "icovisitante": "suiza",
-                        "eqlocal": "BRASIL",
-                        "eqvisitante": "SUIZA",
-                        "fecha": "28/11/2022"
+                        "icovisitante": "ghana"
                     },
-                    "puntos": "",
                     "realPartido": {
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_vis": "",
+                        "resultado": "V",
+                        "resul_loc": "2",
                         "resul_penloc": "",
-                        "resul_loc": ""
+                        "resul_penvis": "",
+                        "resul_vis": "3"
                     },
+                    "id": 30,
+                    "puntosCG": "0",
+                    "puntosP": "0",
+                    "puntos": 0,
                     "prodePartido": {
                         "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "E"
+                    },
+                    "puntosDG": "0"
+                },
+                {
+                    "datosPartido": {
+                        "icovisitante": "suiza",
+                        "dia": "LUNES",
+                        "eqvisitante": "SUIZA",
+                        "eqlocal": "BRASIL",
+                        "fecha": "28/11/2022",
+                        "icolocal": "brasil",
+                        "grupo": "GRUPO G",
+                        "hora": "13:00"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "1"
+                    },
+                    "id": 31,
+                    "puntosDG": "0",
+                    "prodePartido": {
                         "prode_penvis": "",
                         "prode_vis": "0",
                         "prode_loc": "2",
+                        "prode_penloc": "",
                         "prode_resul": "L"
                     },
-                    "id": 31
+                    "partido_n": 31
                 },
                 {
-                    "datosPartido": {
-                        "fecha": "28/11/2022",
-                        "eqvisitante": "URUGUAY",
-                        "grupo": "GRUPO H",
-                        "icovisitante": "uruguay",
-                        "hora": "16:00",
-                        "icolocal": "portugal",
-                        "eqlocal": "PORTUGAL",
-                        "dia": "LUNES"
-                    },
-                    "puntos": "",
                     "prodePartido": {
-                        "prode_penvis": "",
+                        "prode_resul": "E",
                         "prode_loc": "1",
+                        "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_vis": "1",
-                        "prode_resul": "E"
+                        "prode_vis": "1"
                     },
+                    "puntosP": "0",
+                    "partido_n": 32,
                     "id": 32,
                     "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
+                        "resul_vis": "0",
+                        "resultado": "L",
                         "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": ""
+                        "resul_loc": "2",
+                        "resul_penloc": ""
                     },
-                    "partido_n": 32
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "datosPartido": {
+                        "eqlocal": "PORTUGAL",
+                        "hora": "16:00",
+                        "grupo": "GRUPO H",
+                        "dia": "LUNES",
+                        "icolocal": "portugal",
+                        "eqvisitante": "URUGUAY",
+                        "icovisitante": "uruguay",
+                        "fecha": "28/11/2022"
+                    },
+                    "puntosCG": "1"
                 }
             ],
             "fecha_n": 2
         },
         {
-            "fecha_n": 3,
             "partidos": [
                 {
                     "datosPartido": {
-                        "icolocal": "paisesbajos",
-                        "eqvisitante": "QATAR",
-                        "icovisitante": "qatar",
                         "dia": "MARTES",
-                        "grupo": "GRUPO A",
-                        "eqlocal": "PAÍSES BAJOS",
                         "hora": "12:00",
-                        "fecha": "29/11/2022"
+                        "icolocal": "paisesbajos",
+                        "icovisitante": "qatar",
+                        "eqlocal": "PAÍSES BAJOS",
+                        "fecha": "29/11/2022",
+                        "grupo": "GRUPO A",
+                        "eqvisitante": "QATAR"
                     },
-                    "puntos": "",
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "id": 33,
+                    "puntosDG": "0",
                     "partido_n": 33,
+                    "prodePartido": {
+                        "prode_loc": "3",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": "0"
+                    },
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resultado": "L",
+                        "resul_penloc": ""
+                    }
+                },
+                {
+                    "puntos": 0,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_loc": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "L"
+                    },
+                    "partido_n": 34,
+                    "puntosDG": "0",
                     "realPartido": {
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
+                        "resul_vis": "2",
+                        "resultado": "V",
                         "resul_penvis": "",
-                        "resul_loc": ""
+                        "resul_loc": "1"
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "3",
-                        "prode_vis": "0",
-                        "prode_penloc": "",
-                        "prode_resul": "L"
-                    },
-                    "id": 33
-                },
-                {
-                    "partido_n": 34,
                     "datosPartido": {
-                        "fecha": "29/11/2022",
-                        "icovisitante": "senegal",
-                        "dia": "MARTES",
-                        "icolocal": "ecuador",
                         "eqlocal": "ECUADOR",
+                        "icovisitante": "senegal",
                         "grupo": "GRUPO A",
-                        "eqvisitante": "SENEGAL",
-                        "hora": "12:00"
+                        "icolocal": "ecuador",
+                        "hora": "12:00",
+                        "dia": "MARTES",
+                        "fecha": "29/11/2022",
+                        "eqvisitante": "SENEGAL"
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_vis": "0",
-                        "prode_penloc": "",
-                        "prode_resul": "L"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 34
+                    "id": 34,
+                    "puntosP": "0",
+                    "puntosCG": "0"
                 },
                 {
+                    "puntosP": "1",
+                    "partido_n": 35,
                     "datosPartido": {
-                        "fecha": "29/11/2022",
-                        "hora": "16:00",
-                        "icolocal": "gales",
                         "grupo": "GRUPO B",
                         "eqvisitante": "INGLATERRA",
-                        "icovisitante": "inglaterra",
+                        "dia": "MARTES",
+                        "fecha": "29/11/2022",
+                        "icolocal": "gales",
+                        "hora": "16:00",
                         "eqlocal": "GALES",
-                        "dia": "MARTES"
+                        "icovisitante": "inglaterra"
                     },
-                    "partido_n": 35,
                     "realPartido": {
-                        "resul_penvis": "",
-                        "resul_vis": "",
+                        "resul_loc": "0",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                        "resultado": "V",
+                        "resul_penvis": "",
+                        "resul_vis": "3"
                     },
-                    "puntos": "",
+                    "puntosDG": "0",
                     "id": 35,
                     "prodePartido": {
                         "prode_penloc": "",
-                        "prode_resul": "V",
-                        "prode_penvis": "",
                         "prode_vis": "2",
-                        "prode_loc": "1"
-                    }
+                        "prode_loc": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "V"
+                    },
+                    "puntosCG": "1",
+                    "puntos": 2
                 },
                 {
                     "prodePartido": {
                         "prode_loc": "0",
-                        "prode_resul": "V",
-                        "prode_penvis": "",
                         "prode_penloc": "",
-                        "prode_vis": "1"
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "V"
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_vis": "1",
+                        "resultado": "V"
                     },
                     "partido_n": 36,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    },
+                    "puntos": 5,
+                    "puntosDG": "1",
                     "id": 36,
+                    "puntosP": "3",
                     "datosPartido": {
-                        "icolocal": "iran",
-                        "dia": "MARTES",
-                        "fecha": "29/11/2022",
                         "icovisitante": "estadosunidos",
-                        "grupo": "GRUPO B",
                         "hora": "16:00",
+                        "dia": "MARTES",
                         "eqlocal": "IRÁN",
-                        "eqvisitante": "ESTADOS UNIDOS"
-                    }
+                        "fecha": "29/11/2022",
+                        "icolocal": "iran",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "grupo": "GRUPO B"
+                    },
+                    "puntosCG": "1"
                 },
                 {
                     "datosPartido": {
-                        "grupo": "GRUPO D",
-                        "eqvisitante": "FRANCIA",
-                        "eqlocal": "TÚNEZ",
                         "fecha": "30/11/2022",
-                        "icolocal": "tunez",
-                        "hora": "12:00",
+                        "dia": "MIÉRCOLES",
+                        "eqvisitante": "FRANCIA",
+                        "grupo": "GRUPO D",
                         "icovisitante": "francia",
-                        "dia": "MIÉRCOLES"
+                        "icolocal": "tunez",
+                        "eqlocal": "TÚNEZ",
+                        "hora": "12:00"
                     },
                     "puntos": "",
+                    "id": 37,
                     "prodePartido": {
                         "prode_penvis": "",
-                        "prode_loc": "0",
-                        "prode_resul": "V",
                         "prode_penloc": "",
-                        "prode_vis": "2"
+                        "prode_vis": "2",
+                        "prode_resul": "V",
+                        "prode_loc": "0"
                     },
-                    "id": 37,
                     "realPartido": {
                         "resul_vis": "",
+                        "resul_penvis": "",
                         "resul_loc": "",
-                        "resultado": "",
                         "resul_penloc": "",
-                        "resul_penvis": ""
+                        "resultado": ""
                     },
                     "partido_n": 37
                 },
                 {
-                    "puntos": "",
-                    "datosPartido": {
-                        "eqlocal": "AUSTRALIA",
-                        "grupo": "GRUPO D",
-                        "hora": "12:00",
-                        "dia": "MIÉRCOLES",
-                        "icolocal": "australia",
-                        "icovisitante": "dinamarca",
-                        "eqvisitante": "DINAMARCA",
-                        "fecha": "30/11/2022"
-                    },
-                    "partido_n": 38,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": ""
-                    },
-                    "id": 38,
                     "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_resul": "V",
                         "prode_loc": "0",
                         "prode_penvis": "",
-                        "prode_penloc": ""
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_resul": "V"
+                    },
+                    "id": 38,
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 38,
+                    "puntos": "",
+                    "datosPartido": {
+                        "hora": "12:00",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO D",
+                        "eqlocal": "AUSTRALIA",
+                        "fecha": "30/11/2022",
+                        "eqvisitante": "DINAMARCA",
+                        "icovisitante": "dinamarca",
+                        "icolocal": "australia"
                     }
                 },
                 {
-                    "puntos": "",
                     "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_resul": "V",
                         "prode_vis": "2",
                         "prode_penloc": "",
-                        "prode_penvis": ""
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_loc": "1"
                     },
+                    "puntos": "",
                     "id": 39,
-                    "partido_n": 39,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
                     "datosPartido": {
-                        "icolocal": "polonia",
                         "fecha": "30/11/2022",
+                        "eqvisitante": "ARGENTINA",
                         "grupo": "GRUPO C",
                         "eqlocal": "POLONIA",
-                        "hora": "16:00",
-                        "icovisitante": "argentina",
-                        "eqvisitante": "ARGENTINA",
-                        "dia": "MIÉRCOLES"
-                    }
-                },
-                {
-                    "puntos": "",
-                    "datosPartido": {
-                        "grupo": "GRUPO C",
-                        "eqvisitante": "MÉXICO",
-                        "icovisitante": "mexico",
                         "dia": "MIÉRCOLES",
-                        "eqlocal": "ARABIA SAUDITA",
                         "hora": "16:00",
-                        "fecha": "30/11/2022",
-                        "icolocal": "arabiasaudita"
+                        "icolocal": "polonia",
+                        "icovisitante": "argentina"
                     },
+                    "partido_n": 39,
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    },
-                    "partido_n": 40,
-                    "id": 40,
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_resul": "E",
-                        "prode_penloc": ""
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    },
-                    "partido_n": 41,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "E",
-                        "prode_loc": "1",
-                        "prode_vis": "1",
-                        "prode_penvis": ""
-                    },
-                    "datosPartido": {
-                        "icovisitante": "belgica",
-                        "eqlocal": "CROACIA",
-                        "hora": "12:00",
-                        "eqvisitante": "BÉLGICA",
-                        "dia": "JUEVES",
-                        "grupo": "GRUPO F",
-                        "fecha": "01/12/2022",
-                        "icolocal": "croacia"
-                    },
-                    "id": 41,
-                    "puntos": ""
-                },
-                {
-                    "datosPartido": {
-                        "eqlocal": "CANADÁ",
-                        "grupo": "GRUPO F",
-                        "fecha": "01/12/2022",
-                        "icovisitante": "marruecos",
-                        "icolocal": "canada",
-                        "hora": "12:00",
-                        "eqvisitante": "MARRUECOS",
-                        "dia": "JUEVES"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 42,
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_resul": "E",
-                        "prode_penvis": "",
-                        "prode_vis": "1",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 42
-                },
-                {
-                    "partido_n": 43,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_penvis": "",
-                        "prode_resul": "V",
-                        "prode_vis": "2",
-                        "prode_penloc": ""
-                    },
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "eqlocal": "JAPÓN",
-                        "icovisitante": "espana",
-                        "grupo": "GRUPO E",
-                        "eqvisitante": "ESPAÑA",
-                        "dia": "JUEVES",
-                        "icolocal": "japon",
-                        "fecha": "01/12/2022"
-                    },
-                    "id": 43,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
                         "resul_loc": "",
                         "resul_vis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
                         "resul_penvis": ""
                     }
                 },
                 {
                     "puntos": "",
-                    "id": 44,
                     "prodePartido": {
-                        "prode_resul": "V",
-                        "prode_loc": "0",
-                        "prode_vis": "2",
                         "prode_penvis": "",
-                        "prode_penloc": ""
+                        "prode_resul": "E",
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_vis": "1"
                     },
-                    "partido_n": 44,
-                    "datosPartido": {
-                        "eqvisitante": "ALEMANIA",
-                        "dia": "JUEVES",
-                        "icolocal": "costarica",
-                        "fecha": "01/12/2022",
-                        "hora": "16:00",
-                        "icovisitante": "alemania",
-                        "grupo": "GRUPO E",
-                        "eqlocal": "COSTA RICA"
-                    },
+                    "partido_n": 40,
+                    "id": 40,
                     "realPartido": {
                         "resul_vis": "",
-                        "resultado": "",
                         "resul_penloc": "",
                         "resul_penvis": "",
-                        "resul_loc": ""
-                    }
-                },
-                {
-                    "puntos": "",
-                    "id": 45,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
                         "resul_loc": "",
                         "resultado": ""
                     },
-                    "partido_n": 45,
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "grupo": "GRUPO C",
+                        "eqvisitante": "MÉXICO",
+                        "fecha": "30/11/2022",
+                        "eqlocal": "ARABIA SAUDITA",
+                        "icolocal": "arabiasaudita",
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "mexico"
+                    }
+                },
+                {
+                    "partido_n": 41,
                     "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
+                    "puntos": "",
+                    "id": 41,
+                    "datosPartido": {
+                        "eqvisitante": "BÉLGICA",
+                        "fecha": "01/12/2022",
+                        "icovisitante": "belgica",
+                        "eqlocal": "CROACIA",
+                        "hora": "12:00",
+                        "icolocal": "croacia",
+                        "dia": "JUEVES",
+                        "grupo": "GRUPO F"
+                    },
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    }
+                },
+                {
+                    "prodePartido": {
+                        "prode_resul": "E",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_vis": "1"
+                    },
+                    "partido_n": 42,
+                    "id": 42,
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
+                    },
+                    "puntos": "",
+                    "datosPartido": {
+                        "fecha": "01/12/2022",
+                        "eqvisitante": "MARRUECOS",
+                        "eqlocal": "CANADÁ",
+                        "grupo": "GRUPO F",
+                        "icolocal": "canada",
+                        "icovisitante": "marruecos",
+                        "hora": "12:00",
+                        "dia": "JUEVES"
+                    }
+                },
+                {
+                    "datosPartido": {
+                        "icovisitante": "espana",
+                        "eqvisitante": "ESPAÑA",
+                        "dia": "JUEVES",
+                        "hora": "16:00",
+                        "eqlocal": "JAPÓN",
+                        "fecha": "01/12/2022",
+                        "grupo": "GRUPO E",
+                        "icolocal": "japon"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_resul": "V",
+                        "prode_vis": "2"
+                    },
+                    "puntos": "",
+                    "id": 43,
+                    "partido_n": 43,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resultado": "",
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resul_penloc": ""
+                    }
+                },
+                {
+                    "datosPartido": {
+                        "icolocal": "costarica",
+                        "hora": "16:00",
+                        "grupo": "GRUPO E",
+                        "eqvisitante": "ALEMANIA",
+                        "eqlocal": "COSTA RICA",
+                        "icovisitante": "alemania",
+                        "fecha": "01/12/2022",
+                        "dia": "JUEVES"
+                    },
+                    "id": 44,
+                    "puntos": "",
+                    "partido_n": 44,
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penvis": ""
+                    },
+                    "prodePartido": {
+                        "prode_vis": "2",
+                        "prode_loc": "0",
                         "prode_resul": "V",
                         "prode_penvis": "",
-                        "prode_loc": "0",
-                        "prode_vis": "1",
                         "prode_penloc": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "02/12/2022",
-                        "eqvisitante": "PORTUGAL",
-                        "grupo": "GRUPO H",
-                        "eqlocal": "COREA",
-                        "hora": "12:00",
-                        "dia": "VIERNES",
-                        "icolocal": "corea",
-                        "icovisitante": "portugal"
                     }
                 },
                 {
                     "datosPartido": {
                         "hora": "12:00",
-                        "grupo": "GRUPO H",
-                        "icolocal": "ghana",
-                        "icovisitante": "uruguay",
                         "fecha": "02/12/2022",
-                        "eqlocal": "GHANA",
-                        "eqvisitante": "URUGUAY",
-                        "dia": "VIERNES"
+                        "eqlocal": "COREA",
+                        "icovisitante": "portugal",
+                        "dia": "VIERNES",
+                        "icolocal": "corea",
+                        "grupo": "GRUPO H",
+                        "eqvisitante": "PORTUGAL"
                     },
-                    "id": 46,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "partido_n": 46,
+                    "id": 45,
                     "puntos": "",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resultado": ""
+                    },
                     "prodePartido": {
                         "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_resul": "E",
+                        "prode_loc": "0",
+                        "prode_penloc": "",
                         "prode_vis": "1",
-                        "prode_penloc": ""
+                        "prode_resul": "V"
+                    },
+                    "partido_n": 45
+                },
+                {
+                    "datosPartido": {
+                        "grupo": "GRUPO H",
+                        "dia": "VIERNES",
+                        "eqlocal": "GHANA",
+                        "eqvisitante": "URUGUAY",
+                        "fecha": "02/12/2022",
+                        "icovisitante": "uruguay",
+                        "hora": "12:00",
+                        "icolocal": "ghana"
+                    },
+                    "id": 46,
+                    "puntos": "",
+                    "partido_n": 46,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_resul": "E",
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_penvis": ""
+                    },
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resultado": ""
                     }
                 },
                 {
                     "id": 47,
                     "puntos": "",
                     "prodePartido": {
-                        "prode_resul": "V",
                         "prode_vis": "2",
                         "prode_penloc": "",
                         "prode_loc": "1",
+                        "prode_resul": "V",
                         "prode_penvis": ""
+                    },
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": ""
                     },
                     "partido_n": 47,
                     "datosPartido": {
-                        "hora": "16:00",
-                        "grupo": "GRUPO G",
-                        "icolocal": "camerun",
+                        "fecha": "02/12/2022",
                         "eqvisitante": "BRASIL",
+                        "hora": "16:00",
+                        "icolocal": "camerun",
                         "dia": "VIERNES",
-                        "eqlocal": "CAMERÚN",
+                        "grupo": "GRUPO G",
                         "icovisitante": "brasil",
-                        "fecha": "02/12/2022"
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
+                        "eqlocal": "CAMERÚN"
                     }
                 },
                 {
                     "id": 48,
                     "puntos": "",
+                    "partido_n": 48,
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resul_penvis": ""
+                    },
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "1",
+                        "prode_resul": "E"
+                    },
                     "datosPartido": {
-                        "grupo": "GRUPO G",
+                        "eqlocal": "SERBIA",
                         "icolocal": "serbia",
-                        "dia": "VIERNES",
+                        "fecha": "02/12/2022",
+                        "grupo": "GRUPO G",
                         "eqvisitante": "SUIZA",
                         "icovisitante": "suiza",
                         "hora": "16:00",
-                        "fecha": "02/12/2022",
-                        "eqlocal": "SERBIA"
-                    },
-                    "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_penvis": "",
-                        "prode_resul": "E",
-                        "prode_loc": "1",
-                        "prode_penloc": ""
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "partido_n": 48
+                        "dia": "VIERNES"
+                    }
                 }
-            ]
+            ],
+            "fecha_n": 3
         },
         {
-            "fecha_n": 4,
             "partidos": [
                 {
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
-                    },
-                    "id": 49,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "partido_n": 49,
-                    "puntos": "",
                     "datosPartido": {
-                        "icolocal": "vacio",
-                        "hora": "12:00",
-                        "icovisitante": "vacio",
-                        "eqvisitante": "2° B",
-                        "grupo": "OCTAVOS DE FINAL",
                         "eqlocal": "1° A",
-                        "fecha": "03/12/2022",
-                        "dia": "SÁBADO"
+                        "eqvisitante": "2° B",
+                        "dia": "SÁBADO",
+                        "icolocal": "vacio",
+                        "hora": "12:00",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "vacio",
+                        "fecha": "03/12/2022"
+                    },
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "",
+                        "resul_vis": "",
+                        "resul_loc": ""
+                    },
+                    "puntos": "",
+                    "partido_n": 49,
+                    "id": 49,
+                    "prodePartido": {
+                        "prode_ext": "",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_vis": "1",
+                        "prode_penloc": "",
+                        "prode_loc": "2"
                     }
                 },
                 {
+                    "partido_n": 50,
                     "datosPartido": {
-                        "icolocal": "vacio",
-                        "eqlocal": "1° C",
-                        "hora": "16:00",
+                        "eqvisitante": "2° D",
                         "icovisitante": "vacio",
                         "fecha": "03/12/2022",
-                        "eqvisitante": "2° D",
                         "grupo": "OCTAVOS DE FINAL",
+                        "eqlocal": "1° C",
+                        "icolocal": "vacio",
+                        "hora": "16:00",
                         "dia": "SÁBADO"
                     },
+                    "id": 50,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resultado": ""
+                    },
+                    "puntos": "",
                     "prodePartido": {
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
+                        "prode_ext": "",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_vis": "0",
                         "prode_penloc": "",
                         "prode_penvis": ""
-                    },
-                    "puntos": "",
-                    "id": 50,
-                    "partido_n": 50,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": ""
                     }
                 },
                 {
+                    "partido_n": 51,
+                    "id": 51,
                     "puntos": "",
                     "datosPartido": {
-                        "icovisitante": "vacio",
-                        "dia": "DOMINGO",
-                        "eqvisitante": "2° C",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "hora": "12:00",
                         "fecha": "04/12/2022",
+                        "eqlocal": "1° D",
+                        "eqvisitante": "2° C",
+                        "dia": "DOMINGO",
                         "icolocal": "vacio",
-                        "eqlocal": "1° D"
+                        "hora": "12:00",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icovisitante": "vacio"
                     },
                     "realPartido": {
                         "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
                         "resul_loc": "",
+                        "resul_vis": "",
                         "resultado": ""
                     },
-                    "id": 51,
-                    "partido_n": 51,
                     "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "",
                         "prode_penloc": "",
-                        "prode_vis": ""
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_ext": "L",
+                        "prode_resul": "E",
+                        "prode_vis": "1"
                     }
                 },
                 {
-                    "partido_n": 52,
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_resul": ""
-                    },
-                    "puntos": "",
                     "realPartido": {
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
                         "resul_loc": "",
-                        "resul_vis": ""
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 52,
+                    "datosPartido": {
+                        "eqvisitante": "2° A",
+                        "dia": "DOMINGO",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icolocal": "vacio",
+                        "fecha": "04/12/2022",
+                        "eqlocal": "1° B",
+                        "hora": "16:00",
+                        "icovisitante": "vacio"
                     },
                     "id": 52,
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "icolocal": "vacio",
-                        "icovisitante": "vacio",
-                        "fecha": "04/12/2022",
-                        "eqvisitante": "2° A",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqlocal": "1° B",
-                        "dia": "DOMINGO"
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_loc": "2",
+                        "prode_ext": "L",
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
                     }
                 },
                 {
                     "partido_n": 53,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
                     "realPartido": {
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_vis": "",
+                        "resul_penloc": ""
+                    },
+                    "id": 53,
+                    "puntos": "",
+                    "datosPartido": {
+                        "eqlocal": "1° E",
+                        "dia": "LUNES",
+                        "icovisitante": "vacio",
+                        "icolocal": "vacio",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "fecha": "05/12/2022",
+                        "hora": "12:00",
+                        "eqvisitante": "2° F"
+                    },
+                    "prodePartido": {
+                        "prode_ext": "L",
+                        "prode_resul": "E",
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_penloc": ""
+                    }
+                },
+                {
+                    "id": 54,
+                    "realPartido": {
+                        "resul_penvis": "",
                         "resul_vis": "",
                         "resul_penloc": "",
                         "resultado": "",
-                        "resul_penvis": "",
                         "resul_loc": ""
                     },
-                    "datosPartido": {
-                        "dia": "LUNES",
-                        "eqvisitante": "2° F",
-                        "icovisitante": "vacio",
-                        "hora": "12:00",
-                        "fecha": "05/12/2022",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqlocal": "1° E",
-                        "icolocal": "vacio"
-                    },
-                    "id": 53
-                },
-                {
+                    "puntos": "",
                     "prodePartido": {
+                        "prode_ext": "L",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
                         "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penvis": ""
+                        "prode_penvis": "",
+                        "prode_vis": "0"
                     },
-                    "id": 54,
+                    "partido_n": 54,
                     "datosPartido": {
                         "fecha": "05/12/2022",
-                        "icolocal": "vacio",
+                        "eqlocal": "1° G",
                         "eqvisitante": "2° H",
+                        "icolocal": "vacio",
                         "grupo": "OCTAVOS DE FINAL",
                         "dia": "LUNES",
                         "hora": "16:00",
-                        "eqlocal": "1° G",
+                        "icovisitante": "vacio"
+                    }
+                },
+                {
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_loc": ""
+                    },
+                    "prodePartido": {
+                        "prode_ext": "L",
+                        "prode_vis": "1",
+                        "prode_resul": "V",
+                        "prode_loc": "0",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
+                    "partido_n": 55,
+                    "datosPartido": {
+                        "fecha": "06/12/2022",
+                        "icovisitante": "vacio",
+                        "eqlocal": "1° F",
+                        "dia": "MARTES",
+                        "hora": "12:00",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "icolocal": "vacio",
+                        "eqvisitante": "2° E"
+                    },
+                    "puntos": "",
+                    "id": 55
+                },
+                {
+                    "datosPartido": {
+                        "eqvisitante": "2° G",
+                        "fecha": "06/12/2022",
+                        "dia": "MARTES",
+                        "hora": "16:00",
+                        "eqlocal": "1° H",
+                        "icolocal": "vacio",
+                        "grupo": "OCTAVOS DE FINAL",
                         "icovisitante": "vacio"
                     },
                     "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
                         "resul_penvis": "",
                         "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "puntos": "",
-                    "partido_n": 54
-                },
-                {
-                    "realPartido": {
                         "resultado": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": ""
-                    },
-                    "id": 55,
-                    "partido_n": 55,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_resul": ""
-                    },
-                    "puntos": "",
-                    "datosPartido": {
-                        "eqvisitante": "2° E",
-                        "icolocal": "vacio",
-                        "eqlocal": "1° F",
-                        "icovisitante": "vacio",
-                        "hora": "12:00",
-                        "dia": "MARTES",
-                        "fecha": "06/12/2022",
-                        "grupo": "OCTAVOS DE FINAL"
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
                         "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
+                        "resul_penloc": ""
                     },
-                    "partido_n": 56,
-                    "datosPartido": {
-                        "eqvisitante": "2° G",
-                        "hora": "16:00",
-                        "fecha": "06/12/2022",
-                        "dia": "MARTES",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "icovisitante": "vacio",
-                        "eqlocal": "1° H",
-                        "icolocal": "vacio"
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_ext": "L",
+                        "prode_penvis": ""
                     },
                     "id": 56,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_vis": ""
-                    }
+                    "partido_n": 56
                 }
-            ]
+            ],
+            "fecha_n": 4
         },
         {
             "fecha_n": 5,
             "partidos": [
                 {
-                    "id": 57,
                     "partido_n": 57,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penvis": ""
-                    },
                     "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
                         "resul_vis": "",
-                        "resul_penvis": ""
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_loc": "",
+                        "resul_penloc": ""
                     },
                     "datosPartido": {
-                        "eqlocal": "GANADOR P. 5",
                         "fecha": "09/12/2022",
-                        "grupo": "CUARTOS DE FINAL",
-                        "eqvisitante": "GANADOR P. 6",
+                        "icolocal": "vacio",
                         "dia": "VIERNES",
                         "icovisitante": "vacio",
                         "hora": "12:00",
+                        "eqlocal": "GANADOR P. 5",
+                        "grupo": "CUARTOS DE FINAL",
+                        "eqvisitante": "GANADOR P. 6"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_resul": "",
+                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_loc": ""
+                    },
+                    "id": 57,
+                    "puntos": ""
+                },
+                {
+                    "id": 58,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "",
+                        "resul_loc": "",
+                        "resultado": "",
+                        "resul_penloc": ""
+                    },
+                    "partido_n": 58,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_vis": "",
+                        "prode_loc": "",
+                        "prode_resul": "",
+                        "prode_penvis": ""
+                    },
+                    "datosPartido": {
+                        "eqvisitante": "GANADOR P. 2",
+                        "grupo": "CUARTOS DE FINAL",
+                        "icolocal": "vacio",
+                        "icovisitante": "vacio",
+                        "fecha": "09/12/2022",
+                        "dia": "VIERNES",
+                        "hora": "16:00",
+                        "eqlocal": "GANADOR P. 1"
+                    },
+                    "puntos": ""
+                },
+                {
+                    "datosPartido": {
+                        "hora": "12:00",
+                        "eqvisitante": "GANADOR P. 8",
+                        "dia": "SÁBADO",
+                        "icovisitante": "vacio",
+                        "eqlocal": "GANADOR P. 7",
+                        "fecha": "10/12/2022",
+                        "icolocal": "vacio",
+                        "grupo": "CUARTOS DE FINAL"
+                    },
+                    "puntos": "",
+                    "partido_n": 59,
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_vis": "",
+                        "resultado": ""
+                    },
+                    "id": 59,
+                    "prodePartido": {
+                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "",
+                        "prode_resul": ""
+                    }
+                },
+                {
+                    "datosPartido": {
+                        "icolocal": "vacio",
+                        "eqlocal": "GANADOR P. 4",
+                        "eqvisitante": "GANADOR P. 3",
+                        "fecha": "10/12/2022",
+                        "dia": "SÁBADO",
+                        "grupo": "CUARTOS DE FINAL",
+                        "hora": "16:00",
+                        "icovisitante": "vacio"
+                    },
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_penvis": "",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_penloc": ""
+                    },
+                    "partido_n": 60,
+                    "id": 60,
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_penloc": "",
+                        "prode_loc": "",
+                        "prode_penvis": "",
+                        "prode_vis": ""
+                    }
+                }
+            ]
+        },
+        {
+            "partidos": [
+                {
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_vis": ""
+                    },
+                    "prodePartido": {
+                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "",
+                        "prode_penvis": "",
+                        "prode_resul": ""
+                    },
+                    "partido_n": 61,
+                    "id": 61,
+                    "datosPartido": {
+                        "fecha": "13/12/2022",
+                        "hora": "16:00",
+                        "eqlocal": "GANADOR P. 10",
+                        "icovisitante": "vacio",
+                        "eqvisitante": "GANADOR P. 9",
+                        "grupo": "SEMIFINAL",
+                        "dia": "MARTES",
                         "icolocal": "vacio"
                     },
                     "puntos": ""
                 },
                 {
-                    "partido_n": 58,
-                    "puntos": "",
-                    "datosPartido": {
-                        "fecha": "09/12/2022",
-                        "dia": "VIERNES",
-                        "hora": "16:00",
-                        "icovisitante": "vacio",
-                        "eqvisitante": "GANADOR P. 2",
-                        "icolocal": "vacio",
-                        "eqlocal": "GANADOR P. 1",
-                        "grupo": "CUARTOS DE FINAL"
-                    },
-                    "id": 58,
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "",
+                        "prode_resul": "",
                         "prode_loc": "",
+                        "prode_vis": "",
                         "prode_penloc": "",
-                        "prode_resul": ""
+                        "prode_penvis": ""
                     },
+                    "puntos": "",
                     "realPartido": {
+                        "resul_penloc": "",
+                        "resul_vis": "",
                         "resul_loc": "",
                         "resultado": "",
+                        "resul_penvis": ""
+                    },
+                    "datosPartido": {
+                        "grupo": "SEMIFINAL",
+                        "icolocal": "vacio",
+                        "hora": "16:00",
+                        "eqlocal": "GANADOR P. 12",
+                        "fecha": "14/12/2022",
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "vacio",
+                        "eqvisitante": "GANADOR P. 11"
+                    },
+                    "id": 62,
+                    "partido_n": 62
+                }
+            ],
+            "fecha_n": 6
+        },
+        {
+            "fecha_n": 7,
+            "partidos": [
+                {
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_loc": "",
                         "resul_penvis": "",
                         "resul_vis": "",
                         "resul_penloc": ""
-                    }
-                },
-                {
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penvis": ""
                     },
-                    "datosPartido": {
-                        "eqlocal": "GANADOR P. 7",
-                        "dia": "SÁBADO",
-                        "fecha": "10/12/2022",
-                        "icolocal": "vacio",
-                        "hora": "12:00",
-                        "grupo": "CUARTOS DE FINAL",
-                        "icovisitante": "vacio",
-                        "eqvisitante": "GANADOR P. 8"
-                    },
-                    "partido_n": 59,
-                    "id": 59,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    }
-                },
-                {
-                    "id": 60,
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 60,
-                    "puntos": "",
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "dia": "SÁBADO",
-                        "fecha": "10/12/2022",
-                        "grupo": "CUARTOS DE FINAL",
-                        "icovisitante": "vacio",
-                        "eqlocal": "GANADOR P. 4",
-                        "icolocal": "vacio",
-                        "eqvisitante": "GANADOR P. 3"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    }
-                }
-            ]
-        },
-        {
-            "fecha_n": 6,
-            "partidos": [
-                {
-                    "id": 61,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_penvis": "",
-                        "prode_resul": ""
-                    },
-                    "partido_n": 61,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "datosPartido": {
-                        "dia": "MARTES",
-                        "eqvisitante": "GANADOR P. 9",
-                        "icolocal": "vacio",
-                        "icovisitante": "vacio",
-                        "grupo": "SEMIFINAL",
-                        "hora": "16:00",
-                        "eqlocal": "GANADOR P. 10",
-                        "fecha": "13/12/2022"
-                    }
-                },
-                {
-                    "partido_n": 62,
-                    "id": 62,
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": ""
-                    },
-                    "datosPartido": {
-                        "eqvisitante": "GANADOR P. 11",
-                        "dia": "MIÉRCOLES",
-                        "grupo": "SEMIFINAL",
-                        "icovisitante": "vacio",
-                        "fecha": "14/12/2022",
-                        "icolocal": "vacio",
-                        "hora": "16:00",
-                        "eqlocal": "GANADOR P. 12"
-                    }
-                }
-            ]
-        },
-        {
-            "partidos": [
-                {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "17/12/2022",
-                        "icovisitante": "vacio",
-                        "dia": "SÁBADO",
-                        "eqvisitante": "PERDEDOR P. 14",
-                        "grupo": "3° Y 4° PUESTO",
-                        "icolocal": "vacio",
-                        "eqlocal": "PERDEDOR P.13",
-                        "hora": "12:00"
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_vis": ""
-                    },
-                    "puntos": "",
                     "id": 63,
-                    "partido_n": 63
+                    "partido_n": 63,
+                    "datosPartido": {
+                        "icovisitante": "vacio",
+                        "dia": "SÁBADO",
+                        "fecha": "17/12/2022",
+                        "eqvisitante": "PERDEDOR P. 14",
+                        "eqlocal": "PERDEDOR P.13",
+                        "hora": "12:00",
+                        "grupo": "3° Y 4° PUESTO",
+                        "icolocal": "vacio"
+                    },
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "",
+                        "prode_loc": "",
+                        "prode_resul": ""
+                    }
                 },
                 {
                     "datosPartido": {
-                        "fecha": "18/12/2022",
                         "icovisitante": "vacio",
+                        "fecha": "18/12/2022",
+                        "eqlocal": "GANADOR P. 13",
+                        "hora": "12:00",
+                        "grupo": "FINAL",
                         "dia": "DOMINGO",
                         "eqvisitante": "GANADOR P. 14",
-                        "icolocal": "vacio",
-                        "eqlocal": "GANADOR P. 13",
-                        "grupo": "FINAL",
-                        "hora": "12:00"
+                        "icolocal": "vacio"
                     },
                     "puntos": "",
-                    "partido_n": 64,
                     "realPartido": {
-                        "resul_vis": "",
+                        "resul_penvis": "",
                         "resul_loc": "",
-                        "resul_penloc": "",
+                        "resul_vis": "",
                         "resultado": "",
-                        "resul_penvis": ""
+                        "resul_penloc": ""
                     },
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
                         "prode_loc": "",
-                        "prode_vis": ""
+                        "prode_penloc": "",
+                        "prode_vis": "",
+                        "prode_resul": "",
+                        "prode_penvis": ""
                     },
-                    "id": 64
+                    "id": 64,
+                    "partido_n": 64
                 }
-            ],
-            "fecha_n": 7
+            ]
         }
     ],
-    "user_version": 4,
     "timestamp": {
-        "seconds": 1669329388,
-        "nanoseconds": 838000000
-    },
-    "user": "VILLAFANEDIEGO@GMAIL.COM",
-    "user_modificacion": "24/11/2022, 19:36:28"
+        "seconds": 1670045190,
+        "nanoseconds": 225000000
+    }
 }
 
 export var unicoDiego = {
@@ -22939,788 +23503,854 @@ export var unicoDiego = {
 
 
 export var fechaAdri = {
+    "user_modificacion": "3/12/2022, 03:04:00",
+    "timestamp": {
+        "seconds": 1670047440,
+        "nanoseconds": 909000000
+    },
+    "user_version": 5,
+    "user": "ADRIANMARTIN@GMAIL.COM",
     "fechanro": [
         {
+            "fecha_n": 1,
             "partidos": [
                 {
-                    "id": 1,
+                    "puntosP": "0",
+                    "puntosDG": "0",
                     "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
+                        "resultado": "V",
                         "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "fecha": "20/11/2022",
-                        "eqvisitante": "ECUADOR",
-                        "grupo": "GRUPO A",
-                        "hora": "13:00",
-                        "icolocal": "qatar",
-                        "eqlocal": "QATAR",
-                        "dia": "DOMINGO",
-                        "icovisitante": "ecuador"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "0",
-                        "prode_penvis": "",
-                        "prode_resul": "V",
-                        "prode_vis": "2",
-                        "prode_penloc": ""
+                        "resul_vis": "2",
+                        "resul_loc": "0",
+                        "resul_penvis": ""
                     },
                     "partido_n": 1,
-                    "puntos": ""
-                },
-                {
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_loc": "3",
-                        "prode_penloc": "",
-                        "prode_vis": "0"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": ""
-                    },
-                    "partido_n": 2,
-                    "id": 2,
-                    "datosPartido": {
-                        "fecha": "21/11/2022",
-                        "icovisitante": "iran",
-                        "hora": "10:00",
-                        "eqlocal": "INGLATERRA",
-                        "eqvisitante": "IRÁN",
-                        "icolocal": "inglaterra",
-                        "dia": "LUNES",
-                        "grupo": "GRUPO B"
-                    }
-                },
-                {
-                    "id": 3,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_resul": "V",
-                        "prode_vis": "2",
-                        "prode_loc": "0",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "partido_n": 3,
-                    "datosPartido": {
-                        "eqvisitante": "PAÍSES BAJOS",
-                        "hora": "13:00",
-                        "grupo": "GRUPO A",
-                        "eqlocal": "SENEGAL",
-                        "icolocal": "senegal",
-                        "dia": "LUNES",
-                        "icovisitante": "paisesbajos",
-                        "fecha": "21/11/2022"
-                    }
-                },
-                {
-                    "puntos": "",
-                    "id": 4,
-                    "partido_n": 4,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": ""
-                    },
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_vis": "1"
-                    },
-                    "datosPartido": {
-                        "icovisitante": "gales",
-                        "fecha": "21/11/2022",
-                        "dia": "LUNES",
-                        "eqlocal": "ESTADOS UNIDOS",
-                        "hora": "16:00",
-                        "icolocal": "estadosunidos",
-                        "grupo": "GRUPO B",
-                        "eqvisitante": "GALES"
-                    }
-                },
-                {
-                    "partido_n": 5,
-                    "puntos": "",
-                    "datosPartido": {
-                        "icolocal": "argentina",
-                        "eqlocal": "ARGENTINA",
-                        "grupo": "GRUPO C",
-                        "fecha": "22/11/2022",
-                        "hora": "07:00",
-                        "dia": "MARTES",
-                        "icovisitante": "arabiasaudita",
-                        "eqvisitante": "ARABIA SAUDITA"
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_resul": "L",
-                        "prode_loc": "5"
-                    },
-                    "id": 5,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    }
-                },
-                {
-                    "partido_n": 6,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
-                    "id": 6,
-                    "prodePartido": {
-                        "prode_vis": "1",
-                        "prode_penloc": "",
-                        "prode_loc": "2",
-                        "prode_resul": "L",
-                        "prode_penvis": ""
-                    },
-                    "datosPartido": {
-                        "dia": "MARTES",
-                        "hora": "10:00",
-                        "icolocal": "dinamarca",
-                        "fecha": "22/11/2022",
-                        "grupo": "GRUPO D",
-                        "eqlocal": "DINAMARCA",
-                        "eqvisitante": "TÚNEZ",
-                        "icovisitante": "tunez"
-                    },
-                    "puntos": ""
-                },
-                {
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_loc": "2",
-                        "prode_vis": "0",
-                        "prode_penloc": ""
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "eqlocal": "MÉXICO",
-                        "eqvisitante": "POLONIA",
-                        "icovisitante": "polonia",
-                        "dia": "MARTES",
-                        "fecha": "22/11/2022",
-                        "hora": "13:00",
-                        "icolocal": "mexico",
-                        "grupo": "GRUPO C"
-                    },
-                    "partido_n": 7,
-                    "id": 7
-                },
-                {
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 8,
-                    "puntos": "",
-                    "datosPartido": {
-                        "grupo": "GRUPO D",
-                        "hora": "16:00",
-                        "eqlocal": "FRANCIA",
-                        "icolocal": "francia",
-                        "fecha": "22/11/2022",
-                        "dia": "MARTES",
-                        "icovisitante": "australia",
-                        "eqvisitante": "AUSTRALIA"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "1",
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "L"
-                    },
-                    "partido_n": 8
-                },
-                {
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "1",
-                        "prode_penloc": "",
-                        "prode_loc": "1",
-                        "prode_resul": "E"
-                    },
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "id": 9,
-                    "puntos": "",
-                    "partido_n": 9,
-                    "datosPartido": {
-                        "eqlocal": "MARRUECOS",
-                        "icolocal": "marruecos",
-                        "grupo": "GRUPO F",
-                        "icovisitante": "croacia",
-                        "hora": "07:00",
-                        "fecha": "23/11/2022",
-                        "dia": "MIÉRCOLES",
-                        "eqvisitante": "CROACIA"
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": ""
-                    },
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_loc": "3",
-                        "prode_resul": "L",
-                        "prode_penvis": ""
-                    },
-                    "puntos": "",
-                    "id": 10,
-                    "partido_n": 10,
-                    "datosPartido": {
-                        "icolocal": "alemania",
-                        "eqvisitante": "JAPÓN",
-                        "grupo": "GRUPO E",
-                        "dia": "MIÉRCOLES",
-                        "eqlocal": "ALEMANIA",
-                        "fecha": "23/11/2022",
-                        "icovisitante": "japon",
-                        "hora": "10:00"
-                    }
-                },
-                {
-                    "datosPartido": {
-                        "icolocal": "espana",
-                        "hora": "13:00",
-                        "icovisitante": "costarica",
-                        "grupo": "GRUPO E",
-                        "dia": "MIÉRCOLES",
-                        "eqlocal": "ESPAÑA",
-                        "eqvisitante": "COSTA RICA",
-                        "fecha": "23/11/2022"
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_loc": "2"
-                    },
-                    "id": 11,
-                    "partido_n": 11,
-                    "puntos": ""
-                },
-                {
-                    "id": 12,
-                    "datosPartido": {
-                        "dia": "MIÉRCOLES",
-                        "grupo": "GRUPO F",
-                        "eqvisitante": "CANADÁ",
-                        "fecha": "23/11/2022",
-                        "hora": "16:00",
-                        "icolocal": "belgica",
-                        "icovisitante": "canada",
-                        "eqlocal": "BÉLGICA"
-                    },
-                    "partido_n": 12,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_vis": "0",
-                        "prode_loc": "2",
-                        "prode_resul": "L"
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    },
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_loc": "1",
-                        "prode_vis": "0",
-                        "prode_penloc": ""
-                    },
-                    "partido_n": 13,
-                    "puntos": "",
-                    "id": 13,
-                    "datosPartido": {
-                        "icovisitante": "camerun",
-                        "hora": "07:00",
-                        "dia": "JUEVES",
-                        "grupo": "GRUPO G",
-                        "eqlocal": "SUIZA",
-                        "fecha": "24/11/2022",
-                        "eqvisitante": "CAMERÚN",
-                        "icolocal": "suiza"
-                    }
-                },
-                {
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_loc": "1",
-                        "prode_penvis": "",
-                        "prode_vis": "0"
-                    },
-                    "partido_n": 14,
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": ""
-                    },
-                    "puntos": "",
-                    "id": 14,
-                    "datosPartido": {
-                        "eqlocal": "URUGUAY",
-                        "icovisitante": "corea",
-                        "fecha": "24/11/2022",
-                        "hora": "10:00",
-                        "icolocal": "uruguay",
-                        "eqvisitante": "COREA",
-                        "grupo": "GRUPO H",
-                        "dia": "JUEVES"
-                    }
-                },
-                {
-                    "datosPartido": {
-                        "eqlocal": "PORTUGAL",
-                        "hora": "13:00",
-                        "grupo": "GRUPO H",
-                        "eqvisitante": "GHANA",
-                        "icolocal": "portugal",
-                        "icovisitante": "ghana",
-                        "fecha": "24/11/2022",
-                        "dia": "JUEVES"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "2",
-                        "prode_resul": "L",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "0"
-                    },
-                    "partido_n": 15,
-                    "puntos": "",
-                    "id": 15,
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": ""
-                    }
-                },
-                {
-                    "partido_n": 16,
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    },
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_loc": "3",
-                        "prode_penvis": "",
-                        "prode_vis": "0"
-                    },
-                    "id": 16,
-                    "datosPartido": {
-                        "eqlocal": "BRASIL",
-                        "grupo": "GRUPO G",
-                        "icolocal": "brasil",
-                        "fecha": "24/11/2022",
-                        "dia": "JUEVES",
-                        "eqvisitante": "SERBIA",
-                        "icovisitante": "serbia",
-                        "hora": "16:00"
-                    }
-                }
-            ],
-            "fecha_n": 1
-        },
-        {
-            "fecha_n": 2,
-            "partidos": [
-                {
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_loc": "2",
-                        "prode_vis": "0"
-                    },
-                    "datosPartido": {
-                        "grupo": "GRUPO B",
-                        "fecha": "25/11/2022",
-                        "icovisitante": "iran",
-                        "dia": "VIERNES",
-                        "eqlocal": "GALES",
-                        "eqvisitante": "IRÁN",
-                        "icolocal": "gales",
-                        "hora": "07:00"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": ""
-                    },
-                    "id": 17,
-                    "partido_n": 17
-                },
-                {
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
+                    "id": 1,
+                    "puntos": 0,
+                    "puntosCG": "0",
                     "datosPartido": {
                         "icolocal": "qatar",
-                        "icovisitante": "senegal",
-                        "dia": "VIERNES",
-                        "eqvisitante": "SENEGAL",
-                        "eqlocal": "QATAR",
-                        "fecha": "25/11/2022",
                         "grupo": "GRUPO A",
-                        "hora": "10:00"
+                        "eqvisitante": "ECUADOR",
+                        "hora": "13:00",
+                        "eqlocal": "QATAR",
+                        "icovisitante": "ecuador",
+                        "dia": "DOMINGO",
+                        "fecha": "20/11/2022"
                     },
-                    "partido_n": 18,
-                    "id": 18,
                     "prodePartido": {
-                        "prode_resul": "V",
-                        "prode_penloc": "",
-                        "prode_loc": "0",
+                        "prode_vis": "0",
                         "prode_penvis": "",
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_loc": "0"
+                    }
+                },
+                {
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_penvis": "",
+                        "prode_loc": "3",
+                        "prode_resul": "L",
+                        "prode_penloc": ""
+                    },
+                    "datosPartido": {
+                        "eqlocal": "INGLATERRA",
+                        "icovisitante": "iran",
+                        "icolocal": "inglaterra",
+                        "hora": "10:00",
+                        "dia": "LUNES",
+                        "grupo": "GRUPO B",
+                        "eqvisitante": "IRÁN",
+                        "fecha": "21/11/2022"
+                    },
+                    "puntosDG": "0",
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "partido_n": 2,
+                    "realPartido": {
+                        "resul_loc": "6",
+                        "resultado": "L",
+                        "resul_vis": "2",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "id": 2
+                },
+                {
+                    "puntos": 5,
+                    "partido_n": 3,
+                    "puntosCG": "1",
+                    "id": 3,
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_vis": "2",
+                        "resul_penvis": ""
+                    },
+                    "puntosDG": "1",
+                    "datosPartido": {
+                        "icolocal": "senegal",
+                        "hora": "13:00",
+                        "icovisitante": "paisesbajos",
+                        "eqvisitante": "PAÍSES BAJOS",
+                        "eqlocal": "SENEGAL",
+                        "fecha": "21/11/2022",
+                        "grupo": "GRUPO A",
+                        "dia": "LUNES"
+                    },
+                    "puntosP": "3",
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_resul": "V",
+                        "prode_loc": "0",
                         "prode_vis": "2"
                     }
                 },
                 {
                     "realPartido": {
                         "resul_penvis": "",
+                        "resul_vis": "1",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": ""
+                        "resul_loc": "1",
+                        "resultado": "E"
                     },
-                    "datosPartido": {
-                        "hora": "13:00",
-                        "icolocal": "paisesbajos",
-                        "dia": "VIERNES",
-                        "eqvisitante": "ECUADOR",
-                        "fecha": "25/11/2022",
-                        "icovisitante": "ecuador",
-                        "eqlocal": "PAÍSES BAJOS",
-                        "grupo": "GRUPO A"
-                    },
-                    "partido_n": 19,
                     "prodePartido": {
-                        "prode_loc": "1",
+                        "prode_vis": "1",
                         "prode_penvis": "",
-                        "prode_vis": "0",
                         "prode_penloc": "",
-                        "prode_resul": "L"
+                        "prode_resul": "L",
+                        "prode_loc": "2"
                     },
-                    "id": 19,
-                    "puntos": ""
+                    "partido_n": 4,
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "icovisitante": "gales",
+                        "icolocal": "estadosunidos",
+                        "dia": "LUNES",
+                        "eqlocal": "ESTADOS UNIDOS",
+                        "fecha": "21/11/2022",
+                        "eqvisitante": "GALES",
+                        "grupo": "GRUPO B",
+                        "hora": "16:00"
+                    },
+                    "puntosDG": "0",
+                    "id": 4
                 },
                 {
-                    "partido_n": 20,
-                    "id": 20,
                     "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
+                        "resul_loc": "1",
                         "resul_penloc": "",
+                        "resul_vis": "2",
+                        "resultado": "V",
                         "resul_penvis": ""
                     },
-                    "puntos": "",
+                    "partido_n": 5,
+                    "puntosCG": "0",
                     "datosPartido": {
-                        "dia": "VIERNES",
-                        "eqlocal": "INGLATERRA",
-                        "icolocal": "inglaterra",
-                        "fecha": "25/11/2022",
-                        "grupo": "GRUPO B",
-                        "hora": "16:00",
-                        "icovisitante": "estadosunidos",
-                        "eqvisitante": "ESTADOS UNIDOS"
+                        "icolocal": "argentina",
+                        "eqlocal": "ARGENTINA",
+                        "hora": "07:00",
+                        "dia": "MARTES",
+                        "icovisitante": "arabiasaudita",
+                        "eqvisitante": "ARABIA SAUDITA",
+                        "fecha": "22/11/2022",
+                        "grupo": "GRUPO C"
+                    },
+                    "puntos": 0,
+                    "prodePartido": {
+                        "prode_loc": "5",
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_penvis": "",
+                        "prode_resul": "L"
+                    },
+                    "puntosDG": "0",
+                    "id": 5,
+                    "puntosP": "0"
+                },
+                {
+                    "datosPartido": {
+                        "eqlocal": "DINAMARCA",
+                        "hora": "10:00",
+                        "icolocal": "dinamarca",
+                        "dia": "MARTES",
+                        "grupo": "GRUPO D",
+                        "icovisitante": "tunez",
+                        "fecha": "22/11/2022",
+                        "eqvisitante": "TÚNEZ"
+                    },
+                    "id": 6,
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "1",
+                        "prode_loc": "2"
+                    },
+                    "puntos": 0,
+                    "realPartido": {
+                        "resul_vis": "0",
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "E"
+                    },
+                    "partido_n": 6,
+                    "puntosP": "0"
+                },
+                {
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_vis": "0"
+                    },
+                    "id": 7,
+                    "partido_n": 7,
+                    "puntosP": "0",
+                    "datosPartido": {
+                        "grupo": "GRUPO C",
+                        "hora": "13:00",
+                        "fecha": "22/11/2022",
+                        "eqvisitante": "POLONIA",
+                        "dia": "MARTES",
+                        "eqlocal": "MÉXICO",
+                        "icolocal": "mexico",
+                        "icovisitante": "polonia"
                     },
                     "prodePartido": {
                         "prode_penloc": "",
                         "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_loc": "2",
+                        "prode_vis": "0"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "puntosDG": "0"
+                },
+                {
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_penloc": ""
+                    },
+                    "partido_n": 8,
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "eqlocal": "FRANCIA",
+                        "eqvisitante": "AUSTRALIA",
+                        "fecha": "22/11/2022",
+                        "icovisitante": "australia",
+                        "dia": "MARTES",
+                        "grupo": "GRUPO D",
+                        "icolocal": "francia"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "id": 8,
+                    "puntosDG": "0",
+                    "puntosP": "1",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_loc": "4",
+                        "resul_vis": "1"
+                    }
+                },
+                {
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_resul": "E"
+                    },
+                    "puntos": 2,
+                    "puntosDG": "1",
+                    "datosPartido": {
+                        "eqvisitante": "CROACIA",
+                        "grupo": "GRUPO F",
+                        "icolocal": "marruecos",
+                        "dia": "MIÉRCOLES",
+                        "eqlocal": "MARRUECOS",
+                        "fecha": "23/11/2022",
+                        "hora": "07:00",
+                        "icovisitante": "croacia"
+                    },
+                    "id": 9,
+                    "puntosP": "1",
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 9
+                },
+                {
+                    "id": 10,
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_loc": "3",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": "0"
+                    },
+                    "puntos": 1,
+                    "datosPartido": {
+                        "eqvisitante": "JAPÓN",
+                        "eqlocal": "ALEMANIA",
+                        "icolocal": "alemania",
+                        "hora": "10:00",
+                        "grupo": "GRUPO E",
+                        "dia": "MIÉRCOLES",
+                        "icovisitante": "japon",
+                        "fecha": "23/11/2022"
+                    },
+                    "puntosP": "0",
+                    "puntosCG": "1",
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_vis": "2",
+                        "resultado": "V"
+                    },
+                    "partido_n": 10
+                },
+                {
+                    "partido_n": 11,
+                    "id": 11,
+                    "puntosDG": "0",
+                    "realPartido": {
+                        "resul_loc": "7",
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resul_penvis": ""
+                    },
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "L",
+                        "prode_loc": "2"
+                    },
+                    "datosPartido": {
+                        "grupo": "GRUPO E",
+                        "icovisitante": "costarica",
+                        "eqlocal": "ESPAÑA",
+                        "icolocal": "espana",
+                        "eqvisitante": "COSTA RICA",
+                        "hora": "13:00",
+                        "fecha": "23/11/2022",
+                        "dia": "MIÉRCOLES"
+                    },
+                    "puntos": 1,
+                    "puntosCG": "0",
+                    "puntosP": "1"
+                },
+                {
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_loc": "1",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "L",
+                        "resul_vis": "0"
+                    },
+                    "puntosP": "1",
+                    "id": 12,
+                    "prodePartido": {
+                        "prode_vis": "0",
                         "prode_loc": "2",
                         "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_resul": "L"
+                    },
+                    "puntosDG": "0",
+                    "puntos": 1,
+                    "datosPartido": {
+                        "icolocal": "belgica",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO F",
+                        "icovisitante": "canada",
+                        "fecha": "23/11/2022",
+                        "hora": "16:00",
+                        "eqlocal": "BÉLGICA",
+                        "eqvisitante": "CANADÁ"
+                    },
+                    "partido_n": 12
+                },
+                {
+                    "puntos": 5,
+                    "id": 13,
+                    "puntosDG": "1",
+                    "partido_n": 13,
+                    "datosPartido": {
+                        "eqlocal": "SUIZA",
+                        "eqvisitante": "CAMERÚN",
+                        "grupo": "GRUPO G",
+                        "dia": "JUEVES",
+                        "icovisitante": "camerun",
+                        "icolocal": "suiza",
+                        "hora": "07:00",
+                        "fecha": "24/11/2022"
+                    },
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_vis": "0"
+                    },
+                    "puntosP": "3",
+                    "puntosCG": "1",
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "1",
+                        "resul_vis": "0"
+                    }
+                },
+                {
+                    "puntosP": "0",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_vis": "0",
+                        "prode_penvis": "",
+                        "prode_resul": "L"
+                    },
+                    "partido_n": 14,
+                    "puntos": 0,
+                    "datosPartido": {
+                        "icovisitante": "corea",
+                        "icolocal": "uruguay",
+                        "eqvisitante": "COREA",
+                        "dia": "JUEVES",
+                        "hora": "10:00",
+                        "eqlocal": "URUGUAY",
+                        "fecha": "24/11/2022",
+                        "grupo": "GRUPO H"
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_vis": "0"
+                    },
+                    "id": 14
+                },
+                {
+                    "partido_n": 15,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_penloc": ""
+                    },
+                    "id": 15,
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "puntos": 1,
+                    "puntosP": "1",
+                    "datosPartido": {
+                        "hora": "13:00",
+                        "icolocal": "portugal",
+                        "icovisitante": "ghana",
+                        "dia": "JUEVES",
+                        "grupo": "GRUPO H",
+                        "eqlocal": "PORTUGAL",
+                        "eqvisitante": "GHANA",
+                        "fecha": "24/11/2022"
+                    },
+                    "realPartido": {
+                        "resul_loc": "3",
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_vis": "2",
+                        "resul_penvis": ""
+                    }
+                },
+                {
+                    "partido_n": 16,
+                    "puntosDG": "0",
+                    "id": 16,
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "icolocal": "brasil",
+                        "icovisitante": "serbia",
+                        "eqvisitante": "SERBIA",
+                        "dia": "JUEVES",
+                        "eqlocal": "BRASIL",
+                        "hora": "16:00",
+                        "grupo": "GRUPO G",
+                        "fecha": "24/11/2022"
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resul_vis": "0",
+                        "resultado": "L",
+                        "resul_penloc": ""
+                    },
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "prodePartido": {
+                        "prode_loc": "3",
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "0"
+                    }
+                }
+            ]
+        },
+        {
+            "partidos": [
+                {
+                    "partido_n": 17,
+                    "puntosCG": "1",
+                    "prodePartido": {
+                        "prode_loc": "2",
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penvis": ""
+                    },
+                    "datosPartido": {
+                        "icovisitante": "iran",
+                        "dia": "VIERNES",
+                        "eqlocal": "GALES",
+                        "hora": "07:00",
+                        "fecha": "25/11/2022",
+                        "eqvisitante": "IRÁN",
+                        "grupo": "GRUPO B",
+                        "icolocal": "gales"
+                    },
+                    "puntosP": "0",
+                    "realPartido": {
+                        "resul_vis": "2",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_loc": "0"
+                    },
+                    "puntos": 1,
+                    "id": 17,
+                    "puntosDG": "0"
+                },
+                {
+                    "id": 18,
+                    "puntosP": "1",
+                    "puntosDG": "1",
+                    "partido_n": 18,
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "hora": "10:00",
+                        "dia": "VIERNES",
+                        "fecha": "25/11/2022",
+                        "eqlocal": "QATAR",
+                        "icolocal": "qatar",
+                        "eqvisitante": "SENEGAL",
+                        "grupo": "GRUPO A",
+                        "icovisitante": "senegal"
+                    },
+                    "prodePartido": {
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_loc": "0",
+                        "prode_vis": "2",
+                        "prode_penloc": ""
+                    },
+                    "realPartido": {
+                        "resul_loc": "1",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resul_vis": "3"
+                    },
+                    "puntos": 2
+                },
+                {
+                    "puntos": 0,
+                    "realPartido": {
+                        "resultado": "E",
+                        "resul_vis": "1",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "puntosP": "0",
+                    "puntosCG": "0",
+                    "partido_n": 19,
+                    "puntosDG": "0",
+                    "id": 19,
+                    "datosPartido": {
+                        "eqvisitante": "ECUADOR",
+                        "icovisitante": "ecuador",
+                        "icolocal": "paisesbajos",
+                        "eqlocal": "PAÍSES BAJOS",
+                        "fecha": "25/11/2022",
+                        "hora": "13:00",
+                        "grupo": "GRUPO A",
+                        "dia": "VIERNES"
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_resul": "L",
                         "prode_vis": "0"
                     }
                 },
                 {
                     "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
                         "resul_penvis": "",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
+                        "resul_vis": "0"
+                    },
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "eqlocal": "INGLATERRA",
+                        "grupo": "GRUPO B",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "icolocal": "inglaterra",
+                        "dia": "VIERNES",
+                        "fecha": "25/11/2022",
+                        "icovisitante": "estadosunidos"
+                    },
+                    "puntosP": "0",
+                    "id": 20,
+                    "puntosDG": "0",
+                    "prodePartido": {
+                        "prode_resul": "L",
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_loc": "2",
+                        "prode_penvis": ""
+                    },
+                    "puntos": 0,
+                    "puntosCG": "0",
+                    "partido_n": 20
+                },
+                {
+                    "puntos": 1,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "0",
+                        "resul_vis": "1",
+                        "resultado": "V",
                         "resul_penloc": ""
                     },
+                    "puntosP": "0",
                     "partido_n": 21,
+                    "puntosDG": "0",
+                    "id": 21,
+                    "puntosCG": "1",
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_resul": "L",
+                        "prode_loc": "1",
+                        "prode_vis": "0",
+                        "prode_penvis": ""
+                    },
                     "datosPartido": {
-                        "hora": "07:00",
+                        "dia": "SÁBADO",
+                        "eqvisitante": "AUSTRALIA",
                         "fecha": "26/11/2022",
+                        "icolocal": "tunez",
+                        "eqlocal": "TÚNEZ",
                         "icovisitante": "australia",
                         "grupo": "GRUPO D",
-                        "dia": "SÁBADO",
-                        "eqlocal": "TÚNEZ",
-                        "icolocal": "tunez",
-                        "eqvisitante": "AUSTRALIA"
-                    },
-                    "id": 21,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_vis": "0",
-                        "prode_penvis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "L",
-                        "prode_loc": "1"
+                        "hora": "07:00"
                     }
                 },
                 {
-                    "id": 22,
-                    "partido_n": 22,
-                    "datosPartido": {
-                        "icovisitante": "arabiasaudita",
-                        "fecha": "26/11/2022",
-                        "eqvisitante": "ARABIA SAUDITA",
-                        "eqlocal": "POLONIA",
-                        "dia": "SÁBADO",
-                        "hora": "10:00",
-                        "grupo": "GRUPO C",
-                        "icolocal": "polonia"
-                    },
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_penloc": "",
+                        "prode_vis": "1",
                         "prode_penvis": "",
                         "prode_loc": "1",
-                        "prode_vis": "1",
+                        "prode_penloc": "",
                         "prode_resul": "E"
                     },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_vis": ""
-                    }
-                },
-                {
-                    "id": 23,
+                    "puntos": 1,
                     "datosPartido": {
-                        "eqvisitante": "DINAMARCA",
-                        "fecha": "26/11/2022",
-                        "icolocal": "francia",
+                        "hora": "10:00",
+                        "eqvisitante": "ARABIA SAUDITA",
                         "dia": "SÁBADO",
-                        "hora": "13:00",
-                        "icovisitante": "dinamarca",
-                        "eqlocal": "FRANCIA",
-                        "grupo": "GRUPO D"
-                    },
-                    "partido_n": 23,
-                    "prodePartido": {
-                        "prode_resul": "L",
-                        "prode_penvis": "",
-                        "prode_loc": "2",
-                        "prode_vis": "1",
-                        "prode_penloc": ""
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    }
-                },
-                {
-                    "partido_n": 24,
-                    "datosPartido": {
-                        "fecha": "26/11/2022",
+                        "icovisitante": "arabiasaudita",
+                        "eqlocal": "POLONIA",
                         "grupo": "GRUPO C",
-                        "eqlocal": "ARGENTINA",
-                        "dia": "SÁBADO",
-                        "icolocal": "argentina",
-                        "hora": "16:00",
-                        "icovisitante": "mexico",
-                        "eqvisitante": "MÉXICO"
+                        "icolocal": "polonia",
+                        "fecha": "26/11/2022"
                     },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "2",
-                        "prode_vis": "1",
-                        "prode_penloc": "",
-                        "prode_resul": "L"
-                    },
+                    "id": 22,
                     "realPartido": {
+                        "resul_vis": "0",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
+                        "resultado": "L",
+                        "resul_loc": "2",
                         "resul_penloc": ""
                     },
-                    "id": 24
+                    "partido_n": 22,
+                    "puntosP": "0",
+                    "puntosCG": "1"
                 },
                 {
-                    "id": 25,
+                    "partido_n": 23,
+                    "datosPartido": {
+                        "hora": "13:00",
+                        "dia": "SÁBADO",
+                        "fecha": "26/11/2022",
+                        "eqlocal": "FRANCIA",
+                        "eqvisitante": "DINAMARCA",
+                        "grupo": "GRUPO D",
+                        "icovisitante": "dinamarca",
+                        "icolocal": "francia"
+                    },
+                    "puntos": 5,
+                    "puntosP": "3",
+                    "id": 23,
+                    "puntosDG": "1",
+                    "puntosCG": "1",
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "2",
+                        "resul_vis": "1",
+                        "resultado": "L",
+                        "resul_penloc": ""
+                    },
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "2",
+                        "prode_vis": "1",
+                        "prode_resul": "L"
+                    }
+                },
+                {
+                    "puntosP": "1",
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_loc": "2",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    },
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "partido_n": 24,
+                    "realPartido": {
+                        "resul_loc": "2",
+                        "resul_penvis": "",
+                        "resul_vis": "0",
+                        "resul_penloc": "",
+                        "resultado": "L"
+                    },
+                    "id": 24,
+                    "datosPartido": {
+                        "icolocal": "argentina",
+                        "eqlocal": "ARGENTINA",
+                        "eqvisitante": "MÉXICO",
+                        "fecha": "26/11/2022",
+                        "dia": "SÁBADO",
+                        "grupo": "GRUPO C",
+                        "icovisitante": "mexico",
+                        "hora": "16:00"
+                    },
+                    "puntos": 1
+                },
+                {
+                    "puntosDG": "1",
                     "partido_n": 25,
                     "datosPartido": {
                         "eqlocal": "JAPÓN",
-                        "fecha": "27/11/2022",
-                        "icovisitante": "costarica",
+                        "icolocal": "japon",
                         "dia": "DOMINGO",
+                        "grupo": "GRUPO E",
+                        "fecha": "27/11/2022",
                         "hora": "07:00",
                         "eqvisitante": "COSTA RICA",
-                        "grupo": "GRUPO E",
-                        "icolocal": "japon"
-                    },
-                    "prodePartido": {
-                        "prode_vis": "2",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "V",
-                        "prode_loc": "1"
+                        "icovisitante": "costarica"
                     },
                     "realPartido": {
-                        "resul_penloc": "",
+                        "resul_vis": "1",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": ""
+                        "resul_loc": "0",
+                        "resultado": "V",
+                        "resul_penloc": ""
                     },
-                    "puntos": ""
+                    "puntosCG": "0",
+                    "puntosP": "1",
+                    "puntos": 2,
+                    "id": 25,
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_vis": "2",
+                        "prode_penloc": ""
+                    }
                 },
                 {
+                    "puntosP": "0",
                     "datosPartido": {
-                        "icovisitante": "marruecos",
                         "dia": "DOMINGO",
-                        "icolocal": "belgica",
-                        "fecha": "27/11/2022",
                         "hora": "10:00",
+                        "eqlocal": "BÉLGICA",
+                        "icovisitante": "marruecos",
+                        "fecha": "27/11/2022",
+                        "icolocal": "belgica",
                         "eqvisitante": "MARRUECOS",
-                        "grupo": "GRUPO F",
-                        "eqlocal": "BÉLGICA"
+                        "grupo": "GRUPO F"
                     },
+                    "id": 26,
+                    "puntos": 0,
+                    "puntosCG": "0",
                     "partido_n": 26,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
-                    },
+                    "puntosDG": "0",
                     "prodePartido": {
-                        "prode_penloc": "",
                         "prode_resul": "L",
                         "prode_penvis": "",
+                        "prode_penloc": "",
                         "prode_loc": "2",
                         "prode_vis": "1"
                     },
-                    "id": 26
-                },
-                {
-                    "datosPartido": {
-                        "dia": "DOMINGO",
-                        "icolocal": "croacia",
-                        "icovisitante": "canada",
-                        "fecha": "27/11/2022",
-                        "eqlocal": "CROACIA",
-                        "grupo": "GRUPO F",
-                        "hora": "13:00",
-                        "eqvisitante": "CANADÁ"
-                    },
                     "realPartido": {
+                        "resul_vis": "2",
                         "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "id": 27,
+                        "resultado": "V",
+                        "resul_loc": "0"
+                    }
+                },
+                {
                     "prodePartido": {
                         "prode_penloc": "",
                         "prode_penvis": "",
@@ -23728,621 +24358,706 @@ export var fechaAdri = {
                         "prode_resul": "L",
                         "prode_loc": "2"
                     },
-                    "partido_n": 27,
-                    "puntos": ""
-                },
-                {
-                    "prodePartido": {
-                        "prode_resul": "E",
-                        "prode_vis": "1",
-                        "prode_loc": "1",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "datosPartido": {
-                        "eqvisitante": "ALEMANIA",
-                        "eqlocal": "ESPAÑA",
-                        "dia": "DOMINGO",
-                        "icolocal": "espana",
-                        "hora": "16:00",
-                        "icovisitante": "alemania",
-                        "grupo": "GRUPO E",
-                        "fecha": "27/11/2022"
-                    },
-                    "id": 28,
-                    "puntos": "",
-                    "partido_n": 28
-                },
-                {
-                    "id": 29,
-                    "datosPartido": {
-                        "eqlocal": "CAMERÚN",
-                        "hora": "07:00",
-                        "icovisitante": "serbia",
-                        "fecha": "28/11/2022",
-                        "grupo": "GRUPO G",
-                        "eqvisitante": "SERBIA",
-                        "icolocal": "camerun",
-                        "dia": "LUNES"
-                    },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "L",
-                        "prode_loc": "2",
-                        "prode_penloc": "",
-                        "prode_vis": "0"
-                    },
-                    "puntos": "",
+                    "puntosP": "1",
+                    "puntos": 1,
+                    "puntosCG": "0",
                     "realPartido": {
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resultado": "",
+                        "resul_loc": "4",
+                        "resultado": "L",
+                        "resul_vis": "1",
                         "resul_penvis": ""
                     },
-                    "partido_n": 29
+                    "partido_n": 27,
+                    "datosPartido": {
+                        "hora": "13:00",
+                        "eqvisitante": "CANADÁ",
+                        "fecha": "27/11/2022",
+                        "icovisitante": "canada",
+                        "grupo": "GRUPO F",
+                        "dia": "DOMINGO",
+                        "icolocal": "croacia",
+                        "eqlocal": "CROACIA"
+                    },
+                    "id": 27,
+                    "puntosDG": "0"
                 },
                 {
-                    "partido_n": 30,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_resul": "V",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_loc": "0",
-                        "prode_vis": "1"
-                    },
                     "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": ""
+                        "resul_loc": "1",
+                        "resultado": "E",
+                        "resul_vis": "1",
+                        "resul_penvis": ""
                     },
-                    "id": 30,
+                    "id": 28,
+                    "puntosP": "3",
+                    "puntosDG": "1",
+                    "partido_n": 28,
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_penvis": ""
+                    },
                     "datosPartido": {
+                        "icolocal": "espana",
+                        "icovisitante": "alemania",
+                        "dia": "DOMINGO",
+                        "hora": "16:00",
+                        "eqvisitante": "ALEMANIA",
+                        "eqlocal": "ESPAÑA",
+                        "fecha": "27/11/2022",
+                        "grupo": "GRUPO E"
+                    },
+                    "puntosCG": "1",
+                    "puntos": 5
+                },
+                {
+                    "datosPartido": {
+                        "eqvisitante": "SERBIA",
+                        "grupo": "GRUPO G",
+                        "eqlocal": "CAMERÚN",
                         "dia": "LUNES",
+                        "icolocal": "camerun",
+                        "fecha": "28/11/2022",
+                        "icovisitante": "serbia",
+                        "hora": "07:00"
+                    },
+                    "prodePartido": {
+                        "prode_loc": "2",
+                        "prode_penvis": "",
+                        "prode_vis": "0",
+                        "prode_resul": "L",
+                        "prode_penloc": ""
+                    },
+                    "puntosCG": "0",
+                    "puntos": 0,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "3",
+                        "resultado": "E",
+                        "resul_penloc": "",
+                        "resul_vis": "3"
+                    },
+                    "id": 29,
+                    "puntosP": "0",
+                    "partido_n": 29,
+                    "puntosDG": "0"
+                },
+                {
+                    "realPartido": {
+                        "resul_loc": "2",
+                        "resul_vis": "3",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_penvis": ""
+                    },
+                    "puntosP": "1",
+                    "puntos": 2,
+                    "puntosDG": "1",
+                    "partido_n": 30,
+                    "datosPartido": {
                         "hora": "10:00",
-                        "grupo": "GRUPO H",
+                        "dia": "LUNES",
+                        "eqvisitante": "GHANA",
                         "eqlocal": "COREA",
+                        "grupo": "GRUPO H",
                         "icovisitante": "ghana",
                         "fecha": "28/11/2022",
-                        "icolocal": "corea",
-                        "eqvisitante": "GHANA"
+                        "icolocal": "corea"
+                    },
+                    "id": 30,
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_resul": "V",
+                        "prode_loc": "0",
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
                     }
                 },
                 {
+                    "id": 31,
+                    "partido_n": 31,
                     "datosPartido": {
                         "fecha": "28/11/2022",
+                        "eqlocal": "BRASIL",
+                        "eqvisitante": "SUIZA",
                         "dia": "LUNES",
                         "icolocal": "brasil",
-                        "grupo": "GRUPO G",
-                        "eqvisitante": "SUIZA",
                         "hora": "13:00",
-                        "icovisitante": "suiza",
-                        "eqlocal": "BRASIL"
+                        "grupo": "GRUPO G",
+                        "icovisitante": "suiza"
                     },
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "1",
+                        "prode_penloc": "",
                         "prode_loc": "3",
                         "prode_resul": "L",
-                        "prode_penloc": ""
+                        "prode_vis": "1",
+                        "prode_penvis": ""
                     },
-                    "id": 31,
-                    "puntos": "",
+                    "puntosP": "1",
+                    "puntosDG": "0",
+                    "puntosCG": "0",
                     "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
+                        "resul_vis": "0",
+                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
+                        "resul_loc": "1",
+                        "resultado": "L"
                     },
-                    "partido_n": 31
+                    "puntos": 1
                 },
                 {
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "1",
-                        "prode_resul": "E",
-                        "prode_penloc": "",
-                        "prode_loc": "1"
-                    },
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "grupo": "GRUPO H",
-                        "dia": "LUNES",
-                        "eqlocal": "PORTUGAL",
-                        "fecha": "28/11/2022",
-                        "icolocal": "portugal",
-                        "icovisitante": "uruguay",
-                        "eqvisitante": "URUGUAY"
-                    },
-                    "partido_n": 32,
-                    "puntos": "",
                     "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
+                        "resul_vis": "0",
                         "resul_penloc": "",
-                        "resul_vis": "",
+                        "resultado": "L",
+                        "resul_loc": "2",
                         "resul_penvis": ""
                     },
-                    "id": 32
+                    "puntosDG": "0",
+                    "puntos": 1,
+                    "puntosCG": "1",
+                    "id": 32,
+                    "datosPartido": {
+                        "icolocal": "portugal",
+                        "hora": "16:00",
+                        "fecha": "28/11/2022",
+                        "icovisitante": "uruguay",
+                        "eqvisitante": "URUGUAY",
+                        "grupo": "GRUPO H",
+                        "eqlocal": "PORTUGAL",
+                        "dia": "LUNES"
+                    },
+                    "puntosP": "0",
+                    "partido_n": 32,
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "1"
+                    }
                 }
-            ]
+            ],
+            "fecha_n": 2
         },
         {
             "partidos": [
                 {
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": ""
+                    "prodePartido": {
+                        "prode_vis": "0",
+                        "prode_penvis": "",
+                        "prode_loc": "2",
+                        "prode_penloc": "",
+                        "prode_resul": "L"
                     },
+                    "puntos": 5,
+                    "puntosDG": "1",
+                    "id": 33,
+                    "puntosCG": "1",
+                    "partido_n": 33,
+                    "realPartido": {
+                        "resul_loc": "2",
+                        "resul_penloc": "",
+                        "resultado": "L",
+                        "resul_vis": "0",
+                        "resul_penvis": ""
+                    },
+                    "puntosP": "3",
                     "datosPartido": {
                         "eqvisitante": "QATAR",
-                        "dia": "MARTES",
-                        "fecha": "29/11/2022",
-                        "eqlocal": "PAÍSES BAJOS",
                         "icolocal": "paisesbajos",
                         "icovisitante": "qatar",
-                        "hora": "12:00",
-                        "grupo": "GRUPO A"
-                    },
-                    "id": 33,
-                    "partido_n": 33,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_loc": ""
+                        "grupo": "GRUPO A",
+                        "fecha": "29/11/2022",
+                        "dia": "MARTES",
+                        "eqlocal": "PAÍSES BAJOS",
+                        "hora": "12:00"
                     }
                 },
                 {
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_penvis": ""
+                    },
+                    "id": 34,
+                    "puntosP": "0",
                     "datosPartido": {
-                        "hora": "12:00",
                         "dia": "MARTES",
-                        "eqvisitante": "SENEGAL",
                         "icolocal": "ecuador",
-                        "fecha": "29/11/2022",
+                        "hora": "12:00",
                         "icovisitante": "senegal",
+                        "fecha": "29/11/2022",
                         "eqlocal": "ECUADOR",
+                        "eqvisitante": "SENEGAL",
                         "grupo": "GRUPO A"
                     },
+                    "puntosDG": "0",
+                    "puntos": 0,
                     "realPartido": {
-                        "resultado": "",
+                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": ""
+                        "resultado": "V",
+                        "resul_vis": "2",
+                        "resul_loc": "1"
                     },
                     "partido_n": 34,
-                    "puntos": "",
-                    "id": 34
+                    "puntosCG": "0"
                 },
                 {
-                    "id": 35,
-                    "partido_n": 35,
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": ""
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_penvis": "",
+                        "prode_resul": "V",
+                        "prode_vis": "3",
+                        "prode_penloc": ""
                     },
-                    "puntos": "",
+                    "partido_n": 35,
+                    "puntos": 1,
+                    "puntosDG": "0",
+                    "puntosCG": "0",
+                    "id": 35,
+                    "puntosP": "1",
                     "datosPartido": {
                         "eqvisitante": "INGLATERRA",
-                        "fecha": "29/11/2022",
-                        "eqlocal": "GALES",
-                        "dia": "MARTES",
-                        "icovisitante": "inglaterra",
-                        "hora": "16:00",
                         "icolocal": "gales",
-                        "grupo": "GRUPO B"
-                    },
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_resul": ""
-                    }
-                },
-                {
-                    "puntos": "",
-                    "partido_n": 36,
-                    "datosPartido": {
-                        "icovisitante": "estadosunidos",
-                        "dia": "MARTES",
-                        "eqlocal": "IRÁN",
-                        "icolocal": "iran",
-                        "fecha": "29/11/2022",
                         "hora": "16:00",
                         "grupo": "GRUPO B",
-                        "eqvisitante": "ESTADOS UNIDOS"
+                        "fecha": "29/11/2022",
+                        "icovisitante": "inglaterra",
+                        "eqlocal": "GALES",
+                        "dia": "MARTES"
                     },
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
-                    },
-                    "id": 36,
                     "realPartido": {
-                        "resul_vis": "",
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": "",
+                        "resul_vis": "3",
+                        "resultado": "V",
+                        "resul_loc": "0",
                         "resul_penvis": ""
                     }
                 },
                 {
-                    "id": 37,
-                    "partido_n": 37,
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
-                    },
+                    "id": 36,
+                    "puntosP": "1",
+                    "partido_n": 36,
                     "datosPartido": {
-                        "icolocal": "tunez",
-                        "fecha": "30/11/2022",
-                        "grupo": "GRUPO D",
-                        "eqlocal": "TÚNEZ",
-                        "hora": "12:00",
-                        "dia": "MIÉRCOLES",
-                        "icovisitante": "francia",
-                        "eqvisitante": "FRANCIA"
+                        "grupo": "GRUPO B",
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "dia": "MARTES",
+                        "hora": "16:00",
+                        "fecha": "29/11/2022",
+                        "icolocal": "iran",
+                        "icovisitante": "estadosunidos",
+                        "eqlocal": "IRÁN"
                     },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_vis": "1",
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resultado": "V"
+                    },
+                    "puntosDG": "1",
                     "prodePartido": {
-                        "prode_vis": "",
+                        "prode_loc": "1",
                         "prode_penvis": "",
-                        "prode_resul": "",
+                        "prode_resul": "V",
                         "prode_penloc": "",
-                        "prode_loc": ""
-                    }
+                        "prode_vis": "2"
+                    },
+                    "puntosCG": "0",
+                    "puntos": 2
                 },
                 {
-                    "id": 38,
+                    "partido_n": 37,
+                    "datosPartido": {
+                        "icovisitante": "francia",
+                        "hora": "12:00",
+                        "icolocal": "tunez",
+                        "fecha": "30/11/2022",
+                        "eqvisitante": "FRANCIA",
+                        "dia": "MIÉRCOLES",
+                        "eqlocal": "TÚNEZ",
+                        "grupo": "GRUPO D"
+                    },
+                    "puntos": 0,
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_vis": "2"
+                    },
                     "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
                         "resul_penloc": "",
                         "resul_penvis": "",
-                        "resul_vis": ""
+                        "resultado": "L",
+                        "resul_loc": "1",
+                        "resul_vis": "0"
                     },
+                    "puntosCG": "0",
+                    "puntosDG": "0",
+                    "puntosP": "0",
+                    "id": 37
+                },
+                {
+                    "prodePartido": {
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": "2",
+                        "prode_resul": "V",
+                        "prode_loc": "0"
+                    },
+                    "puntosDG": "0",
                     "datosPartido": {
-                        "grupo": "GRUPO D",
                         "eqlocal": "AUSTRALIA",
                         "hora": "12:00",
                         "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO D",
                         "icolocal": "australia",
-                        "eqvisitante": "DINAMARCA",
                         "fecha": "30/11/2022",
-                        "icovisitante": "dinamarca"
+                        "icovisitante": "dinamarca",
+                        "eqvisitante": "DINAMARCA"
                     },
-                    "partido_n": 38,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penloc": ""
-                    }
-                },
-                {
-                    "datosPartido": {
-                        "eqvisitante": "ARGENTINA",
-                        "icolocal": "polonia",
-                        "grupo": "GRUPO C",
-                        "fecha": "30/11/2022",
-                        "dia": "MIÉRCOLES",
-                        "icovisitante": "argentina",
-                        "eqlocal": "POLONIA",
-                        "hora": "16:00"
-                    },
-                    "partido_n": 39,
-                    "puntos": "",
                     "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
-                    },
-                    "id": 39,
-                    "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_loc": ""
-                    }
-                },
-                {
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
+                        "resultado": "L",
+                        "resul_vis": "0",
                         "resul_penloc": "",
-                        "resul_vis": "",
                         "resul_penvis": "",
-                        "resul_loc": ""
+                        "resul_loc": "1"
                     },
-                    "datosPartido": {
-                        "grupo": "GRUPO C",
-                        "eqvisitante": "MÉXICO",
-                        "fecha": "30/11/2022",
-                        "icolocal": "arabiasaudita",
-                        "eqlocal": "ARABIA SAUDITA",
-                        "dia": "MIÉRCOLES",
-                        "hora": "16:00",
-                        "icovisitante": "mexico"
-                    },
-                    "partido_n": 40,
-                    "id": 40
+                    "puntos": 0,
+                    "puntosP": "0",
+                    "partido_n": 38,
+                    "id": 38,
+                    "puntosCG": "0"
                 },
                 {
-                    "puntos": "",
-                    "id": 41,
+                    "prodePartido": {
+                        "prode_loc": "0",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_resul": "V",
+                        "prode_vis": "3"
+                    },
+                    "puntos": 1,
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "eqvisitante": "ARGENTINA",
+                        "icovisitante": "argentina",
+                        "icolocal": "polonia",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO C",
+                        "eqlocal": "POLONIA",
+                        "fecha": "30/11/2022"
+                    },
+                    "puntosP": "1",
+                    "puntosDG": "0",
+                    "id": 39,
+                    "puntosCG": "0",
+                    "realPartido": {
+                        "resul_loc": "0",
+                        "resul_penloc": "",
+                        "resultado": "V",
+                        "resul_vis": "2",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 39
+                },
+                {
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_penvis": "",
+                        "resultado": "V",
+                        "resul_loc": "1",
+                        "resul_vis": "2"
+                    },
+                    "puntosCG": "1",
+                    "partido_n": 40,
+                    "puntosP": "3",
+                    "puntos": 5,
+                    "datosPartido": {
+                        "fecha": "30/11/2022",
+                        "hora": "16:00",
+                        "dia": "MIÉRCOLES",
+                        "grupo": "GRUPO C",
+                        "icovisitante": "mexico",
+                        "eqlocal": "ARABIA SAUDITA",
+                        "icolocal": "arabiasaudita",
+                        "eqvisitante": "MÉXICO"
+                    },
+                    "id": 40,
+                    "puntosDG": "1",
+                    "prodePartido": {
+                        "prode_resul": "V",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_vis": "2"
+                    }
+                },
+                {
+                    "puntosDG": "1",
+                    "puntos": 2,
+                    "partido_n": 41,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resul_vis": "0",
+                        "resultado": "E",
+                        "resul_loc": "0"
+                    },
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_resul": "E",
+                        "prode_vis": "1"
+                    },
+                    "puntosP": "1",
+                    "puntosCG": "0",
                     "datosPartido": {
                         "hora": "12:00",
-                        "icolocal": "croacia",
-                        "fecha": "01/12/2022",
-                        "eqvisitante": "BÉLGICA",
                         "icovisitante": "belgica",
-                        "dia": "JUEVES",
                         "eqlocal": "CROACIA",
-                        "grupo": "GRUPO F"
+                        "grupo": "GRUPO F",
+                        "dia": "JUEVES",
+                        "eqvisitante": "BÉLGICA",
+                        "icolocal": "croacia",
+                        "fecha": "01/12/2022"
                     },
-                    "partido_n": 41,
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_penloc": ""
-                    },
-                    "realPartido": {
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_penvis": ""
-                    }
+                    "id": 41
                 },
                 {
+                    "partido_n": 42,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "1",
+                        "resul_vis": "2",
+                        "resul_penloc": "",
+                        "resultado": "V"
+                    },
+                    "puntosDG": "1",
+                    "puntos": 5,
+                    "puntosP": "3",
+                    "puntosCG": "1",
                     "datosPartido": {
-                        "fecha": "01/12/2022",
-                        "grupo": "GRUPO F",
-                        "eqlocal": "CANADÁ",
-                        "dia": "JUEVES",
-                        "icolocal": "canada",
                         "eqvisitante": "MARRUECOS",
                         "icovisitante": "marruecos",
-                        "hora": "12:00"
+                        "grupo": "GRUPO F",
+                        "hora": "12:00",
+                        "fecha": "01/12/2022",
+                        "icolocal": "canada",
+                        "dia": "JUEVES",
+                        "eqlocal": "CANADÁ"
                     },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    },
-                    "partido_n": 42,
                     "prodePartido": {
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
                         "prode_penvis": "",
-                        "prode_loc": ""
+                        "prode_penloc": "",
+                        "prode_loc": "1",
+                        "prode_vis": "2",
+                        "prode_resul": "V"
                     },
-                    "id": 42,
-                    "puntos": ""
+                    "id": 42
                 },
                 {
+                    "puntosCG": "0",
                     "partido_n": 43,
                     "id": 43,
                     "realPartido": {
-                        "resul_loc": "",
+                        "resul_loc": "2",
                         "resul_penloc": "",
-                        "resul_vis": "",
                         "resul_penvis": "",
-                        "resultado": ""
+                        "resultado": "L",
+                        "resul_vis": "1"
                     },
+                    "puntos": 0,
                     "prodePartido": {
-                        "prode_loc": "",
                         "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_penvis": "",
-                        "prode_resul": ""
+                        "prode_vis": "3",
+                        "prode_resul": "V",
+                        "prode_loc": "1",
+                        "prode_penvis": ""
                     },
-                    "puntos": "",
                     "datosPartido": {
-                        "icolocal": "japon",
-                        "icovisitante": "espana",
                         "dia": "JUEVES",
-                        "eqlocal": "JAPÓN",
+                        "icovisitante": "espana",
                         "grupo": "GRUPO E",
-                        "fecha": "01/12/2022",
-                        "eqvisitante": "ESPAÑA",
-                        "hora": "16:00"
-                    }
-                },
-                {
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "eqvisitante": "ALEMANIA",
-                        "grupo": "GRUPO E",
+                        "icolocal": "japon",
                         "fecha": "01/12/2022",
                         "hora": "16:00",
+                        "eqvisitante": "ESPAÑA",
+                        "eqlocal": "JAPÓN"
+                    },
+                    "puntosP": "0",
+                    "puntosDG": "0"
+                },
+                {
+                    "puntos": 2,
+                    "puntosCG": "0",
+                    "datosPartido": {
+                        "fecha": "01/12/2022",
+                        "eqlocal": "COSTA RICA",
+                        "grupo": "GRUPO E",
                         "dia": "JUEVES",
+                        "hora": "16:00",
                         "icovisitante": "alemania",
                         "icolocal": "costarica",
-                        "eqlocal": "COSTA RICA"
+                        "eqvisitante": "ALEMANIA"
                     },
                     "partido_n": 44,
                     "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "",
+                        "prode_vis": "2",
                         "prode_penvis": "",
-                        "prode_resul": ""
+                        "prode_penloc": "",
+                        "prode_loc": "0",
+                        "prode_resul": "V"
                     },
-                    "puntos": "",
+                    "puntosDG": "1",
+                    "realPartido": {
+                        "resul_vis": "4",
+                        "resul_loc": "2",
+                        "resultado": "V",
+                        "resul_penvis": "",
+                        "resul_penloc": ""
+                    },
+                    "puntosP": "1",
                     "id": 44
                 },
                 {
+                    "puntosP": "0",
                     "datosPartido": {
-                        "dia": "VIERNES",
                         "eqlocal": "COREA",
-                        "hora": "12:00",
-                        "fecha": "02/12/2022",
-                        "icolocal": "corea",
                         "eqvisitante": "PORTUGAL",
+                        "hora": "12:00",
+                        "grupo": "GRUPO H",
+                        "dia": "VIERNES",
                         "icovisitante": "portugal",
-                        "grupo": "GRUPO H"
+                        "fecha": "02/12/2022",
+                        "icolocal": "corea"
                     },
-                    "partido_n": 45,
-                    "id": 45,
+                    "puntosDG": "0",
+                    "puntos": 0,
+                    "puntosCG": "0",
                     "realPartido": {
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": "",
+                        "resultado": "L",
                         "resul_penvis": "",
-                        "resul_loc": ""
+                        "resul_penloc": "",
+                        "resul_vis": "1",
+                        "resul_loc": "2"
                     },
+                    "id": 45,
+                    "partido_n": 45,
                     "prodePartido": {
-                        "prode_vis": "",
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_loc": "0",
                         "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_loc": "",
-                        "prode_penvis": ""
-                    },
-                    "puntos": ""
+                        "prode_vis": "2"
+                    }
                 },
                 {
+                    "puntos": 1,
                     "realPartido": {
-                        "resultado": "",
+                        "resultado": "V",
+                        "resul_penloc": "",
+                        "resul_loc": "0",
                         "resul_penvis": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": ""
+                        "resul_vis": "2"
+                    },
+                    "puntosCG": "0",
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "V",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_vis": "2"
                     },
                     "id": 46,
+                    "puntosDG": "0",
+                    "puntosP": "1",
                     "datosPartido": {
-                        "icovisitante": "uruguay",
-                        "grupo": "GRUPO H",
-                        "eqvisitante": "URUGUAY",
-                        "fecha": "02/12/2022",
                         "icolocal": "ghana",
-                        "eqlocal": "GHANA",
+                        "eqvisitante": "URUGUAY",
+                        "icovisitante": "uruguay",
+                        "hora": "12:00",
                         "dia": "VIERNES",
-                        "hora": "12:00"
+                        "fecha": "02/12/2022",
+                        "grupo": "GRUPO H",
+                        "eqlocal": "GHANA"
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": ""
-                    },
-                    "partido_n": 46,
-                    "puntos": ""
+                    "partido_n": 46
                 },
                 {
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "fecha": "02/12/2022",
-                        "icolocal": "camerun",
-                        "grupo": "GRUPO G",
-                        "icovisitante": "brasil",
-                        "dia": "VIERNES",
-                        "eqvisitante": "BRASIL",
-                        "eqlocal": "CAMERÚN"
-                    },
-                    "id": 47,
                     "prodePartido": {
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
+                        "prode_vis": "2",
+                        "prode_resul": "E",
+                        "prode_penvis": "",
+                        "prode_loc": "2",
+                        "prode_penloc": ""
+                    },
+                    "puntosP": "0",
+                    "puntosCG": "0",
+                    "id": 47,
+                    "realPartido": {
+                        "resultado": "L",
+                        "resul_penloc": "",
+                        "resul_loc": "1",
+                        "resul_penvis": "",
+                        "resul_vis": "0"
                     },
                     "partido_n": 47,
-                    "realPartido": {
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_loc": ""
+                    "datosPartido": {
+                        "fecha": "02/12/2022",
+                        "hora": "16:00",
+                        "eqlocal": "CAMERÚN",
+                        "grupo": "GRUPO G",
+                        "dia": "VIERNES",
+                        "eqvisitante": "BRASIL",
+                        "icovisitante": "brasil",
+                        "icolocal": "camerun"
                     },
-                    "puntos": ""
+                    "puntos": 0,
+                    "puntosDG": "0"
                 },
                 {
+                    "puntosDG": "1",
+                    "puntosP": "1",
                     "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_resul": "",
                         "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_loc": ""
+                        "prode_penvis": "",
+                        "prode_vis": "1",
+                        "prode_loc": "0",
+                        "prode_resul": "V"
                     },
-                    "puntos": "",
-                    "partido_n": 48,
-                    "id": 48,
+                    "puntos": 2,
                     "datosPartido": {
-                        "icolocal": "serbia",
+                        "icovisitante": "suiza",
                         "eqvisitante": "SUIZA",
-                        "hora": "16:00",
-                        "fecha": "02/12/2022",
-                        "dia": "VIERNES",
                         "grupo": "GRUPO G",
+                        "fecha": "02/12/2022",
+                        "hora": "16:00",
                         "eqlocal": "SERBIA",
-                        "icovisitante": "suiza"
+                        "icolocal": "serbia",
+                        "dia": "VIERNES"
                     },
+                    "id": 48,
                     "realPartido": {
+                        "resul_vis": "3",
+                        "resultado": "V",
+                        "resul_penvis": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_penvis": ""
-                    }
+                        "resul_loc": "2"
+                    },
+                    "partido_n": 48,
+                    "puntosCG": "0"
                 }
             ],
             "fecha_n": 3
@@ -24351,134 +25066,236 @@ export var fechaAdri = {
             "fecha_n": 4,
             "partidos": [
                 {
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": ""
-                    },
-                    "datosPartido": {
-                        "dia": "SÁBADO",
-                        "hora": "12:00",
-                        "icovisitante": "vacio",
-                        "fecha": "03/12/2022",
-                        "eqvisitante": "2° B",
-                        "eqlocal": "1° A",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "icolocal": "vacio"
-                    },
-                    "puntos": "",
                     "id": 49,
                     "partido_n": 49,
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": "",
-                        "prode_penvis": ""
-                    }
-                },
-                {
-                    "id": 50,
                     "puntos": "",
-                    "partido_n": 50,
                     "datosPartido": {
-                        "eqvisitante": "2° D",
-                        "eqlocal": "1° C",
-                        "icovisitante": "vacio",
-                        "hora": "16:00",
-                        "icolocal": "vacio",
+                        "hora": "12:00",
+                        "dia": "SÁBADO",
+                        "eqlocal": "PAISES BAJOS",
+                        "icovisitante": "estadosunidos",
                         "fecha": "03/12/2022",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "dia": "SÁBADO"
+                        "eqvisitante": "ESTADOS UNIDOS",
+                        "icolocal": "paisesbajos",
+                        "grupo": "OCTAVOS DE FINAL"
                     },
                     "realPartido": {
-                        "resul_loc": "",
                         "resul_penloc": "",
-                        "resul_vis": "",
                         "resultado": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
                         "resul_penvis": ""
                     },
                     "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_vis": "1",
                         "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penloc": ""
+                        "prode_ext": "L"
                     }
                 },
                 {
-                    "id": 51,
-                    "datosPartido": {
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqvisitante": "2° C",
-                        "eqlocal": "1° D",
-                        "hora": "12:00",
-                        "icolocal": "vacio",
-                        "fecha": "04/12/2022",
-                        "dia": "DOMINGO",
-                        "icovisitante": "vacio"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
-                    },
                     "prodePartido": {
-                        "prode_loc": "",
+                        "prode_resul": "L",
                         "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
+                        "prode_vis": "0",
+                        "prode_penvis": "",
+                        "prode_loc": "2",
+                        "prode_ext": "L"
                     },
-                    "partido_n": 51
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_loc": ""
+                    },
+                    "datosPartido": {
+                        "fecha": "03/12/2022",
+                        "eqlocal": "ARGENTINA",
+                        "icovisitante": "australia",
+                        "icolocal": "argentina",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "dia": "SÁBADO",
+                        "hora": "16:00",
+                        "eqvisitante": "AUSTRALIA"
+                    },
+                    "id": 50,
+                    "puntos": "",
+                    "partido_n": 50
                 },
                 {
+                    "partido_n": 51,
                     "prodePartido": {
-                        "prode_loc": "",
+                        "prode_vis": "1",
+                        "prode_ext": "L",
                         "prode_penloc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
+                        "prode_loc": "3",
+                        "prode_penvis": "",
+                        "prode_resul": "L"
                     },
-                    "id": 52,
-                    "puntos": "",
+                    "datosPartido": {
+                        "fecha": "04/12/2022",
+                        "icolocal": "francia",
+                        "dia": "DOMINGO",
+                        "eqvisitante": "POLONIA",
+                        "icovisitante": "polonia",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "hora": "12:00",
+                        "eqlocal": "FRANCIA"
+                    },
                     "realPartido": {
                         "resul_vis": "",
-                        "resul_penvis": "",
                         "resultado": "",
+                        "resul_penvis": "",
                         "resul_penloc": "",
                         "resul_loc": ""
                     },
+                    "puntos": "",
+                    "id": 51
+                },
+                {
                     "partido_n": 52,
+                    "prodePartido": {
+                        "prode_loc": "2",
+                        "prode_vis": "1",
+                        "prode_resul": "L",
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_ext": "L"
+                    },
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resultado": ""
+                    },
+                    "puntos": "",
+                    "id": 52,
                     "datosPartido": {
-                        "eqvisitante": "2° A",
-                        "dia": "DOMINGO",
-                        "icolocal": "vacio",
-                        "hora": "16:00",
-                        "eqlocal": "1° B",
-                        "icovisitante": "vacio",
+                        "icovisitante": "senegal",
+                        "fecha": "04/12/2022",
                         "grupo": "OCTAVOS DE FINAL",
-                        "fecha": "04/12/2022"
+                        "hora": "16:00",
+                        "eqlocal": "INGLATERRA",
+                        "icolocal": "inglaterra",
+                        "eqvisitante": "SENEGAL",
+                        "dia": "DOMINGO"
                     }
                 },
                 {
                     "partido_n": 53,
                     "id": 53,
+                    "realPartido": {
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_vis": ""
+                    },
+                    "datosPartido": {
+                        "fecha": "05/12/2022",
+                        "hora": "12:00",
+                        "icolocal": "japon",
+                        "icovisitante": "croacia",
+                        "dia": "LUNES",
+                        "eqvisitante": "CROACIA",
+                        "eqlocal": "JAPON",
+                        "grupo": "OCTAVOS DE FINAL"
+                    },
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_loc": "1",
+                        "prode_resul": "E",
+                        "prode_penloc": "",
+                        "prode_ext": "L",
+                        "prode_penvis": "",
+                        "prode_vis": "1"
+                    }
+                },
+                {
+                    "datosPartido": {
+                        "hora": "16:00",
+                        "dia": "LUNES",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "fecha": "05/12/2022",
+                        "icovisitante": "corea",
+                        "eqlocal": "BRASIL",
+                        "icolocal": "brasil",
+                        "eqvisitante": "COREA"
+                    },
+                    "partido_n": 54,
+                    "realPartido": {
+                        "resul_vis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_loc": "",
+                        "resul_penvis": ""
+                    },
+                    "puntos": "",
+                    "prodePartido": {
+                        "prode_loc": "2",
+                        "prode_penloc": "",
+                        "prode_vis": "0",
+                        "prode_penvis": "",
+                        "prode_ext": "L",
+                        "prode_resul": "L"
+                    },
+                    "id": 54
+                },
+                {
+                    "prodePartido": {
+                        "prode_ext": "V",
+                        "prode_loc": "1",
+                        "prode_resul": "E",
+                        "prode_vis": "1",
+                        "prode_penvis": "",
+                        "prode_penloc": ""
+                    },
+                    "realPartido": {
+                        "resul_loc": "",
+                        "resul_penvis": "",
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_vis": ""
+                    },
+                    "puntos": "",
+                    "id": 55,
+                    "datosPartido": {
+                        "eqlocal": "MARRUECOS",
+                        "grupo": "OCTAVOS DE FINAL",
+                        "dia": "MARTES",
+                        "eqvisitante": "ESPANA",
+                        "hora": "12:00",
+                        "fecha": "06/12/2022",
+                        "icovisitante": "espana",
+                        "icolocal": "marruecos"
+                    },
+                    "partido_n": 55
+                },
+                {
+                    "partido_n": 56,
+                    "prodePartido": {
+                        "prode_vis": "1",
+                        "prode_resul": "E",
+                        "prode_penvis": "",
+                        "prode_loc": "1",
+                        "prode_penloc": "",
+                        "prode_ext": "L"
+                    },
                     "datosPartido": {
                         "grupo": "OCTAVOS DE FINAL",
-                        "hora": "12:00",
-                        "icovisitante": "vacio",
-                        "dia": "LUNES",
-                        "eqvisitante": "2° F",
-                        "eqlocal": "1° E",
-                        "icolocal": "vacio",
-                        "fecha": "05/12/2022"
+                        "eqvisitante": "SUIZA",
+                        "fecha": "06/12/2022",
+                        "icovisitante": "suiza",
+                        "hora": "16:00",
+                        "eqlocal": "PORTUGAL",
+                        "dia": "MARTES",
+                        "icolocal": "portugal"
                     },
+                    "puntos": "",
                     "realPartido": {
                         "resultado": "",
                         "resul_loc": "",
@@ -24486,287 +25303,193 @@ export var fechaAdri = {
                         "resul_penloc": "",
                         "resul_vis": ""
                     },
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_penvis": "",
-                        "prode_loc": ""
-                    }
-                },
-                {
-                    "datosPartido": {
-                        "hora": "16:00",
-                        "icolocal": "vacio",
-                        "eqvisitante": "2° H",
-                        "dia": "LUNES",
-                        "eqlocal": "1° G",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "fecha": "05/12/2022",
-                        "icovisitante": "vacio"
-                    },
-                    "puntos": "",
-                    "id": 54,
-                    "partido_n": 54,
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_resul": "",
-                        "prode_loc": ""
-                    },
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resultado": "",
-                        "resul_penloc": "",
-                        "resul_vis": "",
-                        "resul_penvis": ""
-                    }
-                },
-                {
-                    "partido_n": 55,
-                    "id": 55,
-                    "puntos": "",
-                    "datosPartido": {
-                        "icolocal": "vacio",
-                        "eqvisitante": "2° E",
-                        "hora": "12:00",
-                        "fecha": "06/12/2022",
-                        "dia": "MARTES",
-                        "icovisitante": "vacio",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "eqlocal": "1° F"
-                    },
-                    "prodePartido": {
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_vis": "",
-                        "prode_resul": ""
-                    },
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_loc": "",
-                        "resul_penloc": ""
-                    }
-                },
-                {
-                    "partido_n": 56,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    },
-                    "prodePartido": {
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penvis": "",
-                        "prode_penloc": ""
-                    },
-                    "id": 56,
-                    "datosPartido": {
-                        "eqvisitante": "2° G",
-                        "grupo": "OCTAVOS DE FINAL",
-                        "icovisitante": "vacio",
-                        "icolocal": "vacio",
-                        "fecha": "06/12/2022",
-                        "dia": "MARTES",
-                        "eqlocal": "1° H",
-                        "hora": "16:00"
-                    },
-                    "puntos": ""
+                    "id": 56
                 }
             ]
         },
         {
+            "fecha_n": 5,
             "partidos": [
                 {
-                    "prodePartido": {
-                        "prode_vis": "",
-                        "prode_loc": "",
-                        "prode_penloc": "",
-                        "prode_resul": "",
-                        "prode_penvis": ""
-                    },
+                    "partido_n": 57,
+                    "puntos": "",
                     "datosPartido": {
                         "icovisitante": "vacio",
-                        "icolocal": "vacio",
-                        "dia": "VIERNES",
                         "eqvisitante": "GANADOR P. 6",
-                        "eqlocal": "GANADOR P. 5",
-                        "hora": "12:00",
+                        "icolocal": "vacio",
+                        "fecha": "09/12/2022",
+                        "dia": "VIERNES",
                         "grupo": "CUARTOS DE FINAL",
-                        "fecha": "09/12/2022"
+                        "eqlocal": "GANADOR P. 5",
+                        "hora": "12:00"
                     },
-                    "id": 57,
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_vis": "",
-                        "resul_penvis": "",
-                        "resul_penloc": "",
-                        "resul_loc": ""
-                    },
-                    "partido_n": 57,
-                    "puntos": ""
-                },
-                {
                     "realPartido": {
                         "resul_vis": "",
                         "resul_penvis": "",
                         "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": ""
+                        "resul_loc": "",
+                        "resultado": ""
                     },
-                    "id": 58,
-                    "partido_n": 58,
                     "prodePartido": {
+                        "prode_penvis": "",
                         "prode_resul": "",
                         "prode_loc": "",
-                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_vis": ""
+                    },
+                    "id": 57
+                },
+                {
+                    "id": 58,
+                    "prodePartido": {
                         "prode_penvis": "",
-                        "prode_penloc": ""
+                        "prode_penloc": "",
+                        "prode_vis": "",
+                        "prode_loc": "",
+                        "prode_resul": ""
+                    },
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_vis": "",
+                        "resul_loc": ""
                     },
                     "datosPartido": {
                         "eqvisitante": "GANADOR P. 2",
-                        "grupo": "CUARTOS DE FINAL",
-                        "hora": "16:00",
-                        "fecha": "09/12/2022",
                         "dia": "VIERNES",
+                        "icovisitante": "vacio",
+                        "fecha": "09/12/2022",
+                        "hora": "16:00",
                         "eqlocal": "GANADOR P. 1",
                         "icolocal": "vacio",
-                        "icovisitante": "vacio"
+                        "grupo": "CUARTOS DE FINAL"
                     },
-                    "puntos": ""
+                    "puntos": "",
+                    "partido_n": 58
                 },
                 {
-                    "id": 59,
-                    "partido_n": 59,
-                    "puntos": "",
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_resul": "",
-                        "prode_vis": "",
-                        "prode_penloc": ""
+                    "datosPartido": {
+                        "icolocal": "vacio",
+                        "grupo": "CUARTOS DE FINAL",
+                        "eqvisitante": "GANADOR P. 8",
+                        "icovisitante": "vacio",
+                        "dia": "SÁBADO",
+                        "eqlocal": "GANADOR P. 7",
+                        "hora": "12:00",
+                        "fecha": "10/12/2022"
                     },
+                    "prodePartido": {
+                        "prode_resul": "",
+                        "prode_loc": "",
+                        "prode_penloc": "",
+                        "prode_penvis": "",
+                        "prode_vis": ""
+                    },
+                    "puntos": "",
+                    "partido_n": 59,
+                    "id": 59,
                     "realPartido": {
-                        "resul_loc": "",
+                        "resultado": "",
                         "resul_vis": "",
                         "resul_penloc": "",
-                        "resultado": "",
+                        "resul_loc": "",
                         "resul_penvis": ""
-                    },
-                    "datosPartido": {
-                        "eqvisitante": "GANADOR P. 8",
-                        "icolocal": "vacio",
-                        "eqlocal": "GANADOR P. 7",
-                        "icovisitante": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "dia": "SÁBADO",
-                        "fecha": "10/12/2022",
-                        "hora": "12:00"
                     }
                 },
                 {
-                    "datosPartido": {
-                        "icovisitante": "vacio",
-                        "fecha": "10/12/2022",
-                        "eqlocal": "GANADOR P. 4",
-                        "dia": "SÁBADO",
-                        "icolocal": "vacio",
-                        "grupo": "CUARTOS DE FINAL",
-                        "eqvisitante": "GANADOR P. 3",
-                        "hora": "16:00"
-                    },
                     "id": 60,
+                    "partido_n": 60,
                     "realPartido": {
                         "resul_vis": "",
-                        "resultado": "",
                         "resul_loc": "",
                         "resul_penvis": "",
-                        "resul_penloc": ""
+                        "resul_penloc": "",
+                        "resultado": ""
                     },
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_vis": "",
                         "prode_penvis": "",
+                        "prode_vis": "",
+                        "prode_penloc": "",
                         "prode_loc": "",
                         "prode_resul": ""
                     },
                     "puntos": "",
-                    "partido_n": 60
+                    "datosPartido": {
+                        "eqvisitante": "GANADOR P. 3",
+                        "grupo": "CUARTOS DE FINAL",
+                        "icolocal": "vacio",
+                        "hora": "16:00",
+                        "icovisitante": "vacio",
+                        "fecha": "10/12/2022",
+                        "eqlocal": "GANADOR P. 4",
+                        "dia": "SÁBADO"
+                    }
                 }
-            ],
-            "fecha_n": 5
+            ]
         },
         {
-            "fecha_n": 6,
             "partidos": [
                 {
+                    "id": 61,
+                    "puntos": "",
+                    "realPartido": {
+                        "resultado": "",
+                        "resul_penloc": "",
+                        "resul_loc": "",
+                        "resul_vis": "",
+                        "resul_penvis": ""
+                    },
                     "datosPartido": {
                         "grupo": "SEMIFINAL",
-                        "eqlocal": "GANADOR P. 10",
-                        "icolocal": "vacio",
+                        "fecha": "13/12/2022",
+                        "hora": "16:00",
                         "dia": "MARTES",
+                        "icolocal": "vacio",
                         "eqvisitante": "GANADOR P. 9",
                         "icovisitante": "vacio",
-                        "hora": "16:00",
-                        "fecha": "13/12/2022"
+                        "eqlocal": "GANADOR P. 10"
                     },
                     "partido_n": 61,
                     "prodePartido": {
-                        "prode_penloc": "",
-                        "prode_penvis": "",
-                        "prode_loc": "",
                         "prode_resul": "",
-                        "prode_vis": ""
-                    },
-                    "realPartido": {
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resultado": "",
-                        "resul_loc": ""
-                    },
-                    "puntos": "",
-                    "id": 61
+                        "prode_penvis": "",
+                        "prode_vis": "",
+                        "prode_penloc": "",
+                        "prode_loc": ""
+                    }
                 },
                 {
+                    "realPartido": {
+                        "resul_penloc": "",
+                        "resultado": "",
+                        "resul_penvis": "",
+                        "resul_vis": "",
+                        "resul_loc": ""
+                    },
                     "partido_n": 62,
                     "prodePartido": {
                         "prode_resul": "",
-                        "prode_loc": "",
                         "prode_penvis": "",
+                        "prode_vis": "",
                         "prode_penloc": "",
-                        "prode_vis": ""
+                        "prode_loc": ""
                     },
+                    "id": 62,
+                    "puntos": "",
                     "datosPartido": {
                         "dia": "MIÉRCOLES",
-                        "fecha": "14/12/2022",
-                        "eqlocal": "GANADOR P. 12",
-                        "icolocal": "vacio",
                         "hora": "16:00",
-                        "grupo": "SEMIFINAL",
+                        "icolocal": "vacio",
+                        "eqlocal": "GANADOR P. 12",
                         "icovisitante": "vacio",
-                        "eqvisitante": "GANADOR P. 11"
-                    },
-                    "puntos": "",
-                    "realPartido": {
-                        "resultado": "",
-                        "resul_loc": "",
-                        "resul_vis": "",
-                        "resul_penloc": "",
-                        "resul_penvis": ""
-                    },
-                    "id": 62
+                        "eqvisitante": "GANADOR P. 11",
+                        "fecha": "14/12/2022",
+                        "grupo": "SEMIFINAL"
+                    }
                 }
-            ]
+            ],
+            "fecha_n": 6
         },
         {
             "fecha_n": 7,
@@ -24774,71 +25497,64 @@ export var fechaAdri = {
                 {
                     "realPartido": {
                         "resul_loc": "",
+                        "resul_penloc": "",
+                        "resul_vis": "",
+                        "resultado": "",
+                        "resul_penvis": ""
+                    },
+                    "partido_n": 63,
+                    "prodePartido": {
+                        "prode_penvis": "",
+                        "prode_penloc": "",
+                        "prode_loc": "",
+                        "prode_vis": "",
+                        "prode_resul": ""
+                    },
+                    "id": 63,
+                    "datosPartido": {
+                        "hora": "12:00",
+                        "dia": "SÁBADO",
+                        "icolocal": "vacio",
+                        "eqlocal": "PERDEDOR P.13",
+                        "grupo": "3° Y 4° PUESTO",
+                        "fecha": "17/12/2022",
+                        "icovisitante": "vacio",
+                        "eqvisitante": "PERDEDOR P. 14"
+                    },
+                    "puntos": ""
+                },
+                {
+                    "id": 64,
+                    "realPartido": {
                         "resultado": "",
                         "resul_penvis": "",
                         "resul_penloc": "",
+                        "resul_loc": "",
                         "resul_vis": ""
                     },
-                    "partido_n": 63,
-                    "datosPartido": {
-                        "eqlocal": "PERDEDOR P.13",
-                        "icovisitante": "vacio",
-                        "dia": "SÁBADO",
-                        "eqvisitante": "PERDEDOR P. 14",
-                        "fecha": "17/12/2022",
-                        "hora": "12:00",
-                        "grupo": "3° Y 4° PUESTO",
-                        "icolocal": "vacio"
-                    },
-                    "puntos": "",
                     "prodePartido": {
                         "prode_vis": "",
-                        "prode_penloc": "",
-                        "prode_loc": "",
                         "prode_penvis": "",
-                        "prode_resul": ""
-                    },
-                    "id": 63
-                },
-                {
-                    "realPartido": {
-                        "resul_loc": "",
-                        "resul_penvis": "",
-                        "resul_vis": "",
-                        "resultado": "",
-                        "resul_penloc": ""
+                        "prode_penloc": "",
+                        "prode_resul": "",
+                        "prode_loc": ""
                     },
                     "datosPartido": {
+                        "hora": "12:00",
                         "eqvisitante": "GANADOR P. 14",
-                        "icovisitante": "vacio",
+                        "eqlocal": "GANADOR P. 13",
                         "fecha": "18/12/2022",
                         "grupo": "FINAL",
-                        "hora": "12:00",
-                        "eqlocal": "GANADOR P. 13",
                         "icolocal": "vacio",
+                        "icovisitante": "vacio",
                         "dia": "DOMINGO"
                     },
-                    "prodePartido": {
-                        "prode_penvis": "",
-                        "prode_loc": "",
-                        "prode_vis": "",
-                        "prode_resul": "",
-                        "prode_penloc": ""
-                    },
-                    "id": 64,
-                    "puntos": "",
-                    "partido_n": 64
+                    "partido_n": 64,
+                    "puntos": ""
                 }
             ]
         }
-    ],
-    "timestamp": {
-        "seconds": 1669130717,
-        "nanoseconds": 621000000
-    },
-    "user_version": 2,
-    "user": "ADRIANMARTIN@GMAIL.COM",
-    "user_modificacion": "22/11/2022, 12:25:17"
+    ]
 }
 
 export var unicoAdri = {

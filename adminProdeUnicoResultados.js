@@ -1,5 +1,6 @@
 
-import { saveProdeUnicoUser, cargaProdeUnicoResultadosAdmin, updateProdeUnicoResultados } from "./firebase.js"
+import { cargaProdeUnicoResultadosAdmin, updateProdeUnicoResultados, unificarTodosUsuariosProdeUnico, updateResultadosUsuariosProdeUnico, updatePronosticosProdeUnico, updateTablaPosicionesProdeUnico } from "./firebase.js"
+import { objModeloPronosticosProdeUnico } from "./js/modeloPronosticosProdeUnico.js"
 import { noPasa } from "./js/env.js"
 export const encryptObj = (obj, ps) => CryptoJS.AES.encrypt(JSON.stringify(obj), ps).toString();
 export const decryptObj = (cryp, ps) => JSON.parse(CryptoJS.AES.decrypt(cryp, ps).toString(CryptoJS.enc.Utf8));
@@ -733,6 +734,273 @@ btnGuardar.addEventListener('click', async (event) => {
 })
 
 
+
 /********************** */
+var unicoAdmin;
+var unicoUnificado;
 //Calcular puntajes
+const actualizarPuntajes = async () => {
+    await unificarTodosUsuariosProdeUnico()
+    unicoAdmin = await JSON.parse(decryptObj(window.localStorage.getItem("prodeUnicoAdmin"), noPasa));
+    unicoUnificado = JSON.parse(window.localStorage.getItem("todosDocsProdeUnico"));
+
+    unicoAdmin.partidos.forEach(p => {
+        if (!(p.prodePartido.prode_loc === "") && !(p.prodePartido.prode_vis === "")) {
+            //Guardo en real partido lo cargado en prodepartido de ADMIN
+            p.realPartido.resul_eqlocal = p.prodePartido.prode_eqlocal
+            p.realPartido.resul_eqvisitante = p.prodePartido.prode_eqvisitante
+            p.realPartido.resul_icolocal = p.prodePartido.prode_icolocal
+            p.realPartido.resul_icovisitante = p.prodePartido.prode_icovisitante
+            p.realPartido.resul_loc = p.prodePartido.prode_loc
+            p.realPartido.resul_vis = p.prodePartido.prode_vis
+            p.realPartido.resul_ext = p.prodePartido.prode_ext
+            p.realPartido.resultado = p.prodePartido.prode_resul
+        } else { //reseteo realPartido de admin
+            p.realPartido.resul_eqlocal = ""
+            p.realPartido.resul_eqvisitante = ""
+            p.realPartido.resul_icolocal = "vacio"
+            p.realPartido.resul_icovisitante = "vacio"
+            p.realPartido.resul_loc = ""
+            p.realPartido.resul_vis = ""
+            p.realPartido.resul_ext = ""
+            p.realPartido.resultado = ""
+            p.prodePartido.prode_resul = ""
+        }
+    })
+    console.log({ unicoAdmin })
+    await updateProdeUnicoResultados(unicoAdmin, usuario)
+    //Cargar a usuarios en la parte real y calcula puntos. Primera fase
+    unicoUnificado.forEach(async usu => {
+        for (let p = 0; p < 48; p++) {
+            usu.partidos[p].realPartido = unicoAdmin.partidos[p].realPartido
+            let prodeLoc = usu.partidos[p].prodePartido.prode_loc != "" ? Number(usu.partidos[p].prodePartido.prode_loc) : ""
+            let prodeVis = usu.partidos[p].prodePartido.prode_vis != "" ? Number(usu.partidos[p].prodePartido.prode_vis) : ""
+            let realLoc = unicoAdmin.partidos[p].realPartido.resul_loc != "" ? Number(unicoAdmin.partidos[p].realPartido.resul_loc) : ""
+            let realVis = unicoAdmin.partidos[p].realPartido.resul_vis != "" ? Number(unicoAdmin.partidos[p].realPartido.resul_vis) : ""
+            let prodeResul = usu.partidos[p].prodePartido.prode_resul
+            let realResul = unicoAdmin.partidos[p].realPartido.resultado
+
+            if (realResul != "") {
+                if (prodeResul === realResul) {
+                    if (prodeLoc === realLoc && prodeVis === realVis) { //resultado exacto
+                        usu.partidos[p].puntosP = 3 //acierto y resultado exacto
+                    } else {
+                        usu.partidos[p].puntosP = 1 //acierto resultado
+                    }
+                } else {
+                    usu.partidos[p].puntosP = 0 //no acierto
+                }
+                //puntos por diferencia de gol
+                if ((prodeLoc - prodeVis) === (realLoc - realVis)) {
+                    usu.partidos[p].puntosDG = 1;
+                } else {
+                    usu.partidos[p].puntosDG = 0;
+                }
+                //puntos por cantidad de goles en el partido
+                if ((prodeLoc + prodeVis) === (realLoc + realVis)) {
+                    usu.partidos[p].puntosCG = 1;
+                } else {
+                    usu.partidos[p].puntosCG = 0;
+                }
+                usu.partidos[p].puntos = Number(usu.partidos[p].puntosP) + Number(usu.partidos[p].puntosDG) + Number(usu.partidos[p].puntosCG)
+            } else {
+                usu.partidos[p].puntos = "";
+                usu.partidos[p].puntosP = "";
+                usu.partidos[p].puntosCG = "";
+                usu.partidos[p].puntosDG = "";
+            }
+
+        }
+        /****************************************** */
+        for (let p = 48; p < 64; p++) {
+            let modifFase = 0;
+
+            if (p >= 48 && p < 56) {
+                modifFase = 1
+            } else if (p >= 56 && p < 60) {
+                modifFase = 2
+            } else if (p >= 60 && p < 62) {
+                modifFase = 3
+            } else if (p === 63) {
+                modifFase = 4
+            }
+
+            usu.partidos[p].realPartido = unicoAdmin.partidos[p].realPartido
+            let prodeLoc = usu.partidos[p].prodePartido.prode_loc != "" ? Number(usu.partidos[p].prodePartido.prode_loc) : ""
+            let prodeVis = usu.partidos[p].prodePartido.prode_vis != "" ? Number(usu.partidos[p].prodePartido.prode_vis) : ""
+            let realLoc = unicoAdmin.partidos[p].realPartido.resul_loc != "" ? Number(unicoAdmin.partidos[p].realPartido.resul_loc) : ""
+            let realVis = unicoAdmin.partidos[p].realPartido.resul_vis != "" ? Number(unicoAdmin.partidos[p].realPartido.resul_vis) : ""
+            let prodeResul = usu.partidos[p].prodePartido.prode_resul
+            let realResul = unicoAdmin.partidos[p].realPartido.resultado
+            let prodeExt = usu.partidos[p].prodePartido.prode_ext
+            let realExt = unicoAdmin.partidos[p].realPartido.resul_ext
+            let prodeEqLoc = usu.partidos[p].prodePartido.prode_eqlocal
+            let prodeEqVis = usu.partidos[p].prodePartido.prode_eqvisitante
+            let realEqLoc = usu.partidos[p].realPartido.resul_eqlocal
+            let realEqVis = usu.partidos[p].realPartido.resul_eqvisitante
+
+
+            let aciertoEqFase = 3
+            let aciertoPartExacto = 3
+
+            if ((prodeEqLoc === realEqLoc) || (prodeEqVis === realEqVis)) { //Acierta equipo que paso de fase
+                aciertoPartExacto = aciertoPartExacto + modifFase;
+                aciertoEqFase = aciertoEqFase + modifFase;
+            }
+            if ((prodeEqLoc === realEqLoc) && (prodeEqVis === realEqVis)) { // Acierta partido exacto
+                aciertoPartExacto = aciertoPartExacto + modifFase;
+                usu.partidos[p].puntosPartExacto = aciertoPartExacto;
+                aciertoEqFase = aciertoEqFase + modifFase;
+                usu.partidos[p].puntosEqFase = aciertoEqFase;
+                if (realResul != "") {
+                    if (prodeResul === realResul) {
+                        if (((prodeLoc === realLoc && prodeVis === realVis) && (realResul != "E")) || ((realResul === "E") && (realExt === prodeExt))) { //resultado exacto
+                            usu.partidos[p].puntosP = 3 + modifFase //acierto y resultado exacto
+                        } else if (((realResul === "E") && (realExt != prodeExt)) || (!(prodeLoc === realLoc && prodeVis === realVis))) {
+                            usu.partidos[p].puntosP = 1 + modifFase //acierto resultado
+                        }
+                    } else {
+                        usu.partidos[p].puntosP = 0 //no acierto
+                    }
+                    //puntos por diferencia de gol
+                    if ((prodeLoc - prodeVis) === (realLoc - realVis)) {
+                        usu.partidos[p].puntosDG = 1 + modifFase;
+                    } else {
+                        usu.partidos[p].puntosDG = 0;
+                    }
+                    //puntos por cantidad de goles en el partido
+                    if ((prodeLoc + prodeVis) === (realLoc + realVis)) {
+                        usu.partidos[p].puntosCG = 1 + modifFase;
+                    } else {
+                        usu.partidos[p].puntosCG = 0;
+                    }
+                    usu.partidos[p].puntos = Number(usu.partidos[p].puntosP) + Number(usu.partidos[p].puntosDG) + Number(usu.partidos[p].puntosCG) + Number(usu.partidos[p].puntosPartExacto) + Number(usu.partidos[p].puntosEqFase)
+                } else {
+                    usu.partidos[p].puntos = "0";
+                    usu.partidos[p].puntosP = "0";
+                    usu.partidos[p].puntosCG = "0";
+                    usu.partidos[p].puntosDG = "0";
+                    usu.partidos[p].puntosPartExacto = "0";
+                    usu.partidos[p].puntosEqFase = "0";
+                }
+            } else {
+                usu.partidos[p].puntos = "0";
+                usu.partidos[p].puntosP = "0";
+                usu.partidos[p].puntosCG = "0";
+                usu.partidos[p].puntosDG = "0";
+                usu.partidos[p].puntosPartExacto = "0";
+                usu.partidos[p].puntosEqFase = "0";
+            }
+        }
+
+
+        await updateResultadosUsuariosProdeUnico(usu, usu.user)
+    });
+    console.log(unicoUnificado)
+    window.localStorage.setItem("todosDocsProdeUnico", JSON.stringify(unicoUnificado));
+
+}
+
+/******************************** */
+/** actualiza pronosticos */
+var objPronosticosProdeUnico;
+
+//Genero documento con todos los pronosticos de usuarios
+export const generarDocPronosticos = async () => {
+    let objTodosDocProdeUnico = JSON.parse(window.localStorage.getItem("todosDocsProdeUnico"));
+    objPronosticosProdeUnico = JSON.parse(JSON.stringify(objModeloPronosticosProdeUnico))
+    console.log({ objTodosDocProdeUnico })
+    console.log({ objPronosticosProdeUnico })
+    //ordeno los partidos de cada usuario
+    objTodosDocProdeUnico.forEach(usu => {
+        usu.partidos.sort((a, b) => a.id - b.id)
+    });
+
+    //Asigno a cada uno de los 64 partidos del modelo, el pronostico de cada usuario.
+    objPronosticosProdeUnico.forEach((part, ind) => {
+        part.prodes = new Array()
+        objTodosDocProdeUnico.forEach(usu => {
+            part.realPartido = usu.partidos[ind].realPartido
+            part.prodes.push(
+                {
+                    user: usu.user,
+                    // prodePartido: usu.partidos[ind].prodePartido,
+                    prodePartido: {
+                        prode_ext: usu.partidos[ind].prodePartido.prode_ext,
+                        prode_loc: usu.partidos[ind].prodePartido.prode_loc,
+                        prode_vis: usu.partidos[ind].prodePartido.prode_vis,
+                        prode_resul: usu.partidos[ind].prodePartido.prode_resul,
+                        prode_eqlocal: usu.partidos[ind].datosPartido.eqlocal,
+                        prode_eqvisitante: usu.partidos[ind].datosPartido.eqvisitante,
+                        prode_icolocal: usu.partidos[ind].datosPartido.icolocal,
+                        prode_icovisitante: usu.partidos[ind].datosPartido.icovisitante
+                    }
+                }
+            )
+        });
+    });
+    let objPronFinal = new Object()
+    objPronFinal.partidos = objPronosticosProdeUnico
+    await updatePronosticosProdeUnico(objPronFinal);
+
+}
+
+
+
+//------------------------------------------------------------------------------------------------
+// Función para crear la tabla de posiciones
+const actualizarTablaPosicionesProdeUnico = async () => {
+    //Primero tiene que generar obj con puntajes de usuario
+    console.log("Actualizando *-----> ActualizarTablaPosicionesProdeUnico")
+    let objTodosDocProdeUnico = JSON.parse(window.localStorage.getItem("todosDocsProdeUnico"));
+    let objTablaPosicionesProdeUnico = new Object();
+    objTablaPosicionesProdeUnico.usuarios = new Array();
+
+    objTodosDocProdeUnico.forEach(usu => {
+        let user = usu.user;
+        user = user.substring(0, user.indexOf('@'));
+        let trespt = 0
+        let unopt = 0
+        let ceropt = 0
+        let puntos = 0
+        let pj = 0
+        let puntosExtra = 0
+        usu.partidos.forEach(p => {
+            if (!(p.puntos === "")) {
+                if (Number(p.puntosP) === 3) {
+                    trespt++;
+                }
+                if (Number(p.puntosP) === 1) {
+                    unopt++;
+                }
+                if (Number(p.puntosP) === 0) {
+                    ceropt++;
+                }
+                pj++;
+                //console.log("pj: ", pj, " usu: ", usu.user)
+                puntosExtra = puntosExtra + Number(p.puntosCG) + Number(p.puntosDG)
+                puntos = puntos + Number(p.puntos)
+            }
+        })
+
+        objTablaPosicionesProdeUnico.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "trespt": trespt, "unopt": unopt, "ceropt": ceropt, "DG_CG": puntosExtra })
+    });
+    console.log("Obj tabla Posiciones:");
+    console.log(objTablaPosicionesProdeUnico);
+    //await updateTablaPosicionesFechas(objTablaPosiciones);
+    await updateTablaPosicionesProdeUnico(objTablaPosicionesProdeUnico)
+    //window.localStorage.setItem("tablaPosicionesProdeUnico", JSON.stringify(objTablaPosicionesProdeUnico));
+}
+
+//--------------------------------------------------------------------------------
+
+const btnActualizar = document.getElementById("btnActualizarResultados");
+btnActualizar.addEventListener('click', async (event) => {
+    await actualizarPuntajes()
+    await generarDocPronosticos()
+    await actualizarTablaPosicionesProdeUnico()
+});
+
+
+
 

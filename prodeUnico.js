@@ -63,6 +63,23 @@ const disenoProdeUnico = async (cantPart, origenDatos, fase, posInicial) => {
     `
     let j = posInicial;
     for (let i = 0; i < fechaFiltrada.length; i++) {
+        let colorResul = "transparent";
+        if (fechaFiltrada[i].puntos === "") { colorResul = "transparent" } else {
+            if (Number(fechaFiltrada[i].puntos) === 5) {
+                colorResul = "#5EC448" //verdeclaro;
+            } else if (Number(fechaFiltrada[i].puntos) === 3) {
+                colorResul = "#6BD089" //verdeclaro;
+            } else if (Number(fechaFiltrada[i].puntos) === 2) {
+                colorResul = "#0070C0" //azul;
+            } else if (Number(fechaFiltrada[i].puntos) === 1) {
+                colorResul = "#595959" //naranja   
+            } else if (Number(fechaFiltrada[i].puntos) === 0) {
+                colorResul = "#d5385a" //red    
+            }
+        }
+
+
+
         let visible = "none";
         let seleccionadoL;
         let seleccionadoV;
@@ -105,7 +122,7 @@ const disenoProdeUnico = async (cantPart, origenDatos, fase, posInicial) => {
                 </select>
                 </div>
                 <div class="resultado">${fechaFiltrada[i].realPartido.resul_loc + "-" + fechaFiltrada[i].realPartido.resul_vis}</div>
-                <div class="puntos">${fechaFiltrada[i].idg}</div>
+                <div class="puntos" style="background-color:${colorResul}">${fechaFiltrada[i].puntos}</div>
             </div>
         `
         j++;
@@ -114,6 +131,7 @@ const disenoProdeUnico = async (cantPart, origenDatos, fase, posInicial) => {
         </div>
     </div>
     `
+    console.log({ fase, fechaFiltrada })
     // document.getElementById("tablaProdeUnico").insertAdjacentHTML("afterend", f)
     document.getElementById("tablaProdeUnico_" + fase).innerHTML = tablaProdeUnico[fase]
 }

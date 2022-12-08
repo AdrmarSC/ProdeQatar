@@ -65,16 +65,20 @@ const disenoProdeUnico = async (cantPart, origenDatos, fase, posInicial) => {
     for (let i = 0; i < fechaFiltrada.length; i++) {
         let colorResul = "transparent";
         if (fechaFiltrada[i].puntos === "") { colorResul = "transparent" } else {
-            if (Number(fechaFiltrada[i].puntos) === 5) {
+            if (Number(fechaFiltrada[i].puntos) > 5) {
+                colorResul = "#D44249" //red;
+            } else if (Number(fechaFiltrada[i].puntos) === 5) {
                 colorResul = "#5EC448" //verdeclaro;
+            } else if (Number(fechaFiltrada[i].puntos) === 4) {
+                colorResul = "#9E4AC7" //celeste;
             } else if (Number(fechaFiltrada[i].puntos) === 3) {
-                colorResul = "#6BD089" //verdeclaro;
+                colorResul = "#1D8919" //verdeclaro;
             } else if (Number(fechaFiltrada[i].puntos) === 2) {
                 colorResul = "#0070C0" //azul;
             } else if (Number(fechaFiltrada[i].puntos) === 1) {
                 colorResul = "#595959" //naranja   
             } else if (Number(fechaFiltrada[i].puntos) === 0) {
-                colorResul = "#d5385a" //red    
+                colorResul = "#000000" //negro
             }
         }
 

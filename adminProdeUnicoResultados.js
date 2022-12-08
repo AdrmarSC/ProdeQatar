@@ -803,11 +803,15 @@ const actualizarPuntajes = async () => {
                     usu.partidos[p].puntosCG = 0;
                 }
                 usu.partidos[p].puntos = Number(usu.partidos[p].puntosP) + Number(usu.partidos[p].puntosDG) + Number(usu.partidos[p].puntosCG)
+                usu.partidos[p].puntosPartExacto = "0";
+                usu.partidos[p].puntosEqFase = "0";
             } else {
-                usu.partidos[p].puntos = "";
-                usu.partidos[p].puntosP = "";
-                usu.partidos[p].puntosCG = "";
-                usu.partidos[p].puntosDG = "";
+                usu.partidos[p].puntos = "0";
+                usu.partidos[p].puntosP = "0";
+                usu.partidos[p].puntosCG = "0";
+                usu.partidos[p].puntosDG = "0";
+                usu.partidos[p].puntosPartExacto = "0";
+                usu.partidos[p].puntosEqFase = "0";
             }
 
         }
@@ -840,25 +844,28 @@ const actualizarPuntajes = async () => {
             let realEqVis = usu.partidos[p].realPartido.resul_eqvisitante
 
 
-            let aciertoEqFase = 3
-            let aciertoPartExacto = 3
-
-            if ((prodeEqLoc === realEqLoc) || (prodeEqVis === realEqVis)) { //Acierta equipo que paso de fase
-                aciertoPartExacto = aciertoPartExacto + modifFase;
-                aciertoEqFase = aciertoEqFase + modifFase;
+            let aciertoEqFase = 0
+            let aciertoPartExacto = 0
+            //console.log({ p, realEqLoc, prodeEqLoc })
+            if (realEqLoc === prodeEqLoc) { // si acierta equipo que pasa de fase
+                aciertoEqFase = 3 + aciertoEqFase + modifFase;
             }
+            if (realEqVis === prodeEqVis) {// si acierta equipo que pasa de fase
+                aciertoEqFase = 3 + aciertoEqFase + modifFase;
+            }
+            usu.partidos[p].puntosEqFase = aciertoEqFase;
             if ((prodeEqLoc === realEqLoc) && (prodeEqVis === realEqVis)) { // Acierta partido exacto
-                aciertoPartExacto = aciertoPartExacto + modifFase;
+                aciertoPartExacto = 3 + modifFase;
                 usu.partidos[p].puntosPartExacto = aciertoPartExacto;
-                aciertoEqFase = aciertoEqFase + modifFase;
-                usu.partidos[p].puntosEqFase = aciertoEqFase;
                 if (realResul != "") {
                     if (prodeResul === realResul) {
-                        if (((prodeLoc === realLoc && prodeVis === realVis) && (realResul != "E")) || ((realResul === "E") && (realExt === prodeExt))) { //resultado exacto
+                        if (((prodeLoc === realLoc && prodeVis === realVis) && (realResul != "E")) || ((prodeLoc === realLoc && prodeVis === realVis) & (realResul === "E") && (realExt === prodeExt))) { //resultado exacto
                             usu.partidos[p].puntosP = 3 + modifFase //acierto y resultado exacto
-                        } else if (((realResul === "E") && (realExt != prodeExt)) || (!(prodeLoc === realLoc && prodeVis === realVis))) {
+                        } else if (((prodeLoc === realLoc && prodeVis === realVis) && (realResul === "E") && (realExt != prodeExt)) || (!(prodeLoc === realLoc && prodeVis === realVis))) {
                             usu.partidos[p].puntosP = 1 + modifFase //acierto resultado
                         }
+                    } else if ((prodeResul != realResul) && ((realResul === "E" && realExt === prodeResul) || (prodeResul === "E" && prodeExt === realResul))) {
+                        usu.partidos[p].puntosP = 1 + modifFase //acierto resultado
                     } else {
                         usu.partidos[p].puntosP = 0 //no acierto
                     }
@@ -881,7 +888,7 @@ const actualizarPuntajes = async () => {
                     usu.partidos[p].puntosCG = "0";
                     usu.partidos[p].puntosDG = "0";
                     usu.partidos[p].puntosPartExacto = "0";
-                    usu.partidos[p].puntosEqFase = "0";
+
                 }
             } else {
                 usu.partidos[p].puntos = "0";
@@ -889,11 +896,9 @@ const actualizarPuntajes = async () => {
                 usu.partidos[p].puntosCG = "0";
                 usu.partidos[p].puntosDG = "0";
                 usu.partidos[p].puntosPartExacto = "0";
-                usu.partidos[p].puntosEqFase = "0";
             }
+            usu.partidos[p].puntos = Number(usu.partidos[p].puntosP) + Number(usu.partidos[p].puntosDG) + Number(usu.partidos[p].puntosCG) + Number(usu.partidos[p].puntosPartExacto) + Number(usu.partidos[p].puntosEqFase)
         }
-
-
         await updateResultadosUsuariosProdeUnico(usu, usu.user)
     });
     console.log(unicoUnificado)
@@ -911,6 +916,11 @@ export const generarDocPronosticos = async () => {
     objPronosticosProdeUnico = JSON.parse(JSON.stringify(objModeloPronosticosProdeUnico))
     console.log({ objTodosDocProdeUnico })
     console.log({ objPronosticosProdeUnico })
+    const docAdmin = unicoAdmin.partidos
+    console.log({ docAdmin })
+    // tomo doc admin para cargar partidos no jugados pero con equipos clasificados
+    docAdmin.sort((a, b) => a.id - b.id);
+
     //ordeno los partidos de cada usuario
     objTodosDocProdeUnico.forEach(usu => {
         usu.partidos.sort((a, b) => a.id - b.id)
@@ -937,10 +947,22 @@ export const generarDocPronosticos = async () => {
                     }
                 }
             )
+            part.datosPartido.eqlocal = (part.realPartido.resul_eqlocal != "") ? part.realPartido.resul_eqlocal : part.datosPartido.eqlocal
+            part.datosPartido.icolocal = (part.realPartido.resul_icolocal != "vacio") ? part.realPartido.resul_icolocal : part.datosPartido.icolocal
+            part.datosPartido.eqvisitante = (part.realPartido.resul_eqvisitante != "") ? part.realPartido.resul_eqvisitante : part.datosPartido.eqvisitante
+            part.datosPartido.icovisitante = (part.realPartido.resul_icovisitante != "vacio") ? part.realPartido.resul_icovisitante : part.datosPartido.icovisitante
         });
+        if ((part.datosPartido.eqlocal.includes("GANADOR") || part.datosPartido.eqlocal.includes("PERDEDOR")) && (!(docAdmin[ind].datosPartido.eqlocal.includes("GANADOR")) || !(docAdmin[ind].datosPartido.eqlocal.includes("PERDEDOR")))) {
+            part.datosPartido.eqlocal = docAdmin[ind].datosPartido.eqlocal
+            part.datosPartido.icolocal = docAdmin[ind].datosPartido.icolocal
+            part.datosPartido.eqvisitante = docAdmin[ind].datosPartido.eqvisitante
+            part.datosPartido.icovisitante = docAdmin[ind].datosPartido.icovisitante
+
+        }
     });
     let objPronFinal = new Object()
     objPronFinal.partidos = objPronosticosProdeUnico
+    console.log({ objPronFinal })
     await updatePronosticosProdeUnico(objPronFinal);
 
 }
@@ -959,31 +981,50 @@ const actualizarTablaPosicionesProdeUnico = async () => {
     objTodosDocProdeUnico.forEach(usu => {
         let user = usu.user;
         user = user.substring(0, user.indexOf('@'));
+        let ptsmascincopt = 0
+        let mascincopt = 0
+        let cincopt = 0
+        let cuatropt = 0
         let trespt = 0
+        let dospt = 0
         let unopt = 0
         let ceropt = 0
         let puntos = 0
         let pj = 0
         let puntosExtra = 0
         usu.partidos.forEach(p => {
-            if (!(p.puntos === "")) {
-                if (Number(p.puntosP) === 3) {
+            if (!(p.puntos === "") && (!(p.realPartido.resultado === ""))) {
+                if (Number(p.puntos) > 5) {
+                    mascincopt++;
+                    ptsmascincopt = ptsmascincopt + p.puntos;
+                }
+                if (Number(p.puntos) === 5) {
+                    cincopt++;
+                }
+                if (Number(p.puntos) === 4) {
+                    cuatropt++;
+                }
+                if (Number(p.puntos) === 3) {
                     trespt++;
                 }
-                if (Number(p.puntosP) === 1) {
+                if (Number(p.puntos) === 2) {
+                    dospt++;
+                }
+                if (Number(p.puntos) === 1) {
                     unopt++;
                 }
-                if (Number(p.puntosP) === 0) {
+                if (Number(p.puntos) === 0) {
                     ceropt++;
                 }
                 pj++;
                 //console.log("pj: ", pj, " usu: ", usu.user)
-                puntosExtra = puntosExtra + Number(p.puntosCG) + Number(p.puntosDG)
+                //puntosExtra = puntosExtra + Number(p.puntosCG) + Number(p.puntosDG) + Number(p.puntosEqFase) + Number(p.puntosPartExacto)
+                puntosExtra = puntosExtra + Number(p.puntosEqFase) + Number(p.puntosPartExacto)
                 puntos = puntos + Number(p.puntos)
             }
         })
 
-        objTablaPosicionesProdeUnico.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "trespt": trespt, "unopt": unopt, "ceropt": ceropt, "DG_CG": puntosExtra })
+        objTablaPosicionesProdeUnico.usuarios.push({ "user": user, "puntos": puntos, "pj": pj, "cincopt": cincopt, "cuatropt": cuatropt, "trespt": trespt, "dospt": dospt, "unopt": unopt, "ceropt": ceropt, "DG_CG": puntosExtra, "mascincopt": mascincopt, "ptsmascincopt": ptsmascincopt })
     });
     console.log("Obj tabla Posiciones:");
     console.log(objTablaPosicionesProdeUnico);

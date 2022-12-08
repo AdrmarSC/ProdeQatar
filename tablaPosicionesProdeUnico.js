@@ -30,10 +30,13 @@ const cargarTablaPosiciones = async () => {
                     <div class="participante">PARTICIPANTE</div>
                     <div class="puntos">PUNTOS</div>
                     <div class="pj">PJ</div>
+                    <div class="cincopuntos">5 Pts</div>
+                    <div class="cuatropuntos">4 Pts</div>
                     <div class="trespuntos">3 Pts</div>
+                    <div class="dospuntos">2 Pts</div>
                     <div class="unpunto">1 Pts</div>
                     <div class="ceropunto">0 Pts</div>
-                    <div class="participacion">Extras</div>
+                    <div class="participacion"> > 5 pts</div>
                 </div>        
     `
     let puesto = 0;
@@ -48,10 +51,13 @@ const cargarTablaPosiciones = async () => {
                     <div class="participante">${usu.user}</div>
                     <div class="puntos">${usu.puntos}</div>
                     <div class="pj">${usu.pj}</div>
+                    <div class="cincopuntos">${usu.cincopt}</div>
+                    <div class="cuatropuntos">${usu.cuatropt}</div>
                     <div class="trespuntos">${usu.trespt}</div>
+                    <div class="dospuntos">${usu.dospt}</div>
                     <div class="unpunto">${usu.unopt}</div>
                     <div class="ceropunto">${usu.ceropt}</div>
-                    <div class="participacion">${usu.DG_CG}</div>
+                    <div class="participacion">${usu.mascincopt} (${usu.ptsmascincopt} p)</div>
                 </div >
            `
     })

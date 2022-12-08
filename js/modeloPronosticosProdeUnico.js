@@ -1183,13 +1183,13 @@ export var objModeloPronosticosProdeUnico =
             "partido_n": 57,
             "datosPartido": {
                 "eqlocal": "GANADOR P. 5",
-                "dia": "VIERNES",
+                "dia": "SÁBADO",
                 "icovisitante": "vacio",
                 "icolocal": "vacio",
                 "grupo": "CUARTOS DE FINAL",
-                "hora": "12:00",
+                "hora": "16:00",
                 "eqvisitante": "GANADOR P. 6",
-                "fecha": "09/12/2022"
+                "fecha": "10/12/2022"
             },
             "realPartido": {
                 "resultado": "",
@@ -1245,10 +1245,10 @@ export var objModeloPronosticosProdeUnico =
             "id": 60,
             "partido_n": 60,
             "datosPartido": {
-                "fecha": "10/12/2022",
-                "hora": "16:00",
+                "fecha": "09/12/2022",
+                "hora": "12:00",
                 "eqvisitante": "GANADOR P. 3",
-                "dia": "SÁBADO",
+                "dia": "VIERNES",
                 "eqlocal": "GANADOR P. 4",
                 "icolocal": "vacio",
                 "icovisitante": "vacio",

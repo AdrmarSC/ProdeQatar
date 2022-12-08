@@ -14,8 +14,8 @@ body {
     font-weight: 500 !important;
     text-align: center;
     justify-content: center;
-    max-width: 766px;
-    min-width: 766px;
+    max-width: 900px;
+    min-width: 900px;
 }
 
 .tituloCuadro {
@@ -48,8 +48,8 @@ body {
     min-width: 34vh;
 }
 .tituloJugadores {
-    min-width: 30px;
-    width: 70px;
+    min-width: 97px;
+    width: 97px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     border-right: 1px solid #fff;
@@ -110,8 +110,8 @@ body {
     border-left: 0px !important;
 }
 .jugadores {
-    min-width: 30px;
-    width: 70px;
+    min-width: 97px;
+    width: 97px;
 }
 
 .solapa1 {
@@ -154,12 +154,12 @@ body {
 
 .tablaColores {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+    grid-template-columns: 0.4fr 1.5fr 0.4fr 1.5fr 0.4fr 1.5fr 0.4fr 1.5fr 0.4fr 1.5fr 0.4fr 1.5fr 0.4fr 1.5fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     justify-content: center;
-    max-width: 350px;
-    min-width: 350px;
+    max-width: 500px;
+    min-width: 500px;
     gap: 0.1% 0px;
     margin: 1% auto;
     padding-left: 20px;
@@ -170,8 +170,15 @@ body {
     padding-left: 5px;
 }
 
+.mascincoColor {
+    background: #d5385a;
+}
+
 .cincoColor {
     background: #5ec448;
+}
+.cuatroColor {
+    background: #9e4ac7;
 }
 .tresColor {
     background: #1d8919;
@@ -183,5 +190,5 @@ body {
     background: #595959;
 }
 .ceroColor {
-    background: #d5385a;
+    background: #000;
 }

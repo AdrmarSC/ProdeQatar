@@ -1,8 +1,8 @@
-export var verFechasCerradas = 4;
+export var verFechasCerradas = 5;
 export var noPasa = "prueba";
 
 //variables de actualización en local
-let cambiar = 4
+let cambiar = 5
 export var ultUpdTablaPos = cambiar;
 export var ultUpdProdeFec = cambiar;
 export var ultUpdPronos = cambiar;

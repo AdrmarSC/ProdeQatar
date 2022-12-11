@@ -264,5 +264,6 @@ body {
     background: #595959;
 }
 .ceroColor {
-    background: #d5385a;
+    /* background: #d5385a; */
+    background: #000000;
 }

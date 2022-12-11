@@ -81,7 +81,8 @@ const partidosFecha = async (num) => {
             } else if (Number(fechaFiltrada[i].puntos) === 1) {
                 colorResul = "#595959" //naranja   
             } else if (Number(fechaFiltrada[i].puntos) === 0) {
-                colorResul = "#d5385a" //red    
+                //colorResul = "#d5385a" //red    
+                colorResul = "#000000" //negro    
             }
         }
 

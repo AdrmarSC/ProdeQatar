@@ -102,7 +102,8 @@ const partidosFecha = async (num) => {
                             colorResul = "#595959" //gris  
                         }
                     } else {//0 puntos
-                        colorResul = "#d5385a" //red
+                        //colorResul = "#d5385a" //red
+                        colorResul = "#000000" //negro
                     }
                 }
             } else if (numFecha > 3) {
@@ -117,8 +118,11 @@ const partidosFecha = async (num) => {
                         } else {//1punto
                             colorResul = "#595959" //gris  
                         }
+                    } else if (cgProde === cgReal) {//1 puntos
+                        //colorResul = "#d5385a" //red
+                        colorResul = "#595959" //gris  
                     } else {//0 puntos
-                        colorResul = "#d5385a" //red
+                        colorResul = "#000000" //negro
                     }
                 }
             }

@@ -455,25 +455,30 @@ const actualizarResultadoTodosUsuarios = async (numF) => {
                 let extProde = obj.fechanro[fec].partidos[i].prodePartido.prode_ext
                 let extReal = origenResultados.fechanro[fec].partidos[i].realPartido.resul_ext || ""
 
-                if (obj.fechanro[fec].partidos[i].prodePartido.prode_resul === origenResultados.fechanro[fec].partidos[i].realPartido.resultado) {
-                    if ((obj.fechanro[fec].partidos[i].prodePartido.prode_loc === origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) && (obj.fechanro[fec].partidos[i].prodePartido.prode_vis === origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)) {
-                        if ((fec < 3) || (origenResultados.fechanro[fec].partidos[i].realPartido.resultado != "E")) {
-                            obj.fechanro[fec].partidos[i].puntosP = "3";
-                            console.log("suma 3 puntos")
-                        } else if (extReal === extProde) {
-                            obj.fechanro[fec].partidos[i].puntosP = "2";
-                            console.log("suma 1 punto por penales")
+                if (origenResultados.fechanro[fec].partidos[i].realPartido.resultado != "") {
+                    if (obj.fechanro[fec].partidos[i].prodePartido.prode_resul === origenResultados.fechanro[fec].partidos[i].realPartido.resultado) {
+                        if ((obj.fechanro[fec].partidos[i].prodePartido.prode_loc === origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) && (obj.fechanro[fec].partidos[i].prodePartido.prode_vis === origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)) {
+                            if ((fec < 3) || (origenResultados.fechanro[fec].partidos[i].realPartido.resultado != "E")) {
+                                obj.fechanro[fec].partidos[i].puntosP = "3";
+                                console.log("suma 3 puntos")
+                            } else if (extReal === extProde) {
+                                obj.fechanro[fec].partidos[i].puntosP = "2";
+                                console.log("suma 1 punto por penales")
+                            } else {
+                                obj.fechanro[fec].partidos[i].puntosP = "1";
+                            }
                         } else {
                             obj.fechanro[fec].partidos[i].puntosP = "1";
+                            console.log("suma 1 puntos")
                         }
                     } else {
-                        obj.fechanro[fec].partidos[i].puntosP = "1";
-                        console.log("suma 1 puntos")
+                        obj.fechanro[fec].partidos[i].puntosP = "0";
+                        console.log("no suma puntos")
                     }
-                } else {
+                } else {//partido no jugado
                     obj.fechanro[fec].partidos[i].puntosP = "0";
-                    console.log("no suma puntos")
                 }
+
                 //puntos por diferencia de gol
                 let dgProde = Number(obj.fechanro[fec].partidos[i].prodePartido.prode_loc) - Number(obj.fechanro[fec].partidos[i].prodePartido.prode_vis)
                 let dgReal = Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_loc) - Number(origenResultados.fechanro[fec].partidos[i].realPartido.resul_vis)
@@ -501,7 +506,12 @@ const actualizarResultadoTodosUsuarios = async (numF) => {
                 } else {
                     obj.fechanro[fec].partidos[i].puntosEXT = "0";
                 }
-
+                if (obj.fechanro[fec].partidos[i].prodePartido.prode_resul === "") { // no cargó pronostico
+                    obj.fechanro[fec].partidos[i].puntosDG = "0";
+                    obj.fechanro[fec].partidos[i].puntosCG = "0";
+                    obj.fechanro[fec].partidos[i].puntosP = "0";
+                    obj.fechanro[fec].partidos[i].puntosEXT = "0"
+                }
                 let puntos = Number(obj.fechanro[fec].partidos[i].puntosP) + Number(obj.fechanro[fec].partidos[i].puntosDG) + Number(obj.fechanro[fec].partidos[i].puntosCG) + Number(obj.fechanro[fec].partidos[i].puntosEXT)
                 obj.fechanro[fec].partidos[i].puntos = puntos;
 

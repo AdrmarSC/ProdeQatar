@@ -271,7 +271,7 @@ window.onload = async () => {
                 datosLocalResultado = window.localStorage.getItem("resultadoFechas");
             }
             datosLocalResultado = window.localStorage.getItem("resultadoFechas");
-            document.getElementById("fecha1").onclick = abrirFecha(1);
+            document.getElementById("fecha1").onclick = abrirFecha(7);
         }
     } else {
         document.getElementById("animacion").innerHTML = `<div>Iniciar sesión y clickear en la sección "Prode" para visualizar los partidos</div>`

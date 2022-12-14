@@ -187,7 +187,7 @@ const abrirFecha = async (fecha) => {
     tabcontent = document.getElementsByClassName("tabcontent")
     /*************************************** */
     /*MODIFICAR PARA HABILITAR FASES FINALES*/
-    let fechasActivas = 5;
+    let fechasActivas = 7;
     /*************************************** */
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none"
@@ -347,7 +347,7 @@ window.onload = async () => {
         }
 
         datosLocal = await decryptObj(window.localStorage.getItem('objFiBdata'), noPasa);
-        document.getElementById("fecha1").onclick = abrirFecha(5);
+        document.getElementById("fecha1").onclick = abrirFecha(7);
     } else {
         document.getElementById("animacion").innerHTML = `<div>Iniciar sesión y clickear en la sección "Prode" para visualizar los partidos</div>`
     }

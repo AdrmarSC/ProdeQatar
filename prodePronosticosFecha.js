@@ -197,19 +197,19 @@ window.onload = async () => {
                     } else {
                         console.log("datos en storage actualizados")
                         actualizar = false;
-                        document.getElementById("fecha1").onclick = abrirFecha(4);
+                        document.getElementById("fecha1").onclick = abrirFecha(7);
                     }
                 } else {
                     actualizar = true;
                 }
-                document.getElementById("fecha1").onclick = abrirFecha(4);
+                document.getElementById("fecha1").onclick = abrirFecha(7);
 
                 if (actualizar) {
                     console.log("actualizado")
                     window.localStorage.setItem("ultUpdPronos", ultUpdPronos)
                     console.log("recuperando datos")
                     await docFechasCerradas();
-                    document.getElementById("fecha1").onclick = abrirFecha(4);
+                    document.getElementById("fecha1").onclick = abrirFecha(7);
                 }
             }
         } else {
